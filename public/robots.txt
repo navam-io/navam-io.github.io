@@ -1,30 +1,75 @@
 # Robots.txt for navam.io
+# https://www.navam.io/robots.txt
 
+# Default rules for all robots
 User-agent: *
 Allow: /
-
-# Sitemaps
-Sitemap: https://navam.io/sitemap-index.xml
-
-# Crawl delay (be respectful)
 Crawl-delay: 1
 
-# Allow all AI/LLM crawlers
+# Sitemaps
+Sitemap: https://www.navam.io/sitemap-index.xml
+
+# AI.txt for LLM crawlers
+# https://www.navam.io/ai.txt
+
+# OpenAI GPT Crawlers
 User-agent: GPTBot
 Allow: /
+Crawl-delay: 1
 
 User-agent: ChatGPT-User
 Allow: /
 
+# Common Crawl (used by many AI models)
 User-agent: CCBot
 Allow: /
+Crawl-delay: 1
 
+# Anthropic Claude
 User-agent: anthropic-ai
 Allow: /
+Crawl-delay: 1
 
 User-agent: Claude-Web
 Allow: /
+Crawl-delay: 1
+
+# Google Bard/Gemini
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 1
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 1
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+Crawl-delay: 1
+
+# Apple AI
+User-agent: Applebot-Extended
+Allow: /
+Crawl-delay: 1
+
+# Bing AI
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
 
 # Block assets that don't need indexing
 Disallow: /refer/images/*.png$
 Disallow: /_astro/
+Disallow: /*.json$
+
+# Important pages for SEO
+# Homepage: https://www.navam.io/
+# Products: https://www.navam.io/products
+# Blog: https://www.navam.io/blog
+# Advisory: https://www.navam.io/advisory

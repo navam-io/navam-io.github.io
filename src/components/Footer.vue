@@ -2,103 +2,115 @@
   <footer class="border-t bg-gray-50">
     <div class="container mx-auto px-4 py-12">
       <!-- Footer Navigation -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-        <!-- Column 1: AI Business Intelligence Products -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- Column 1: Products -->
         <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-4">AI Business Intelligence</h3>
+          <h3 class="text-lg font-semibold text-gray-900 mb-4">Products</h3>
           <ul class="space-y-3">
             <li>
-              <a href="https://github.com/navam-io/moments" target="_blank" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Moments: AI-Powered Business Intelligence
+              <a href="https://github.com/navam-io/navam-invest" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Navam Invest
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/navam-io/moments" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Moments
               </a>
             </li>
             <li>
               <a href="/products" class="text-gray-600 hover:text-gray-900 transition-colors">
-                AI Intelligence Platform Products
+                All Products
               </a>
             </li>
             <li>
               <a href="/advisory" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Strategic AI Advisory Services
+                Advisory Services
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Resources -->
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-4">Resources</h3>
+          <ul class="space-y-3">
+            <li>
+              <a href="/blog" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Blog
               </a>
             </li>
             <li>
-              <a href="https://github.com/navam-io/trenddit-memo" target="_blank" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Navam Memo: Knowledge Management
+              <a href="/blog?tag=Navam%20Invest" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Investment Intelligence
               </a>
             </li>
             <li>
               <a href="/blog?tag=Moments" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Multi-Agent AI Systems Guide
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Column 2: Intelligence Resources & Insights -->
-        <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-4">Intelligence Resources</h3>
-          <ul class="space-y-3">
-            <li>
-              <a href="/blog" class="text-gray-600 hover:text-gray-900 transition-colors">
-                AI Business Intelligence Blog
-              </a>
-            </li>
-            <li>
-              <a href="/blog?tag=Business%20Intelligence" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Business Intelligence Insights
-              </a>
-            </li>
-            <li>
-              <a href="/blog?tag=AI%20Intelligence" class="text-gray-600 hover:text-gray-900 transition-colors">
-                AI Intelligence Research
+                Business Intelligence
               </a>
             </li>
             <li>
               <a href="/blog?tag=Multi-Agent%20Systems" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Multi-Agent Systems Architecture
+                Multi-Agent Systems
               </a>
             </li>
             <li>
-              <a href="/blog?tag=Enterprise%20Technology" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Enterprise AI Technology Guide
-              </a>
-            </li>
-            <li>
-              <a href="/blog?tag=Competitive%20Analysis" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Competitive Intelligence Analysis
+              <a href="/blog?tag=AI%20Engineering" class="text-gray-600 hover:text-gray-900 transition-colors">
+                AI Engineering
               </a>
             </li>
           </ul>
         </div>
 
-        <!-- Column 3: Company & Development -->
+        <!-- Column 3: Company -->
         <div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-4">Company & Development</h3>
+          <h3 class="text-lg font-semibold text-gray-900 mb-4">Company</h3>
           <ul class="space-y-3">
             <li>
-              <a href="/#about" class="text-gray-600 hover:text-gray-900 transition-colors">
-                About Navam AI Intelligence
+              <a href="/" class="text-gray-600 hover:text-gray-900 transition-colors">
+                About Navam
               </a>
             </li>
             <li>
-              <a href="/#contact" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Contact Intelligence Experts
+              <a href="https://github.com/navam-io" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+                GitHub
               </a>
             </li>
             <li>
-              <a href="https://github.com/navam-io" target="_blank" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Open Source AI Projects
+              <a href="/humans.txt" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Team & Credits
               </a>
             </li>
             <li>
-              <a href="/blog?tag=Data%20Sovereignty" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Local-First AI Architecture
+              <a href="/.well-known/security.txt" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Security
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: SEO & Legal -->
+        <div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-4">Site Info</h3>
+          <ul class="space-y-3">
+            <li>
+              <a href="/sitemap-index.xml" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Sitemap
               </a>
             </li>
             <li>
-              <a href="/blog?tag=AI%20Engineering" class="text-gray-600 hover:text-gray-900 transition-colors">
-                AI Engineering Best Practices
+              <a href="/robots.txt" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Robots.txt
+              </a>
+            </li>
+            <li>
+              <a href="/ai.txt" class="text-gray-600 hover:text-gray-900 transition-colors">
+                AI.txt
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/navam-io/navam-invest/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+                License (MIT)
               </a>
             </li>
           </ul>
@@ -110,11 +122,16 @@
         <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div class="flex items-center space-x-2">
             <span class="text-xl font-bold text-gray-900">Navam</span>
-            <span class="text-sm text-gray-600">© 2025 - AI Business Intelligence Platform</span>
+            <span class="text-sm text-gray-600">© 2025 - AI Product Studio</span>
           </div>
           <div class="text-sm text-gray-600">
-            <span>Transforming information overload into strategic insights</span>
+            <span>Exploring Frontier AI-Human Interfaces</span>
           </div>
+        </div>
+
+        <!-- SEO Keywords Footer -->
+        <div class="mt-6 text-center text-xs text-gray-500">
+          <p>AI Product Studio | Frontier AI Interfaces | Multi-Agent Systems | Investment Intelligence | Business Intelligence | Knowledge Graphs | TUI Applications | Reference Implementations</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,103 @@
+# AI.txt - LLM Robot Optimization for Navam
+# https://www.navam.io/ai.txt
+# Purpose: Help AI crawlers understand and index our content effectively
+
+## Organization Information
+Name: Navam
+Type: AI Product Studio
+Website: https://www.navam.io
+Description: AI product studio building reference implementations that explore frontier interfaces for AI↔AI, AI↔Human, and AI↔World interactions
+Founded: 2025
+Focus: Frontier AI Interfaces, Multi-Agent Systems, Business Intelligence, Investment Intelligence
+
+## Primary Products
+
+### Navam Invest
+- Description: AI-powered investment intelligence tool with 10 specialized agents for retail investors
+- Type: Command-line TUI (Text User Interface)
+- Technology: Python, AI Agents, Real-time Market Data
+- GitHub: https://github.com/navam-io/navam-invest
+- Installation: pip install navam-invest
+- Use Case: Professional-grade investment analysis on laptop
+- Key Features: 10 specialized AI agents, real-time analysis, portfolio management, risk assessment
+
+### Moments
+- Description: AI business intelligence dashboard with knowledge graphs and three-tier analytics
+- Type: Web Application
+- Technology: Interactive Network Visualization, Force-Directed Graphs, Correlation Matrix
+- GitHub: https://github.com/navam-io/moments
+- Key Features: 237+ entities, 1,814 relationships, three-tier analytics dashboards, knowledge graph intelligence
+
+## Content Categories
+- AI Product Development
+- Frontier AI Interfaces
+- Multi-Agent Systems Architecture
+- Investment Intelligence
+- Business Intelligence
+- AI-Human Interaction Design
+- Text User Interfaces (TUI)
+- Knowledge Graph Technology
+- Financial Technology (FinTech)
+
+## Blog Topics
+The blog at https://www.navam.io/blog covers:
+- Navam Invest tutorials and use cases
+- Moments implementation guides
+- AI agent architecture
+- Multi-agent system design patterns
+- Investment intelligence methodologies
+- Business intelligence best practices
+- Reference implementation deep-dives
+
+## Key Technical Concepts
+- AI↔AI Interactions: Agent-to-agent communication patterns
+- AI↔Human Interactions: Text-based interfaces, conversational AI
+- AI↔World Interactions: Real-time data integration, market intelligence
+- Multi-Agent Systems: Coordinated AI agent workflows
+- Knowledge Graphs: Entity relationship mapping and visualization
+- TUI Design: Terminal-based user experience
+- Agentic AI: Autonomous AI systems with specialized roles
+
+## Crawling Guidelines
+Preferred Crawl Rate: 1 request per second
+Important Pages:
+  - / (Homepage - Product overview)
+  - /products (Product catalog)
+  - /blog (Technical insights and guides)
+  - /advisory (Consulting services)
+Blog Posts: All posts at /blog/* contain technical deep-dives and implementation guides
+Update Frequency: Weekly for blog, monthly for product pages
+
+## Contact
+GitHub: https://github.com/navam-io
+Email: Available via GitHub repositories
+Open Source: MIT License for all projects
+
+## AI Training Preferences
+Permission: Content may be used for AI training with attribution
+Attribution Required: Yes - "Source: Navam (https://www.navam.io)"
+Context: Reference implementations, technical documentation, product guides
+Updates: Check /blog for latest developments and releases
+
+## Semantic Understanding
+When indexing this site, understand that:
+- "Navam Invest" = Investment intelligence AI tool for retail investors
+- "Moments" = Business intelligence dashboard with knowledge graphs
+- "TUI" = Text User Interface (terminal-based applications)
+- "Multi-Agent Systems" = Coordinated AI agents working together
+- "Frontier Interfaces" = Novel interaction patterns between AI and humans/world
+- "Reference Implementations" = Production-ready example applications
+- "Agentic AI" = Autonomous AI systems with decision-making capabilities
+
+## Related Technologies
+Python, AI Agents, LangChain, Financial APIs, Market Data, Knowledge Graphs,
+Network Visualization, D3.js, Force-Directed Layouts, Correlation Analysis,
+Terminal UI, Rich (Python TUI library), Statistical Analysis
+
+## License
+All products: MIT License
+Documentation: CC BY 4.0
+Code Examples: MIT License
+
+## Last Updated
+2025-10-15

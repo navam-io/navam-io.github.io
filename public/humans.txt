@@ -1,0 +1,99 @@
+/* TEAM */
+
+Product Studio: Navam
+Website: https://www.navam.io
+Location: Global (Remote-First)
+
+/* SITE */
+
+Standards: HTML5, CSS3, JavaScript ES6+, TypeScript
+Components: Astro 5, Vue 3, Tailwind CSS
+Tools: Vite, GitHub Actions, GitHub Pages
+Frameworks: Astro Static Site Generator
+AI Integration: Multi-Agent Systems, LangChain
+Analytics: Google Analytics
+
+/* PRODUCTS */
+
+Navam Invest:
+  - AI-powered investment intelligence tool
+  - 10 specialized AI agents
+  - Python TUI (Text User Interface)
+  - GitHub: https://github.com/navam-io/navam-invest
+  - Install: pip install navam-invest
+
+Moments:
+  - AI business intelligence dashboard
+  - 237+ entities, 1,814 relationships
+  - Interactive knowledge graphs
+  - Three-tier analytics
+  - GitHub: https://github.com/navam-io/moments
+
+/* TECHNOLOGY STACK */
+
+Frontend:
+  - Astro 5.14.5 (Static Site Generator)
+  - Vue 3 (UI Components)
+  - Tailwind CSS 4.x (Styling)
+  - MDX (Content)
+
+Backend:
+  - Python (Navam Invest)
+  - AI Agents & LLMs
+  - Real-time Market Data APIs
+  - Statistical Analysis
+
+Development:
+  - TypeScript
+  - Git & GitHub
+  - CI/CD via GitHub Actions
+  - Static Hosting on GitHub Pages
+
+/* PHILOSOPHY */
+
+Mission: Build reference implementations exploring frontier AI interfaces
+Focus: AI↔AI, AI↔Human, AI↔World interactions
+Approach: Fully documented, AI-generated products with prompts included
+License: MIT License (Open Source)
+Values: Transparency, Quality, Innovation, Accessibility
+
+/* FEATURES */
+
+- Multi-Agent AI Systems
+- Text User Interfaces (TUI)
+- Knowledge Graph Visualization
+- Real-time Data Integration
+- Local-First Architecture
+- Professional-Grade Analytics
+- Open Source Contributions
+
+/* THANKS */
+
+Open Source Community
+AI/ML Research Community
+Financial Data Providers
+Python & JavaScript Ecosystems
+Astro & Vue Communities
+
+/* CONTACT */
+
+GitHub: https://github.com/navam-io
+Blog: https://www.navam.io/blog
+Products: https://www.navam.io/products
+Advisory: https://www.navam.io/advisory
+
+/* UPDATES */
+
+Last update: 2025-10-15
+Site version: 1.6.0
+Frequency: Weekly blog updates, Monthly product releases
+
+/* SEO & METADATA */
+
+Primary Keywords: AI Product Studio, Frontier AI Interfaces, Multi-Agent Systems,
+Investment Intelligence, Business Intelligence, TUI Applications, Knowledge Graphs
+
+Location: https://www.navam.io
+Sitemap: https://www.navam.io/sitemap-index.xml
+Robots: https://www.navam.io/robots.txt
+AI Info: https://www.navam.io/ai.txt
