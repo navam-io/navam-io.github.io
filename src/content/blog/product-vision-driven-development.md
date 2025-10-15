@@ -6,7 +6,7 @@ author: "Trenddit Team"
 excerpt: "Transform business requirements into intelligent AWS solutions using AI-powered architecture generation and strategic product vision methodologies."
 featuredImage: "/images/blog/production-architecture.png"
 relatedPosts: ["aws-solutions-architecture-automation", "lean-ai-stack-selection", "enterprise-ai-development-workflows"]
-tags: ["product-vision", "aws", "solutions-architecture", "ai", "business-strategy", "automation", "trenddit"]
+tags: ['Development Acceleration', 'Strategic Intelligence']
 ---
 
 Modern AI development requires a fundamental shift from traditional specification-driven approaches to vision-first methodologies. By starting with a compelling product vision and leveraging AI to generate technical solutions, teams can create more innovative and market-aligned products.

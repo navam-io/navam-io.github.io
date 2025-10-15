@@ -6,7 +6,7 @@ author: "Trenddit Team"
 excerpt: "Learn how to develop AWS solutions architecture tools using product vision first approach and vibe-friendly technology stacks with Claude 4 integration."
 featuredImage: "/images/blog/first-sprint-generation.png"
 relatedPosts: ["product-vision-driven-development", "lean-ai-stack-selection", "enterprise-ai-development-workflows"]
-tags: ["aws", "solutions-architecture", "ai", "development", "product-vision", "claude-4", "trenddit"]
+tags: ['System Architecture', 'Strategic Intelligence']
 ---
 
 By the time I start writing this chapter, Claude 4 is launched. Claude Code has also been updated to integrate directly with VS Code. In order to evaluate the latest capabilities of the model as well as Claude Code, I decide to develop my next project using Anthropic API instead of Bedrock API.

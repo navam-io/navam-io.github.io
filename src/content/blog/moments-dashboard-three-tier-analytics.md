@@ -4,7 +4,7 @@ title: 'Moments Dashboard: Three-Tier Analytics for AI Business Intelligence'
 date: '2025-01-12'
 author: 'Trenddit Advisory Team'
 excerpt: 'Transform AI industry data into strategic insights with Moments three-tier analytics dashboard featuring real-time KPIs, correlation intelligence, and factor analysis across strategic, tactical, and operational levels.'
-tags: ['Moments', 'Dashboard', 'Analytics', 'Business Intelligence', 'AI Intelligence', 'Enterprise Strategy', 'Data Visualization']
+tags: ['Strategic Intelligence', 'Data Visualization']
 featuredImage: '/images/blog/dashboard.png'
 ---
 

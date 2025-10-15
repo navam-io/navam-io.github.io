@@ -4,7 +4,7 @@ title: "Enterprise AI Advisory Platform: Transforming Technology Investment Deci
 excerpt: "How Trenddit Client revolutionizes enterprise technology adoption with AI-first intelligence and predictive forecasting."
 author: "Trenddit Team"  
 date: "2025-01-16"
-tags: ["Trenddit Client", "Enterprise Strategy", "AI Advisory", "Technology Investment"]
+tags: ['Strategic Intelligence']
 featuredImage: "/images/blog/trenddit-workflow.png"
 ---
 

@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: 'Moments: AI-Powered Business Intelligence for Research Teams'
 excerpt: 'How advanced AI agents transform market research by automatically detecting and classifying pivotal moments across 100+ companies and enterprise disruption patterns, delivering 95% faster strategic insights.'
-tags: ['Moments', 'AI Intelligence', 'Business Intelligence', 'Market Research', 'Claude Code SDK', 'Competitive Analysis']
+tags: ['Strategic Intelligence', 'Knowledge Discovery']
 featuredImage: '/images/blog/moments.png'
 ---
 

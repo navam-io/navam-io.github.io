@@ -4,7 +4,7 @@ title: 'Interactive Knowledge Graph: Network Visualization for AI Industry Intel
 date: '2025-01-12'
 author: 'Trenddit Advisory Team'
 excerpt: 'Discover hidden connections in the AI ecosystem through force-directed network visualization with 237+ entities and 1,814 relationships, revealing strategic patterns and market dynamics.'
-tags: ['Moments', 'Knowledge Graph', 'Network Analysis', 'Data Visualization', 'AI Intelligence', 'Business Intelligence', 'Strategic Planning']
+tags: ['Strategic Intelligence', 'Data Visualization', 'Knowledge Discovery']
 featuredImage: '/images/blog/graph.png'
 ---
 

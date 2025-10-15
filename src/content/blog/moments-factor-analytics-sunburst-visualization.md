@@ -4,7 +4,7 @@ title: 'Factor Distribution Analytics: Advanced Sunburst Charts for AI Intellige
 date: '2025-01-12'
 author: 'Trenddit Advisory Team'
 excerpt: 'Unlock hidden patterns in AI industry dynamics through multi-dimensional visualization combining interactive sunburst charts with correlation heatmaps for comprehensive factor distribution analysis.'
-tags: ['Moments', 'Factor Analysis', 'Data Visualization', 'Sunburst Charts', 'Analytics', 'Business Intelligence', 'Pattern Recognition']
+tags: ['Data Visualization', 'Strategic Intelligence']
 featuredImage: '/images/blog/dashboard-factors.png'
 ---
 

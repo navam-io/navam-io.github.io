@@ -4,7 +4,7 @@ title: "Getting Started with Trenddit Client: AI-Powered Enterprise Intelligence
 excerpt: "Complete step-by-step guide to implementing Trenddit Client for enterprise technology decision-making."
 author: "Trenddit Team"
 date: "2025-01-17" 
-tags: ["Trenddit Client", "Getting Started", "User Guide", "Implementation"]
+tags: ['Strategic Intelligence', 'Knowledge Discovery']
 featuredImage: "/images/blog/personalized-trends.png"
 ---
 

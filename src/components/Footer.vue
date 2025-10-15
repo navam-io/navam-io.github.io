@@ -40,23 +40,38 @@
               </a>
             </li>
             <li>
-              <a href="/blog?tag=Navam%20Invest" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Investment Intelligence
+              <a href="/blog?tag=Strategic%20Intelligence" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Strategic Intelligence
               </a>
             </li>
             <li>
-              <a href="/blog?tag=Moments" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Business Intelligence
+              <a href="/blog?tag=Investment%20Analysis" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Investment Analysis
               </a>
             </li>
             <li>
-              <a href="/blog?tag=Multi-Agent%20Systems" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Multi-Agent Systems
+              <a href="/blog?tag=Development%20Acceleration" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Development Acceleration
               </a>
             </li>
             <li>
-              <a href="/blog?tag=AI%20Engineering" class="text-gray-600 hover:text-gray-900 transition-colors">
-                AI Engineering
+              <a href="/blog?tag=Knowledge%20Discovery" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Knowledge Discovery
+              </a>
+            </li>
+            <li>
+              <a href="/blog?tag=System%20Architecture" class="text-gray-600 hover:text-gray-900 transition-colors">
+                System Architecture
+              </a>
+            </li>
+            <li>
+              <a href="/blog?tag=Performance%20%26%20Cost" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Performance & Cost
+              </a>
+            </li>
+            <li>
+              <a href="/blog?tag=Data%20Visualization" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Data Visualization
               </a>
             </li>
           </ul>

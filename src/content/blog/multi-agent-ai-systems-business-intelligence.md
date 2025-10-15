@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: 'Multi-Agent AI Systems: Production-Grade Business Intelligence for Enterprise'
 excerpt: 'Advanced techniques for building specialized AI agent architectures using Claude Sonnet 4, sophisticated prompt engineering, and hybrid classification systems to transform business content into actionable intelligence.'
-tags: ['Moments', 'AI Intelligence', 'Business Intelligence', 'Multi-Agent Systems', 'Enterprise Technology', 'AI Engineering']
+tags: ['System Architecture', 'Strategic Intelligence']
 featuredImage: '/images/blog/agents.png'
 ---
 
