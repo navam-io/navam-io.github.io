@@ -1,0 +1,47 @@
+---
+export interface Props {
+  title: string;
+  subtitle: string;
+  primaryCTA?: {
+    text: string;
+    href: string;
+  };
+  secondaryCTA?: {
+    text: string;
+    href: string;
+  };
+}
+
+const { title, subtitle, primaryCTA, secondaryCTA } = Astro.props;
+---
+
+<header class="relative overflow-hidden bg-gradient-hero space-section text-center">
+  <div class="floating-bg-purple" aria-hidden="true"></div>
+  <div class="floating-bg-blue" aria-hidden="true"></div>
+
+  <div class="container-custom">
+    <div class="relative z-10">
+      <h1 class="text-hero font-display font-bold mb-sm text-gradient">
+        {title}
+      </h1>
+      <p class="text-hero-subtitle text-text-secondary mb-lg max-w-2xl mx-auto">
+        {subtitle}
+      </p>
+
+      {(primaryCTA || secondaryCTA) && (
+        <div class="flex gap-sm justify-center flex-wrap">
+          {primaryCTA && (
+            <a href={primaryCTA.href} class="btn-primary">
+              {primaryCTA.text}
+            </a>
+          )}
+          {secondaryCTA && (
+            <a href={secondaryCTA.href} class="btn-secondary">
+              {secondaryCTA.text}
+            </a>
+          )}
+        </div>
+      )}
+    </div>
+  </div>
+</header>

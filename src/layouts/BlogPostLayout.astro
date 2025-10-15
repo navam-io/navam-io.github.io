@@ -1,0 +1,180 @@
+---
+import MainLayout from './MainLayout.astro';
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { title, description, pubDate, tags, image, readingTime } = post.data;
+
+const formattedDate = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}).format(pubDate);
+---
+
+<MainLayout
+  title={`${title} - Navam Blog`}
+  description={description}
+  image={image?.url}
+  type="article"
+  pubDate={pubDate}
+  tags={tags}
+>
+  <header class="space-section-sm" style="background: linear-gradient(135deg, #F2D5E8 0%, #E8D5F2 100%);">
+    <div class="container-custom text-center">
+      {tags.length > 0 && (
+        <span class="inline-block px-4 py-2 text-sm rounded-full font-medium mb-sm" style="background: linear-gradient(135deg, #E8D5F2 0%, #D5E8F2 100%); color: var(--color-text-primary);">
+          {tags[0]}
+        </span>
+      )}
+      <h1 class="text-hero font-bold mb-sm" style="font-family: var(--font-display); color: var(--color-text-primary);">
+        {title}
+      </h1>
+      <div class="flex justify-center items-center gap-4 text-sm" style="color: var(--color-text-secondary);">
+        <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+        {readingTime && (
+          <>
+            <span>•</span>
+            <span>{readingTime} read</span>
+          </>
+        )}
+      </div>
+    </div>
+  </header>
+
+  <article class="container-custom prose prose-lg mx-auto" style="padding-top: 4rem; padding-bottom: 4rem; max-width: 65ch;">
+    <slot />
+  </article>
+
+  <div class="container-custom" style="padding-bottom: 4rem;">
+    <div class="p-8 rounded-xl text-center" style="background: linear-gradient(135deg, #D5F2E8 0%, #D5E8F2 100%);">
+      <h3 class="text-2xl font-bold mb-sm" style="font-family: var(--font-display);">Ready to Try Navam Invest?</h3>
+      <p class="mb-md" style="color: var(--color-text-secondary);">
+        Experience professional-grade investment intelligence on your laptop.
+      </p>
+      <a href="/#get-started" class="btn-primary">Get Started</a>
+    </div>
+  </div>
+</MainLayout>
+
+<style>
+  /* Prose styles for MDX content */
+  .prose {
+    color: var(--color-text-primary);
+  }
+
+  .prose h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-primary);
+  }
+
+  .prose h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+  }
+
+  .prose p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: var(--color-text-primary);
+  }
+
+  .prose ul, .prose ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .prose li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+  }
+
+  .prose strong {
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  .prose a {
+    color: #8B5CF6;
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+
+  .prose a:hover {
+    color: #6D28D9;
+  }
+
+  .prose code {
+    background: #F3F4F6;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    color: #EC4899;
+  }
+
+  .prose pre {
+    background: var(--color-text-primary);
+    color: #E8D5F2;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 2rem 0;
+  }
+
+  .prose pre code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+  }
+
+  .prose img {
+    border-radius: 0.75rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  .prose blockquote {
+    border-left: 4px solid #EC4899;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--color-text-secondary);
+  }
+
+  .prose hr {
+    margin: 3rem 0;
+    border: none;
+    border-top: 2px solid #E5E7EB;
+  }
+
+  .prose table {
+    width: 100%;
+    margin: 2rem 0;
+    border-collapse: collapse;
+  }
+
+  .prose th, .prose td {
+    padding: 0.75rem;
+    border: 1px solid #E5E7EB;
+    text-align: left;
+  }
+
+  .prose th {
+    background: #F9FAFB;
+    font-weight: 600;
+  }
+</style>

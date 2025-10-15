@@ -1,0 +1,57 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  tags: string[];
+  image?: {
+    url: string;
+    alt: string;
+  };
+  readingTime?: string;
+  slug: string;
+  featured?: boolean;
+}
+
+const { title, description, pubDate, tags, image, readingTime, slug, featured = false } = Astro.props;
+
+const formattedDate = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}).format(pubDate);
+---
+
+<article class={`card group ${featured ? 'md:col-span-2' : ''}`}>
+  {image && (
+    <a href={`/blog/${slug}`} class="block">
+      <img
+        src={image.url}
+        alt={image.alt}
+        class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+      />
+    </a>
+  )}
+  <div class="p-md">
+    {tags.length > 0 && (
+      <span class="inline-block px-3 py-1 text-sm bg-gradient-primary rounded-full text-text-primary font-medium mb-xs">
+        {tags[0]}
+      </span>
+    )}
+    <h2 class="font-display text-xl font-bold mb-xs hover:text-purple-600 transition-colors">
+      <a href={`/blog/${slug}`} class="no-underline text-text-primary">
+        {title}
+      </a>
+    </h2>
+    <p class="text-text-secondary mb-sm line-clamp-3">{description}</p>
+    <div class="flex items-center gap-sm text-sm text-text-light">
+      <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+      {readingTime && (
+        <>
+          <span>•</span>
+          <span>{readingTime}</span>
+        </>
+      )}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,49 @@
+---
+export interface Feature {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface Props {
+  title: string;
+  subtitle: string;
+  features: Feature[];
+  showcaseImage?: {
+    url: string;
+    alt: string;
+  };
+}
+
+const { title, subtitle, features, showcaseImage } = Astro.props;
+import ProductFeature from './ProductFeature.astro';
+---
+
+<section id="product" class="space-section">
+  <div class="container-custom">
+    <div class="section-header">
+      <h2>{title}</h2>
+      <p class="section-subtitle">{subtitle}</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md mb-lg">
+      {features.map((feature) => (
+        <ProductFeature
+          icon={feature.icon}
+          title={feature.title}
+          description={feature.description}
+        />
+      ))}
+    </div>
+
+    {showcaseImage && (
+      <div class="mt-lg rounded-xl overflow-hidden shadow-lg group">
+        <img
+          src={showcaseImage.url}
+          alt={showcaseImage.alt}
+          class="w-full h-auto block transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+    )}
+  </div>
+</section>

@@ -1,0 +1,60 @@
+---
+export interface Step {
+  title: string;
+  description?: string;
+  code?: string;
+}
+
+export interface Props {
+  title: string;
+  subtitle: string;
+  steps: Step[];
+  requirements?: string[];
+}
+
+const { title, subtitle, steps, requirements } = Astro.props;
+---
+
+<section id="get-started" class="bg-gradient-accent space-section">
+  <div class="container-custom">
+    <div class="text-center">
+      <h2 class="text-section-title font-display mb-sm">{title}</h2>
+      <p class="text-xl text-text-secondary mb-lg">{subtitle}</p>
+
+      <div class="flex flex-col gap-md max-w-3xl mx-auto mb-lg text-left">
+        {steps.map((step, index) => (
+          <div class="flex flex-col sm:flex-row gap-md items-start bg-white p-md rounded-lg shadow-sm">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center font-bold text-xl text-text-primary">
+              {index + 1}
+            </div>
+            <div class="flex-1">
+              <h4 class="font-display text-xl mb-xs">{step.title}</h4>
+              {step.description && (
+                <p class="text-text-secondary mb-sm">{step.description}</p>
+              )}
+              {step.code && (
+                <div class="code-block mt-sm">
+                  <code>{step.code}</code>
+                  <button
+                    class="btn-primary text-sm py-2 px-4"
+                    onclick={`navigator.clipboard.writeText('${step.code}')`}
+                  >
+                    Copy
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {requirements && requirements.length > 0 && (
+        <div class="bg-white/70 p-md rounded-md max-w-3xl mx-auto">
+          {requirements.map((req) => (
+            <p class="mb-xs text-text-secondary" set:html={req} />
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</section>

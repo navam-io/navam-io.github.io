@@ -1,0 +1,30 @@
+# Robots.txt for navam.io
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://navam.io/sitemap-index.xml
+
+# Crawl delay (be respectful)
+Crawl-delay: 1
+
+# Allow all AI/LLM crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Block assets that don't need indexing
+Disallow: /refer/images/*.png$
+Disallow: /_astro/

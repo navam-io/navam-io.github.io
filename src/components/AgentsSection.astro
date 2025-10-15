@@ -1,0 +1,25 @@
+---
+export interface Agent {
+  name: string;
+  description: string;
+}
+
+export interface Props {
+  title: string;
+  agents: Agent[];
+}
+
+const { title, agents } = Astro.props;
+import AgentCard from './AgentCard.astro';
+---
+
+<section id="features" class="bg-gradient-secondary space-section">
+  <div class="container-custom">
+    <h2 class="text-section-title font-display text-center mb-lg">{title}</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm">
+      {agents.map((agent) => (
+        <AgentCard name={agent.name} description={agent.description} />
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../../layouts/MainLayout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<MainLayout
+  title="Blog - Navam"
+  description="Insights on AI-powered investment intelligence, vibe coding, multi-agent systems, and building the future of fintech."
+>
+  <section class="space-section" style="background: linear-gradient(135deg, #E8D5F2 0%, #D5E8F2 50%, #D5F2E8 100%);">
+    <div class="container-custom text-center">
+      <h1 class="text-hero font-bold mb-sm" style="font-family: var(--font-display);">
+        <span class="text-gradient">Navam Blog</span>
+      </h1>
+      <p class="text-xl max-w-2xl mx-auto" style="color: var(--color-text-secondary);">
+        Insights on AI-powered investment intelligence, vibe coding, multi-agent systems, and building the future of fintech.
+      </p>
+    </div>
+  </section>
+
+  <section class="container-custom" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {sortedPosts.map((post) => (
+        <BlogCard
+          title={post.data.title}
+          description={post.data.description}
+          pubDate={post.data.pubDate}
+          tags={post.data.tags}
+          image={post.data.image}
+          readingTime={post.data.readingTime}
+          slug={post.slug}
+          featured={post.data.featured}
+        />
+      ))}
+    </div>
+  </section>
+
+  <section class="container-custom" style="padding-bottom: 4rem;">
+    <div class="p-8 rounded-xl text-center" style="background: linear-gradient(135deg, #F2E5D5 0%, #F2D5E8 100%);">
+      <h2 class="text-3xl font-bold mb-sm" style="font-family: var(--font-display);">Get Started with Navam Invest</h2>
+      <p class="text-lg mb-md max-w-2xl mx-auto" style="color: var(--color-text-secondary);">
+        Professional-grade investment intelligence powered by 10 specialized AI agents. Install in under 2 minutes.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="/#get-started" class="btn-primary">Install Now</a>
+        <a href="https://github.com/navam-io/navam-invest" target="_blank" rel="noopener" class="btn-secondary">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+</MainLayout>

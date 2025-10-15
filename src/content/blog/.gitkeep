@@ -1,0 +1,19 @@
+# Blog Content Directory
+
+This directory will contain all blog posts in MDX format.
+
+Each post should have frontmatter matching this schema:
+
+```yaml
+---
+title: Post Title
+description: Post description for SEO
+pubDate: 2025-10-14
+tags: [tag1, tag2]
+image:
+  url: /path/to/image.png
+  alt: Image alt text
+readingTime: 10 min
+featured: false
+---
+```

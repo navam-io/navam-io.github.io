@@ -1,0 +1,70 @@
+# Robots.txt for navam.io
+# Allow all search engines and LLM crawlers to access all content
+
+# General Rules for Search Engines
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# Allow common search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Allow LLM Training & Research Bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap Location
+Sitemap: https://navam.io/sitemap.xml
+
+# LLM-specific content
+# For AI assistants looking for structured content
+# See /llms.txt and /llms-full.txt for detailed information
