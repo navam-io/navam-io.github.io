@@ -17,41 +17,84 @@ export interface Props {
 const { title, useCases } = Astro.props;
 ---
 
-<section class="space-section">
+<section class="use-cases">
   <div class="container-custom">
-    <h2 class="text-section-title font-display text-center mb-lg">{title}</h2>
-    <div class="flex flex-col gap-xl">
+    <h2 class="use-cases-title">{title}</h2>
+    <div class="use-cases-list">
       {useCases.map((useCase, index) => (
-        <div class={`grid grid-cols-1 md:grid-cols-2 gap-lg items-center ${useCase.reverse ? 'md:flex-row-reverse' : ''}`}>
-          {useCase.reverse ? (
-            <>
-              <div class="md:order-2">
-                <img
-                  src={useCase.image.url}
-                  alt={useCase.image.alt}
-                  class="w-full rounded-lg shadow-lg"
-                />
-              </div>
-              <div class="md:order-1">
-                <h3 class="font-display text-3xl mb-sm">{useCase.title}</h3>
-                <p class="text-text-secondary text-lg leading-relaxed">{useCase.description}</p>
-              </div>
-            </>
-          ) : (
-            <>
-              <img
-                src={useCase.image.url}
-                alt={useCase.image.alt}
-                class="w-full rounded-lg shadow-lg"
-              />
-              <div>
-                <h3 class="font-display text-3xl mb-sm">{useCase.title}</h3>
-                <p class="text-text-secondary text-lg leading-relaxed">{useCase.description}</p>
-              </div>
-            </>
-          )}
+        <div class={`use-case ${useCase.reverse ? 'reverse' : ''}`}>
+          <div class="use-case-image">
+            <img
+              src={useCase.image.url}
+              alt={useCase.image.alt}
+            />
+          </div>
+          <div class="use-case-content">
+            <h3>{useCase.title}</h3>
+            <p>{useCase.description}</p>
+          </div>
         </div>
       ))}
     </div>
   </div>
 </section>
+
+<style>
+  .use-cases {
+    padding: var(--space-xl) 0;
+  }
+
+  .use-cases-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-primary);
+  }
+
+  .use-cases-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+
+  .use-case {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .use-case {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .use-case.reverse .use-case-image {
+      order: 2;
+    }
+
+    .use-case.reverse .use-case-content {
+      order: 1;
+    }
+  }
+
+  .use-case-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .use-case-content h3 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-primary);
+  }
+
+  .use-case-content p {
+    color: var(--color-text-secondary);
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+</style>

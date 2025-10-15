@@ -2,30 +2,25 @@
 const currentPath = Astro.url.pathname;
 ---
 
-<nav class="sticky top-0 z-50 backdrop-blur-nav shadow-sm transition-all duration-300" style="background: rgba(255, 255, 255, 0.95);">
+<nav class="navbar">
   <div class="container-custom">
-    <div class="flex justify-between items-center" style="padding-top: 1rem; padding-bottom: 1rem;">
-      <a href="/" class="flex items-center no-underline transition-transform duration-300 hover:-translate-y-0.5" style="gap: 1rem;">
-        <img src="/refer/images/logo-circle.png" alt="Navam Logo" class="w-10 h-10 rounded-full transition-transform duration-300 hover:rotate-[10deg]">
-        <span class="text-2xl font-bold" style="font-family: var(--font-display); color: var(--color-text-primary);">Navam</span>
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="/refer/images/logo-circle.png" alt="Navam Logo" class="nav-logo">
+        <span class="nav-brand-text">Navam</span>
       </a>
 
       <button
         id="mobile-menu-toggle"
-        class="md:hidden p-2"
+        class="mobile-menu-toggle"
         aria-label="Toggle mobile menu"
-        style="color: var(--color-text-primary);"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="menu-icon">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
 
-      <ul
-        id="nav-links"
-        class="hidden md:flex list-none items-center"
-        style="gap: 2rem;"
-      >
+      <ul id="nav-links" class="nav-links">
         <li><a href="/#product" class="nav-link">Product</a></li>
         <li><a href="/#features" class="nav-link">Features</a></li>
         <li><a href="/blog" class="nav-link">Blog</a></li>
@@ -36,9 +31,83 @@ const currentPath = Astro.url.pathname;
 </nav>
 
 <style>
-  /* Mobile menu styles */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-brand:hover {
+    transform: translateY(-2px);
+  }
+
+  .nav-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-brand:hover .nav-logo {
+    transform: rotate(10deg);
+  }
+
+  .nav-brand-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+    padding: 0.5rem;
+    color: var(--color-text-primary);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
   @media (max-width: 768px) {
-    #nav-links {
+    .mobile-menu-toggle {
+      display: block;
+    }
+  }
+
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
       display: flex;
       position: absolute;
       top: 100%;
@@ -56,23 +125,23 @@ const currentPath = Astro.url.pathname;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    #nav-links.active {
+    .nav-links.active {
       transform: translateY(0);
       opacity: 1;
       pointer-events: all;
     }
 
-    #nav-links li {
+    .nav-links li {
       width: 100%;
     }
 
-    #nav-links a {
+    .nav-links a {
       display: block;
       padding: 1rem 2rem;
       border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
 
-    #nav-links a::after {
+    .nav-links a::after {
       display: none;
     }
   }

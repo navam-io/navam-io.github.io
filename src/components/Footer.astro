@@ -1,17 +1,17 @@
 ---
 ---
 
-<footer class="text-white" style="background: linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 100%); padding-top: 4rem; padding-bottom: 4rem;">
+<footer class="footer">
   <div class="container-custom">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5" style="gap: 4rem; margin-bottom: 4rem;">
+    <div class="footer-grid">
       <div class="footer-section">
-        <img src="/refer/images/logo-circle.png" alt="Navam Logo" class="w-15 h-15" style="margin-bottom: 1rem;">
+        <img src="/refer/images/logo-circle.png" alt="Navam Logo" class="footer-logo">
         <p class="footer-text">Frontier interfaces for AI, humans, and the world</p>
       </div>
 
       <div class="footer-section">
-        <h4 style="font-family: var(--font-display); margin-bottom: 1rem;">Product</h4>
-        <ul class="list-none" style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <h4>Product</h4>
+        <ul>
           <li><a href="/#product" class="footer-link">Navam Invest</a></li>
           <li><a href="/#features" class="footer-link">Features</a></li>
           <li><a href="/#get-started" class="footer-link">Installation</a></li>
@@ -21,8 +21,8 @@
       </div>
 
       <div class="footer-section">
-        <h4 style="font-family: var(--font-display); margin-bottom: 1rem;">Content</h4>
-        <ul class="list-none" style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <h4>Content</h4>
+        <ul>
           <li><a href="/blog" class="footer-link">Blog</a></li>
           <li><a href="/blog/introducing-navam-invest" class="footer-link">Product Launch</a></li>
           <li><a href="/blog/smart-api-caching-performance" class="footer-link">Smart Caching</a></li>
@@ -32,8 +32,8 @@
       </div>
 
       <div class="footer-section">
-        <h4 style="font-family: var(--font-display); margin-bottom: 1rem;">Resources</h4>
-        <ul class="list-none" style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <h4>Resources</h4>
+        <ul>
           <li><a href="https://github.com/navam-io/navam-invest#readme" class="footer-link" target="_blank" rel="noopener">Documentation</a></li>
           <li><a href="https://github.com/navam-io/navam-invest/issues" class="footer-link" target="_blank" rel="noopener">Support & Issues</a></li>
           <li><a href="/llms.txt" class="footer-link">LLM Info</a></li>
@@ -42,8 +42,8 @@
       </div>
 
       <div class="footer-section">
-        <h4 style="font-family: var(--font-display); margin-bottom: 1rem;">Legal & SEO</h4>
-        <ul class="list-none" style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <h4>Legal & SEO</h4>
+        <ul>
           <li><a href="https://github.com/navam-io/navam-invest/blob/main/LICENSE" class="footer-link" target="_blank" rel="noopener">MIT License</a></li>
           <li><a href="/robots.txt" class="footer-link">Robots.txt</a></li>
           <li><a href="/llms-full.txt" class="footer-link">Complete Documentation</a></li>
@@ -52,22 +52,66 @@
       </div>
     </div>
 
-    <div class="text-center footer-border border-t text-sm footer-muted" style="padding-top: 2rem;">
+    <div class="footer-bottom">
       <p>
         &copy; 2025 navam-io. Released under MIT License. |
-        <a href="/sitemap.xml" class="footer-muted transition-colors">Sitemap</a> |
-        <a href="/robots.txt" class="footer-muted transition-colors">Robots</a> |
-        <a href="/llms.txt" class="footer-muted transition-colors">LLMs</a>
+        <a href="/sitemap.xml" class="footer-muted">Sitemap</a> |
+        <a href="/robots.txt" class="footer-muted">Robots</a> |
+        <a href="/llms.txt" class="footer-muted">LLMs</a>
       </p>
     </div>
   </div>
 </footer>
 
 <style>
+  .footer {
+    background: linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 100%);
+    padding: var(--space-xl) 0;
+    color: white;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+  }
+
+  @media (min-width: 768px) {
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .footer-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  .footer-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .footer-section h4 {
+    font-family: var(--font-display);
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
   .footer-link {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
     display: inline-block;
   }
 
@@ -77,14 +121,20 @@
 
   .footer-text {
     color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
   }
 
-  .footer-border {
-    border-color: rgba(255, 255, 255, 0.1);
+  .footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.875rem;
   }
 
   .footer-muted {
     color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.3s ease;
   }
 
   .footer-muted:hover {

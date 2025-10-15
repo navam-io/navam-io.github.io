@@ -15,21 +15,21 @@ export interface Props {
 const { title, subtitle, primaryCTA, secondaryCTA } = Astro.props;
 ---
 
-<header class="relative overflow-hidden bg-gradient-hero space-section text-center">
+<header class="hero">
   <div class="floating-bg-purple" aria-hidden="true"></div>
   <div class="floating-bg-blue" aria-hidden="true"></div>
 
   <div class="container-custom">
-    <div class="relative z-10">
-      <h1 class="text-hero font-display font-bold mb-sm text-gradient">
+    <div class="hero-content">
+      <h1 class="hero-title">
         {title}
       </h1>
-      <p class="text-hero-subtitle text-text-secondary mb-lg max-w-2xl mx-auto">
+      <p class="hero-subtitle">
         {subtitle}
       </p>
 
       {(primaryCTA || secondaryCTA) && (
-        <div class="flex gap-sm justify-center flex-wrap">
+        <div class="cta-buttons">
           {primaryCTA && (
             <a href={primaryCTA.href} class="btn-primary">
               {primaryCTA.text}
@@ -45,3 +45,47 @@ const { title, subtitle, primaryCTA, secondaryCTA } = Astro.props;
     </div>
   </div>
 </header>
+
+<style>
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient-hero);
+    padding: var(--space-xl) 0;
+    text-align: center;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 10;
+  }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: bold;
+    margin-bottom: var(--space-sm);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-lg);
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>
