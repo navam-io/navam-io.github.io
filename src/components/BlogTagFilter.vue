@@ -1,27 +1,38 @@
 <template>
-  <div class="mb-8">
-    <div class="flex flex-wrap gap-3 items-center">
-      <span class="text-sm font-medium text-gray-700">Filter by:</span>
+  <div class="space-y-6">
+    <!-- Section Title -->
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-gray-900 mb-2">Explore by Category</h2>
+      <p class="text-gray-600">Filter articles by topic to find exactly what you need</p>
+    </div>
+
+    <!-- Filter Pills -->
+    <div class="flex flex-wrap gap-3 justify-center items-center">
       <button
         @click="setActiveTag('')"
         :class="[
-          'px-4 py-2 rounded-full text-sm font-medium transition-colors',
-          activeTag === '' 
-            ? 'bg-blue-600 text-white' 
-            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+          'px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105',
+          activeTag === ''
+            ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg'
+            : 'bg-white text-gray-700 border border-gray-200 hover:border-purple-300 hover:shadow-md'
         ]"
       >
-        All Posts
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+          </svg>
+          All Articles
+        </span>
       </button>
       <button
         v-for="tag in availableTags"
         :key="tag"
         @click="setActiveTag(tag)"
         :class="[
-          'px-4 py-2 rounded-full text-sm font-medium transition-colors',
-          activeTag === tag 
-            ? 'bg-blue-600 text-white' 
-            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+          'px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105',
+          activeTag === tag
+            ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg'
+            : 'bg-white text-gray-700 border border-gray-200 hover:border-purple-300 hover:shadow-md'
         ]"
       >
         {{ tag }}
