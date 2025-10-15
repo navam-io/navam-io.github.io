@@ -46,38 +46,15 @@ const activeTag = ref('')
 const availableTags = ref([])
 
 onMounted(() => {
-  // Extract unique classification tags including Moments tags
+  // New customer-problem-oriented taxonomy (7 categories)
   const classificationTags = [
-    'Moments',
-    'Navam Client', 
-    'Navam Memo', 
-    'AI Intelligence',
-    'Business Intelligence',
-    'Multi-Agent Systems',
-    'Dashboard',
-    'Analytics',
-    'Knowledge Graph',
-    'Network Analysis',
-    'Correlation Analysis',
-    'Factor Analysis',
-    'Data Visualization',
-    'Sunburst Charts',
-    'Pattern Recognition',
-    'Statistical Analysis',
-    'Enterprise Technology',
-    'Enterprise Strategy',
-    'AI Advisory',
-    'AI Agents', 
-    'Code Generation', 
-    'Lean Workflows',
-    'User Guide',
-    'Performance Optimization',
-    'File System Architecture',
-    'Market Research',
-    'Competitive Analysis',
-    'Data Sovereignty',
-    'Strategic Planning',
-    'Data Science'
+    'Strategic Intelligence',
+    'Investment Analysis',
+    'Development Acceleration',
+    'Knowledge Discovery',
+    'System Architecture',
+    'Performance & Cost',
+    'Data Visualization'
   ]
   availableTags.value = classificationTags
 
