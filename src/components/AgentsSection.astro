@@ -13,13 +13,53 @@ const { title, agents } = Astro.props;
 import AgentCard from './AgentCard.astro';
 ---
 
-<section id="features" class="bg-gradient-secondary space-section">
+<section id="features" class="features">
   <div class="container-custom">
-    <h2 class="text-section-title font-display text-center mb-lg">{title}</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm">
+    <h2>{title}</h2>
+    <div class="agents-grid">
       {agents.map((agent) => (
         <AgentCard name={agent.name} description={agent.description} />
       ))}
     </div>
   </div>
 </section>
+
+<style>
+  .features {
+    background: var(--gradient-secondary);
+    padding: var(--space-xl) 0;
+  }
+
+  .features h2 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-primary);
+  }
+
+  .agents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-sm);
+  }
+
+  @media (max-width: 1024px) {
+    .agents-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .agents-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+  }
+
+  @media (max-width: 480px) {
+    .agents-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-xs);
+    }
+  }
+</style>

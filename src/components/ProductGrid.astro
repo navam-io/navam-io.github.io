@@ -19,14 +19,14 @@ const { title, subtitle, features, showcaseImage } = Astro.props;
 import ProductFeature from './ProductFeature.astro';
 ---
 
-<section id="product" class="space-section">
+<section id="product" class="product-intro">
   <div class="container-custom">
     <div class="section-header">
       <h2>{title}</h2>
       <p class="section-subtitle">{subtitle}</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md mb-lg">
+    <div class="product-grid">
       {features.map((feature) => (
         <ProductFeature
           icon={feature.icon}
@@ -37,13 +37,38 @@ import ProductFeature from './ProductFeature.astro';
     </div>
 
     {showcaseImage && (
-      <div class="mt-lg rounded-xl overflow-hidden shadow-lg group">
+      <div class="product-showcase">
         <img
           src={showcaseImage.url}
           alt={showcaseImage.alt}
-          class="w-full h-auto block transition-transform duration-300 group-hover:scale-105"
+          class="showcase-image"
         />
       </div>
     )}
   </div>
 </section>
+
+<style>
+  .product-intro {
+    padding: var(--space-xl) 0;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+  }
+
+  @media (max-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
