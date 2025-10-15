@@ -122,13 +122,6 @@
         </div>
 
 
-        <!-- Scroll Indicator -->
-        <div class="animate-bounce mt-16">
-          <div class="w-6 h-10 border-2 border-white/50 rounded-full mx-auto relative">
-            <div class="w-1 h-3 bg-white/70 rounded-full absolute left-1/2 top-2 transform -translate-x-1/2 animate-pulse"></div>
-          </div>
-          <p class="text-white/60 text-sm mt-2 font-light">Explore our products</p>
-        </div>
       </div>
     </div>
     
@@ -139,10 +132,6 @@
 
 <script setup lang="ts">
 import Button from '@/components/ui/Button.vue'
-
-const scrollToProducts = () => {
-  document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })
-}
 </script>
 
 <style scoped>
