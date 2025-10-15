@@ -1,0 +1,127 @@
+---
+import '@styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  ogImage?: string;
+  ogType?: string;
+  twitterCard?: string;
+  canonicalURL?: string;
+  author?: string;
+}
+
+const {
+  title,
+  description = 'AI-powered business intelligence platform featuring Moments for enterprise intelligence. Transform information overload into strategic insights with multi-agent systems, smart correlation discovery, and competitive analysis capabilities.',
+  keywords = 'Moments, AI business intelligence, multi-agent systems, business intelligence platform, competitive analysis, AI-powered insights, Navam Client, Navam Memo, enterprise intelligence, strategic decision-making, lean AI automation, AI advisory',
+  ogImage = '/android-chrome-512x512.png',
+  ogType = 'website',
+  twitterCard = 'summary_large_image',
+  canonicalURL = new URL(Astro.url.pathname, Astro.site).toString(),
+  author = 'Navam Team'
+} = Astro.props;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Navam",
+  "description": "AI-powered business intelligence platform featuring Moments for enterprise intelligence, multi-agent systems, and competitive analysis",
+  "url": "https://trenddit.com",
+  "logo": "https://trenddit.com/android-chrome-512x512.png",
+  "sameAs": [
+    "https://github.com/trendditcom"
+  ],
+  "products": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Moments",
+      "description": "AI-powered business intelligence platform with multi-agent processing and smart correlation discovery",
+      "url": "https://github.com/trendditcom/moments"
+    },
+    {
+      "@type": "SoftwareApplication", 
+      "name": "Navam Client",
+      "description": "AI-first enterprise intelligence platform for technology decision-making",
+      "url": "https://github.com/trendditcom/trenddit-client"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Navam Memo", 
+      "description": "Chrome extension for AI-powered knowledge management and intelligent conversations",
+      "url": "https://github.com/trendditcom/trenddit-memo"
+    }
+  ]
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content={author} />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(ogImage, Astro.site).toString()} />
+    <meta property="og:site_name" content="Navam" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content={twitterCard} />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(ogImage, Astro.site).toString()} />
+    
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#8B5CF6" />
+    <meta name="msapplication-TileColor" content="#8B5CF6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Generator -->
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYVYFTM1QG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FYVYFTM1QG');
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

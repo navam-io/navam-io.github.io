@@ -1,100 +1,70 @@
 ---
 import { getCollection } from 'astro:content';
-import MainLayout from '../../layouts/MainLayout.astro';
-import BlogCard from '../../components/BlogCard.astro';
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/Header.vue';
+import Footer from '@components/Footer.vue';
+import BlogList from '@components/BlogList.vue';
 
+// Get all blog posts using content collections API
 const allPosts = await getCollection('blog');
-const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Transform to format expected by BlogList component
+const postArray = allPosts.map(post => {
+  const data = post.data;
+  return {
+    url: `/blog/${post.slug}`,
+    frontmatter: {
+      title: data.title,
+      // Use description or excerpt - BlogList expects 'excerpt'
+      excerpt: data.excerpt || data.description || '',
+      // Use pubDate or date
+      pubDate: data.pubDate || data.date,
+      // Use image or featuredImage - BlogList expects 'featuredImage'
+      featuredImage: data.featuredImage || (data.image?.url) || '',
+      author: data.author,
+      tags: data.tags || [],
+      featured: data.featured || false,
+      readingTime: data.readingTime,
+    }
+  };
+});
+
+// Custom sorting function to prioritize featured posts and sort by date
+const sortedPosts = postArray.sort((a, b) => {
+  // Check if posts have featured status
+  const aIsFeatured = a.frontmatter.featured || false;
+  const bIsFeatured = b.frontmatter.featured || false;
+
+  // Featured posts get priority
+  if (aIsFeatured && !bIsFeatured) return -1;
+  if (!aIsFeatured && bIsFeatured) return 1;
+
+  // Within the same priority group, sort by date (newest first)
+  const aDate = new Date(a.frontmatter.pubDate || 0);
+  const bDate = new Date(b.frontmatter.pubDate || 0);
+  return bDate - aDate;
+});
 ---
 
-<MainLayout
-  title="Blog - Navam | AI Investment Intelligence Insights"
-  description="Insights on AI-powered investment intelligence, multi-agent systems, LangGraph architecture, and frontier interfaces."
+<Layout
+  title="Navam Blog - AI Product Studio Insights & Guides"
+  description="Explore AI product development insights, frontier interface exploration, investment intelligence, business intelligence, and multi-agent system architecture from Navam's product studio."
+  keywords="AI blog, product studio, AI insights, Navam Invest, Moments, AI business intelligence, investment intelligence guides, multi-agent systems, AI automation, AI product development"
+  ogImage="/images/logo.png"
+  ogType="website"
 >
-  <header class="blog-hero">
-    <div class="container-custom">
-      <h1>Navam Blog</h1>
-      <p>Insights on AI-powered investment intelligence and frontier interfaces</p>
-    </div>
-  </header>
+  <Header client:load />
+  <main class="min-h-screen">
+    <div class="container mx-auto px-4 py-16">
+      <div class="mx-auto max-w-4xl">
+        <h1 class="text-4xl font-bold mb-4">Navam Blog</h1>
+        <p class="text-lg text-gray-600 mb-12">
+          Insights, use cases, and guides for frontier AI interfaces and intelligent systems
+        </p>
 
-  <main class="blog-main">
-    <div class="container-custom">
-      <div class="blog-grid">
-        {sortedPosts.map((post) => (
-          <BlogCard
-            title={post.data.title}
-            description={post.data.description}
-            pubDate={post.data.pubDate}
-            tags={post.data.tags}
-            image={post.data.image}
-            readingTime={post.data.readingTime}
-            slug={post.slug}
-            featured={post.data.featured}
-          />
-        ))}
+        <BlogList client:load posts={sortedPosts} />
       </div>
     </div>
   </main>
-</MainLayout>
-
-<style>
-  .blog-hero {
-    background: var(--gradient-secondary);
-    padding: var(--space-xl) 0 var(--space-lg);
-    text-align: center;
-  }
-
-  .blog-hero h1 {
-    font-family: var(--font-display);
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 700;
-    margin-bottom: var(--space-sm);
-    background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .blog-hero p {
-    font-size: 1.25rem;
-    color: var(--color-text-secondary);
-  }
-
-  .blog-main {
-    padding: var(--space-xl) 0;
-  }
-
-  .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: var(--space-lg);
-  }
-
-  @media (max-width: 1024px) {
-    .blog-grid {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-  }
-
-  @media (max-width: 768px) {
-    .blog-grid {
-      grid-template-columns: 1fr;
-      gap: var(--space-md);
-    }
-
-    .blog-hero {
-      padding: var(--space-lg) 0;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .blog-hero h1 {
-      font-size: 2rem;
-    }
-
-    .blog-hero p {
-      font-size: 1rem;
-    }
-  }
-</style>
+  <Footer client:load />
+</Layout>

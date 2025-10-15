@@ -1,5 +1,7 @@
 # Active Backlog
 
+[ ] Replace the styles, design, pages, menus, layout of the current site with those used in /Users/manavsehgal/Developer/trendditcom.github.io. Merge the blogs and website content from trenddit site. Copy blogs text and images used. Make sure using Navam brand name when referring to company and Trenddit can be used for individual product names. Retain the Navam logo.
+
 ## Recently Completed
 
 [x] Research and create comprehensive refactoring plan for modern static site framework - Completed (October 14, 2025)

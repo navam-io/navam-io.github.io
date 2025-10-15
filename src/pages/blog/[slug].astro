@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import BlogPostLayout from '../../layouts/BlogPostLayout.astro';
+import BlogPost from '../../layouts/BlogPost.astro';
 
 export async function getStaticPaths() {
   const blogPosts = await getCollection('blog');
@@ -12,8 +12,20 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+
+// Transform post data to frontmatter format expected by BlogPost layout
+const frontmatter = {
+  title: post.data.title,
+  date: post.data.date || post.data.pubDate,
+  author: post.data.author,
+  excerpt: post.data.excerpt || post.data.description,
+  featuredImage: post.data.featuredImage || post.data.image?.url,
+  layout: '@layouts/BlogPost.astro',
+  tags: post.data.tags || [],
+  relatedPosts: post.data.relatedPosts || [],
+};
 ---
 
-<BlogPostLayout post={post}>
+<BlogPost frontmatter={frontmatter}>
   <Content />
-</BlogPostLayout>
+</BlogPost>
