@@ -94,11 +94,11 @@
     <div class="bg-gradient-to-br from-blue-50 to-purple-50 py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center pt-16 border-t border-blue-200">
-        <a 
-          href="/blog?tag=Navam%20Client"
+        <a
+          href="/blog?tag=Strategic%20Intelligence"
           class="inline-flex items-center group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
         >
-          <span>Explore Navam Client Insights</span>
+          <span>Explore Strategic Intelligence</span>
           <svg 
             class="ml-3 w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300" 
             fill="none" 

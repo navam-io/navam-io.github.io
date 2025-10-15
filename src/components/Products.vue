@@ -87,7 +87,7 @@
                 <Button as="a" href="https://github.com/navam-io/moments" target="_blank" class="bg-blue-600 hover:bg-blue-700">
                   View on GitHub
                 </Button>
-                <Button variant="outline" as="a" href="/blog?tag=Moments" class="border-blue-600 text-blue-600 hover:bg-blue-50">
+                <Button variant="outline" as="a" href="/blog?tag=Strategic%20Intelligence" class="border-blue-600 text-blue-600 hover:bg-blue-50">
                   Learn More
                 </Button>
               </div>
@@ -112,7 +112,7 @@
                 <Button variant="outline" as="a" href="https://github.com/navam-io/trenddit-client" target="_blank">
                   View on GitHub
                 </Button>
-                <Button variant="outline" as="a" href="/blog?tag=Navam%20Client">
+                <Button variant="outline" as="a" href="/blog?tag=Strategic%20Intelligence">
                   Learn More
                 </Button>
               </div>
@@ -135,7 +135,7 @@
                 <Button variant="outline" as="a" href="https://github.com/navam-io/trenddit-memo" target="_blank">
                   View on GitHub
                 </Button>
-                <Button variant="outline" as="a" href="/blog?tag=Navam%20Memo">
+                <Button variant="outline" as="a" href="/blog?tag=Knowledge%20Discovery">
                   Learn More
                 </Button>
               </div>

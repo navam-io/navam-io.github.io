@@ -94,7 +94,7 @@
                 variant="outline"
                 size="sm"
                 as="a"
-                href="/blog?tag=Moments"
+                href="/blog?tag=Strategic%20Intelligence"
                 class="flex-1 bg-white/10 border-2 border-white/40 text-white hover:bg-white/20 text-sm font-medium"
               >
                 Learn More
