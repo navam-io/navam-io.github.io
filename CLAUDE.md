@@ -68,32 +68,93 @@ This project uses custom Claude Code commands for streamlined development:
 
 ## Local Development
 
-To test the website locally, use the built-in development server:
+### Astro Development Server
+
+This project uses **Astro 5.14.5** with Vue 3 components. To run the development server:
 
 ```bash
-python3 server.py
+npm run dev
 ```
 
-This starts a server on `http://localhost:8000` with:
-- Automatic directory index serving
-- CORS headers for testing
-- No caching (always fresh content)
-- Clear logging output
+This starts the Astro dev server on `http://localhost:4321/` with:
+- Hot module replacement (HMR)
+- Vue component hydration
+- Content collections validation
+- Tailwind CSS processing
+- Fast refresh on file changes
 
-Alternative: Use Python's built-in server with `python3 -m http.server 8000`
+### Building for Production
+
+```bash
+npm run build
+```
+
+This creates optimized static files in `dist/` directory.
 
 ## Key Architecture Decisions
 
-This is a **static website** project with no build tools or complex frameworks:
-- Pure HTML/CSS/JS stack
-- GitHub Pages deployment ready
-- Python development server for local testing
+This is an **Astro static site** with the following stack:
+- **Framework**: Astro 5.14.5 (Static Site Generator)
+- **UI Components**: Vue 3 with client-side hydration
+- **Styling**: Tailwind CSS + custom CSS properties
+- **Content**: Astro content collections for type-safe blog management
+- **Deployment**: GitHub Pages (automated via GitHub Actions)
 
-## Git Workflow
+## Git Workflow & GitHub Pages Deployment
 
-The repository uses:
-- Main branch: `main`
-- Permissions preconfigured for git operations (add, commit, push, checkout, log, reset, pull, rebase)
+**CRITICAL: GitHub Pages deploys from the `main` branch only.**
+
+### Standard Workflow for Commits
+
+When committing and deploying changes:
+
+```bash
+# 1. Stage all changes
+git add .
+
+# 2. Commit with descriptive message
+git commit -m "Your commit message"
+
+# 3. Push to BOTH master and main branches
+git push origin master
+git push origin master:main
+```
+
+**Why push to both branches?**
+- `master`: Development branch for local work
+- `main`: Deployment branch monitored by GitHub Actions
+- GitHub Pages only deploys from `main`
+
+### Important Notes
+
+- **Always push to `main`** to trigger GitHub Pages deployment
+- GitHub Actions workflow (`Deploy to GitHub Pages`) runs on push to `main`
+- Deployment typically takes 2-5 minutes
+- Monitor deployment: https://github.com/navam-io/navam-io.github.io/actions
+
+### Branch Synchronization
+
+Both `main` and `master` should stay in sync. If they diverge:
+
+```bash
+# Force sync master to main
+git checkout master
+git push origin master:main --force
+
+# Update local main
+git checkout main
+git reset --hard origin/main
+```
+
+### Custom Commit Command
+
+Use `/code/commit` slash command which automatically:
+1. Runs `git add .`
+2. Creates an appropriate commit message
+3. Commits changes
+4. **Pushes to BOTH master and main branches** (ensuring deployment)
+
+The repository has permissions preconfigured for: add, commit, push, checkout, log, reset, pull, rebase, merge, remote operations.
 
 ## Important Context
 
