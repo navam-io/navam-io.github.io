@@ -24,157 +24,223 @@ const formattedDate = new Intl.DateTimeFormat('en-US', {
   pubDate={pubDate}
   tags={tags}
 >
-  <header class="space-section-sm" style="background: linear-gradient(135deg, #F2D5E8 0%, #E8D5F2 100%);">
-    <div class="container-custom text-center">
+  <header class="post-header">
+    <div class="container-custom">
       {tags.length > 0 && (
-        <span class="inline-block px-4 py-2 text-sm rounded-full font-medium mb-sm" style="background: linear-gradient(135deg, #E8D5F2 0%, #D5E8F2 100%); color: var(--color-text-primary);">
+        <span class="blog-tag">
           {tags[0]}
         </span>
       )}
-      <h1 class="text-hero font-bold mb-sm" style="font-family: var(--font-display); color: var(--color-text-primary);">
-        {title}
-      </h1>
-      <div class="flex justify-center items-center gap-4 text-sm" style="color: var(--color-text-secondary);">
-        <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+      <h1>{title}</h1>
+      <div class="post-meta">
+        <span class="blog-date">{formattedDate}</span>
         {readingTime && (
-          <>
-            <span>•</span>
-            <span>{readingTime} read</span>
-          </>
+          <span class="blog-reading-time">{readingTime}</span>
         )}
       </div>
     </div>
   </header>
 
-  <article class="container-custom prose prose-lg mx-auto" style="padding-top: 4rem; padding-bottom: 4rem; max-width: 65ch;">
+  <article class="post-content">
     <slot />
   </article>
-
-  <div class="container-custom" style="padding-bottom: 4rem;">
-    <div class="p-8 rounded-xl text-center" style="background: linear-gradient(135deg, #D5F2E8 0%, #D5E8F2 100%);">
-      <h3 class="text-2xl font-bold mb-sm" style="font-family: var(--font-display);">Ready to Try Navam Invest?</h3>
-      <p class="mb-md" style="color: var(--color-text-secondary);">
-        Experience professional-grade investment intelligence on your laptop.
-      </p>
-      <a href="/#get-started" class="btn-primary">Get Started</a>
-    </div>
-  </div>
 </MainLayout>
 
 <style>
-  /* Prose styles for MDX content */
-  .prose {
+  /* Post header styling */
+  .post-header {
+    background: var(--gradient-hero);
+    padding: var(--space-xl) 0;
+    text-align: center;
+  }
+
+  .post-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--color-text-primary);
   }
 
-  .prose h2 {
+  .post-meta {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--space-md);
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+  }
+
+  /* Post content styling - matches legacy blog.css exactly */
+  .post-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  :global(.post-content h2) {
     font-family: var(--font-display);
     font-size: 2rem;
-    font-weight: 700;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
     color: var(--color-text-primary);
+    font-weight: 700;
   }
 
-  .prose h3 {
+  :global(.post-content h2:first-of-type) {
+    margin-top: 0;
+  }
+
+  :global(.post-content h3) {
     font-family: var(--font-display);
     font-size: 1.5rem;
-    font-weight: 700;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-sm);
     color: var(--color-text-primary);
-  }
-
-  .prose p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-    color: var(--color-text-primary);
-  }
-
-  .prose ul, .prose ol {
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
-  }
-
-  .prose li {
-    margin-bottom: 0.5rem;
-    line-height: 1.7;
-  }
-
-  .prose strong {
     font-weight: 600;
+  }
+
+  :global(.post-content p) {
+    margin-bottom: var(--space-sm);
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    font-size: 1.125rem;
+  }
+
+  :global(.post-content p strong) {
     color: var(--color-text-primary);
+    font-weight: 600;
   }
 
-  .prose a {
+  :global(.post-content a) {
     color: #8B5CF6;
-    text-decoration: underline;
-    transition: color 0.2s;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+    transition: all 0.3s ease;
   }
 
-  .prose a:hover {
+  :global(.post-content a:hover) {
     color: #6D28D9;
+    border-bottom-color: #6D28D9;
   }
 
-  .prose code {
-    background: #F3F4F6;
-    padding: 0.2rem 0.4rem;
-    border-radius: 0.25rem;
+  :global(.post-content img) {
+    width: 100%;
+    border-radius: 16px;
+    margin: var(--space-md) 0;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+  }
+
+  :global(.post-content img:hover) {
+    transform: scale(1.01);
+  }
+
+  :global(.post-content ul),
+  :global(.post-content ol) {
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-lg);
+    color: var(--color-text-secondary);
+  }
+
+  :global(.post-content li) {
+    margin-bottom: var(--space-xs);
+    line-height: 1.7;
+    font-size: 1.125rem;
+  }
+
+  :global(.post-content ul li::marker) {
+    color: #8B5CF6;
+  }
+
+  :global(.post-content ol li::marker) {
+    color: #8B5CF6;
+    font-weight: 600;
+  }
+
+  :global(.post-content code) {
+    background: #F5F7FA;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
     font-family: var(--font-mono);
     font-size: 0.9em;
-    color: #EC4899;
+    color: #8B5CF6;
+    border: 1px solid #E8D5F2;
   }
 
-  .prose pre {
-    background: var(--color-text-primary);
+  :global(.post-content pre) {
+    background: #2D2D2D;
     color: #E8D5F2;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+    padding: var(--space-md);
+    border-radius: 12px;
     overflow-x: auto;
-    margin: 2rem 0;
+    margin: var(--space-md) 0;
+    box-shadow: var(--shadow-md);
   }
 
-  .prose pre code {
-    background: transparent;
+  :global(.post-content pre code) {
+    background: none;
     padding: 0;
     color: inherit;
-    font-size: 0.875rem;
+    border: none;
+    font-size: 0.95em;
+    line-height: 1.6;
   }
 
-  .prose img {
-    border-radius: 0.75rem;
-    margin: 2rem 0;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-  }
-
-  .prose blockquote {
-    border-left: 4px solid #EC4899;
-    padding-left: 1.5rem;
-    margin: 2rem 0;
+  :global(.post-content blockquote) {
+    border-left: 4px solid var(--pastel-purple);
+    padding-left: var(--space-md);
+    margin: var(--space-md) 0;
     font-style: italic;
     color: var(--color-text-secondary);
   }
 
-  .prose hr {
-    margin: 3rem 0;
-    border: none;
-    border-top: 2px solid #E5E7EB;
+  /* Responsive */
+  @media (max-width: 768px) {
+    .post-header {
+      padding: var(--space-lg) 0;
+    }
+
+    .post-content {
+      padding: var(--space-lg) var(--space-sm);
+    }
+
+    :global(.post-content h2) {
+      font-size: 1.75rem;
+    }
+
+    :global(.post-content h3) {
+      font-size: 1.25rem;
+    }
+
+    :global(.post-content p),
+    :global(.post-content li) {
+      font-size: 1rem;
+    }
   }
 
-  .prose table {
-    width: 100%;
-    margin: 2rem 0;
-    border-collapse: collapse;
-  }
+  @media (max-width: 480px) {
+    .post-header h1 {
+      font-size: 1.75rem;
+    }
 
-  .prose th, .prose td {
-    padding: 0.75rem;
-    border: 1px solid #E5E7EB;
-    text-align: left;
-  }
+    :global(.post-content h2) {
+      font-size: 1.5rem;
+      margin-top: var(--space-md);
+    }
 
-  .prose th {
-    background: #F9FAFB;
-    font-weight: 600;
+    :global(.post-content h3) {
+      font-size: 1.125rem;
+    }
+
+    .post-meta {
+      flex-direction: column;
+      gap: var(--space-xs);
+      font-size: 0.875rem;
+    }
   }
 </style>
