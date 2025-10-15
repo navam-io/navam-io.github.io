@@ -15,28 +15,28 @@ export interface Props {
 const { title, subtitle, steps, requirements } = Astro.props;
 ---
 
-<section id="get-started" class="bg-gradient-accent space-section">
+<section id="get-started" class="get-started">
   <div class="container-custom">
-    <div class="text-center">
-      <h2 class="text-section-title font-display mb-sm">{title}</h2>
-      <p class="text-xl text-text-secondary mb-lg">{subtitle}</p>
+    <div class="get-started-header">
+      <h2>{title}</h2>
+      <p class="subtitle">{subtitle}</p>
 
-      <div class="flex flex-col gap-md max-w-3xl mx-auto mb-lg text-left">
+      <div class="steps-container">
         {steps.map((step, index) => (
-          <div class="flex flex-col sm:flex-row gap-md items-start bg-white p-md rounded-lg shadow-sm">
-            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center font-bold text-xl text-text-primary">
+          <div class="step-card">
+            <div class="step-number">
               {index + 1}
             </div>
-            <div class="flex-1">
-              <h4 class="font-display text-xl mb-xs">{step.title}</h4>
+            <div class="step-content">
+              <h4>{step.title}</h4>
               {step.description && (
-                <p class="text-text-secondary mb-sm">{step.description}</p>
+                <p class="step-description">{step.description}</p>
               )}
               {step.code && (
-                <div class="code-block mt-sm">
+                <div class="code-block">
                   <code>{step.code}</code>
                   <button
-                    class="btn-primary text-sm py-2 px-4"
+                    class="copy-button"
                     onclick={`navigator.clipboard.writeText('${step.code}')`}
                   >
                     Copy
@@ -49,12 +49,144 @@ const { title, subtitle, steps, requirements } = Astro.props;
       </div>
 
       {requirements && requirements.length > 0 && (
-        <div class="bg-white/70 p-md rounded-md max-w-3xl mx-auto">
+        <div class="requirements">
           {requirements.map((req) => (
-            <p class="mb-xs text-text-secondary" set:html={req} />
+            <p set:html={req} />
           ))}
         </div>
       )}
     </div>
   </div>
 </section>
+
+<style>
+  .get-started {
+    background: var(--gradient-accent);
+    padding: var(--space-xl) 0;
+  }
+
+  .get-started-header {
+    text-align: center;
+  }
+
+  .get-started h2 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-primary);
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-lg);
+  }
+
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    max-width: 48rem;
+    margin: 0 auto var(--space-lg);
+    text-align: left;
+  }
+
+  .step-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    background: white;
+    padding: var(--space-md);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  @media (min-width: 640px) {
+    .step-card {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  .step-number {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--color-text-primary);
+  }
+
+  .step-content {
+    flex: 1;
+  }
+
+  .step-content h4 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text-primary);
+  }
+
+  .step-description {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-sm);
+  }
+
+  .code-block {
+    margin-top: var(--space-sm);
+    background: #2D2D2D;
+    padding: var(--space-sm);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .code-block code {
+    color: #E0E0E0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+  }
+
+  .copy-button {
+    background: white;
+    color: var(--color-text-primary);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .copy-button:hover {
+    background: #F5F5F5;
+    transform: translateY(-1px);
+  }
+
+  .requirements {
+    background: rgba(255, 255, 255, 0.7);
+    padding: var(--space-md);
+    border-radius: 8px;
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  .requirements p {
+    margin-bottom: var(--space-xs);
+    color: var(--color-text-secondary);
+  }
+
+  .requirements p:last-child {
+    margin-bottom: 0;
+  }
+</style>
