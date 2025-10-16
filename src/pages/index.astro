@@ -1,26 +1,36 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import Header from '@components/Header.vue';
-import Hero from '@components/Hero.vue';
-import Products from '@components/Products.vue';
-import HomeBlogShowcase from '@components/HomeBlogShowcase.vue';
-import Advisory from '@components/Advisory.vue';
+import HeroReference from '@components/home/HeroReference.vue';
+import ValueProposition from '@components/home/ValueProposition.vue';
+import FeaturesGrid from '@components/home/FeaturesGrid.vue';
+import ProductShowcase from '@components/home/ProductShowcase.vue';
+import TechnicalDeepDive from '@components/home/TechnicalDeepDive.vue';
+import LearningOutcomes from '@components/home/LearningOutcomes.vue';
+import UseCasesGrid from '@components/home/UseCasesGrid.vue';
+import TechnologyStack from '@components/home/TechnologyStack.vue';
+import FooterCTA from '@components/home/FooterCTA.vue';
 import Footer from '@components/Footer.vue';
 ---
 
 <Layout
-  title="Navam - AI Product Studio | Exploring Frontier AI-Human Interfaces"
-  description="Navam is an AI product studio building reference implementations that explore frontier interfaces for AI↔AI, AI↔Human, and AI↔World interactions. Featuring Navam Invest, Moments, and more."
-  keywords="Navam, AI product studio, frontier AI interfaces, AI-human interfaces, Navam Invest, Moments, AI business intelligence, investment intelligence, multi-agent systems, AI advisory, reference implementations"
+  title="Navam - Production AI Reference Implementations for AI Engineers"
+  description="Complete multi-agent systems built by AI engineers, for AI engineers. Study production-grade architectures, fork the code, build your product. Featuring Navam Invest, Moments, and more."
+  keywords="production AI, reference implementations, multi-agent systems, LangGraph production, AI engineering, Claude agents, prompt engineering, agent coordination, streaming UIs, intelligent caching, FinTech AI, investment platform code"
   ogImage="/images/logo.png"
   ogType="website"
 >
   <Header client:load />
   <main>
-    <Hero client:load />
-    <Products client:load />
-    <HomeBlogShowcase client:load />
-    <Advisory client:load />
+    <HeroReference client:load />
+    <ValueProposition client:load />
+    <FeaturesGrid client:load />
+    <ProductShowcase client:load />
+    <TechnicalDeepDive client:load />
+    <LearningOutcomes client:load />
+    <UseCasesGrid client:load />
+    <TechnologyStack client:load />
+    <FooterCTA client:load />
   </main>
   <Footer client:load />
 </Layout>

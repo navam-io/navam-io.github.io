@@ -23,8 +23,13 @@
               </a>
             </li>
             <li>
-              <a href="/advisory" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Advisory Services
+              <a href="/pricing" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="/contact" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Contact
               </a>
             </li>
           </ul>

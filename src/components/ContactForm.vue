@@ -75,7 +75,7 @@
             />
           </div>
 
-          <!-- Interest Field -->
+          <!-- Pricing Options Field -->
           <div>
             <label for="interest" class="block text-sm font-semibold text-gray-700 mb-2">
               I'm interested in <span class="text-red-500">*</span>
@@ -95,13 +95,34 @@
               @change="clearError('interest')"
             >
               <option value="">Select an option...</option>
-              <option value="Navam Invest">Navam Invest - Investment Intelligence</option>
-              <option value="Moments">Moments - Business Analytics Dashboard</option>
-              <option value="AI Advisory">AI Advisory Services</option>
-              <option value="Custom Solution">Custom AI Solution</option>
+              <option value="Single Implementation - $299">Single Implementation - $299</option>
+              <option value="Senior Engineer Package - $799">Senior Engineer Package - $799 (Best Value)</option>
+              <option value="Implementation + Consulting - $1,499">Implementation + Consulting - $1,499</option>
+              <option value="Custom Implementation - Starting at $4,999">Custom Implementation - Starting at $4,999</option>
               <option value="General Inquiry">General Inquiry</option>
             </select>
             <p v-if="errors.interest" class="mt-2 text-sm text-red-600">{{ errors.interest }}</p>
+          </div>
+
+          <!-- Product Selection Field -->
+          <div>
+            <label for="product" class="block text-sm font-semibold text-gray-700 mb-2">
+              Which product(s) are you interested in?
+            </label>
+            <select
+              id="product"
+              v-model="formData.product"
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-cyan-500 focus:ring-cyan-200 transition-all duration-300"
+              :disabled="isSubmitting"
+            >
+              <option value="">Select a product...</option>
+              <option value="Navam Invest">Navam Invest - Investment Intelligence Platform</option>
+              <option value="Moments">Moments - Business Intelligence with Knowledge Graphs</option>
+              <option value="Navam Client">Navam Client - Enterprise Strategic Intelligence</option>
+              <option value="Navam Memo">Navam Memo - Knowledge Management Chrome Extension</option>
+              <option value="All Products">All Products (Senior Engineer Package)</option>
+              <option value="Custom">Custom Product for My Domain</option>
+            </select>
           </div>
 
           <!-- Message Field -->
@@ -228,6 +249,7 @@ interface FormData {
   email: string
   company: string
   interest: string
+  product: string
   message: string
 }
 
@@ -243,6 +265,7 @@ const formData = reactive<FormData>({
   email: '',
   company: '',
   interest: '',
+  product: '',
   message: ''
 })
 

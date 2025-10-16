@@ -8,9 +8,9 @@
         </a>
         <nav class="flex items-center space-x-6 text-sm font-medium sm:ml-auto">
           <a href="/" class="transition-colors hover:text-foreground/80 text-foreground">Home</a>
-          <a href="/blog" class="transition-colors hover:text-foreground/80 text-foreground/60">Blog</a>
           <a href="/products" class="transition-colors hover:text-foreground/80 text-foreground/60">Products</a>
-          <a href="/advisory" class="transition-colors hover:text-foreground/80 text-foreground/60">Advisory</a>
+          <a href="/pricing" class="transition-colors hover:text-foreground/80 text-foreground/60">Pricing</a>
+          <a href="/blog" class="transition-colors hover:text-foreground/80 text-foreground/60">Blog</a>
           <a href="/contact" class="transition-colors hover:text-foreground/80 text-foreground/60">Contact</a>
         </nav>
       </div>
