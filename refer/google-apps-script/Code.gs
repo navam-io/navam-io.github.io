@@ -38,17 +38,39 @@ function doPost(e) {
   try {
     // Log the incoming request for debugging
     console.log('Received POST request');
-    console.log('Request type:', e.postData ? e.postData.type : 'No postData');
+    console.log('Has parameter:', !!e.parameter);
+    console.log('Has postData:', !!e.postData);
+    if (e.postData) {
+      console.log('PostData type:', e.postData.type);
+      console.log('PostData contents:', e.postData.contents);
+    }
 
-    // Parse the data - handle both JSON and form-encoded
+    // Parse the data - handle different formats
     let data;
-    if (e.postData && e.postData.type === 'application/json') {
-      console.log('Parsing JSON payload');
-      data = JSON.parse(e.postData.contents);
-    } else if (e.parameter) {
+
+    // Try form parameters first (standard form submission)
+    if (e.parameter && Object.keys(e.parameter).length > 0) {
       console.log('Using form parameters');
       data = e.parameter;
-    } else {
+    }
+    // Handle JSON payloads
+    else if (e.postData && e.postData.type === 'application/json') {
+      console.log('Parsing JSON payload');
+      data = JSON.parse(e.postData.contents);
+    }
+    // Handle form-encoded data in postData.contents
+    else if (e.postData && e.postData.contents) {
+      console.log('Parsing form-encoded data from postData.contents');
+      data = {};
+      const pairs = e.postData.contents.split('&');
+      for (let i = 0; i < pairs.length; i++) {
+        const pair = pairs[i].split('=');
+        const key = decodeURIComponent(pair[0]);
+        const value = decodeURIComponent(pair[1] || '');
+        data[key] = value.replace(/\+/g, ' '); // Replace + with spaces
+      }
+    }
+    else {
       throw new Error('No data received in request');
     }
 
