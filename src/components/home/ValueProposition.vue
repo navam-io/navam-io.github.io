@@ -31,9 +31,13 @@
               <Icon name="shield-check" size="sm" class="text-red-600 flex-shrink-0 mt-1" />
               <span class="text-gray-800 font-medium">How do you handle errors in agent workflows?</span>
             </li>
-            <li class="flex items-start gap-3 bg-white/60 backdrop-blur-sm rounded-xl p-4 md:col-span-2">
+            <li class="flex items-start gap-3 bg-white/60 backdrop-blur-sm rounded-xl p-4">
               <Icon name="brain" size="sm" class="text-indigo-600 flex-shrink-0 mt-1" />
               <span class="text-gray-800 font-medium">What prompts actually work in production?</span>
+            </li>
+            <li class="flex items-start gap-3 bg-white/60 backdrop-blur-sm rounded-xl p-4">
+              <Icon name="code" size="sm" class="text-orange-600 flex-shrink-0 mt-1" />
+              <span class="text-gray-800 font-medium">How do you test multi-agent systems effectively?</span>
             </li>
           </ul>
 

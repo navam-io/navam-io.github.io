@@ -9,7 +9,7 @@
       <div class="text-center max-w-7xl mx-auto">
         <!-- Main Headline -->
         <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-tight animate-fade-in tracking-tight">
-          <span class="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-2xl">
+          <span class="titanium-text-3d">
             100% Vibe Coding<br />Ready Products
           </span>
         </h1>
@@ -393,5 +393,57 @@ import Icon from '@/components/ui/Icon.vue'
 .backdrop-blur-xl {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
+}
+
+/* Premium Brushed Metal Text - Load Animation */
+@keyframes metal-ease-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+    filter: blur(2px) brightness(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0) brightness(1);
+  }
+}
+
+.titanium-text-3d {
+  /* Brushed metal gradient - premium solid feel */
+  background: linear-gradient(
+    180deg,
+    #e8ecf0 0%,
+    #cbd4dd 20%,
+    #b8c2d0 40%,
+    #a8b2c1 50%,
+    #b8c2d0 60%,
+    #cbd4dd 80%,
+    #e8ecf0 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Solid 3D depth - subtle but premium */
+  text-shadow:
+    /* Top highlight */
+    0 -1px 0 rgba(255, 255, 255, 0.6),
+    /* Bottom shadow for depth */
+    0 1px 0 rgba(0, 0, 0, 0.2),
+    0 2px 2px rgba(0, 0, 0, 0.15),
+    0 3px 3px rgba(0, 0, 0, 0.1),
+    /* Subtle ambient shadow */
+    0 4px 8px rgba(0, 0, 0, 0.08);
+
+  /* Clean metallic finish */
+  filter: brightness(1.05) contrast(1.1);
+
+  /* Smooth ease-in animation on load only */
+  animation: metal-ease-in 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+
+  display: inline-block;
+  font-weight: 900;
+  letter-spacing: -0.02em;
 }
 </style>

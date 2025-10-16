@@ -1,3 +1,8 @@
+# Vibe Coding
+.claude/
+backlog/
+refer/
+
 # build output
 dist/
 # generated types
