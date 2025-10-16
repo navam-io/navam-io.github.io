@@ -127,7 +127,7 @@
               <Button
                 size="sm"
                 as="a"
-                href="https://github.com/navam-io/moments"
+                href="https://github.com/trendditcom/moments"
                 target="_blank"
                 class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium shadow-lg"
               >
@@ -185,7 +185,7 @@
               <Button
                 size="sm"
                 as="a"
-                href="https://github.com/navam-io/trenddit-client"
+                href="https://github.com/trendditcom/trenddit-client"
                 target="_blank"
                 class="flex-1 bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium shadow-lg"
               >
@@ -243,7 +243,7 @@
               <Button
                 size="sm"
                 as="a"
-                href="https://github.com/navam-io/trenddit-memo"
+                href="https://github.com/trendditcom/trenddit-memo"
                 target="_blank"
                 class="flex-1 bg-orange-600 hover:bg-orange-700 text-white text-sm font-medium shadow-lg"
               >
@@ -268,12 +268,13 @@
           <Button
             size="lg"
             as="a"
-            href="/products"
+            href="https://github.com/navam-io"
+            target="_blank"
             class="bg-white text-purple-900 hover:bg-gray-100 transition-all duration-300 px-8 py-4 text-lg font-bold rounded-full shadow-2xl hover:scale-105"
           >
             <span class="flex items-center gap-3">
-              <Icon name="box" size="md" />
-              Explore All Products
+              <Icon name="github" size="md" />
+              See the Code on GitHub
             </span>
           </Button>
           <Button

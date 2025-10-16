@@ -183,7 +183,7 @@ The application runs entirely on organizational infrastructure, ensuring researc
 
 Research validation from [Harvard Business Review's 2024 Research Excellence study](https://hbr.org/topic/subject/artificial-intelligence) demonstrates that organizations using AI-powered research intelligence achieve 70% improvement in strategic recommendation accuracy and 80% reduction in competitive surprise events.
 
-**Get Started**: Learn how Moments can accelerate your research team's analytical capabilities through Trenddit's implementation advisory services.
+**Get Started**: Learn how Moments can accelerate your research team's analytical capabilities through Navam's implementation advisory services.
 
 ---
 

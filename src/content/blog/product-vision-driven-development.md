@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "Product Vision Driven Development: AI Solutions Architecture with Strategic Focus"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Transform business requirements into intelligent AWS solutions using AI-powered architecture generation and strategic product vision methodologies."
 featuredImage: "/images/blog/production-architecture.png"
 relatedPosts: ["aws-solutions-architecture-automation", "lean-ai-stack-selection", "enterprise-ai-development-workflows"]
@@ -257,13 +257,13 @@ class SolutionOrchestrator:
         )
 ```
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
 ### Strategic Alignment
 
-This product vision approach aligns perfectly with Trenddit's mission of lean AI automation:
+This product vision approach aligns perfectly with Navam's mission of lean AI automation:
 
-**Trenddit Memo Connection:**
+**Navam Memo Connection:**
 - **Knowledge Capture:** Browser extension captures architectural patterns
 - **AI-Powered Organization:** Automatically categorize solution components
 - **Cross-Reference Capabilities:** Link solutions to documentation and best practices

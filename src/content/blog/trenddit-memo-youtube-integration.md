@@ -1,8 +1,8 @@
 ---
 layout: '@layouts/BlogPost.astro'
-title: "Trenddit Memo YouTube Integration: Chat with Video Content Using AI"
+title: "Navam Memo YouTube Integration: Chat with Video Content Using AI"
 date: "2025-07-06"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Capture YouTube videos with automatic transcript extraction and have intelligent conversations with video content. Transform educational videos into searchable, interactive knowledge."
 featuredImage: "/images/blog/save-memo.png"
 relatedPosts: ["introducing-trenddit-memo-ai-browsing", "trenddit-memo-multi-ai-providers", "trenddit-memo-privacy-local-first"]
@@ -23,7 +23,7 @@ Video content is incredibly valuable for learning, but it has limitations:
 - **Lost in playlists**: Great videos get buried in "Watch Later" lists
 - **No cross-referencing**: Can't easily connect insights across multiple videos
 
-Trenddit Memo's YouTube integration solves all of these problems.
+Navam Memo's YouTube integration solves all of these problems.
 
 ## How YouTube Integration Works
 
@@ -31,7 +31,7 @@ Trenddit Memo's YouTube integration solves all of these problems.
 
 When you're watching any YouTube video:
 
-1. **Click "Capture Content"** in the Trenddit Memo side panel
+1. **Click "Capture Content"** in the Navam Memo side panel
 2. **Automatic detection**: Recognizes you're on a YouTube page
 3. **Full extraction**: Captures video metadata, thumbnail, and transcript
 4. **Instant processing**: AI immediately analyzes the content
@@ -244,7 +244,7 @@ AI automatically suggests relevant tags based on video content:
 ### Setup Requirements
 
 **No additional configuration needed:**
-1. Install Trenddit Memo extension
+1. Install Navam Memo extension
 2. Configure your preferred AI provider
 3. Navigate to any YouTube video
 4. Click "Capture Content" to start
@@ -265,7 +265,7 @@ AI automatically suggests relevant tags based on video content:
 
 ## Transform Your Video Learning
 
-Stop letting valuable video content disappear into your browsing history. With Trenddit Memo's YouTube integration:
+Stop letting valuable video content disappear into your browsing history. With Navam Memo's YouTube integration:
 
 **Turn passive watching into active learning**
 - Extract key insights automatically
@@ -279,6 +279,6 @@ Stop letting valuable video content disappear into your browsing history. With T
 - Permanent, organized storage of valuable content
 - Cross-reference insights from multiple sources
 
-[Start capturing YouTube content with Trenddit Memo →](https://github.com/trendditcom/trenddit-memo)
+[Start capturing YouTube content with Navam Memo →](https://github.com/trendditcom/trenddit-memo)
 
-*Ready to transform how you learn from video content? Install Trenddit Memo and start building your intelligent video knowledge base today.*
+*Ready to transform how you learn from video content? Install Navam Memo and start building your intelligent video knowledge base today.*

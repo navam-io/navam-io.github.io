@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: 'Correlation Matrix Analytics: Quantifying AI Industry Relationships'
 date: '2025-01-12'
-author: 'Trenddit Advisory Team'
+author: 'Navam Advisory Team'
 excerpt: 'Transform qualitative AI industry connections into precise quantitative insights through advanced correlation coefficients, hierarchical clustering, and statistical relationship measurement.'
 tags: ['Strategic Intelligence', 'Data Visualization']
 featuredImage: '/images/blog/matrix.png'

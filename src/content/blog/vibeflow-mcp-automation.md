@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "VibeFlow MCP Automation: Building AI-Powered Document Management CLI"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Develop advanced AI automation workflows with VibeFlow, a document management CLI using Model Context Protocol and Amazon Bedrock Claude Sonnet."
 featuredImage: "/images/blog/high-level-architecture.png"
 relatedPosts: ["ai-automation-best-practices", "enterprise-ai-development-workflows", "vibe-coding-workflow-fundamentals"]
@@ -31,11 +31,11 @@ The domains for these workflows are personal productivity including document man
 
 Make sure the technology stack in based on Python. The CLI should run on a personal laptop. It should leverage Amazon Bedrock managed Claude Sonnet 3.7 model capabilities to its fullest to automate and integrate with all features of VibeFlow.
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
-This approach aligns with Trenddit's mission to provide lean AI automation solutions. The Trenddit Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
+This approach aligns with Navam's mission to provide lean AI automation solutions. The Navam Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
 
-**Trenddit Memo Synergy:**
+**Navam Memo Synergy:**
 - **Unified Workflow**: Capture content in browser, process with VibeFlow CLI
 - **Cross-Platform Automation**: Browser extension feeds into desktop workflows
 - **Knowledge Integration**: Combine web research with document management
@@ -47,4 +47,4 @@ This approach aligns with Trenddit's mission to provide lean AI automation solut
 - **Unified AI**: Consistent AI assistance across all touchpoints
 - **Complete Platform**: Full-spectrum knowledge management solution
 
-For organizations looking to implement similar AI-driven workflows, consider how tools like Trenddit Memo can streamline knowledge management and enhance productivity across teams.
+For organizations looking to implement similar AI-driven workflows, consider how tools like Navam Memo can streamline knowledge management and enhance productivity across teams.

@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "Sprint-Driven AI Development: Incremental Feature Slicing with VibeFlow"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Master advanced sprint-driven development methodologies using AI-assisted feature slicing, scaffold generation, and iterative project building."
 featuredImage: "/images/blog/high-level-architecture.png"
 relatedPosts: ["vibeflow-mcp-automation", "ai-automation-best-practices", "vibe-coding-workflow-fundamentals"]
@@ -162,18 +162,18 @@ Generate the next VibeFlow project sprint using this streamlined approach:
 - sprint-003-document-explorer.md
 - sprint-004-mcp-integration.md
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
-This sprint-driven development approach aligns perfectly with Trenddit's lean automation philosophy:
+This sprint-driven development approach aligns perfectly with Navam's lean automation philosophy:
 
-**Trenddit Memo Synergy:**
+**Navam Memo Synergy:**
 - **Sprint Documentation**: Capture sprint plans and outcomes in browser for reference
 - **Learning Acceleration**: Document successful patterns for reuse across projects
 - **Knowledge Sharing**: Share sprint methodologies with team members
 - **Continuous Improvement**: Iterate on sprint planning based on captured insights
 
 **Ecosystem Benefits:**
-- **Methodology Standardization**: Consistent sprint planning across all Trenddit projects
+- **Methodology Standardization**: Consistent sprint planning across all Navam projects
 - **Pattern Recognition**: Identify successful feature slicing strategies
 - **Team Learning**: Share sprint outcomes and lessons learned
 - **Quality Assurance**: Document evaluation criteria and testing approaches

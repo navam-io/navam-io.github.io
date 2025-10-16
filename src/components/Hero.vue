@@ -84,7 +84,7 @@
               <Button
                 size="sm"
                 as="a"
-                href="https://github.com/navam-io/moments"
+                href="https://github.com/trendditcom/moments"
                 target="_blank"
                 class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium"
               >
@@ -109,7 +109,8 @@
             variant="outline"
             size="lg"
             as="a"
-            href="/products"
+            href="https://github.com/navam-io"
+            target="_blank"
             class="bg-transparent border-2 border-white/50 text-white hover:bg-white/10 transition-all duration-300 px-8 py-4 text-lg font-semibold rounded-full hover:border-white/80"
           >
             <span class="flex items-center gap-3">

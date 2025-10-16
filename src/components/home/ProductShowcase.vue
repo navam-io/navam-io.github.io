@@ -275,7 +275,8 @@ navam invest</code></pre>
               variant="outline"
               size="sm"
               as="a"
-              href="/products/moments"
+              href="https://github.com/trendditcom/moments"
+              target="_blank"
               class="bg-white/10 border-white/40 text-white hover:bg-white/20 w-full"
             >
               Learn More →
@@ -292,7 +293,8 @@ navam invest</code></pre>
               variant="outline"
               size="sm"
               as="a"
-              href="/products/navam-client"
+              href="https://github.com/trendditcom/trenddit-client"
+              target="_blank"
               class="bg-white/10 border-white/40 text-white hover:bg-white/20 w-full"
             >
               Learn More →
@@ -309,7 +311,8 @@ navam invest</code></pre>
               variant="outline"
               size="sm"
               as="a"
-              href="/products/navam-memo"
+              href="https://github.com/trendditcom/trenddit-memo"
+              target="_blank"
               class="bg-white/10 border-white/40 text-white hover:bg-white/20 w-full"
             >
               Learn More →

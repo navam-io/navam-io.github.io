@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "AI-Friendly Frontend Architecture: Building Modern React Applications with AI Integration"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Master frontend architecture patterns optimized for AI development, featuring React, TypeScript, and modern UI frameworks that accelerate AI-powered applications."
 featuredImage: "/images/blog/first-sprint-generation.png"
 relatedPosts: ["ai-development-tools-infrastructure", "technology-stack-optimization", "enterprise-ai-development-workflows"]
@@ -393,18 +393,18 @@ export const AIQueryProvider: React.FC<{ children: React.ReactNode }> = ({ child
 };
 ```
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
-This AI-friendly frontend architecture integrates seamlessly with Trenddit's automation platform:
+This AI-friendly frontend architecture integrates seamlessly with Navam's automation platform:
 
-**Trenddit Memo Synergy:**
+**Navam Memo Synergy:**
 - **Unified Components:** Reusable AI interface components across web and browser extension
 - **Shared State Management:** Consistent state patterns between platforms
-- **Cross-Platform Design:** Tailwind classes work across all Trenddit products
+- **Cross-Platform Design:** Tailwind classes work across all Navam products
 - **Performance Optimization:** React Query caching improves user experience
 
 **Ecosystem Benefits:**
-- **Component Library:** Shared AI UI components across all Trenddit products
+- **Component Library:** Shared AI UI components across all Navam products
 - **Design System:** Consistent visual language and interaction patterns
 - **Performance Standards:** Optimized patterns for AI-powered interfaces
 - **Developer Experience:** Familiar patterns accelerate development across projects

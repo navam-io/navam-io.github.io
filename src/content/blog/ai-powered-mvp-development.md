@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "AI-Powered MVP Development: Building VibeSolver with Vibe-Friendly Technology Stack"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Discover how to select and implement vibe-friendly technology stacks for rapid AI-powered application development with minimal code and maximum productivity."
 featuredImage: "/images/blog/first-sprint-generation.png"
 relatedPosts: ["aws-solutions-architecture-patterns", "lean-ai-stack-selection", "ai-automation-best-practices"]
@@ -95,18 +95,18 @@ I also note the specific design requirements for VibeSolver as `specs/design.md`
 
 The VibeSolver web app should be designed with latest UI design system to provide a modern, reactive, easy, usable, and visual interface to achieve the intended requirements of the product. The design system and UI is inspired by Figma Infinite Canvas UI where user can design using drag and drop on an infinite canvas and Voiceflow Visual Workflow editor where user can visually connect steps of a workflow and run the workflows step by step.
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
-This vibe-friendly stack approach aligns perfectly with Trenddit's philosophy of lean AI automation:
+This vibe-friendly stack approach aligns perfectly with Navam's philosophy of lean AI automation:
 
-**Trenddit Memo Synergy:**
+**Navam Memo Synergy:**
 - **Technology Selection:** Use similar stack principles for consistent development experience
 - **AI-First Development:** Leverage Claude's deep knowledge of these technologies
 - **Rapid Prototyping:** Enable quick iteration and testing of new features
 - **Knowledge Sharing:** Document stack decisions for team learning
 
 **Ecosystem Benefits:**
-- **Unified Development:** Consistent tooling across all Trenddit products
+- **Unified Development:** Consistent tooling across all Navam products
 - **Shared Learning:** Stack expertise transfers between projects
 - **Rapid Development:** Proven patterns accelerate new feature development
 - **AI Optimization:** Technology choices optimized for AI-assisted development

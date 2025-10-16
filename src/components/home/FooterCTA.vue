@@ -22,7 +22,8 @@
           <Button
             size="lg"
             as="a"
-            href="/products"
+            href="https://github.com/navam-io"
+            target="_blank"
             class="bg-white text-purple-900 hover:bg-gray-100 px-8 py-4 text-lg font-bold rounded-full shadow-2xl"
           >
             <span class="flex items-center gap-2">

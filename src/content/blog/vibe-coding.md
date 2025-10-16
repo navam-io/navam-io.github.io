@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "Vibe Coding"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Discover the rails required to achieve production quality results when generating apps using Claude Code and AI automation."
 featuredImage: "/images/blog/vibe-coding-workflows.png"
 tags: ['Development Acceleration']
@@ -40,9 +40,9 @@ Other specific workflows include:
 
 
 
-This approach aligns with Trenddit's mission to provide lean AI automation solutions. The Trenddit Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
+This approach aligns with Navam's mission to provide lean AI automation solutions. The Navam Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
 
-For organizations looking to implement similar AI-driven workflows, consider how tools like Trenddit Memo can streamline knowledge management and enhance productivity across teams.
+For organizations looking to implement similar AI-driven workflows, consider how tools like Navam Memo can streamline knowledge management and enhance productivity across teams.
 
 ## Workflow Activities
 
@@ -113,7 +113,7 @@ Here are the 10 rails I use for my vibe coding projects.
 
 ## Product Definition
 
-Tenddit is a web app with clean, modern user interface that starts with features similar to post feeds like Reddit or Twitter/X. Trenddit enables users to track technology trends as a feed of individual posts. Trenddit is different from Reddit or Twitter as it uses Amazon Bedrock managed Anthropic Claude models to automatically vote trends up or down based on a criteria the user can define. Trenddit can also submit posts automatically based on sources the user can define. One such source it supports is an RSS feed. So user can provide it an RSS feed link and Trenddit will pull posts into the user feed. User can also submit web page urls and Trenddit can automatically parse meta data of these urls incluing social media tags to populate the post content.
+Tenddit is a web app with clean, modern user interface that starts with features similar to post feeds like Reddit or Twitter/X. Navam enables users to track technology trends as a feed of individual posts. Navam is different from Reddit or Twitter as it uses Amazon Bedrock managed Anthropic Claude models to automatically vote trends up or down based on a criteria the user can define. Navam can also submit posts automatically based on sources the user can define. One such source it supports is an RSS feed. So user can provide it an RSS feed link and Navam will pull posts into the user feed. User can also submit web page urls and Navam can automatically parse meta data of these urls incluing social media tags to populate the post content.
 
 ## Technology Stack 
 
@@ -121,7 +121,7 @@ Being opinionated about the technology stack early in vibe coding helps ensure a
 
 I use Claude Desktop with extended thinking and web search model to come up with the technology stack recommendation.
 
-Then I save the technology stack guidance (prompt) and framework selection (response) as `stack.md` file in the root of Trenddit project folder.
+Then I save the technology stack guidance (prompt) and framework selection (response) as `stack.md` file in the root of Navam project folder.
 
 ```markdown
 ## Guidance
@@ -405,7 +405,7 @@ The modular architecture makes the codebase easier to navigate and maintain goin
 
 ## Runtime Errors
 
-As Practitioners are writing this section based on the 10 Rails for Vibe Coding strategies, I realized there wasn't a single feature slice where I encountered browser console errors! I only had a couple of server runtime errors! While there were plenty of examples in prior chapter where the rails had gaps. This is a validation of the rails approach considering a significant refactoring stage in the middle of this iteration of the Trenddit project. I also attribute this to using single language stack in Python for the frontend and backend. Python is one of the most popular languages well represented in the LLM world knowledge. Single language across stack keeps the project structure navigable. Python is less verbose than JavaScript. Python frameworks and packages like Reflex and FastAPI are also simpler and well documented.
+As Practitioners are writing this section based on the 10 Rails for Vibe Coding strategies, I realized there wasn't a single feature slice where I encountered browser console errors! I only had a couple of server runtime errors! While there were plenty of examples in prior chapter where the rails had gaps. This is a validation of the rails approach considering a significant refactoring stage in the middle of this iteration of the Navam project. I also attribute this to using single language stack in Python for the frontend and backend. Python is one of the most popular languages well represented in the LLM world knowledge. Single language across stack keeps the project structure navigable. Python is less verbose than JavaScript. Python frameworks and packages like Reflex and FastAPI are also simpler and well documented.
 
 Here is an example of server side error.
 ![Image](/images/blog/server-errors.png)

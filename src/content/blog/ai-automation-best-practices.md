@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "AI Automation Best Practices: Essential Workflows for Enterprise Development"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Master the three fundamental workflows recommended by Anthropic for production-quality AI-powered development projects."
 featuredImage: "/images/blog/vibe-coding-workflows.png"
 relatedPosts: ["enterprise-ai-development-workflows", "lean-ai-stack-selection", "vibe-coding-workflow-fundamentals"]

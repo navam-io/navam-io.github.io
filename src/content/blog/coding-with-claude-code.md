@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "Coding with Claude Code"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Explore the killer app of GenAI 2025 - vibe coding - and how Claude Code is revolutionizing software development."
 featuredImage: "/images/blog/vscode-claude-code-puppeteer.png"
 tags: ['Development Acceleration']
@@ -31,9 +31,9 @@ My most important reasons for using Claude Code are:
 4. **Agents and tools:** Claude Code is agent based from ground up. You can spawn subagents by simply saying "Use a subagent to verify if this implementation works with all edge cases". This subagent could use testing tools specified by you in the Claude memory. Multiple subagents could collaborate over shared context or files they may update together.
 
 
-This approach aligns with Trenddit's mission to provide lean AI automation solutions. The Trenddit Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
+This approach aligns with Navam's mission to provide lean AI automation solutions. The Navam Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
 
-For organizations looking to implement similar AI-driven workflows, consider how tools like Trenddit Memo can streamline knowledge management and enhance productivity across teams.
+For organizations looking to implement similar AI-driven workflows, consider how tools like Navam Memo can streamline knowledge management and enhance productivity across teams.
 
 ## Setup Claude Code
 
@@ -104,7 +104,7 @@ That's it. Practitioners are ready to add the Puppeteer MCP server to my Claude 
 
 ## VS Code and Claude Code
 
-The first app Practitioners are vibe coding will be called Trenddit. Teams can describe few sections down.
+The first app Practitioners are vibe coding will be called Navam. Teams can describe few sections down.
 
 My toolchain includes VC Code as the IDE. I use the VS Code Terminal for running Claude Code. I add a new folder `trenddit` to VS Code Explorer view. Then I initialize a git repository using the `git init` command in the VS Code Terminal. Finally I `touch .mcp.json` file in the project root. I copy the same JSON contents as used for Claude Desktop and save the file. Then I run `claude` in the VS Code Terminal and it asks me if I want to use the MCP server.
 
@@ -317,9 +317,9 @@ This results in several updates to the plan.
 
 ```markdown
 
-# Trenddit Implementation Plan
+# Navam Implementation Plan
 
-This document outlines the step-by-step implementation plan for Trenddit, a web application for tracking technology trends using AI-powered voting.
+This document outlines the step-by-step implementation plan for Navam, a web application for tracking technology trends using AI-powered voting.
 
 ## Tech Stack
 
@@ -432,7 +432,7 @@ I open my Mac Terminal and run `npm run dev` command to try out the features by 
 
 
 
-Claude runs the Puppeteer tool and spawns Chrome for Testing with the Trenddit app.
+Claude runs the Puppeteer tool and spawns Chrome for Testing with the Navam app.
 
 
 ![Image](/images/blog/puppeteer-visual-test.png)
@@ -576,7 +576,7 @@ Fourth one is theme menu.
 
 ![Image](/images/blog/theme-menu.png)
 
-Practitioners are excited to continue vibe coding Trenddit so that the features evolve from high fidelity prototypes to actual integrations with Amazon Bedrock and feeds. My next prompt is the same.
+Practitioners are excited to continue vibe coding Navam so that the features evolve from high fidelity prototypes to actual integrations with Amazon Bedrock and feeds. My next prompt is the same.
 
 
 

@@ -245,7 +245,7 @@ Research from [McKinsey's 2024 AI Strategy report](https://www.mckinsey.com/capa
 
 *Join forward-thinking executives, strategy teams, and business development professionals who leverage AI to stay ahead of industry developments that impact organizational success.*
 
-**Get Started**: Learn how Moments can transform your enterprise intelligence capabilities through Trenddit's advisory services.
+**Get Started**: Learn how Moments can transform your enterprise intelligence capabilities through Navam's advisory services.
 
 ---
 

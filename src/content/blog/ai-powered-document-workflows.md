@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "AI-Powered Document Workflows: Intelligent Content Management and Automation"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Master advanced document management using AI-powered workflows for content creation, organization, search, and collaborative knowledge management."
 featuredImage: "/images/blog/vibe-writing-summaries.png"
 relatedPosts: ["enterprise-ai-development-workflows", "ai-automation-best-practices", "lean-ai-stack-selection"]
@@ -465,13 +465,13 @@ class ScalableDocumentProcessor:
         return aggregated_results
 ```
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
 ### Unified Knowledge Management
 
-This AI-powered document workflow system integrates seamlessly with the Trenddit ecosystem:
+This AI-powered document workflow system integrates seamlessly with the Navam ecosystem:
 
-**Trenddit Memo Synergy:**
+**Navam Memo Synergy:**
 - **Browser-to-Document:** Seamlessly capture web content into document workflows
 - **AI-Powered Organization:** Automatically categorize and tag captured content
 - **Cross-Platform Search:** Unified search across browser captures and documents

@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: 'Factor Distribution Analytics: Advanced Sunburst Charts for AI Intelligence'
 date: '2025-01-12'
-author: 'Trenddit Advisory Team'
+author: 'Navam Advisory Team'
 excerpt: 'Unlock hidden patterns in AI industry dynamics through multi-dimensional visualization combining interactive sunburst charts with correlation heatmaps for comprehensive factor distribution analysis.'
 tags: ['Data Visualization', 'Strategic Intelligence']
 featuredImage: '/images/blog/dashboard-factors.png'

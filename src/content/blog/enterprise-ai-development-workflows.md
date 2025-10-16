@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "Enterprise AI Development Workflows: Scaling AI Automation for Complex Projects"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Discover advanced AI development workflows for building sophisticated applications like VibeFlow - a document management and automation CLI."
 featuredImage: "/images/blog/high-level-architecture.png"
 relatedPosts: ["ai-automation-best-practices", "ai-powered-document-workflows", "lean-ai-stack-selection"]
@@ -161,9 +161,9 @@ Implement comprehensive testing strategies:
 - **Performance Monitoring:** Real-time system health and optimization
 - **Security Audits:** Regular security assessments and updates
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
-This enterprise workflow approach aligns perfectly with Trenddit's mission to provide lean AI automation solutions. The Trenddit Memo browser extension demonstrates these principles in action, enabling knowledge workers to:
+This enterprise workflow approach aligns perfectly with Navam's mission to provide lean AI automation solutions. The Navam Memo browser extension demonstrates these principles in action, enabling knowledge workers to:
 
 - Capture information seamlessly during web browsing
 - Organize content using AI-powered categorization

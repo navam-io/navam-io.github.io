@@ -265,7 +265,7 @@ According to [Harvard Business Review's 2024 Enterprise AI report](https://hbr.o
 
 *Ready to experience file-system-first AI for your organization? Learn how Moments' persistent, incremental AI processing can transform your business intelligence workflows while maintaining complete data sovereignty.*
 
-**Get Started**: Contact Trenddit's advisory team to implement file-system-first AI architecture for your enterprise intelligence requirements.
+**Get Started**: Contact Navam's advisory team to implement file-system-first AI architecture for your enterprise intelligence requirements.
 
 ---
 

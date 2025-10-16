@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: 'Interactive Knowledge Graph: Network Visualization for AI Industry Intelligence'
 date: '2025-01-12'
-author: 'Trenddit Advisory Team'
+author: 'Navam Advisory Team'
 excerpt: 'Discover hidden connections in the AI ecosystem through force-directed network visualization with 237+ entities and 1,814 relationships, revealing strategic patterns and market dynamics.'
 tags: ['Strategic Intelligence', 'Data Visualization', 'Knowledge Discovery']
 featuredImage: '/images/blog/graph.png'

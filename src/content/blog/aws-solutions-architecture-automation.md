@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "AWS Solutions Architecture Automation: AI-Powered Cloud Solution Generation"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Build VibeSolver - an AI twin of AWS Solutions Architect that automatically generates Well-Architected solutions from natural language requirements."
 featuredImage: "/images/blog/production-solution.png"
 relatedPosts: ["product-vision-driven-development", "lean-ai-stack-selection", "enterprise-ai-development-workflows"]
@@ -409,13 +409,13 @@ class CostOptimizer:
         )
 ```
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
 ### Knowledge Management Synergy
 
-This AWS solutions architecture automation capability integrates seamlessly with the Trenddit ecosystem:
+This AWS solutions architecture automation capability integrates seamlessly with the Navam ecosystem:
 
-**Trenddit Memo Integration:**
+**Navam Memo Integration:**
 - **Solution Documentation:** Automatically capture and organize generated solutions
 - **Best Practice Library:** Build repository of successful architecture patterns
 - **Learning Acceleration:** Personalized recommendations based on previous solutions

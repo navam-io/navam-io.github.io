@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "Lean AI Stack Selection: Complete Technology Foundation Guide"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Complete guide to selecting AI-optimized technology stacks, covering frontend architecture, development infrastructure, and performance optimization strategies."
 featuredImage: "/images/blog/first-sprint-generation.png"
 relatedPosts: ["ai-friendly-frontend-architecture", "ai-development-tools-infrastructure", "technology-stack-optimization"]
@@ -80,11 +80,11 @@ This organization allows teams to:
 2. Optimize database performance for AI workloads
 3. Implement advanced monitoring and alerting
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
-All three approaches work together as part of the Trenddit automation platform:
+All three approaches work together as part of the Navam automation platform:
 
-**Trenddit Memo Synergy:**
+**Navam Memo Synergy:**
 - **Unified Architecture**: Consistent technology choices across all products
 - **Shared Components**: Reusable AI interface patterns and components
 - **Cross-Platform Performance**: Optimized patterns work across web and browser extension

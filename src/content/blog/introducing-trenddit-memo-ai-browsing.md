@@ -1,8 +1,8 @@
 ---
 layout: '@layouts/BlogPost.astro'
-title: "Introducing Trenddit Memo: Transform Your Browsing into AI Conversations"
+title: "Introducing Navam Memo: Transform Your Browsing into AI Conversations"
 date: "2025-07-06"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "A Chrome extension that lets you capture content from any website and actually talk to it using AI. Turn your bookmarks into intelligent conversations with multiple AI providers."
 featuredImage: "/images/blog/select-content-to-capture.png"
 relatedPosts: ["trenddit-memo-multi-ai-providers", "trenddit-memo-youtube-integration", "trenddit-memo-privacy-local-first"]
@@ -11,11 +11,11 @@ tags: ['Knowledge Discovery']
 
 We're building something we wished existed: **turn your browsing into conversations with AI**.
 
-Have you ever bookmarked an amazing article only to never see it again? Or saved dozens of research links that you can't remember why you found interesting? We built Trenddit Memo to solve exactly this problem.
+Have you ever bookmarked an amazing article only to never see it again? Or saved dozens of research links that you can't remember why you found interesting? We built Navam Memo to solve exactly this problem.
 
-## What Makes Trenddit Memo Different
+## What Makes Navam Memo Different
 
-Trenddit Memo is a Chrome extension that transforms how you interact with web content. Instead of just saving bookmarks, you can:
+Navam Memo is a Chrome extension that transforms how you interact with web content. Instead of just saving bookmarks, you can:
 
 - 🧠 **Capture and chat**: Save content from any website and have actual conversations with it using AI
 - 🏷️ **Auto-organize**: AI suggests tags and categories so you don't have to think about filing
@@ -119,7 +119,7 @@ Choose your preferred AI provider and add your API key in the settings. Each pro
 
 ### 4. Start Capturing
 
-Visit any webpage, click the Trenddit Memo icon, hit "Capture Content," and start building your intelligent knowledge base.
+Visit any webpage, click the Navam Memo icon, hit "Capture Content," and start building your intelligent knowledge base.
 
 ## The Technical Foundation
 
@@ -148,7 +148,7 @@ We're actively developing new features based on user feedback:
 
 ## Join Our Community
 
-Trenddit Memo is open source and community-driven:
+Navam Memo is open source and community-driven:
 
 - **⭐ Star us on GitHub** if you find this useful
 - **🐛 Report bugs** to help us improve
@@ -159,6 +159,6 @@ Trenddit Memo is open source and community-driven:
 
 Stop losing track of interesting content. Start having intelligent conversations with everything you find online.
 
-[Get started with Trenddit Memo →](https://github.com/trendditcom/trenddit-memo)
+[Get started with Navam Memo →](https://github.com/trendditcom/trenddit-memo)
 
-*Ready to turn your browser into an AI-powered research assistant? Download Trenddit Memo and start building your intelligent knowledge base today.*
+*Ready to turn your browser into an AI-powered research assistant? Download Navam Memo and start building your intelligent knowledge base today.*

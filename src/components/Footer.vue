@@ -13,13 +13,18 @@
               </a>
             </li>
             <li>
-              <a href="https://github.com/navam-io/moments" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+              <a href="https://github.com/trendditcom/moments" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
                 Moments
               </a>
             </li>
             <li>
-              <a href="/products" class="text-gray-600 hover:text-gray-900 transition-colors">
-                All Products
+              <a href="https://github.com/trendditcom/trenddit-client" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Navam Client
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/trendditcom/trenddit-memo" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Navam Memo
               </a>
             </li>
             <li>
@@ -142,16 +147,16 @@
         <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div class="flex items-center space-x-2">
             <span class="text-xl font-bold text-gray-900">Navam</span>
-            <span class="text-sm text-gray-600">© 2025 - AI Product Studio</span>
+            <span class="text-sm text-gray-600">© 2025 - Production AI Reference Implementations</span>
           </div>
           <div class="text-sm text-gray-600">
-            <span>Exploring Frontier AI-Human Interfaces</span>
+            <span>100% Vibe Coding Ready Products for AI Engineers</span>
           </div>
         </div>
 
         <!-- SEO Keywords Footer -->
         <div class="mt-6 text-center text-xs text-gray-500">
-          <p>AI Product Studio | Frontier AI Interfaces | Multi-Agent Systems | Investment Intelligence | Business Intelligence | Knowledge Graphs | TUI Applications | Reference Implementations</p>
+          <p>100% Vibe Coding Ready | Production AI Reference Implementations | Multi-Agent Systems | LangGraph Production Patterns | Agent Orchestration | Streaming UIs | Intelligent Caching | Investment Intelligence | Business Intelligence | Knowledge Graphs | For AI Engineers</p>
         </div>
       </div>
     </div>

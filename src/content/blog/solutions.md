@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "AWS Solutions Architecture: Comprehensive Development Guide"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Complete guide to building AWS solutions using AI-first development, covering product vision, technology stacks, MVP development, and architecture evaluation."
 featuredImage: "/images/blog/first-sprint-generation.png"
 relatedPosts: ["aws-solutions-architecture-patterns", "ai-powered-mvp-development", "vibesolver-architecture-evaluation"]
@@ -19,7 +19,7 @@ This content has been reorganized into three focused articles:
 Learn how to build AWS solutions architecture tools using product vision first approach and vibe-friendly technology stacks with Claude 4 integration. Covers:
 - Product vision definition methodology
 - AI-first development approach
-- Integration with Trenddit ecosystem
+- Integration with Navam ecosystem
 - Strategic product development
 
 ### ⚡ [AI-Powered MVP Development](/blog/ai-powered-mvp-development)
@@ -49,9 +49,9 @@ This organization allows readers to:
 - Share relevant sections with team members
 - Implement approaches incrementally
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
-All three approaches work together as part of the Trenddit automation platform:
+All three approaches work together as part of the Navam automation platform:
 - **Unified Methodology**: Consistent development approach across all projects
 - **Shared Learning**: Cross-article insights improve overall development practices
 - **Comprehensive Coverage**: Complete development lifecycle from vision to production

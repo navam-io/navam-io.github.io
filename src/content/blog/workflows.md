@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "Advanced AI Automation Workflows: Comprehensive Development Guide"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Complete guide to advanced AI automation workflows, covering MCP automation, sprint-driven development, and document management systems."
 featuredImage: "/images/blog/high-level-architecture.png"
 relatedPosts: ["vibeflow-mcp-automation", "sprint-driven-ai-development", "ai-automation-best-practices"]
@@ -43,11 +43,11 @@ This organization allows readers to:
 - Implement approaches based on project needs
 - Share relevant sections with development teams
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
-Both approaches work together as part of the Trenddit automation platform:
+Both approaches work together as part of the Navam automation platform:
 
-**Trenddit Memo Synergy:**
+**Navam Memo Synergy:**
 - **Unified Workflow**: Combine browser-based knowledge capture with CLI automation
 - **Cross-Platform Integration**: Seamless workflow between web and desktop environments
 - **Knowledge Management**: Document patterns and methodologies for team learning

@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "Vibe Coding Workflow Fundamentals: Essential Patterns for AI-Assisted Development"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Master the foundational principles of vibe coding with practical workflow patterns, testing frameworks, and production-ready development strategies."
 featuredImage: "/images/blog/code-iterate-workflow.png"
 relatedPosts: ["ai-automation-best-practices", "enterprise-ai-development-workflows", "lean-ai-stack-selection"]
@@ -648,20 +648,20 @@ async def metrics():
     return Response(generate_latest(), media_type="text/plain")
 ```
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
 ### Unified Development Experience
 
-These vibe coding fundamentals integrate seamlessly with the Trenddit ecosystem:
+These vibe coding fundamentals integrate seamlessly with the Navam ecosystem:
 
-**Trenddit Memo Integration:**
+**Navam Memo Integration:**
 - **Development Documentation:** Capture and organize coding patterns and solutions
 - **Knowledge Sharing:** Share successful vibe coding patterns across team
 - **Learning Acceleration:** Access to curated development best practices
 - **Context Management:** Maintain development context across browser sessions
 
 **Ecosystem Benefits:**
-- **Consistent Methodology:** Unified approach across all Trenddit development
+- **Consistent Methodology:** Unified approach across all Navam development
 - **Shared Learning:** Cross-product insights improve development practices
 - **Quality Standards:** Consistent quality gates and testing standards
 - **Automation Platform:** Complete development automation solution

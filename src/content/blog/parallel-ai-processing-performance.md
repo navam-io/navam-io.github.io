@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: 'Parallel AI Processing: 10x Performance Through Intelligent Agent Orchestration'
 date: '2025-01-15'
-author: 'Trenddit Advisory Team'
+author: 'Navam Advisory Team'
 excerpt: 'How Moments achieves enterprise-scale AI processing performance through parallel sub-agent architecture, intelligent batching, and sophisticated progress tracking, delivering 400% performance improvement over sequential processing.'
 tags: ['Performance & Cost', 'System Architecture']
 featuredImage: '/images/blog/agents.png'
@@ -383,7 +383,7 @@ Research from [MIT Technology Review's 2024 AI Systems report](https://www.techn
 
 *Experience enterprise-scale AI processing performance with Moments. Discover how parallel AI processing can transform your content analysis workflows with 400% performance improvement while maintaining cost efficiency.*
 
-**Get Started**: Learn how Trenddit's advisory services can help implement parallel AI processing architecture for your enterprise intelligence requirements.
+**Get Started**: Learn how Navam's advisory services can help implement parallel AI processing architecture for your enterprise intelligence requirements.
 
 ---
 

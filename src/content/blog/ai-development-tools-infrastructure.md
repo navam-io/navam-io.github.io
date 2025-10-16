@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "AI Development Tools & Infrastructure: Modern DevOps for AI-Powered Applications"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Build robust development infrastructure optimized for AI applications, featuring CI/CD pipelines, testing frameworks, and deployment strategies for AI workloads."
 featuredImage: "/images/blog/first-sprint-generation.png"
 relatedPosts: ["ai-friendly-frontend-architecture", "technology-stack-optimization", "enterprise-ai-development-workflows"]
@@ -661,12 +661,12 @@ EXPOSE 8000
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
-This development infrastructure integrates with Trenddit's automation platform:
+This development infrastructure integrates with Navam's automation platform:
 
-**Trenddit Memo Integration:**
-- **Shared Infrastructure:** Common CI/CD patterns across all Trenddit products
+**Navam Memo Integration:**
+- **Shared Infrastructure:** Common CI/CD patterns across all Navam products
 - **Cross-Platform Testing:** Unified testing strategies for web and browser extension
 - **Performance Monitoring:** Consistent monitoring and alerting across platforms
 - **Security Standards:** Shared security scanning and compliance tools

@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "Technology Stack Optimization: Performance, Cost, and Scalability for AI Applications"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Optimize your AI technology stack for performance, cost-efficiency, and scalability with proven strategies for technology selection and system optimization."
 featuredImage: "/images/blog/first-sprint-generation.png"
 relatedPosts: ["ai-friendly-frontend-architecture", "ai-development-tools-infrastructure", "enterprise-ai-development-workflows"]
@@ -641,12 +641,12 @@ Technology stacks must evolve with AI advancement:
 - **Security Updates:** Maintain security in AI-integrated systems
 - **Feature Expansion:** Design for easy addition of new AI capabilities
 
-## Integration with Trenddit Ecosystem
+## Integration with Navam Ecosystem
 
-These optimization strategies align with Trenddit's lean automation philosophy:
+These optimization strategies align with Navam's lean automation philosophy:
 
-**Trenddit Memo Integration:**
-- **Cost Monitoring:** Track and optimize costs across all Trenddit products
+**Navam Memo Integration:**
+- **Cost Monitoring:** Track and optimize costs across all Navam products
 - **Performance Metrics:** Shared monitoring and optimization strategies
 - **Technology Choices:** Consistent stack decisions across the platform
 - **Scaling Patterns:** Reusable optimization patterns for growth

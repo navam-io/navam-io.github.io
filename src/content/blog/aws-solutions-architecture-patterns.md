@@ -2,7 +2,7 @@
 layout: '@layouts/BlogPost.astro'
 title: "AWS Solutions Architecture Patterns: Building VibeSolver with AI-First Development"
 date: "2025-07-05"
-author: "Trenddit Team"
+author: "Navam Team"
 excerpt: "Learn how to develop AWS solutions architecture tools using product vision first approach and vibe-friendly technology stacks with Claude 4 integration."
 featuredImage: "/images/blog/first-sprint-generation.png"
 relatedPosts: ["product-vision-driven-development", "lean-ai-stack-selection", "enterprise-ai-development-workflows"]
@@ -27,6 +27,6 @@ Customers are able to refer the visualizations when querying, modifying, analyzi
 
 I save this product vision as `specs/product.md` file in the project.
 
-This approach aligns with Trenddit's mission to provide lean AI automation solutions. The Trenddit Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
+This approach aligns with Navam's mission to provide lean AI automation solutions. The Navam Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
 
-For organizations looking to implement similar AI-driven workflows, consider how tools like Trenddit Memo can streamline knowledge management and enhance productivity across teams.
+For organizations looking to implement similar AI-driven workflows, consider how tools like Navam Memo can streamline knowledge management and enhance productivity across teams.
