@@ -1,0 +1,22 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/Header.vue';
+import ContactHero from '@components/ContactHero.vue';
+import ContactForm from '@components/ContactForm.vue';
+import Footer from '@components/Footer.vue';
+---
+
+<Layout
+  title="Contact Navam - Get in Touch for AI Solutions"
+  description="Interested in Navam Invest, Moments, or custom AI advisory services? Contact us to discuss how frontier AI interfaces can transform your business operations."
+  keywords="contact Navam, AI consultation, investment intelligence inquiry, business analytics demo, AI advisory services, get in touch, request demo, Navam contact form"
+  ogImage="/android-chrome-512x512.png"
+  ogType="website"
+>
+  <Header client:load />
+  <main>
+    <ContactHero client:load />
+    <ContactForm client:load />
+  </main>
+  <Footer client:load />
+</Layout>

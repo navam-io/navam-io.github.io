@@ -11,6 +11,7 @@
           <a href="/blog" class="transition-colors hover:text-foreground/80 text-foreground/60">Blog</a>
           <a href="/products" class="transition-colors hover:text-foreground/80 text-foreground/60">Products</a>
           <a href="/advisory" class="transition-colors hover:text-foreground/80 text-foreground/60">Advisory</a>
+          <a href="/contact" class="transition-colors hover:text-foreground/80 text-foreground/60">Contact</a>
         </nav>
       </div>
     </div>
