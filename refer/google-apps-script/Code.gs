@@ -36,15 +36,23 @@ const SPREADSHEET_ID = 'YOUR_SPREADSHEET_ID_HERE';
  */
 function doPost(e) {
   try {
+    // Log the incoming request for debugging
+    console.log('Received POST request');
+    console.log('Payload:', e.postData.contents);
+
     // Parse the JSON payload
     const data = JSON.parse(e.postData.contents);
+    console.log('Parsed data:', data);
 
     // Get the spreadsheet
     const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+    console.log('Opened spreadsheet:', ss.getName());
+
     let sheet = ss.getSheetByName('Leads');
 
     // Create the sheet if it doesn't exist
     if (!sheet) {
+      console.log('Creating new Leads sheet');
       sheet = ss.insertSheet('Leads');
       // Add headers
       sheet.appendRow([
@@ -89,6 +97,7 @@ function doPost(e) {
     );
 
     // Add the new lead
+    console.log('Adding new row to sheet');
     sheet.appendRow([
       formattedTimestamp,
       data.name || '',
@@ -100,22 +109,36 @@ function doPost(e) {
       'New',  // Status
       ''      // Notes (for manual follow-up notes)
     ]);
+    console.log('Row added successfully. Row number:', sheet.getLastRow());
 
     // Send email notification (optional)
+    console.log('Sending email notification');
     sendEmailNotification(data);
 
-    // Return success response
-    return ContentService
-      .createTextOutput(JSON.stringify({ 'result': 'success', 'row': sheet.getLastRow() }))
+    // Return success response with CORS headers
+    const output = ContentService
+      .createTextOutput(JSON.stringify({
+        'result': 'success',
+        'row': sheet.getLastRow(),
+        'timestamp': new Date().toISOString()
+      }))
       .setMimeType(ContentService.MimeType.JSON);
 
-  } catch (error) {
-    // Log error
-    console.error('Error processing form submission:', error);
+    console.log('✅ Request processed successfully');
+    return output;
 
-    // Return error response
+  } catch (error) {
+    // Log error with details
+    console.error('❌ Error processing form submission:', error);
+    console.error('Error stack:', error.stack);
+
+    // Return error response with CORS headers
     return ContentService
-      .createTextOutput(JSON.stringify({ 'result': 'error', 'message': error.toString() }))
+      .createTextOutput(JSON.stringify({
+        'result': 'error',
+        'message': error.toString(),
+        'timestamp': new Date().toISOString()
+      }))
       .setMimeType(ContentService.MimeType.JSON);
   }
 }
