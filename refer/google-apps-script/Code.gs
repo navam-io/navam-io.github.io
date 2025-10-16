@@ -38,10 +38,20 @@ function doPost(e) {
   try {
     // Log the incoming request for debugging
     console.log('Received POST request');
-    console.log('Payload:', e.postData.contents);
+    console.log('Request type:', e.postData ? e.postData.type : 'No postData');
 
-    // Parse the JSON payload
-    const data = JSON.parse(e.postData.contents);
+    // Parse the data - handle both JSON and form-encoded
+    let data;
+    if (e.postData && e.postData.type === 'application/json') {
+      console.log('Parsing JSON payload');
+      data = JSON.parse(e.postData.contents);
+    } else if (e.parameter) {
+      console.log('Using form parameters');
+      data = e.parameter;
+    } else {
+      throw new Error('No data received in request');
+    }
+
     console.log('Parsed data:', data);
 
     // Get the spreadsheet

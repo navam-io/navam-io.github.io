@@ -253,7 +253,7 @@ const showError = ref(false)
 const errorMessage = ref('')
 
 // TODO: Replace with your actual Google Apps Script Web App URL
-const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwdlD8irGX0Rbm-URqJgOmVXx8Ox3AXnxJ8P6KOzx1ZgTqpYFxxMLfFpEBM4PPczkwZdw/exec'
 
 const validateField = (field: keyof FormErrors) => {
   switch (field) {
@@ -318,37 +318,65 @@ const handleSubmit = async () => {
       source: 'navam.io/contact'
     }
 
-    const response = await fetch(GOOGLE_SCRIPT_URL, {
-      method: 'POST',
-      mode: 'no-cors', // Google Apps Script requires no-cors
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(payload)
+    console.log('Submitting form data:', payload)
+
+    // Use a form submission approach that works with Google Apps Script
+    const formElement = document.createElement('form')
+    formElement.method = 'POST'
+    formElement.action = GOOGLE_SCRIPT_URL
+    formElement.target = 'hidden_iframe'
+    formElement.style.display = 'none'
+
+    // Add form fields
+    Object.entries(payload).forEach(([key, value]) => {
+      const input = document.createElement('input')
+      input.type = 'hidden'
+      input.name = key
+      input.value = String(value)
+      formElement.appendChild(input)
     })
 
-    // With no-cors, we can't read the response, so we assume success
-    // if no error was thrown
-    showSuccess.value = true
+    // Create hidden iframe for submission
+    let iframe = document.getElementById('hidden_iframe') as HTMLIFrameElement
+    if (!iframe) {
+      iframe = document.createElement('iframe')
+      iframe.id = 'hidden_iframe'
+      iframe.name = 'hidden_iframe'
+      iframe.style.display = 'none'
+      document.body.appendChild(iframe)
+    }
 
-    // Reset form
-    Object.keys(formData).forEach(key => {
-      formData[key as keyof FormData] = ''
-    })
+    // Submit form
+    document.body.appendChild(formElement)
+    formElement.submit()
+    document.body.removeChild(formElement)
 
-    // Scroll to success message
+    console.log('Form submitted successfully')
+
+    // Show success after short delay (form submission is async)
     setTimeout(() => {
-      const successEl = document.querySelector('.bg-gradient-to-r.from-green-50')
-      if (successEl) {
-        successEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
-      }
-    }, 100)
+      showSuccess.value = true
+
+      // Reset form
+      Object.keys(formData).forEach(key => {
+        formData[key as keyof FormData] = ''
+      })
+
+      // Scroll to success message
+      setTimeout(() => {
+        const successEl = document.querySelector('.bg-gradient-to-r.from-green-50')
+        if (successEl) {
+          successEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+      }, 100)
+
+      isSubmitting.value = false
+    }, 1000)
 
   } catch (error) {
     console.error('Form submission error:', error)
     showError.value = true
     errorMessage.value = 'Please try again or contact us directly at contact@navam.io'
-  } finally {
     isSubmitting.value = false
   }
 }
