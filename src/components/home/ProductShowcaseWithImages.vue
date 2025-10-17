@@ -18,7 +18,7 @@
             <div class="lg:col-span-3">
               <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 hover:shadow-3xl transition-shadow duration-300">
                 <img
-                  src="/images/blog/natural-prompt.png"
+                  src="/refer/images/navam-invest/natural-prompt.png"
                   alt="Navam Invest Natural Language Prompt Interface"
                   class="w-full"
                   loading="lazy"
