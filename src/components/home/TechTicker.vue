@@ -9,11 +9,7 @@
       </div>
 
       <!-- Infinite Scroll Ticker -->
-      <div class="relative">
-        <!-- Gradient Masks for Fade Effect on Edges -->
-        <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-100 via-gray-100/80 to-transparent z-10 pointer-events-none"></div>
-        <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-100 via-gray-100/80 to-transparent z-10 pointer-events-none"></div>
-
+      <div class="relative ticker-container">
         <!-- Scrolling Container -->
         <div class="tech-ticker-track">
           <!-- First Set of Logos -->
@@ -75,6 +71,24 @@ const technologies = ref<Technology[]>([
 </script>
 
 <style scoped>
+/* Ticker Container with Mask */
+.ticker-container {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
 /* Ticker Container */
 .tech-ticker-track {
   display: flex;
