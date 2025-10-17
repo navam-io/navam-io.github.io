@@ -24,16 +24,13 @@
           <p class="text-white/90 text-sm mb-4 leading-relaxed">
             Multi-agent investment intelligence with streaming TUI. 10 specialized agents, 90%+ test coverage, production-grade.
           </p>
-          <Button
-            variant="outline"
-            size="sm"
-            as="a"
-            href="https://github.com/navam-io/navam-invest"
-            target="_blank"
-            class="bg-white/10 border-white/40 text-white hover:bg-white/20 w-full"
-          >
-            View on GitHub →
-          </Button>
+          <div class="flex items-center justify-center gap-4 text-xs text-white/80">
+            <span>Python 3.9+</span>
+            <span>•</span>
+            <span>LangGraph</span>
+            <span>•</span>
+            <span>Textual TUI</span>
+          </div>
         </Card>
 
         <!-- Moments -->
@@ -47,16 +44,13 @@
           <p class="text-white/90 text-sm mb-4 leading-relaxed">
             Business intelligence with knowledge graphs, 3-tier analytics, 237+ entities, 1,814 relationships.
           </p>
-          <Button
-            variant="outline"
-            size="sm"
-            as="a"
-            href="https://github.com/trendditcom/moments"
-            target="_blank"
-            class="bg-white/10 border-white/40 text-white hover:bg-white/20 w-full"
-          >
-            View on GitHub →
-          </Button>
+          <div class="flex items-center justify-center gap-4 text-xs text-white/80">
+            <span>Next.js 14</span>
+            <span>•</span>
+            <span>React 18</span>
+            <span>•</span>
+            <span>D3.js Graphs</span>
+          </div>
         </Card>
 
         <!-- Trenddit Client -->
@@ -70,16 +64,13 @@
           <p class="text-white/90 text-sm mb-4 leading-relaxed">
             Strategic intelligence platform for enterprise market analysis and technology trend prediction.
           </p>
-          <Button
-            variant="outline"
-            size="sm"
-            as="a"
-            href="https://github.com/trendditcom/trenddit-client"
-            target="_blank"
-            class="bg-white/10 border-white/40 text-white hover:bg-white/20 w-full"
-          >
-            View on GitHub →
-          </Button>
+          <div class="flex items-center justify-center gap-4 text-xs text-white/80">
+            <span>Next.js 15</span>
+            <span>•</span>
+            <span>tRPC 11</span>
+            <span>•</span>
+            <span>Supabase</span>
+          </div>
         </Card>
 
         <!-- Trenddit Memo -->
@@ -93,16 +84,13 @@
           <p class="text-white/90 text-sm mb-4 leading-relaxed">
             Chrome extension for AI-powered knowledge management with semantic tagging and multi-provider chat.
           </p>
-          <Button
-            variant="outline"
-            size="sm"
-            as="a"
-            href="https://github.com/trendditcom/trenddit-memo"
-            target="_blank"
-            class="bg-white/10 border-white/40 text-white hover:bg-white/20 w-full"
-          >
-            View on GitHub →
-          </Button>
+          <div class="flex items-center justify-center gap-4 text-xs text-white/80">
+            <span>Manifest V3</span>
+            <span>•</span>
+            <span>Service Workers</span>
+            <span>•</span>
+            <span>Multi-Provider AI</span>
+          </div>
         </Card>
       </div>
 

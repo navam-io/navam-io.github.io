@@ -68,9 +68,15 @@ This project uses custom Claude Code commands for streamlined development:
 
 ## Local Development
 
+**IMPORTANT: DO NOT spawn dev server automatically.**
+
+The user manages their own build and preview process in a separate terminal. Only start the dev server if:
+1. You need it for your own testing, OR
+2. The user explicitly asks you to start it
+
 ### Astro Development Server
 
-This project uses **Astro 5.14.5** with Vue 3 components. To run the development server:
+This project uses **Astro 5.14.5** with Vue 3 components. To run the development server (only when needed):
 
 ```bash
 npm run dev
