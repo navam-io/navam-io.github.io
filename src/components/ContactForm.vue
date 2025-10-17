@@ -3,9 +3,9 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Form Header -->
       <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">Let's Start a Conversation</h2>
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Questions About Our Products?</h2>
         <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-          Fill out the form below and we'll get back to you within 24 hours to discuss how Navam can help transform your business.
+          Commercial licensing, enterprise support, or custom implementations—we'll respond within 24 hours with exactly what you need to ship production AI.
         </p>
       </div>
 
@@ -92,7 +92,7 @@
                   : 'border-gray-200 focus:border-cyan-500 focus:ring-cyan-200'
               ]"
               :disabled="isSubmitting"
-              placeholder="Tell us about your project or inquiry..."
+              placeholder="What are you building? Need commercial licensing? Custom implementation? Tell us..."
               @blur="validateField('message')"
               @input="clearError('message')"
             ></textarea>

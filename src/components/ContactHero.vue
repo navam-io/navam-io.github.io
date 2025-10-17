@@ -9,18 +9,18 @@
         <!-- Main Title -->
         <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-tight animate-fade-in tracking-tight">
           <span class="bg-gradient-to-r from-white via-cyan-100 to-white bg-clip-text text-transparent drop-shadow-2xl">
-            Get in Touch
+            Ready to Ship Production AI?
           </span>
         </h1>
 
         <!-- Glassmorphism Card for Description -->
         <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 mb-8 shadow-2xl animate-slide-up max-w-4xl mx-auto">
           <p class="text-xl md:text-2xl text-white/90 leading-relaxed font-light mb-6">
-            100% Vibe Coding Ready Products for AI Engineers
+            Stop debugging tutorials. Fork working code. Ship with confidence.
           </p>
 
           <p class="text-lg text-white/80 leading-relaxed font-light max-w-3xl mx-auto">
-            Get access to production-ready reference implementations with MIT licensing. Fork working products, study battle-tested multi-agent patterns, and ship in days instead of months. Interested in commercial licensing, enterprise support, or custom implementation services?
+            Get commercial licensing for our battle-tested multi-agent systems. Every product includes 90%+ test coverage, complete documentation, and works first time. Questions about enterprise support or custom implementations? Let's talk.
           </p>
         </div>
 
@@ -32,8 +32,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <h3 class="text-lg font-semibold text-white mb-2">Production-Ready Code</h3>
-            <p class="text-white/70 text-sm">80%+ first-time success · 90%+ test coverage · Complete systems, not tutorials</p>
+            <h3 class="text-lg font-semibold text-white mb-2">Works First Time</h3>
+            <p class="text-white/70 text-sm">Battle-tested in production · 90%+ test coverage · Ship in days, not months</p>
           </div>
 
           <div class="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
@@ -42,8 +42,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <h3 class="text-lg font-semibold text-white mb-2">Reference Implementations</h3>
-            <p class="text-white/70 text-sm">Multi-agent orchestration · Production prompts · Real architecture decisions</p>
+            <h3 class="text-lg font-semibold text-white mb-2">Fork and Customize</h3>
+            <p class="text-white/70 text-sm">Complete source code · Every agent & tool · Real production patterns you can study</p>
           </div>
 
           <div class="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
