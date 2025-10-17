@@ -17,7 +17,7 @@
         <Card variant="gradient" gradient="green" padding="md">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-              <Icon name="chart-line" size="lg" class="text-white" />
+              <Icon name="dollar-circle" size="lg" class="text-white" />
             </div>
             <h3 class="text-xl font-bold text-white">Navam Invest</h3>
           </div>
