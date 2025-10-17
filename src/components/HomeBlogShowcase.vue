@@ -165,7 +165,7 @@ const loadLatestPosts = async () => {
     // Filter out failed loads
     const validPosts = loadedPosts.filter(post => post !== null) as BlogPost[];
     
-    // Prioritize posts: 2 Moments Dashboard, 2 Navam Client/AI Intelligence, 1 Navam Memo
+    // Prioritize posts: 2 Moments Dashboard, 2 Trenddit Client/AI Intelligence, 1 Trenddit Memo
     const momentsDashboardPosts = validPosts
       .filter(post => 
         post.tags.includes('Moments') || 
@@ -180,7 +180,7 @@ const loadLatestPosts = async () => {
     const trendditClientPosts = validPosts
       .filter(post => 
         !momentsDashboardPosts.some(mp => mp.slug === post.slug) &&
-        (post.tags.includes('Navam Client') || 
+        (post.tags.includes('Trenddit Client') || 
          post.tags.includes('AI Intelligence') ||
          post.tags.includes('Business Intelligence'))
       )
@@ -191,7 +191,7 @@ const loadLatestPosts = async () => {
       .filter(post => 
         !momentsDashboardPosts.some(mp => mp.slug === post.slug) &&
         !trendditClientPosts.some(tc => tc.slug === post.slug) &&
-        (post.tags.includes('Navam Memo') || post.tags.includes('trenddit-memo'))
+        (post.tags.includes('Trenddit Memo') || post.tags.includes('trenddit-memo'))
       )
       .sort((a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime())
       .slice(0, 1);
@@ -254,7 +254,7 @@ const loadLatestPosts = async () => {
         },
         {
           slug: 'introducing-trenddit-memo-ai-browsing',
-          title: 'Introducing Navam Memo: AI-Powered Browsing',
+          title: 'Introducing Trenddit Memo: AI-Powered Browsing',
           excerpt: 'Transform your browsing experience with our intelligent Chrome extension for knowledge management.',
           featuredImage: '/images/blog/select-content-to-capture.png',
           author: 'Navam Team',

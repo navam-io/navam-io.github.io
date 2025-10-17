@@ -8,37 +8,9 @@
         </h2>
 
         <!-- Pain Points -->
-        <div class="bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 rounded-3xl p-8 md:p-12 shadow-xl border-2 border-red-200 mb-8">
-          <p class="text-2xl text-gray-900 leading-relaxed mb-8 font-semibold">
-            Tutorials break in production. Hiring takes months. Trial-and-error costs you your market window.
-          </p>
-
-          <div class="grid md:grid-cols-3 gap-6 text-left">
-            <div class="bg-white/80 rounded-xl p-6 border-l-4 border-red-500">
-              <div class="text-4xl mb-3">😤</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">6 Months Lost</h3>
-              <p class="text-gray-700">
-                You've spent half a year debugging agent coordination. Your competitor just shipped their MVP.
-              </p>
-            </div>
-
-            <div class="bg-white/80 rounded-xl p-6 border-l-4 border-orange-500">
-              <div class="text-4xl mb-3">💸</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">$50K+ Budget</h3>
-              <p class="text-gray-700">
-                Hiring senior AI engineers is expensive. And they still need months to figure out production patterns.
-              </p>
-            </div>
-
-            <div class="bg-white/80 rounded-xl p-6 border-l-4 border-yellow-500">
-              <div class="text-4xl mb-3">🤷</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">No Guarantees</h3>
-              <p class="text-gray-700">
-                LangGraph tutorials show toy examples. How do you know your architecture will scale?
-              </p>
-            </div>
-          </div>
-        </div>
+        <p class="text-2xl text-gray-900 leading-relaxed mb-8 font-semibold">
+          Tutorials break in production. Hiring takes months. Trial-and-error costs you your market window.
+        </p>
       </div>
 
       <!-- Three-Column Comparison -->

@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-20">
           <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Navam Client Insights
+            Trenddit Client Insights
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Deep insights into enterprise intelligence, AI-first technology decisions, and strategic implementation guidance
@@ -90,7 +90,7 @@
       </article>
     </div>
 
-    <!-- View Navam Client Posts CTA -->
+    <!-- View Trenddit Client Posts CTA -->
     <div class="bg-gradient-to-br from-blue-50 to-purple-50 py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center pt-16 border-t border-blue-200">
@@ -160,11 +160,11 @@ const loadNavamClientPosts = async () => {
       })
     );
     
-    // Filter posts by Navam Client tag
+    // Filter posts by Trenddit Client tag
     const validPosts = loadedPosts.filter(post => 
       post !== null && 
       post.tags.some(tag => 
-        tag.includes('Navam Client') ||
+        tag.includes('Trenddit Client') ||
         tag.includes('AI Intelligence') ||
         tag.includes('Enterprise Technology') ||
         tag.includes('Enterprise Strategy') ||
@@ -198,29 +198,29 @@ const loadNavamClientPosts = async () => {
           excerpt: 'Discover how AI-first intelligence systems transform enterprise technology adoption decisions through multi-agent reasoning and predictive analysis.',
           featuredImage: '/images/blog/trends-intelligence-cards.png',
           author: 'Navam Team',
-          tags: ['Navam Client', 'AI Intelligence', 'Enterprise Technology']
+          tags: ['Trenddit Client', 'AI Intelligence', 'Enterprise Technology']
         },
         {
           slug: 'enterprise-ai-advisory-platform-technology-decisions',
           title: 'Enterprise AI Advisory Platform: Technology Investment Decisions',
-          excerpt: 'How Navam Client revolutionizes enterprise technology adoption with AI-first intelligence and predictive forecasting.',
+          excerpt: 'How Trenddit Client revolutionizes enterprise technology adoption with AI-first intelligence and predictive forecasting.',
           featuredImage: '/images/blog/trenddit-workflow.png',
           author: 'Navam Team',
-          tags: ['Navam Client', 'Enterprise Strategy', 'AI Advisory']
+          tags: ['Trenddit Client', 'Enterprise Strategy', 'AI Advisory']
         },
         {
           slug: 'getting-started-trenddit-client-enterprise-intelligence',
-          title: 'Getting Started with Navam Client: AI-Powered Enterprise Intelligence',
-          excerpt: 'Complete step-by-step guide to implementing Navam Client for enterprise technology decision-making.',
+          title: 'Getting Started with Trenddit Client: AI-Powered Enterprise Intelligence',
+          excerpt: 'Complete step-by-step guide to implementing Trenddit Client for enterprise technology decision-making.',
           featuredImage: '/images/blog/personalized-trends.png',
           author: 'Navam Team',
-          tags: ['Navam Client', 'Getting Started', 'User Guide']
+          tags: ['Trenddit Client', 'Getting Started', 'User Guide']
         }
       ];
     }
     
   } catch (error) {
-    console.error('Error loading Navam Client posts:', error);
+    console.error('Error loading Trenddit Client posts:', error);
     // Set fallback posts
     featuredPosts.value = [
       {
@@ -229,7 +229,7 @@ const loadNavamClientPosts = async () => {
         excerpt: 'Discover how AI-first intelligence systems transform enterprise technology adoption decisions through multi-agent reasoning and predictive analysis.',
         featuredImage: '/images/blog/trends-intelligence-cards.png',
         author: 'Navam Team',
-        tags: ['Navam Client', 'AI Intelligence', 'Enterprise Technology']
+        tags: ['Trenddit Client', 'AI Intelligence', 'Enterprise Technology']
       }
     ];
   }

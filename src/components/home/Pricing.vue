@@ -23,19 +23,19 @@
 
           <ul class="space-y-3 mb-8">
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-green-500 flex-shrink-0 mt-1" />
+              <Icon name="check-circle" size="sm" class="text-gray-900 flex-shrink-0 mt-1" />
               <span class="text-gray-700">Full source code access</span>
             </li>
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-green-500 flex-shrink-0 mt-1" />
+              <Icon name="check-circle" size="sm" class="text-gray-900 flex-shrink-0 mt-1" />
               <span class="text-gray-700">All features unlocked</span>
             </li>
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-green-500 flex-shrink-0 mt-1" />
+              <Icon name="check-circle" size="sm" class="text-gray-900 flex-shrink-0 mt-1" />
               <span class="text-gray-700">Study production patterns</span>
             </li>
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-green-500 flex-shrink-0 mt-1" />
+              <Icon name="check-circle" size="sm" class="text-gray-900 flex-shrink-0 mt-1" />
               <span class="text-gray-700">Build personal projects</span>
             </li>
             <li class="flex items-start gap-2">
@@ -60,7 +60,7 @@
         </div>
 
         <!-- Commercial License - Popular -->
-        <div class="bg-gradient-to-br from-green-500 to-emerald-600 rounded-3xl p-8 shadow-2xl border-4 border-green-600 relative transform scale-105">
+        <div class="bg-white rounded-3xl p-8 shadow-2xl border-4 border-green-600 relative transform scale-105">
           <!-- Popular Badge -->
           <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
             <Badge variant="featured" size="lg" class="whitespace-nowrap">
@@ -70,31 +70,31 @@
           </div>
 
           <div class="text-center mb-6 mt-4">
-            <h3 class="text-2xl font-bold text-white mb-2">Commercial License</h3>
-            <div class="text-5xl font-black text-white mb-2">$299</div>
-            <p class="text-white/90">One-time payment</p>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Commercial License</h3>
+            <div class="text-5xl font-black text-green-600 mb-2">$299</div>
+            <p class="text-gray-600">One-time payment</p>
           </div>
 
           <ul class="space-y-3 mb-8">
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-white flex-shrink-0 mt-1" />
-              <span class="text-white font-medium">Everything in Personal</span>
+              <Icon name="check-circle" size="sm" class="text-green-500 flex-shrink-0 mt-1" />
+              <span class="text-gray-900 font-medium">Everything in Personal</span>
             </li>
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-white flex-shrink-0 mt-1" />
-              <span class="text-white font-medium">Build commercial products</span>
+              <Icon name="check-circle" size="sm" class="text-green-500 flex-shrink-0 mt-1" />
+              <span class="text-gray-900 font-medium">Build commercial products</span>
             </li>
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-white flex-shrink-0 mt-1" />
-              <span class="text-white font-medium">Unlimited end products</span>
+              <Icon name="check-circle" size="sm" class="text-green-500 flex-shrink-0 mt-1" />
+              <span class="text-gray-900 font-medium">Unlimited end products</span>
             </li>
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-white flex-shrink-0 mt-1" />
-              <span class="text-white font-medium">Keep 100% of revenue</span>
+              <Icon name="check-circle" size="sm" class="text-green-500 flex-shrink-0 mt-1" />
+              <span class="text-gray-900 font-medium">Keep 100% of revenue</span>
             </li>
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-white flex-shrink-0 mt-1" />
-              <span class="text-white font-medium">Lifetime updates</span>
+              <Icon name="check-circle" size="sm" class="text-green-500 flex-shrink-0 mt-1" />
+              <span class="text-gray-900 font-medium">Lifetime updates</span>
             </li>
           </ul>
 
@@ -102,37 +102,37 @@
             <StripeButton buyButtonId="buy_btn_1SJ5kFRCxnzBPkIXLnQOqiLe" />
           </div>
 
-          <p class="text-center text-white/80 text-sm mt-4">30-day money-back guarantee</p>
+          <p class="text-center text-gray-600 text-sm mt-4">30-day money-back guarantee</p>
         </div>
 
         <!-- Team Bundle -->
-        <div class="bg-white rounded-3xl p-8 shadow-lg border-2 border-purple-200">
+        <div class="bg-white rounded-3xl p-8 shadow-lg border-2 border-orange-200">
           <div class="text-center mb-6">
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Senior Engineer Package</h3>
-            <div class="text-5xl font-black text-purple-600 mb-2">$799</div>
+            <div class="text-5xl font-black text-orange-600 mb-2">$799</div>
             <p class="text-gray-600">Save $397</p>
           </div>
 
           <ul class="space-y-3 mb-8">
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-purple-500 flex-shrink-0 mt-1" />
+              <Icon name="check-circle" size="sm" class="text-orange-500 flex-shrink-0 mt-1" />
               <span class="text-gray-700 font-medium">All 4 products included</span>
             </li>
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-purple-500 flex-shrink-0 mt-1" />
+              <Icon name="check-circle" size="sm" class="text-orange-500 flex-shrink-0 mt-1" />
               <span class="text-gray-700">Navam Invest ($299)</span>
             </li>
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-purple-500 flex-shrink-0 mt-1" />
+              <Icon name="check-circle" size="sm" class="text-orange-500 flex-shrink-0 mt-1" />
               <span class="text-gray-700">Moments ($299)</span>
             </li>
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-purple-500 flex-shrink-0 mt-1" />
-              <span class="text-gray-700">Navam Client ($299)</span>
+              <Icon name="check-circle" size="sm" class="text-orange-500 flex-shrink-0 mt-1" />
+              <span class="text-gray-700">Trenddit Client ($299)</span>
             </li>
             <li class="flex items-start gap-2">
-              <Icon name="check-circle" size="sm" class="text-purple-500 flex-shrink-0 mt-1" />
-              <span class="text-gray-700">Navam Memo ($299)</span>
+              <Icon name="check-circle" size="sm" class="text-orange-500 flex-shrink-0 mt-1" />
+              <span class="text-gray-700">Trenddit Memo ($299)</span>
             </li>
           </ul>
 

@@ -27,6 +27,6 @@ Customers are able to refer the visualizations when querying, modifying, analyzi
 
 I save this product vision as `specs/product.md` file in the project.
 
-This approach aligns with Navam's mission to provide lean AI automation solutions. The Navam Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
+This approach aligns with Navam's mission to provide lean AI automation solutions. The Trenddit Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
 
-For organizations looking to implement similar AI-driven workflows, consider how tools like Navam Memo can streamline knowledge management and enhance productivity across teams.
+For organizations looking to implement similar AI-driven workflows, consider how tools like Trenddit Memo can streamline knowledge management and enhance productivity across teams.

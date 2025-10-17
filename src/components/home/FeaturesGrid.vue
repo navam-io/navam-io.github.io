@@ -16,7 +16,7 @@
         <!-- Benefit 1: Time -->
         <Card variant="default" padding="lg" class="hover:shadow-2xl hover:scale-105 transition-transform duration-300">
           <div class="feature-icon bg-gradient-to-br from-blue-500 to-blue-600 text-white mb-6 flex items-center justify-center">
-            <Icon name="clock" size="lg" />
+            <Icon name="rocket-launch" size="xl" />
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-3">Ship in Days, Not Months</h3>
           <p class="text-3xl font-black text-blue-600 mb-4">6+ Months Saved</p>
@@ -28,7 +28,7 @@
         <!-- Benefit 2: Cost -->
         <Card variant="default" padding="lg" class="hover:shadow-2xl hover:scale-105 transition-transform duration-300">
           <div class="feature-icon bg-gradient-to-br from-green-500 to-green-600 text-white mb-6 flex items-center justify-center">
-            <Icon name="currency-dollar" size="lg" />
+            <Icon name="currency-dollar" size="xl" />
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-3">Avoid $50K+ in Engineering Costs</h3>
           <p class="text-3xl font-black text-green-600 mb-4">$299 vs $50K+</p>
@@ -40,7 +40,7 @@
         <!-- Benefit 3: Prompts -->
         <Card variant="default" padding="lg" class="hover:shadow-2xl hover:scale-105 transition-transform duration-300">
           <div class="feature-icon bg-gradient-to-br from-purple-500 to-purple-600 text-white mb-6 flex items-center justify-center">
-            <Icon name="brain" size="lg" />
+            <Icon name="computer-desktop" size="xl" />
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-3">Skip 6 Months of Prompt Refinement</h3>
           <p class="text-3xl font-black text-purple-600 mb-4">Production Prompts</p>
@@ -52,7 +52,7 @@
         <!-- Benefit 4: Quality -->
         <Card variant="default" padding="lg" class="hover:shadow-2xl hover:scale-105 transition-transform duration-300">
           <div class="feature-icon bg-gradient-to-br from-emerald-500 to-emerald-600 text-white mb-6 flex items-center justify-center">
-            <Icon name="check-badge" size="lg" />
+            <Icon name="check-badge" size="xl" />
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-3">90%+ Test Coverage Included</h3>
           <p class="text-3xl font-black text-emerald-600 mb-4">Production Quality</p>
@@ -64,7 +64,7 @@
         <!-- Benefit 5: Learning -->
         <Card variant="default" padding="lg" class="hover:shadow-2xl hover:scale-105 transition-transform duration-300">
           <div class="feature-icon bg-gradient-to-br from-indigo-500 to-indigo-600 text-white mb-6 flex items-center justify-center">
-            <Icon name="academic-cap" size="lg" />
+            <Icon name="book-open" size="xl" />
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-3">Learn Production Patterns</h3>
           <p class="text-3xl font-black text-indigo-600 mb-4">Real Knowledge</p>
@@ -76,7 +76,7 @@
         <!-- Benefit 6: Freedom -->
         <Card variant="default" padding="lg" class="hover:shadow-2xl hover:scale-105 transition-transform duration-300">
           <div class="feature-icon bg-gradient-to-br from-orange-500 to-orange-600 text-white mb-6 flex items-center justify-center">
-            <Icon name="lock-open" size="lg" />
+            <Icon name="lock-open" size="xl" />
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-3">Keep 100% of Your Revenue</h3>
           <p class="text-3xl font-black text-orange-600 mb-4">MIT Licensed</p>

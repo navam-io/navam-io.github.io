@@ -119,7 +119,7 @@ AI-powered business intelligence with knowledge graphs and three-tier analytics.
 
 ---
 
-### 🔶 [Navam Client](https://github.com/trendditcom/trenddit-client) — Enterprise Strategic Intelligence
+### 🔶 [Trenddit Client](https://github.com/trendditcom/trenddit-client) — Enterprise Strategic Intelligence
 
 Multi-agent market analysis and technology impact predictions for strategic decisions.
 
@@ -130,7 +130,7 @@ Multi-agent market analysis and technology impact predictions for strategic deci
 
 ---
 
-### 🔸 [Navam Memo](https://github.com/trendditcom/trenddit-memo) — Knowledge Management Extension
+### 🔸 [Trenddit Memo](https://github.com/trendditcom/trenddit-memo) — Knowledge Management Extension
 
 Chrome extension for knowledge management with AI-powered semantic tagging.
 

@@ -1,15 +1,15 @@
 ---
 layout: '@layouts/BlogPost.astro'
-title: "Navam Memo Multi-AI Provider Support: Claude, GPT, Gemini, and Local Ollama"
+title: "Trenddit Memo Multi-AI Provider Support: Claude, GPT, Gemini, and Local Ollama"
 date: "2025-07-06"
 author: "Navam Team"
 excerpt: "Compare and switch between Anthropic Claude, OpenAI GPT, Google Gemini, and local Ollama models seamlessly. Choose the right AI for each task with unified provider interface."
 featuredImage: "/images/blog/chat-with-memo.png"
 relatedPosts: ["introducing-trenddit-memo-ai-browsing", "trenddit-memo-privacy-local-first", "trenddit-memo-youtube-integration"]
-tags: ["trenddit-memo", "ai-providers", "claude", "gpt", "gemini", "ollama", "comparison", "integration", "Navam Memo", "AI Agents"]
+tags: ["trenddit-memo", "ai-providers", "claude", "gpt", "gemini", "ollama", "comparison", "integration", "Trenddit Memo", "AI Agents"]
 ---
 
-One of Navam Memo's most powerful features is **multi-AI provider support**. Instead of being locked into a single AI service, you can choose from four different providers and switch between them based on your specific needs.
+One of Trenddit Memo's most powerful features is **multi-AI provider support**. Instead of being locked into a single AI service, you can choose from four different providers and switch between them based on your specific needs.
 
 ## Why Multiple AI Providers Matter
 
@@ -20,7 +20,7 @@ Different AI models excel at different tasks:
 - **Quick questions** need fast, efficient responses
 - **Sensitive content** demands complete privacy and local processing
 
-With Navam Memo, you're not limited to one approach. Use the right AI for the right job.
+With Trenddit Memo, you're not limited to one approach. Use the right AI for the right job.
 
 ## The Four AI Providers We Support
 
@@ -105,7 +105,7 @@ Our team uses different providers for different workflows:
 
 ### Switching Providers Mid-Conversation
 
-One of Navam Memo's unique features is **seamless provider switching**:
+One of Trenddit Memo's unique features is **seamless provider switching**:
 
 1. Start a conversation with one provider
 2. Switch to another provider mid-chat
@@ -126,13 +126,13 @@ Each provider requires different setup steps:
 **Cloud Providers (Claude, GPT, Gemini):**
 1. Sign up for an account with the provider
 2. Generate an API key
-3. Add the key to Navam Memo settings
+3. Add the key to Trenddit Memo settings
 4. Select your preferred models
 
 **Local Provider (Ollama):**
 1. Install Ollama on your machine
 2. Download your preferred models (e.g., `ollama pull llama2`)
-3. Navam Memo automatically detects available models
+3. Trenddit Memo automatically detects available models
 4. Enhanced retry logic ensures reliable connections
 
 ### Smart Provider Features
@@ -146,7 +146,7 @@ Each provider requires different setup steps:
 
 ### Unified Provider Interface
 
-Navam Memo uses a **provider factory pattern** that makes switching between AI services seamless:
+Trenddit Memo uses a **provider factory pattern** that makes switching between AI services seamless:
 
 ```javascript
 // Simplified architecture example
@@ -245,7 +245,7 @@ class AIServiceManager {
 
 ## The Future of Multi-Provider AI
 
-Navam Memo's multi-provider architecture prepares you for the rapidly evolving AI landscape:
+Trenddit Memo's multi-provider architecture prepares you for the rapidly evolving AI landscape:
 
 **New providers**: Easy to add new AI services as they become available  
 **Model updates**: Seamlessly upgrade to new versions as providers release them  
@@ -254,13 +254,13 @@ Navam Memo's multi-provider architecture prepares you for the rapidly evolving A
 
 ## Experience the Power of Choice
 
-Don't limit yourself to one AI provider. With Navam Memo, you can:
+Don't limit yourself to one AI provider. With Trenddit Memo, you can:
 
 - **Use the best tool for each job**
 - **Compare responses from different models**  
 - **Maintain complete privacy when needed**
 - **Optimize costs across providers**
 
-[Try Navam Memo with multiple AI providers →](https://github.com/trendditcom/trenddit-memo)
+[Try Trenddit Memo with multiple AI providers →](https://github.com/trendditcom/trenddit-memo)
 
-*Ready to experience the flexibility of multi-provider AI? Set up Navam Memo and discover which AI models work best for your unique workflow.*
+*Ready to experience the flexibility of multi-provider AI? Set up Trenddit Memo and discover which AI models work best for your unique workflow.*

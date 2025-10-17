@@ -19,12 +19,12 @@
             </li>
             <li>
               <a href="https://github.com/trendditcom/trenddit-client" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Navam Client
+                Trenddit Client
               </a>
             </li>
             <li>
               <a href="https://github.com/trendditcom/trenddit-memo" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Navam Memo
+                Trenddit Memo
               </a>
             </li>
             <li>

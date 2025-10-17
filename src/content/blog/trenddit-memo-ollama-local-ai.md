@@ -1,6 +1,6 @@
 ---
 layout: '@layouts/BlogPost.astro'
-title: "Complete Privacy with Ollama: Local AI Processing in Navam Memo"
+title: "Complete Privacy with Ollama: Local AI Processing in Trenddit Memo"
 date: "2025-07-06"
 author: "Navam Team"
 excerpt: "Achieve 100% privacy with Ollama integration. Process your content with powerful AI models running entirely on your device—no data ever leaves your computer."
@@ -9,7 +9,7 @@ relatedPosts: ["trenddit-memo-privacy-first-design", "introducing-trenddit-memo-
 tags: ['Knowledge Discovery', 'System Architecture']
 ---
 
-For the ultimate in privacy and data control, Navam Memo integrates seamlessly with Ollama to provide **100% local AI processing**. Your content never leaves your device, yet you still get powerful AI analysis and organization.
+For the ultimate in privacy and data control, Trenddit Memo integrates seamlessly with Ollama to provide **100% local AI processing**. Your content never leaves your device, yet you still get powerful AI analysis and organization.
 
 This is privacy-first AI at its finest—all the intelligence, none of the surveillance.
 
@@ -117,7 +117,7 @@ Sensitive Content → Local Capture → Ollama Processing → Local Storage
 **Getting started with Ollama:**
 1. **Install Ollama**: Download from [ollama.ai](https://ollama.ai)
 2. **Pull models**: `ollama pull llama3.1` or your preferred model
-3. **Configure Navam Memo**: Select Ollama as your AI provider
+3. **Configure Trenddit Memo**: Select Ollama as your AI provider
 4. **Start processing**: Your content stays completely local
 
 ### Performance Optimization
@@ -190,7 +190,7 @@ Sensitive Content → Local Capture → Ollama Processing → Local Storage
 - **Hardware acceleration**: GPU and neural processing unit support
 - **Edge computing**: Distributed processing while maintaining privacy
 
-### Navam Memo's Local AI Roadmap
+### Trenddit Memo's Local AI Roadmap
 
 **Upcoming enhancements:**
 - **Enhanced model management**: Easier model installation and updates
@@ -205,7 +205,7 @@ Sensitive Content → Local Capture → Ollama Processing → Local Storage
 **Start processing locally in minutes:**
 1. **Install Ollama**: Download and install on your system
 2. **Download a model**: `ollama pull llama3.1:8b` for a balanced model
-3. **Configure Navam Memo**: Set Ollama as your preferred provider
+3. **Configure Trenddit Memo**: Set Ollama as your preferred provider
 4. **Test processing**: Capture some content and analyze it locally
 5. **Optimize settings**: Adjust model and performance settings
 
@@ -219,7 +219,7 @@ Sensitive Content → Local Capture → Ollama Processing → Local Storage
 
 ## Complete Privacy, Full Power
 
-With Ollama integration, Navam Memo proves that privacy and functionality aren't mutually exclusive:
+With Ollama integration, Trenddit Memo proves that privacy and functionality aren't mutually exclusive:
 
 **Local AI advantages:**
 - ✅ **100% local processing** - No data ever leaves your device
@@ -234,8 +234,8 @@ With Ollama integration, Navam Memo proves that privacy and functionality aren't
 - Maintain complete data sovereignty
 - Enjoy unlimited AI processing
 
-Ready to experience completely private AI? Learn about [Navam Memo's privacy-first design](./trenddit-memo-privacy-first-design) and discover how local-first architecture protects your data.
+Ready to experience completely private AI? Learn about [Trenddit Memo's privacy-first design](./trenddit-memo-privacy-first-design) and discover how local-first architecture protects your data.
 
-[Get started with Navam Memo and Ollama →](https://github.com/trendditcom/trenddit-memo)
+[Get started with Trenddit Memo and Ollama →](https://github.com/trendditcom/trenddit-memo)
 
-*Experience the future of private AI. Install Navam Memo and connect it to Ollama for completely local, completely private AI processing.*
+*Experience the future of private AI. Install Trenddit Memo and connect it to Ollama for completely local, completely private AI processing.*

@@ -1,17 +1,17 @@
 ---
 layout: '@layouts/BlogPost.astro'
-title: "Navam Memo Privacy-First Design: Local Storage and Encrypted API Keys"
+title: "Trenddit Memo Privacy-First Design: Local Storage and Encrypted API Keys"
 date: "2025-07-06"
 author: "Navam Team"
-excerpt: "Your data belongs to you. Learn how Navam Memo's local-first architecture and encrypted key management protect your privacy without compromising functionality."
+excerpt: "Your data belongs to you. Learn how Trenddit Memo's local-first architecture and encrypted key management protect your privacy without compromising functionality."
 featuredImage: "/images/blog/tags.png"
 relatedPosts: ["trenddit-memo-ollama-local-ai", "introducing-trenddit-memo-ai-browsing", "trenddit-memo-multi-ai-providers"]
 tags: ['Knowledge Discovery']
 ---
 
-Privacy isn't an afterthought in Navam Memo—it's fundamental to our design. We believe **your data belongs to you**, and we've built every aspect of our Chrome extension around this principle.
+Privacy isn't an afterthought in Trenddit Memo—it's fundamental to our design. We believe **your data belongs to you**, and we've built every aspect of our Chrome extension around this principle.
 
-From local-first storage to encrypted API keys, Navam Memo gives you full control over your information without sacrificing functionality.
+From local-first storage to encrypted API keys, Trenddit Memo gives you full control over your information without sacrificing functionality.
 
 ## Why Privacy Matters for Knowledge Management
 
@@ -22,7 +22,7 @@ When you capture and organize web content, you're essentially creating a **digit
 - **Content preferences** indicate personal values and decision-making processes
 - **Question patterns** expose strategic thinking and business priorities
 
-Traditional cloud-first tools require you to trust third parties with this intimate data. Navam Memo takes a different approach.
+Traditional cloud-first tools require you to trust third parties with this intimate data. Trenddit Memo takes a different approach.
 
 ## Local-First Architecture
 
@@ -199,7 +199,7 @@ Your Input    Native Chrome    Extension     Direct Provider
 
 ## Privacy Without Compromise
 
-With Navam Memo, you don't have to choose between powerful AI features and data privacy:
+With Trenddit Memo, you don't have to choose between powerful AI features and data privacy:
 
 **Privacy without compromise:**
 - ✅ **Local-first storage** keeps your content on your device
@@ -216,6 +216,6 @@ With Navam Memo, you don't have to choose between powerful AI features and data 
 
 For complete privacy, consider using [Ollama for local AI processing](./trenddit-memo-ollama-local-ai) where no data ever leaves your device.
 
-[Experience privacy-first AI with Navam Memo →](https://github.com/trendditcom/trenddit-memo)
+[Experience privacy-first AI with Trenddit Memo →](https://github.com/trendditcom/trenddit-memo)
 
-*Ready to take control of your data while enjoying powerful AI capabilities? Install Navam Memo and experience truly private knowledge management.*
+*Ready to take control of your data while enjoying powerful AI capabilities? Install Trenddit Memo and experience truly private knowledge management.*

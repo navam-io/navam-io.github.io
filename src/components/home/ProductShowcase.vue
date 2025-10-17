@@ -283,9 +283,9 @@ navam invest</code></pre>
             </Button>
           </Card>
 
-          <!-- Navam Client -->
+          <!-- Trenddit Client -->
           <Card variant="gradient" gradient="purple" padding="md">
-            <h4 class="text-xl font-bold text-white mb-2">Navam Client</h4>
+            <h4 class="text-xl font-bold text-white mb-2">Trenddit Client</h4>
             <p class="text-white text-sm mb-4">
               Enterprise Intelligence Platform for strategic technology decisions.
             </p>
@@ -301,9 +301,9 @@ navam invest</code></pre>
             </Button>
           </Card>
 
-          <!-- Navam Memo -->
+          <!-- Trenddit Memo -->
           <Card variant="gradient" gradient="orange" padding="md">
-            <h4 class="text-xl font-bold text-white mb-2">Navam Memo</h4>
+            <h4 class="text-xl font-bold text-white mb-2">Trenddit Memo</h4>
             <p class="text-white text-sm mb-4">
               Intelligent Knowledge Management Chrome extension with AI-powered tagging.
             </p>

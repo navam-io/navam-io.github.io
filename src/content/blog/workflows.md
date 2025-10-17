@@ -47,7 +47,7 @@ This organization allows readers to:
 
 Both approaches work together as part of the Navam automation platform:
 
-**Navam Memo Synergy:**
+**Trenddit Memo Synergy:**
 - **Unified Workflow**: Combine browser-based knowledge capture with CLI automation
 - **Cross-Platform Integration**: Seamless workflow between web and desktop environments
 - **Knowledge Management**: Document patterns and methodologies for team learning

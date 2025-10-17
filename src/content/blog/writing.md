@@ -5,7 +5,7 @@ date: "2025-07-05"
 author: "Navam Team"
 excerpt: "Master vibe writing workflows using natural language prompts with LLMs to create, enhance, and organize text content."
 featuredImage: "/images/blog/vibe-writing-summaries.png"
-tags: ["ai", "automation", "development", "workflows", "productivity", "aws", "knowledge-management", "trenddit", "Navam Memo", "Lean Workflows"]
+tags: ["ai", "automation", "development", "workflows", "productivity", "aws", "knowledge-management", "trenddit", "Trenddit Memo", "Lean Workflows"]
 ---
 
 
@@ -25,9 +25,9 @@ Markdown is a convenient format for my text content as it can easily integrate w
 The simplicity of Markdown also makes it an ideal format for LLMs to generate and modify. When working with LLMs for content creation, the key aspects involve natural language input, AI-powered generation, iterative refinement, and collaborative development. Markdown makes this process more efficient as it removes the complexity of formatting while still allowing for structured documents with headings, lists, links, and images. This efficiency is crucial for Vibe Writing, as it allows the flow of ideas to remain uninterrupted by formatting concerns, letting both the human writer and the LLM focus on content rather than presentation.
 
 
-This approach aligns with Navam's mission to provide lean AI automation solutions. The Navam Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
+This approach aligns with Navam's mission to provide lean AI automation solutions. The Trenddit Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
 
-For organizations looking to implement similar AI-driven workflows, consider how tools like Navam Memo can streamline knowledge management and enhance productivity across teams.
+For organizations looking to implement similar AI-driven workflows, consider how tools like Trenddit Memo can streamline knowledge management and enhance productivity across teams.
 
 ## Emulating and Extending Existing Tools
 

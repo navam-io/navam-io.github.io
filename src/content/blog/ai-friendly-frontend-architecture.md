@@ -397,7 +397,7 @@ export const AIQueryProvider: React.FC<{ children: React.ReactNode }> = ({ child
 
 This AI-friendly frontend architecture integrates seamlessly with Navam's automation platform:
 
-**Navam Memo Synergy:**
+**Trenddit Memo Synergy:**
 - **Unified Components:** Reusable AI interface components across web and browser extension
 - **Shared State Management:** Consistent state patterns between platforms
 - **Cross-Platform Design:** Tailwind classes work across all Navam products
