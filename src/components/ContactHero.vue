@@ -7,7 +7,7 @@
     <div class="relative z-10 flex items-center justify-center min-h-screen px-4 py-16">
       <div class="text-center max-w-6xl mx-auto">
         <!-- Main Title -->
-        <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-tight animate-fade-in tracking-tight">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-8 leading-tight animate-fade-in tracking-tight">
           <span class="bg-gradient-to-r from-white via-cyan-100 to-white bg-clip-text text-transparent drop-shadow-2xl">
             Ready to Ship Production AI?
           </span>
