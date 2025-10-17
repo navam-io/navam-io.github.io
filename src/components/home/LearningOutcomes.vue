@@ -12,7 +12,7 @@
       </div>
 
       <!-- 2x2 Product Grid -->
-      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         <!-- Navam Invest -->
         <Card variant="gradient" gradient="green" padding="md">
           <div class="flex items-center gap-3 mb-4">
@@ -104,6 +104,22 @@
             View on GitHub →
           </Button>
         </Card>
+      </div>
+
+      <!-- Bundle CTA -->
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-gradient-to-r from-purple-900 to-blue-900 rounded-3xl p-8 text-center text-white shadow-2xl">
+          <div class="flex items-center justify-center gap-3 mb-3">
+            <Icon name="box" size="lg" class="text-white" />
+            <h3 class="text-3xl font-bold">Senior Engineer Package</h3>
+          </div>
+          <p class="text-xl mb-3">Get all 4 products with commercial licenses</p>
+          <p class="text-5xl font-black mb-3">$799 <span class="text-lg font-normal text-white/70">one-time</span></p>
+          <p class="text-white/90 mb-6">Regular: $1,196 • Save $397 (33%)</p>
+          <div class="flex justify-center">
+            <StripeButton buyButtonId="buy_btn_1SJ5etRCxnzBPkIXogmTaqPH" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
