@@ -17,17 +17,9 @@
           <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <div class="lg:col-span-3">
               <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 hover:shadow-3xl transition-shadow duration-300">
-                <div class="bg-gray-100 px-4 py-3 flex items-center gap-2 border-b border-gray-200">
-                  <div class="flex gap-2">
-                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                  </div>
-                  <div class="flex-1 text-center text-sm text-gray-600 font-medium">Terminal - navam invest</div>
-                </div>
                 <img
-                  src="/images/blog/analysis-report.png"
-                  alt="Navam Invest Test Coverage Report"
+                  src="/images/blog/natural-prompt.png"
+                  alt="Navam Invest Natural Language Prompt Interface"
                   class="w-full"
                   loading="lazy"
                 />
