@@ -4,15 +4,38 @@
       <!-- Section Headline -->
       <div class="max-w-3xl mx-auto text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 technical-heading">
-          More Production AI Products
+          Get All Four Production Codebases
         </h2>
         <p class="text-xl text-gray-600">
-          Expand your toolkit with additional reference implementations
+          Python TUIs, Next.js dashboards, tRPC apps, and Chrome extensions—master different stacks by studying working production code.
         </p>
       </div>
 
-      <!-- Compact Product Grid -->
-      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <!-- 2x2 Product Grid -->
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Navam Invest -->
+        <Card variant="gradient" gradient="green" padding="md">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+              <Icon name="chart-line" size="lg" class="text-white" />
+            </div>
+            <h3 class="text-xl font-bold text-white">Navam Invest</h3>
+          </div>
+          <p class="text-white/90 text-sm mb-4 leading-relaxed">
+            Multi-agent investment intelligence with streaming TUI. 10 specialized agents, 90%+ test coverage, production-grade.
+          </p>
+          <Button
+            variant="outline"
+            size="sm"
+            as="a"
+            href="https://github.com/navam-io/navam-invest"
+            target="_blank"
+            class="bg-white/10 border-white/40 text-white hover:bg-white/20 w-full"
+          >
+            View on GitHub →
+          </Button>
+        </Card>
+
         <!-- Moments -->
         <Card variant="gradient" gradient="blue" padding="md">
           <div class="flex items-center gap-3 mb-4">
@@ -81,22 +104,6 @@
             View on GitHub →
           </Button>
         </Card>
-      </div>
-
-      <!-- Bundle CTA -->
-      <div class="max-w-4xl mx-auto">
-        <div class="bg-gradient-to-r from-purple-900 to-blue-900 rounded-3xl p-8 text-center text-white shadow-2xl">
-          <div class="flex items-center justify-center gap-3 mb-3">
-            <Icon name="box" size="lg" class="text-white" />
-            <h3 class="text-3xl font-bold">Senior Engineer Package</h3>
-          </div>
-          <p class="text-xl mb-3">Get all 4 products with commercial licenses</p>
-          <p class="text-5xl font-black mb-3">$799 <span class="text-lg font-normal text-white/70">one-time</span></p>
-          <p class="text-white/90 mb-6">Regular: $1,196 • Save $397 (33%)</p>
-          <div class="flex justify-center">
-            <StripeButton buyButtonId="buy_btn_1SJ5etRCxnzBPkIXogmTaqPH" />
-          </div>
-        </div>
       </div>
     </div>
   </section>

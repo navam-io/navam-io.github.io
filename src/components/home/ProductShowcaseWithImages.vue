@@ -291,19 +291,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Bottom CTA -->
-        <div class="mt-20 text-center">
-          <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-12 border-2 border-blue-200 max-w-4xl mx-auto">
-            <h3 class="text-3xl font-bold text-gray-900 mb-4">
-              Get All Four Production Codebases
-            </h3>
-            <p class="text-xl text-gray-700 mb-8 leading-relaxed">
-              Python TUIs, Next.js dashboards, tRPC apps, and Chrome extensions—master different stacks by studying working production code.
-            </p>
-            <StripeButton buyButtonId="buy_btn_1SJ5etRCxnzBPkIXogmTaqPH" />
-          </div>
-        </div>
       </div>
     </div>
   </section>
