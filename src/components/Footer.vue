@@ -28,11 +28,6 @@
               </a>
             </li>
             <li>
-              <a href="/pricing" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Pricing
-              </a>
-            </li>
-            <li>
               <a href="/contact" class="text-gray-600 hover:text-gray-900 transition-colors">
                 Contact
               </a>

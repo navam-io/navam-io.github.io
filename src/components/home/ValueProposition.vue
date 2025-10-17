@@ -4,47 +4,39 @@
       <!-- Section Headline -->
       <div class="max-w-4xl mx-auto text-center mb-12">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 technical-heading">
-          Stop Guessing. See How It's Actually Built.
+          You're Trying to Build Production AI, But...
         </h2>
 
-        <!-- Opening Copy -->
-        <div class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 rounded-3xl p-8 md:p-12 shadow-xl border border-blue-200">
-          <p class="text-xl text-gray-800 leading-relaxed mb-6">
-            Every LangGraph tutorial shows you how to build a single-agent chatbot.
-            But production systems are different:
+        <!-- Pain Points -->
+        <div class="bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 rounded-3xl p-8 md:p-12 shadow-xl border-2 border-red-200 mb-8">
+          <p class="text-2xl text-gray-900 leading-relaxed mb-8 font-semibold">
+            Tutorials break in production. Hiring takes months. Trial-and-error costs you your market window.
           </p>
 
-          <ul class="grid md:grid-cols-2 gap-4 mb-8">
-            <li class="flex items-start gap-3 bg-white/60 backdrop-blur-sm rounded-xl p-4">
-              <Icon name="shuffle" size="sm" class="text-blue-600 flex-shrink-0 mt-1" />
-              <span class="text-gray-800 font-medium">How do 10 specialized agents coordinate without chaos?</span>
-            </li>
-            <li class="flex items-start gap-3 bg-white/60 backdrop-blur-sm rounded-xl p-4">
-              <Icon name="bolt" size="sm" class="text-purple-600 flex-shrink-0 mt-1" />
-              <span class="text-gray-800 font-medium">How do you stream multi-step workflows without blocking?</span>
-            </li>
-            <li class="flex items-start gap-3 bg-white/60 backdrop-blur-sm rounded-xl p-4">
-              <Icon name="database" size="sm" class="text-green-600 flex-shrink-0 mt-1" />
-              <span class="text-gray-800 font-medium">How do you cache intelligently without breaking real-time data?</span>
-            </li>
-            <li class="flex items-start gap-3 bg-white/60 backdrop-blur-sm rounded-xl p-4">
-              <Icon name="shield-check" size="sm" class="text-red-600 flex-shrink-0 mt-1" />
-              <span class="text-gray-800 font-medium">How do you handle errors in agent workflows?</span>
-            </li>
-            <li class="flex items-start gap-3 bg-white/60 backdrop-blur-sm rounded-xl p-4">
-              <Icon name="brain" size="sm" class="text-indigo-600 flex-shrink-0 mt-1" />
-              <span class="text-gray-800 font-medium">What prompts actually work in production?</span>
-            </li>
-            <li class="flex items-start gap-3 bg-white/60 backdrop-blur-sm rounded-xl p-4">
-              <Icon name="code" size="sm" class="text-orange-600 flex-shrink-0 mt-1" />
-              <span class="text-gray-800 font-medium">How do you test multi-agent systems effectively?</span>
-            </li>
-          </ul>
+          <div class="grid md:grid-cols-3 gap-6 text-left">
+            <div class="bg-white/80 rounded-xl p-6 border-l-4 border-red-500">
+              <div class="text-4xl mb-3">😤</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">6 Months Lost</h3>
+              <p class="text-gray-700">
+                You've spent half a year debugging agent coordination. Your competitor just shipped their MVP.
+              </p>
+            </div>
 
-          <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 text-center">
-            <p class="text-2xl font-bold text-white">
-              Navam vibe coding ready products answer these questions with working code.
-            </p>
+            <div class="bg-white/80 rounded-xl p-6 border-l-4 border-orange-500">
+              <div class="text-4xl mb-3">💸</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">$50K+ Budget</h3>
+              <p class="text-gray-700">
+                Hiring senior AI engineers is expensive. And they still need months to figure out production patterns.
+              </p>
+            </div>
+
+            <div class="bg-white/80 rounded-xl p-6 border-l-4 border-yellow-500">
+              <div class="text-4xl mb-3">🤷</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">No Guarantees</h3>
+              <p class="text-gray-700">
+                LangGraph tutorials show toy examples. How do you know your architecture will scale?
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -176,15 +168,14 @@
 
       <!-- Callout Box -->
       <div class="max-w-4xl mx-auto mt-12">
-        <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-8 border-l-4 border-yellow-500 shadow-lg">
+        <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 border-l-4 border-green-600 shadow-lg">
           <div class="flex items-start gap-4">
-            <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center flex-shrink-0">
-              <Icon name="light-bulb" size="lg" class="text-yellow-600" />
+            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <Icon name="light-bulb" size="lg" class="text-green-600" />
             </div>
             <p class="text-lg text-gray-800 leading-relaxed">
-              Each vibe coding ready product represents <strong class="text-gray-900">6+ months of architecture
-              decisions, prompt engineering, and production refinement</strong> built with AI at a <strong class="text-gray-900">fractional cost of human engineers for thousands of lines of code</strong>.
-              You get the working result, ship 10x faster, and learn while you build.
+              Each product represents <strong class="text-gray-900">6+ months of trial-and-error, architecture decisions, and production refinement</strong>—all the hard lessons learned building real multi-agent systems.
+              Fork the working code, skip the debugging hell, ship in days.
             </p>
           </div>
         </div>

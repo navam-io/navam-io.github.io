@@ -2,12 +2,12 @@
   <section class="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
     <div class="container mx-auto px-4">
       <!-- Section Headline -->
-      <div class="max-w-3xl mx-auto text-center mb-4">
+      <div class="max-w-3xl mx-auto text-center mb-12">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 technical-heading">
-          Production Patterns You Won't Learn From Tutorials
+          Production Patterns Included
         </h2>
         <p class="text-xl text-gray-600">
-          Every implementation shows you the working solution to problems that take months to figure out through trial and error.
+          See exactly how we solved the hard problems
         </p>
       </div>
 
@@ -217,54 +217,6 @@
           </div>
         </div>
 
-        <!-- Sections 4-6 similar structure... Let me add them compactly -->
-        <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-          <button
-            @click="toggleSection(3)"
-            class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors"
-          >
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center text-white">
-                <Icon name="database" size="lg" />
-              </div>
-              <h3 class="text-2xl font-bold text-gray-900 text-left">Intelligent Caching Strategies</h3>
-            </div>
-            <svg
-              class="w-6 h-6 text-gray-500 transition-transform"
-              :class="{ 'rotate-180': expandedSections[3] }"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div
-            class="expandable-content"
-            :class="expandedSections[3] ? 'expanded' : 'collapsed'"
-          >
-            <div class="px-8 pb-6 space-y-4">
-              <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
-                <h4 class="font-bold text-gray-900 mb-2">THE PROBLEM:</h4>
-                <p class="text-gray-700">
-                  When do you cache? What's the right TTL? How do you prevent stale data while maximizing hit rates?
-                </p>
-              </div>
-              <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
-                <h4 class="font-bold text-gray-900 mb-2">OUR IMPLEMENTATION:</h4>
-                <p class="text-gray-700 mb-2">
-                  DuckDB persistence with 42 cached tools. Smart TTL: 60s (real-time), 1h (fundamentals), 24h (economic data). Cache warming for common queries.
-                </p>
-              </div>
-              <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
-                <h4 class="font-bold text-gray-900 mb-2">WHAT YOU'LL LEARN:</h4>
-                <p class="text-gray-700">
-                  Study our caching strategy achieving 75%+ hit rates without breaking real-time data requirements.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -274,7 +226,7 @@
 import { ref } from 'vue'
 import Icon from '@/components/ui/Icon.vue'
 
-const expandedSections = ref([false, false, false, false, false, false])
+const expandedSections = ref([false, false, false])
 
 const toggleSection = (index: number) => {
   expandedSections.value[index] = !expandedSections.value[index]

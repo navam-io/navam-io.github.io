@@ -75,56 +75,6 @@
             />
           </div>
 
-          <!-- Pricing Options Field -->
-          <div>
-            <label for="interest" class="block text-sm font-semibold text-gray-700 mb-2">
-              I'm interested in <span class="text-red-500">*</span>
-            </label>
-            <select
-              id="interest"
-              v-model="formData.interest"
-              required
-              :class="[
-                'w-full px-4 py-3 rounded-xl border transition-all duration-300',
-                errors.interest
-                  ? 'border-red-300 focus:border-red-500 focus:ring-red-200'
-                  : 'border-gray-200 focus:border-cyan-500 focus:ring-cyan-200'
-              ]"
-              :disabled="isSubmitting"
-              @blur="validateField('interest')"
-              @change="clearError('interest'); updateNextSteps()"
-            >
-              <option value="">Select an option...</option>
-              <option value="Single Implementation - $299">Single Implementation - $299</option>
-              <option value="Senior Engineer Package - $799">Senior Engineer Package - $799 (Best Value)</option>
-              <option value="Implementation + Consulting - $1,499">Implementation + Consulting - $1,499</option>
-              <option value="Custom Implementation - Starting at $4,999">Custom Implementation - Starting at $4,999</option>
-              <option value="General Inquiry">General Inquiry</option>
-            </select>
-            <p v-if="errors.interest" class="mt-2 text-sm text-red-600">{{ errors.interest }}</p>
-          </div>
-
-          <!-- Product Selection Field -->
-          <div>
-            <label for="product" class="block text-sm font-semibold text-gray-700 mb-2">
-              Which product(s) are you interested in?
-            </label>
-            <select
-              id="product"
-              v-model="formData.product"
-              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-cyan-500 focus:ring-cyan-200 transition-all duration-300"
-              :disabled="isSubmitting"
-            >
-              <option value="">Select a product...</option>
-              <option value="Navam Invest">Navam Invest - Investment Intelligence Platform</option>
-              <option value="Moments">Moments - Business Intelligence with Knowledge Graphs</option>
-              <option value="Navam Client">Navam Client - Enterprise Strategic Intelligence</option>
-              <option value="Navam Memo">Navam Memo - Knowledge Management Chrome Extension</option>
-              <option value="All Products">All Products (Senior Engineer Package)</option>
-              <option value="Custom">Custom Product for My Domain</option>
-            </select>
-          </div>
-
           <!-- Message Field -->
           <div>
             <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
@@ -147,17 +97,6 @@
               @input="clearError('message')"
             ></textarea>
             <p v-if="errors.message" class="mt-2 text-sm text-red-600">{{ errors.message }}</p>
-          </div>
-
-          <!-- What Happens Next Section -->
-          <div v-if="nextStepsMessage" class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 border-l-4 border-blue-500">
-            <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              What Happens Next
-            </h3>
-            <p class="text-gray-700 leading-relaxed">{{ nextStepsMessage }}</p>
           </div>
 
           <!-- Submit Button -->
@@ -259,48 +198,19 @@ interface FormData {
   name: string
   email: string
   company: string
-  interest: string
-  product: string
   message: string
 }
 
 interface FormErrors {
   name?: string
   email?: string
-  interest?: string
   message?: string
-}
-
-// Plan configuration for pricing options
-const planConfig = {
-  single: {
-    interest: 'Single Implementation - $299',
-    product: 'Navam Invest',
-    nextSteps: 'You will receive a secured Stripe payment link. Once payment is processed, we will add you to our private repository with full documentation, prompts, step-by-step release decisions, references, and complete source code.'
-  },
-  senior: {
-    interest: 'Senior Engineer Package - $799',
-    product: 'All Products',
-    nextSteps: 'You will receive a secured Stripe payment link. Once payment is processed, we will add you to our private repository with full documentation, prompts, step-by-step release decisions, references, and complete source code.'
-  },
-  consulting: {
-    interest: 'Implementation + Consulting - $1,499',
-    product: 'Navam Invest',
-    nextSteps: 'Our team will be in touch to clarify your requirements, propose any revisions to our fees, and agree on a reasonable advance to begin work. We typically respond within 24 hours.'
-  },
-  custom: {
-    interest: 'Custom Implementation - Starting at $4,999',
-    product: 'Custom',
-    nextSteps: 'Our team will be in touch to clarify your requirements, propose any revisions to our fees, and agree on a reasonable advance to begin work. We typically respond within 24 hours.'
-  }
 }
 
 const formData = reactive<FormData>({
   name: '',
   email: '',
   company: '',
-  interest: '',
-  product: '',
   message: ''
 })
 
@@ -309,44 +219,9 @@ const isSubmitting = ref(false)
 const showSuccess = ref(false)
 const showError = ref(false)
 const errorMessage = ref('')
-const nextStepsMessage = ref('')
 
 // TODO: Replace with your actual Google Apps Script Web App URL
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwdlD8irGX0Rbm-URqJgOmVXx8Ox3AXnxJ8P6KOzx1ZgTqpYFxxMLfFpEBM4PPczkwZdw/exec'
-
-// Prefill form based on URL parameters
-onMounted(() => {
-  const urlParams = new URLSearchParams(window.location.search)
-  const plan = urlParams.get('plan')
-
-  if (plan && planConfig[plan as keyof typeof planConfig]) {
-    const config = planConfig[plan as keyof typeof planConfig]
-    formData.interest = config.interest
-    formData.product = config.product
-    nextStepsMessage.value = config.nextSteps
-
-    // Scroll to form after short delay to allow page to render
-    setTimeout(() => {
-      const formElement = document.querySelector('.bg-gradient-to-br.from-gray-50')
-      if (formElement) {
-        formElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }
-    }, 100)
-  }
-})
-
-// Update next steps message when interest changes
-const updateNextSteps = () => {
-  const selectedPlan = Object.entries(planConfig).find(
-    ([_, config]) => config.interest === formData.interest
-  )
-
-  if (selectedPlan) {
-    nextStepsMessage.value = selectedPlan[1].nextSteps
-  } else {
-    nextStepsMessage.value = ''
-  }
-}
 
 const validateField = (field: keyof FormErrors) => {
   switch (field) {
@@ -362,11 +237,6 @@ const validateField = (field: keyof FormErrors) => {
         errors.email = 'Email is required'
       } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
         errors.email = 'Please enter a valid email address'
-      }
-      break
-    case 'interest':
-      if (!formData.interest) {
-        errors.interest = 'Please select an option'
       }
       break
     case 'message':
@@ -388,7 +258,6 @@ const validateForm = (): boolean => {
 
   validateField('name')
   validateField('email')
-  validateField('interest')
   validateField('message')
 
   return Object.keys(errors).length === 0

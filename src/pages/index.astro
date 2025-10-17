@@ -4,19 +4,19 @@ import Header from '@components/Header.vue';
 import HeroReference from '@components/home/HeroReference.vue';
 import ValueProposition from '@components/home/ValueProposition.vue';
 import FeaturesGrid from '@components/home/FeaturesGrid.vue';
-import ProductShowcase from '@components/home/ProductShowcase.vue';
+import HowItWorks from '@components/home/HowItWorks.vue';
+import UseCasesGrid from '@components/home/UseCasesGrid.vue';
 import TechnicalDeepDive from '@components/home/TechnicalDeepDive.vue';
 import LearningOutcomes from '@components/home/LearningOutcomes.vue';
-import UseCasesGrid from '@components/home/UseCasesGrid.vue';
-import TechnologyStack from '@components/home/TechnologyStack.vue';
+import Pricing from '@components/home/Pricing.vue';
 import FooterCTA from '@components/home/FooterCTA.vue';
 import Footer from '@components/Footer.vue';
 ---
 
 <Layout
-  title="Navam - 100% Vibe Coding Ready Products for AI Engineers"
-  description="Production AI reference implementations that work first time. Fork working multi-agent systems, study battle-tested patterns, ship in days. 80%+ success rate, 90%+ test coverage, MIT licensed."
-  keywords="vibe coding ready, production AI, reference implementations, multi-agent systems, LangGraph production, AI engineering, Claude agents, prompt engineering, agent coordination, streaming UIs, intelligent caching, for AI engineers, vibe coding"
+  title="Navam - Production AI Code You Can Fork and Ship"
+  description="Multi-agent systems that work first time. Battle-tested in production, fully documented, ready to customize. Fork working code, ship in days, not months. 90%+ test coverage, MIT licensed."
+  keywords="production AI, multi-agent systems, LangGraph production, AI engineering, Claude agents, prompt engineering, agent coordination, streaming UIs, intelligent caching, fork and ship, reference implementation"
   ogImage="/images/logo.png"
   ogType="website"
 >
@@ -25,11 +25,11 @@ import Footer from '@components/Footer.vue';
     <HeroReference client:load />
     <ValueProposition client:load />
     <FeaturesGrid client:load />
-    <ProductShowcase client:load />
+    <HowItWorks client:load />
+    <UseCasesGrid client:load />
     <TechnicalDeepDive client:load />
     <LearningOutcomes client:load />
-    <UseCasesGrid client:load />
-    <TechnologyStack client:load />
+    <Pricing client:load />
     <FooterCTA client:load />
   </main>
   <Footer client:load />
