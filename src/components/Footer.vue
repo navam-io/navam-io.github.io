@@ -142,10 +142,10 @@
         <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div class="flex items-center space-x-2">
             <span class="text-xl font-bold text-gray-900">Navam</span>
-            <span class="text-sm text-gray-600">© 2025 - Production AI Reference Implementations</span>
+            <span class="text-sm text-gray-600">© 2025 - AI product studio. Fork, Vibe, Ship!</span>
           </div>
           <div class="text-sm text-gray-600">
-            <span>100% Vibe Coding Ready Products for AI Engineers</span>
+            <span>Fork working products. Vibe code to make your own. Ship within days!</span>
           </div>
         </div>
 

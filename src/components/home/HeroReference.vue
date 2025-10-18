@@ -10,7 +10,7 @@
         <!-- Main Headline -->
         <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-tight animate-fade-in tracking-tight">
           <span class="titanium-text-3d">
-            Production AI Code<br />You Can Fork and Ship
+            Production AI Code<br />You Can Fork, Vibe, and Ship
           </span>
         </h1>
 
