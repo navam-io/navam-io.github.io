@@ -275,7 +275,7 @@ navam invest</code></pre>
               variant="outline"
               size="sm"
               as="a"
-              href="https://github.com/trendditcom/moments"
+              href="https://github.com/navam-io/moments"
               target="_blank"
               class="bg-white/10 border-white/40 text-white hover:bg-white/20 w-full"
             >
@@ -283,9 +283,9 @@ navam invest</code></pre>
             </Button>
           </Card>
 
-          <!-- Trenddit Client -->
+          <!-- Trends -->
           <Card variant="gradient" gradient="purple" padding="md">
-            <h4 class="text-xl font-bold text-white mb-2">Trenddit Client</h4>
+            <h4 class="text-xl font-bold text-white mb-2">Trends</h4>
             <p class="text-white text-sm mb-4">
               Enterprise Intelligence Platform for strategic technology decisions.
             </p>
@@ -293,7 +293,7 @@ navam invest</code></pre>
               variant="outline"
               size="sm"
               as="a"
-              href="https://github.com/trendditcom/trenddit-client"
+              href="https://github.com/navam-io/trends"
               target="_blank"
               class="bg-white/10 border-white/40 text-white hover:bg-white/20 w-full"
             >
@@ -301,9 +301,9 @@ navam invest</code></pre>
             </Button>
           </Card>
 
-          <!-- Trenddit Memo -->
+          <!-- Memo -->
           <Card variant="gradient" gradient="orange" padding="md">
-            <h4 class="text-xl font-bold text-white mb-2">Trenddit Memo</h4>
+            <h4 class="text-xl font-bold text-white mb-2">Memo</h4>
             <p class="text-white text-sm mb-4">
               Intelligent Knowledge Management Chrome extension with AI-powered tagging.
             </p>
@@ -311,7 +311,7 @@ navam invest</code></pre>
               variant="outline"
               size="sm"
               as="a"
-              href="https://github.com/trendditcom/trenddit-memo"
+              href="https://github.com/navam-io/memo"
               target="_blank"
               class="bg-white/10 border-white/40 text-white hover:bg-white/20 w-full"
             >

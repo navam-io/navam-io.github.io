@@ -124,7 +124,7 @@
             </div>
           </div>
 
-          <!-- Trenddit Client -->
+          <!-- Trends -->
           <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-green-200 hover:border-green-400 transition-all duration-300 hover:shadow-xl">
             <div class="flex items-start gap-4 mb-6">
               <div class="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -133,7 +133,7 @@
                 </svg>
               </div>
               <div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-1">Trenddit Client</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-1">Trends</h3>
                 <p class="text-sm text-green-700 font-medium">Next.js 15 Enterprise Intelligence App</p>
               </div>
             </div>
@@ -179,7 +179,7 @@
             </div>
           </div>
 
-          <!-- Trenddit Memo -->
+          <!-- Memo -->
           <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 border-2 border-orange-200 hover:border-orange-400 transition-all duration-300 hover:shadow-xl">
             <div class="flex items-start gap-4 mb-6">
               <div class="w-14 h-14 bg-orange-600 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -188,7 +188,7 @@
                 </svg>
               </div>
               <div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-1">Trenddit Memo</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-1">Memo</h3>
                 <p class="text-sm text-orange-700 font-medium">Chrome Extension with Multi-Provider AI</p>
               </div>
             </div>

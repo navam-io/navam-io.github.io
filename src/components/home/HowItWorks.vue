@@ -52,7 +52,7 @@
                 2
               </div>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">Customize</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Vibe</h3>
             <p class="text-gray-700 leading-relaxed">
               Adapt agents, prompts, and tools to your use case. Study the working patterns, learn the architecture, make it yours.
             </p>
@@ -65,7 +65,7 @@
             </svg>
           </div>
 
-          <!-- Step 3: Ship -->
+          <!-- Step 3: Vibe -->
           <div class="text-center">
             <div class="relative mb-6">
               <div class="w-24 h-24 mx-auto bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-xl">

@@ -13,18 +13,18 @@
               </a>
             </li>
             <li>
-              <a href="https://github.com/trendditcom/moments" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+              <a href="https://github.com/navam-io/moments" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
                 Moments
               </a>
             </li>
             <li>
-              <a href="https://github.com/trendditcom/trenddit-client" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Trenddit Client
+              <a href="https://github.com/navam-io/trends" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Trends
               </a>
             </li>
             <li>
-              <a href="https://github.com/trendditcom/trenddit-memo" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Trenddit Memo
+              <a href="https://github.com/navam-io/memo" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Memo
               </a>
             </li>
             <li>

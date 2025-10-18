@@ -31,9 +31,9 @@ My most important reasons for using Claude Code are:
 4. **Agents and tools:** Claude Code is agent based from ground up. You can spawn subagents by simply saying "Use a subagent to verify if this implementation works with all edge cases". This subagent could use testing tools specified by you in the Claude memory. Multiple subagents could collaborate over shared context or files they may update together.
 
 
-This approach aligns with Navam's mission to provide lean AI automation solutions. The Trenddit Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
+This approach aligns with Navam's mission to provide lean AI automation solutions. The Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
 
-For organizations looking to implement similar AI-driven workflows, consider how tools like Trenddit Memo can streamline knowledge management and enhance productivity across teams.
+For organizations looking to implement similar AI-driven workflows, consider how tools like Memo can streamline knowledge management and enhance productivity across teams.
 
 ## Setup Claude Code
 

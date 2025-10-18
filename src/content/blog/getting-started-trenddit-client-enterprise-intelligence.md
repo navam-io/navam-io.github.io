@@ -1,14 +1,14 @@
 ---
 layout: "@layouts/BlogPost.astro"
-title: "Getting Started with Trenddit Client: AI-Powered Enterprise Intelligence"
-excerpt: "Complete step-by-step guide to implementing Trenddit Client for enterprise technology decision-making."
+title: "Getting Started with Trends: AI-Powered Enterprise Intelligence"
+excerpt: "Complete step-by-step guide to implementing Trends for enterprise technology decision-making."
 author: "Navam Team"
 date: "2025-01-17" 
 tags: ['Strategic Intelligence', 'Knowledge Discovery']
 featuredImage: "/images/blog/personalized-trends.png"
 ---
 
-# Getting Started with Trenddit Client: AI-Powered Enterprise Intelligence
+# Getting Started with Trends: AI-Powered Enterprise Intelligence
 
 Transform your organization's technology decision-making process from intuition-based guesswork to evidence-driven strategic advantage. This comprehensive implementation guide takes enterprise teams from initial setup to advanced intelligence capabilities in 90 days or less.
 
@@ -20,7 +20,7 @@ Transform your organization's technology decision-making process from intuition-
 
 ### Executive Sponsor Requirements
 
-Successful Trenddit Client implementation requires executive-level commitment and strategic alignment:
+Successful Trends implementation requires executive-level commitment and strategic alignment:
 
 **Chief Technology Officer Engagement**
 - Technology stack assessment and integration planning authority
@@ -66,8 +66,8 @@ Successful Trenddit Client implementation requires executive-level commitment an
 3. **Billing Configuration**: Set up enterprise billing with usage monitoring and cost control parameters ($200-500/month for comprehensive enterprise use)
 4. **Security Implementation**: Configure IP restrictions, rate limiting, and audit logging for enterprise security requirements
 
-**Trenddit Client Platform Access**
-1. **Enterprise Account Setup**: Visit [Trenddit Client](https://github.com/trendditcom/trenddit-client) and follow enterprise installation procedures
+**Trends Platform Access**
+1. **Enterprise Account Setup**: Visit [Trends](https://github.com/navam-io/trends) and follow enterprise installation procedures
 2. **System Configuration**: Configure enterprise settings including data sources, industry focus, and regulatory requirements
 3. **API Key Integration**: Securely integrate OpenAI API credentials through encrypted configuration management
 4. **Connection Testing**: Verify AI analysis functionality and data source integration accuracy
@@ -294,7 +294,7 @@ Your enterprise profile drives personalized intelligence and recommendation accu
 
 ## Conclusion: Your Intelligence-Driven Future
 
-Organizations implementing Trenddit Client systematically outperform competitors in technology decision-making quality, implementation success rates, and strategic market positioning. [McKinsey research](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024) demonstrates that companies with strong AI adoption achieve 72% higher performance in technology investment outcomes.
+Organizations implementing Trends systematically outperform competitors in technology decision-making quality, implementation success rates, and strategic market positioning. [McKinsey research](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024) demonstrates that companies with strong AI adoption achieve 72% higher performance in technology investment outcomes.
 
 The 90-day implementation timeline transforms enterprise technology strategy from reactive decision-making to predictive strategic advantage. Companies completing this transformation report average improvements of:
 
@@ -308,7 +308,7 @@ Transform your organization's technology decision-making capability now, or comp
 
 ---
 
-**Ready to begin your transformation?** Access the Trenddit Client platform at our [GitHub repository](https://github.com/trendditcom/trenddit-client) and follow our comprehensive setup documentation.
+**Ready to begin your transformation?** Access the Trends platform at our [GitHub repository](https://github.com/navam-io/trends) and follow our comprehensive setup documentation.
 
 **Need implementation support?** Contact our enterprise advisory team at hello@trenddit.com for personalized guidance on accelerating your intelligence-driven transformation.
 
@@ -316,7 +316,7 @@ Transform your organization's technology decision-making capability now, or comp
 
 ### Implementation Resources and Support
 
-- [Trenddit Client GitHub Repository](https://github.com/trendditcom/trenddit-client)
+- [Trends GitHub Repository](https://github.com/navam-io/trends)
 - [Enterprise AI Advisory Platform Guide](/blog/enterprise-ai-advisory-platform-technology-decisions)
 - [AI-Driven Trend Analysis Research](/blog/ai-driven-trend-analysis-enterprise-intelligence)
 - [Stanford AI Index 2025](https://hai.stanford.edu/ai-index/2025-ai-index-report)

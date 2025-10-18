@@ -165,7 +165,7 @@ const loadLatestPosts = async () => {
     // Filter out failed loads
     const validPosts = loadedPosts.filter(post => post !== null) as BlogPost[];
     
-    // Prioritize posts: 2 Moments Dashboard, 2 Trenddit Client/AI Intelligence, 1 Trenddit Memo
+    // Prioritize posts: 2 Moments Dashboard, 2 Trends/AI Intelligence, 1 Memo
     const momentsDashboardPosts = validPosts
       .filter(post => 
         post.tags.includes('Moments') || 
@@ -177,21 +177,21 @@ const loadLatestPosts = async () => {
       .sort((a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime())
       .slice(0, 2);
     
-    const trendditClientPosts = validPosts
-      .filter(post => 
+    const trendsPosts = validPosts
+      .filter(post =>
         !momentsDashboardPosts.some(mp => mp.slug === post.slug) &&
-        (post.tags.includes('Trenddit Client') || 
+        (post.tags.includes('Trends') ||
          post.tags.includes('AI Intelligence') ||
          post.tags.includes('Business Intelligence'))
       )
       .sort((a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime())
       .slice(0, 2);
-    
-    const trendditMemoPosts = validPosts
-      .filter(post => 
+
+    const memoPosts = validPosts
+      .filter(post =>
         !momentsDashboardPosts.some(mp => mp.slug === post.slug) &&
-        !trendditClientPosts.some(tc => tc.slug === post.slug) &&
-        (post.tags.includes('Trenddit Memo') || post.tags.includes('trenddit-memo'))
+        !trendsPosts.some(tc => tc.slug === post.slug) &&
+        (post.tags.includes('Memo') || post.tags.includes('memo'))
       )
       .sort((a, b) => new Date(b.date!).getTime() - new Date(a.date!).getTime())
       .slice(0, 1);
@@ -199,8 +199,8 @@ const loadLatestPosts = async () => {
     // Combine in the desired order
     const prioritizedPosts = [
       ...momentsDashboardPosts,
-      ...trendditClientPosts,
-      ...trendditMemoPosts
+      ...trendsPosts,
+      ...memoPosts
     ];
     
     // Fill remaining slots with other posts if needed
@@ -254,11 +254,11 @@ const loadLatestPosts = async () => {
         },
         {
           slug: 'introducing-trenddit-memo-ai-browsing',
-          title: 'Introducing Trenddit Memo: AI-Powered Browsing',
+          title: 'Introducing Memo: AI-Powered Browsing',
           excerpt: 'Transform your browsing experience with our intelligent Chrome extension for knowledge management.',
           featuredImage: '/images/blog/select-content-to-capture.png',
           author: 'Navam Team',
-          tags: ['trenddit-memo', 'ai', 'productivity']
+          tags: ['memo', 'ai', 'productivity']
         }
       ];
     }

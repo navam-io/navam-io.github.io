@@ -84,7 +84,7 @@
               <Button
                 size="sm"
                 as="a"
-                href="https://github.com/trendditcom/moments"
+                href="https://github.com/navam-io/moments"
                 target="_blank"
                 class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium"
               >

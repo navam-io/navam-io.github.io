@@ -128,11 +128,11 @@
             </li>
             <li class="flex items-start gap-2">
               <Icon name="check-circle" size="sm" class="text-orange-500 flex-shrink-0 mt-1" />
-              <span class="text-gray-700">Trenddit Client ($299)</span>
+              <span class="text-gray-700">Trends ($299)</span>
             </li>
             <li class="flex items-start gap-2">
               <Icon name="check-circle" size="sm" class="text-orange-500 flex-shrink-0 mt-1" />
-              <span class="text-gray-700">Trenddit Memo ($299)</span>
+              <span class="text-gray-700">Memo ($299)</span>
             </li>
           </ul>
 

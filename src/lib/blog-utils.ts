@@ -32,7 +32,7 @@ export interface BookContent {
 export interface GenerationOptions {
   targetTone?: 'professional' | 'casual'
   includeResearch?: boolean
-  alignToTrenddit?: boolean
+  alignToNavam?: boolean
 }
 
 export interface GeneratedBlog {
@@ -160,23 +160,23 @@ export function transformToProfessionalTone(content: string): string {
 }
 
 /**
- * Adds Trenddit-specific context and alignment to content
+ * Adds Navam-specific context and alignment to content
  */
-export function alignToTrendditObjectives(content: string): string {
-  const trendditContext = `
-This approach aligns with Trenddit's mission to provide lean AI automation solutions. The Trenddit Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
+export function alignToNavamObjectives(content: string): string {
+  const navamContext = `
+This approach aligns with Navam's mission to provide lean AI automation solutions. The Memo browser extension exemplifies these principles by enabling knowledge workers to capture, organize, and interact with information using AI-powered automation.
 
-For organizations looking to implement similar AI-driven workflows, consider how tools like Trenddit Memo can streamline knowledge management and enhance productivity across teams.
+For organizations looking to implement similar AI-driven workflows, consider how tools like Memo can streamline knowledge management and enhance productivity across teams.
 `
 
-  // Insert Trenddit context after first major section
+  // Insert Navam context after first major section
   const sections = content.split('\n## ')
   if (sections.length > 1) {
-    sections[1] = sections[1] + '\n' + trendditContext
+    sections[1] = sections[1] + '\n' + navamContext
     return sections.join('\n## ')
   }
 
-  return content + '\n' + trendditContext
+  return content + '\n' + navamContext
 }
 
 /**
@@ -194,7 +194,7 @@ export function extractTags(title: string, content: string): string[] {
     { keywords: ['productivity', 'efficiency'], tag: 'productivity' },
     { keywords: ['aws', 'amazon'], tag: 'aws' },
     { keywords: ['knowledge management', 'documentation'], tag: 'knowledge-management' },
-    { keywords: ['trenddit', 'memo'], tag: 'trenddit' }
+    { keywords: ['navam', 'memo', 'trends'], tag: 'navam' }
   ]
 
   tagMappings.forEach(({ keywords, tag }) => {
@@ -218,7 +218,7 @@ export async function generateBlogFromBook(
   options: GenerationOptions = {}
 ): Promise<GeneratedBlog> {
   try {
-    const { targetTone = 'professional', alignToTrenddit = true } = options
+    const { targetTone = 'professional', alignToNavam = true } = options
 
     let content = bookContent.content
 
@@ -227,9 +227,9 @@ export async function generateBlogFromBook(
       content = transformToProfessionalTone(content)
     }
 
-    // Align to Trenddit objectives if requested
-    if (alignToTrenddit) {
-      content = alignToTrendditObjectives(content)
+    // Align to Navam objectives if requested
+    if (alignToNavam) {
+      content = alignToNavamObjectives(content)
     }
 
     // Generate metadata

@@ -163,7 +163,7 @@ Implement comprehensive testing strategies:
 
 ## Integration with Navam Ecosystem
 
-This enterprise workflow approach aligns perfectly with Navam's mission to provide lean AI automation solutions. The Trenddit Memo browser extension demonstrates these principles in action, enabling knowledge workers to:
+This enterprise workflow approach aligns perfectly with Navam's mission to provide lean AI automation solutions. The Memo browser extension demonstrates these principles in action, enabling knowledge workers to:
 
 - Capture information seamlessly during web browsing
 - Organize content using AI-powered categorization

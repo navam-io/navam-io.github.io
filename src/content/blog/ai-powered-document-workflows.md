@@ -471,7 +471,7 @@ class ScalableDocumentProcessor:
 
 This AI-powered document workflow system integrates seamlessly with the Navam ecosystem:
 
-**Trenddit Memo Synergy:**
+**Memo Synergy:**
 - **Browser-to-Document:** Seamlessly capture web content into document workflows
 - **AI-Powered Organization:** Automatically categorize and tag captured content
 - **Cross-Platform Search:** Unified search across browser captures and documents

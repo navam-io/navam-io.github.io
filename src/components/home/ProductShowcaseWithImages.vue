@@ -115,7 +115,7 @@
               </ul>
               <div class="flex flex-wrap gap-4">
                 <a
-                  href="https://github.com/trendditcom/moments"
+                  href="https://github.com/navam-io/moments"
                   target="_blank"
                   class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors font-medium"
                 >
@@ -148,7 +148,7 @@
           </div>
         </div>
 
-        <!-- Trenddit Client - Image Left -->
+        <!-- Trends - Image Left -->
         <div class="mb-32">
           <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <div class="lg:col-span-3">
@@ -163,7 +163,7 @@
                 </div>
                 <img
                   src="/images/blog/trends-intelligence-cards.png"
-                  alt="Trenddit Client Trend Analysis"
+                  alt="Trends Trend Analysis"
                   class="w-full"
                   loading="lazy"
                 />
@@ -173,7 +173,7 @@
               <div class="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-4">
                 Next.js 15 Enterprise App
               </div>
-              <h3 class="text-3xl font-bold text-gray-900 mb-4">Trenddit Client</h3>
+              <h3 class="text-3xl font-bold text-gray-900 mb-4">Trends</h3>
               <p class="text-lg text-gray-600 mb-6">
                 Strategic intelligence platform with tRPC and Supabase. Card-based UI for tracking and analyzing enterprise trends with AI-powered insights.
               </p>
@@ -205,7 +205,7 @@
               </ul>
               <div class="flex flex-wrap gap-4">
                 <a
-                  href="https://github.com/trendditcom/trenddit-client"
+                  href="https://github.com/navam-io/trends"
                   target="_blank"
                   class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors font-medium"
                 >
@@ -220,14 +220,14 @@
           </div>
         </div>
 
-        <!-- Trenddit Memo - Image Right -->
+        <!-- Memo - Image Right -->
         <div class="mb-16">
           <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <div class="lg:col-span-2 order-2 lg:order-1">
               <div class="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-4">
                 Chrome Extension
               </div>
-              <h3 class="text-3xl font-bold text-gray-900 mb-4">Trenddit Memo</h3>
+              <h3 class="text-3xl font-bold text-gray-900 mb-4">Memo</h3>
               <p class="text-lg text-gray-600 mb-6">
                 Knowledge management extension with multi-provider AI. Capture, tag, and chat with your browsing insights using Claude, GPT, Gemini, or local Ollama.
               </p>
@@ -259,7 +259,7 @@
               </ul>
               <div class="flex flex-wrap gap-4">
                 <a
-                  href="https://github.com/trendditcom/trenddit-memo"
+                  href="https://github.com/navam-io/memo"
                   target="_blank"
                   class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors font-medium"
                 >
@@ -279,11 +279,11 @@
                     <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
                     <div class="w-3 h-3 rounded-full bg-green-500"></div>
                   </div>
-                  <div class="flex-1 text-center text-sm text-gray-600 font-medium">Chrome Extension - Trenddit Memo</div>
+                  <div class="flex-1 text-center text-sm text-gray-600 font-medium">Chrome Extension - Memo</div>
                 </div>
                 <img
                   src="/images/blog/save-memo.png"
-                  alt="Trenddit Memo Chrome Extension"
+                  alt="Memo Chrome Extension"
                   class="w-full"
                   loading="lazy"
                 />

@@ -67,7 +67,7 @@
               <Icon name="chart-pie" size="xl" />
             </div>
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Business Intelligence</h3>
-            <p class="text-sm text-gray-600">Reference: <strong>Moments, Trenddit Client</strong></p>
+            <p class="text-sm text-gray-600">Reference: <strong>Moments, Trends</strong></p>
           </div>
 
           <div class="space-y-4">
@@ -117,7 +117,7 @@
               <Icon name="book-open" size="xl" />
             </div>
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Knowledge & Content</h3>
-            <p class="text-sm text-gray-600">Reference: <strong>Trenddit Memo</strong></p>
+            <p class="text-sm text-gray-600">Reference: <strong>Memo</strong></p>
           </div>
 
           <div class="space-y-4">

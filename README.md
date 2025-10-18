@@ -108,7 +108,7 @@ navam invest
 
 ---
 
-### 🔷 [Moments](https://github.com/trendditcom/moments) — Business Intelligence Platform
+### 🔷 [Moments](https://github.com/navam-io/moments) — Business Intelligence Platform
 
 AI-powered business intelligence with knowledge graphs and three-tier analytics.
 
@@ -119,7 +119,7 @@ AI-powered business intelligence with knowledge graphs and three-tier analytics.
 
 ---
 
-### 🔶 [Trenddit Client](https://github.com/trendditcom/trenddit-client) — Enterprise Strategic Intelligence
+### 🔶 [Trends](https://github.com/navam-io/trends) — Enterprise Strategic Intelligence
 
 Multi-agent market analysis and technology impact predictions for strategic decisions.
 
@@ -130,7 +130,7 @@ Multi-agent market analysis and technology impact predictions for strategic deci
 
 ---
 
-### 🔸 [Trenddit Memo](https://github.com/trendditcom/trenddit-memo) — Knowledge Management Extension
+### 🔸 [Memo](https://github.com/navam-io/memo) — Knowledge Management Extension
 
 Chrome extension for knowledge management with AI-powered semantic tagging.
 

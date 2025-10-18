@@ -53,13 +53,13 @@
           </div>
         </Card>
 
-        <!-- Trenddit Client -->
+        <!-- Trends -->
         <Card variant="gradient" gradient="purple" padding="md">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
               <Icon name="chart-bar" size="lg" class="text-white" />
             </div>
-            <h3 class="text-xl font-bold text-white">Trenddit Client</h3>
+            <h3 class="text-xl font-bold text-white">Trends</h3>
           </div>
           <p class="text-white/90 text-sm mb-4 leading-relaxed">
             Strategic intelligence platform for enterprise market analysis and technology trend prediction.
@@ -73,13 +73,13 @@
           </div>
         </Card>
 
-        <!-- Trenddit Memo -->
+        <!-- Memo -->
         <Card variant="gradient" gradient="orange" padding="md">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
               <Icon name="document-text" size="lg" class="text-white" />
             </div>
-            <h3 class="text-xl font-bold text-white">Trenddit Memo</h3>
+            <h3 class="text-xl font-bold text-white">Memo</h3>
           </div>
           <p class="text-white/90 text-sm mb-4 leading-relaxed">
             Chrome extension for AI-powered knowledge management with semantic tagging and multi-provider chat.

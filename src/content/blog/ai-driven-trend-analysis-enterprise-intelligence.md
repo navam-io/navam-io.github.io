@@ -219,7 +219,7 @@ The question is not whether your organization will adopt intelligence-driven tec
 
 ---
 
-**Ready to transform your technology decision-making process?** Learn more about implementing AI-first intelligence systems at [Trenddit Client](https://github.com/trendditcom/trenddit-client) or explore our comprehensive [implementation guide](/blog/getting-started-trenddit-client-enterprise-intelligence).
+**Ready to transform your technology decision-making process?** Learn more about implementing AI-first intelligence systems at [Trends](https://github.com/navam-io/trends) or explore our comprehensive [implementation guide](/blog/getting-started-trenddit-client-enterprise-intelligence).
 
 **Contact our advisory team** at hello@trenddit.com for personalized guidance on leveraging AI-powered enterprise intelligence for your organization's technology strategy.
 
