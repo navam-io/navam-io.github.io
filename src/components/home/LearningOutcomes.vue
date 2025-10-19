@@ -4,14 +4,14 @@
       <!-- Section Headline -->
       <div class="max-w-3xl mx-auto text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 technical-heading">
-          Get All Four Production Codebases
+          Get All Five Production Codebases
         </h2>
         <p class="text-xl text-gray-600">
-          Python TUIs, Next.js dashboards, tRPC apps, and Chrome extensions—master different stacks by studying working production code.
+          Python TUIs, CLI tools, Next.js dashboards, tRPC apps, and Chrome extensions—master different stacks by studying working production code.
         </p>
       </div>
 
-      <!-- 2x2 Product Grid -->
+      <!-- Product Grid (2x2 + 1 centered) -->
       <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         <!-- Navam Invest -->
         <Card variant="gradient" gradient="green" padding="md">
@@ -94,6 +94,30 @@
         </Card>
       </div>
 
+      <!-- Command - Centered in Row 3 -->
+      <div class="max-w-5xl mx-auto mb-12">
+        <div class="max-w-sm mx-auto">
+          <Card variant="gradient" gradient="cyan" padding="md">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                <Icon name="terminal" size="lg" class="text-white" />
+              </div>
+              <h3 class="text-xl font-bold text-white">Command</h3>
+            </div>
+            <p class="text-white/90 text-sm mb-4 leading-relaxed">
+              Terminal AI workspace with 15+ LLMs, 7 providers. Intent-driven workflows with markdown integration.
+            </p>
+            <div class="flex items-center justify-center gap-4 text-xs text-white/80">
+              <span>Python CLI</span>
+              <span>•</span>
+              <span>15+ Models</span>
+              <span>•</span>
+              <span>7 Providers</span>
+            </div>
+          </Card>
+        </div>
+      </div>
+
       <!-- Bundle CTA -->
       <div class="max-w-4xl mx-auto">
         <div class="bg-gradient-to-r from-purple-900 to-blue-900 rounded-3xl p-8 text-center text-white shadow-2xl">
@@ -101,9 +125,9 @@
             <Icon name="box" size="lg" class="text-white" />
             <h3 class="text-3xl font-bold">Senior Engineer Package</h3>
           </div>
-          <p class="text-xl mb-3">Get all 4 products with commercial licenses</p>
+          <p class="text-xl mb-3">Get all 5 products with commercial licenses</p>
           <p class="text-5xl font-black mb-3">$799 <span class="text-lg font-normal text-white/70">one-time</span></p>
-          <p class="text-white/90 mb-6">Regular: $1,196 • Save $397 (33%)</p>
+          <p class="text-white/90 mb-6">Regular: $1,495 • Save $696 (47%)</p>
           <div class="flex justify-center">
             <StripeButton buyButtonId="buy_btn_1SJ5etRCxnzBPkIXogmTaqPH" />
           </div>

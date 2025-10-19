@@ -116,7 +116,7 @@
           <ul class="space-y-3 mb-8">
             <li class="flex items-start gap-2">
               <Icon name="check-circle" size="sm" class="text-orange-500 flex-shrink-0 mt-1" />
-              <span class="text-gray-700 font-medium">All 4 products included</span>
+              <span class="text-gray-700 font-medium">All 5 products included</span>
             </li>
             <li class="flex items-start gap-2">
               <Icon name="check-circle" size="sm" class="text-orange-500 flex-shrink-0 mt-1" />
@@ -134,13 +134,17 @@
               <Icon name="check-circle" size="sm" class="text-orange-500 flex-shrink-0 mt-1" />
               <span class="text-gray-700">Memo ($299)</span>
             </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check-circle" size="sm" class="text-orange-500 flex-shrink-0 mt-1" />
+              <span class="text-gray-700">Command ($299)</span>
+            </li>
           </ul>
 
           <div class="flex justify-center">
             <StripeButton buyButtonId="buy_btn_1SJ5etRCxnzBPkIXogmTaqPH" />
           </div>
 
-          <p class="text-center text-gray-600 text-sm mt-4">Regular: $1,196 • Save 33%</p>
+          <p class="text-center text-gray-600 text-sm mt-4">Regular: $1,495 • Save $696 (47%)</p>
         </div>
       </div>
 

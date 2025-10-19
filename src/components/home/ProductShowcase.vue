@@ -328,7 +328,7 @@ navam invest</code></pre>
             </div>
             <h4 class="text-2xl font-bold">Senior Engineer Package</h4>
           </div>
-          <p class="text-xl mb-4">All 4 Vibe Coding Ready Products</p>
+          <p class="text-xl mb-4">All 5 Vibe Coding Ready Products</p>
           <p class="text-4xl font-black mb-4">$799 <span class="text-lg font-normal text-white/70">one-time</span></p>
           <p class="text-white/90 mb-6">(save $397)</p>
           <Button

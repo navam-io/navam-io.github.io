@@ -185,7 +185,7 @@
 
             <!-- Description -->
             <p class="text-base md:text-lg text-white/90 mb-4">
-              Get all 4 products with commercial licenses
+              Get all 5 products with commercial licenses
             </p>
 
             <!-- Pricing -->
@@ -196,7 +196,7 @@
 
             <!-- Savings -->
             <div class="text-sm text-white/90 mb-6">
-              Regular: $1,196 • Save $397 (33%)
+              Regular: $1,495 • Save $696 (47%)
             </div>
 
             <!-- CTA Button -->
@@ -208,11 +208,11 @@
             <div class="border-t border-white/20 pt-4">
               <div class="grid grid-cols-3 lg:grid-cols-5 gap-3">
                 <div class="metric-badge">
-                  <div class="metric-badge-value">177K+</div>
+                  <div class="metric-badge-value">192K+</div>
                   <div class="metric-badge-label">Lines</div>
                 </div>
                 <div class="metric-badge">
-                  <div class="metric-badge-value">553</div>
+                  <div class="metric-badge-value">598</div>
                   <div class="metric-badge-label">Files</div>
                 </div>
                 <div class="metric-badge">
@@ -220,7 +220,7 @@
                   <div class="metric-badge-label">Agents</div>
                 </div>
                 <div class="metric-badge">
-                  <div class="metric-badge-value">28</div>
+                  <div class="metric-badge-value">42+</div>
                   <div class="metric-badge-label">Commands</div>
                 </div>
                 <div class="metric-badge col-span-3 lg:col-span-1">
@@ -242,7 +242,7 @@ import Button from '@/components/ui/Button.vue'
 import Icon from '@/components/ui/Icon.vue'
 import StripeButton from '@/components/ui/StripeButton.vue'
 
-type ProductId = 'invest' | 'moments' | 'trends' | 'memo'
+type ProductId = 'invest' | 'moments' | 'trends' | 'memo' | 'command'
 
 interface VibeMetrics {
   slashCommands: number
@@ -266,7 +266,8 @@ const products: Product[] = [
   { id: 'invest', name: 'Navam Invest', icon: 'dollar-circle', activeClass: 'bg-gradient-to-r from-green-500 to-emerald-500 text-white' },
   { id: 'moments', name: 'Moments', icon: 'lightning', activeClass: 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white' },
   { id: 'trends', name: 'Trends', icon: 'chart-bar', activeClass: 'bg-gradient-to-r from-purple-500 to-pink-500 text-white' },
-  { id: 'memo', name: 'Memo', icon: 'document-text', activeClass: 'bg-gradient-to-r from-orange-500 to-red-500 text-white' }
+  { id: 'memo', name: 'Memo', icon: 'document-text', activeClass: 'bg-gradient-to-r from-orange-500 to-red-500 text-white' },
+  { id: 'command', name: 'Command', icon: 'terminal', activeClass: 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white' }
 ]
 
 const selectedProduct = ref<ProductId>('invest')
@@ -413,6 +414,38 @@ const metricsData = {
       'Multi-Provider LLM',
       'Privacy-First',
       'YouTube Extract'
+    ]
+  },
+  command: {
+    totalLOC: 15000,
+    sourceFiles: 45,
+    testCoverage: 75,
+    typeSafety: 92,
+    vibeMetrics: {
+      slashCommands: 1,
+      backlogItems: 25,
+      docsFiles: 12,
+      referFiles: 8,
+      specsFiles: 0,
+      claudeMdLines: 374,
+      totalDocs: 20,
+      readinessScore: 95
+    },
+    architecture: [
+      { count: '14+', name: 'CLI Commands' },
+      { count: '7', name: 'Providers' },
+      { count: '15+', name: 'Models' }
+    ],
+    integrations: [
+      { count: '7', name: 'AI Providers' },
+      { count: '15+', name: 'LLM Models' },
+      { count: '4', name: 'Local Models' }
+    ],
+    production: [
+      'Intent Workflows',
+      'Model Testing',
+      'Audit Trail',
+      'Privacy Controls'
     ]
   }
 }
