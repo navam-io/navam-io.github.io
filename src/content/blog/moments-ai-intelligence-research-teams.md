@@ -3,6 +3,7 @@ layout: '@layouts/BlogPost.astro'
 title: 'Moments: AI-Powered Business Intelligence for Research Teams'
 excerpt: 'How advanced AI agents transform market research by automatically detecting and classifying pivotal moments across 100+ companies and enterprise disruption patterns, delivering 95% faster strategic insights.'
 tags: ['Strategic Intelligence', 'Knowledge Discovery']
+relatedPosts: ["moments-dashboard-three-tier-analytics", "moments-correlation-matrix-analytics", "ai-powered-business-intelligence-end-users"]
 featuredImage: '/images/blog/moments.png'
 ---
 

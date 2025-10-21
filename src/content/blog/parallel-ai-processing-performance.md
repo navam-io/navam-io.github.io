@@ -5,6 +5,7 @@ date: '2025-01-15'
 author: 'Navam Advisory Team'
 excerpt: 'How Moments achieves enterprise-scale AI processing performance through parallel sub-agent architecture, intelligent batching, and sophisticated progress tracking, delivering 400% performance improvement over sequential processing.'
 tags: ['Performance & Cost', 'System Architecture']
+relatedPosts: ["file-system-persistence-real-time-ai", "moments-ai-intelligence-research-teams", "coding-with-claude-code"]
 featuredImage: '/images/blog/agents.png'
 ---
 

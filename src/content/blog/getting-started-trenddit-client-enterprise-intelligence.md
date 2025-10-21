@@ -5,6 +5,7 @@ excerpt: "Complete step-by-step guide to implementing Trends for enterprise tech
 author: "Navam Team"
 date: "2025-01-17" 
 tags: ['Strategic Intelligence', 'Knowledge Discovery']
+relatedPosts: ["enterprise-ai-advisory-platform-technology-decisions", "ai-driven-trend-analysis-enterprise-intelligence", "ai-powered-business-intelligence-end-users"]
 featuredImage: "/images/blog/personalized-trends.png"
 ---
 

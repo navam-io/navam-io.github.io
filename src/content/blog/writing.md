@@ -6,6 +6,7 @@ author: "Navam Team"
 excerpt: "Master vibe writing workflows using natural language prompts with LLMs to create, enhance, and organize text content."
 featuredImage: "/images/blog/vibe-writing-summaries.png"
 tags: ["ai", "automation", "development", "workflows", "productivity", "aws", "knowledge-management", "trenddit", "Memo", "Lean Workflows"]
+relatedPosts: ["command-workflows-markdown-obsidian-vscode", "vibe-coding", "introducing-command-ai-productivity-terminal"]
 ---
 
 

@@ -5,6 +5,7 @@ date: '2025-01-12'
 author: 'Navam Advisory Team'
 excerpt: 'Discover hidden connections in the AI ecosystem through force-directed network visualization with 237+ entities and 1,814 relationships, revealing strategic patterns and market dynamics.'
 tags: ['Strategic Intelligence', 'Data Visualization', 'Knowledge Discovery']
+relatedPosts: ["moments-factor-analytics-sunburst-visualization", "moments-correlation-matrix-analytics", "moments-ai-intelligence-research-teams"]
 featuredImage: '/images/blog/graph.png'
 ---
 

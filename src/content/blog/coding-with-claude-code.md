@@ -6,6 +6,7 @@ author: "Navam Team"
 excerpt: "Explore the killer app of GenAI 2025 - vibe coding - and how Claude Code is revolutionizing software development."
 featuredImage: "/images/blog/vscode-claude-code-puppeteer.png"
 tags: ['Development Acceleration']
+relatedPosts: ["vibe-coding", "parallel-ai-processing-performance", "file-system-persistence-real-time-ai"]
 ---
 
 

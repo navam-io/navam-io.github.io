@@ -6,6 +6,7 @@ author: "Navam Team"
 excerpt: "Learn how Command transforms partial ideas into polished content through intent-driven workflows that integrate seamlessly with your favorite markdown tools."
 featuredImage: "/images/blog/command-workflows.png"
 tags: ['AI Tools', 'Productivity', 'Workflows', 'Content Creation']
+relatedPosts: ["introducing-command-ai-productivity-terminal", "writing", "vibe-coding"]
 ---
 
 ## Transform Partial Ideas into Complete Content

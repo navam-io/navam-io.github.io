@@ -5,6 +5,7 @@ excerpt: "How Trends revolutionizes enterprise technology adoption with AI-first
 author: "Navam Team"  
 date: "2025-01-16"
 tags: ['Strategic Intelligence']
+relatedPosts: ["ai-driven-trend-analysis-enterprise-intelligence", "getting-started-trenddit-client-enterprise-intelligence", "ai-powered-business-intelligence-end-users"]
 featuredImage: "/images/blog/trenddit-workflow.png"
 ---
 

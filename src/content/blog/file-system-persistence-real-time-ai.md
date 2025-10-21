@@ -3,6 +3,7 @@ layout: '@layouts/BlogPost.astro'
 title: 'File-System-First AI: Building Persistent, Real-Time Business Intelligence'
 excerpt: 'How Moments achieves production-grade AI application architecture with human-readable file persistence, incremental processing, and real-time progress tracking for enterprise data sovereignty.'
 tags: ['Knowledge Discovery', 'System Architecture']
+relatedPosts: ["parallel-ai-processing-performance", "moments-ai-intelligence-research-teams", "coding-with-claude-code"]
 featuredImage: '/images/blog/moments.png'
 ---
 

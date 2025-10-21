@@ -4,6 +4,7 @@ import Header from '@components/Header.vue';
 import Footer from '@components/Footer.vue';
 import TableOfContents from '@components/TableOfContents.vue';
 import RelatedPosts from '@components/RelatedPosts.vue';
+import { getCollection } from 'astro:content';
 
 export interface Props {
   frontmatter: {
@@ -21,8 +22,18 @@ export interface Props {
 const { frontmatter } = Astro.props;
 const { title, date, author = 'Navam Team', excerpt, featuredImage, relatedPosts, tags = [] } = frontmatter;
 
-// Get all blog posts for related posts functionality
-const allPosts = await import.meta.glob('../pages/blog/*.{md,mdx}', { eager: true });
+// Get all blog posts for related posts functionality from content collections
+const allBlogPosts = await getCollection('blog');
+const allPosts = allBlogPosts.map(post => ({
+  url: `/blog/${post.slug}`,
+  frontmatter: {
+    title: post.data.title,
+    excerpt: post.data.excerpt || post.data.description || '',
+    featuredImage: post.data.featuredImage || post.data.image?.url || '/images/blog/vibe-coding-workflows.png',
+    author: post.data.author || 'Navam Team',
+    tags: post.data.tags || []
+  }
+}));
 
 // Create structured data for blog post
 const articleStructuredData = {
@@ -145,10 +156,10 @@ const articleStructuredData = {
           </div>
           
           <!-- Related Posts Section -->
-          <RelatedPosts 
-            client:load 
+          <RelatedPosts
+            client:load
             relatedPostSlugs={relatedPosts}
-            allPosts={Object.entries(allPosts).map(([path, post]) => ({ ...post, url: path.replace('../pages', '').replace(/\.mdx?$/, '') }))}
+            allPosts={allPosts}
           />
           
           <div class="mt-12 pt-8 border-t">

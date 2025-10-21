@@ -6,6 +6,7 @@ author: "Navam Team"
 excerpt: "Discover the rails required to achieve production quality results when generating apps using Claude Code and AI automation."
 featuredImage: "/images/blog/vibe-coding-workflows.png"
 tags: ['Development Acceleration']
+relatedPosts: ["coding-with-claude-code", "introducing-command-ai-productivity-terminal", "writing"]
 ---
 
 

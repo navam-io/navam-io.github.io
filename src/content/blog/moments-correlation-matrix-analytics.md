@@ -5,6 +5,7 @@ date: '2025-01-12'
 author: 'Navam Advisory Team'
 excerpt: 'Transform qualitative AI industry connections into precise quantitative insights through advanced correlation coefficients, hierarchical clustering, and statistical relationship measurement.'
 tags: ['Strategic Intelligence', 'Data Visualization']
+relatedPosts: ["moments-dashboard-three-tier-analytics", "moments-factor-analytics-sunburst-visualization", "moments-knowledge-graph-network-visualization"]
 featuredImage: '/images/blog/matrix.png'
 ---
 

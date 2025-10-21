@@ -5,6 +5,7 @@ excerpt: "Discover how AI-first intelligence systems transform enterprise techno
 author: "Navam Team"
 date: "2025-01-15"
 tags: ['Strategic Intelligence']
+relatedPosts: ["enterprise-ai-advisory-platform-technology-decisions", "getting-started-trenddit-client-enterprise-intelligence", "ai-powered-business-intelligence-end-users"]
 featuredImage: "/images/blog/trends-intelligence-cards.png"
 ---
 

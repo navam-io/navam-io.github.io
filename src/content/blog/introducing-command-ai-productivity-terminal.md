@@ -6,6 +6,7 @@ author: "Navam Team"
 excerpt: "Turn your Terminal into a configurable, interactive AI workspace with 15+ LLMs and 7 providers at your fingertips. Command is all you need."
 featuredImage: "/images/blog/command-hero.png"
 tags: ['AI Tools', 'Productivity', 'CLI', 'Development Acceleration']
+relatedPosts: ["command-workflows-markdown-obsidian-vscode", "coding-with-claude-code", "vibe-coding"]
 ---
 
 ## Command Is All You Need

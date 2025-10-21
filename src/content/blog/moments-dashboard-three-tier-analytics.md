@@ -5,6 +5,7 @@ date: '2025-01-12'
 author: 'Navam Advisory Team'
 excerpt: 'Transform AI industry data into strategic insights with Moments three-tier analytics dashboard featuring real-time KPIs, correlation intelligence, and factor analysis across strategic, tactical, and operational levels.'
 tags: ['Strategic Intelligence', 'Data Visualization']
+relatedPosts: ["moments-correlation-matrix-analytics", "moments-factor-analytics-sunburst-visualization", "moments-ai-intelligence-research-teams"]
 featuredImage: '/images/blog/dashboard.png'
 ---
 
