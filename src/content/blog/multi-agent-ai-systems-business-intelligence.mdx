@@ -1,10 +1,12 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: 'Multi-Agent AI Systems: Production-Grade Business Intelligence for Enterprise'
 excerpt: 'Advanced techniques for building specialized AI agent architectures using Claude Sonnet 4, sophisticated prompt engineering, and hybrid classification systems to transform business content into actionable intelligence.'
 tags: ['System Architecture', 'Strategic Intelligence']
 featuredImage: '/images/blog/agents.png'
 ---
+
+import ProductCard from '@/components/blog/ProductCard.vue';
+import BreakoutSection from '@/components/blog/BreakoutSection.vue';
 
 # Multi-Agent AI Systems: Production-Grade Business Intelligence for Enterprise
 
@@ -261,6 +263,14 @@ The Moments multi-agent system delivers measurable business value for enterprise
 - **Continuous improvement** through performance monitoring and drift detection
 
 Research from [Harvard Business Review's 2024 AI Strategy report](https://hbr.org/topic/subject/artificial-intelligence) shows that organizations using multi-agent AI systems for business intelligence achieve 60% faster decision-making cycles and 45% improvement in strategic planning accuracy.
+
+## See Moments in Action
+
+Everything described above is production code you can explore and deploy. The Moments platform implements this exact multi-agent architecture with real business intelligence dashboards:
+
+<BreakoutSection client:load>
+  <ProductCard client:load product="moments" imagePosition="right" />
+</BreakoutSection>
 
 ---
 

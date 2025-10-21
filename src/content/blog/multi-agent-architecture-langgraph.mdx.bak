@@ -9,9 +9,6 @@ readingTime: "10 min"
 featured: false
 ---
 
-import ProductCard from '@/components/blog/ProductCard.vue';
-import BreakoutSection from '@/components/blog/BreakoutSection.vue';
-
 Single AI agents are impressive. But multi-agent systems? They're transformative. When specialized AI agents collaborate, they can tackle problems that no single agent could solve alone. This is the architecture powering Navam Invest—and in this post, we'll show you exactly how it works.
 
 ## Why Multi-Agent Systems?
@@ -271,14 +268,6 @@ Want to build your own? Here's the path:
 4. **Implement with LangGraph:** Start with simple sequential workflows
 5. **Add Complexity Gradually:** Parallel execution, conditional routing, iterations
 
-## See the Architecture in Production
-
-Everything described in this article is live code you can explore and run. Navam Invest implements this exact LangGraph architecture with all 10 specialized agents working together:
-
-<BreakoutSection client:load>
-  <ProductCard client:load product="invest" imagePosition="right" />
-</BreakoutSection>
-
 ## Conclusion
 
 Multi-agent AI systems represent a paradigm shift in how we solve complex problems. By combining specialized expertise with intelligent orchestration, we can build systems that match or exceed human expert performance.
@@ -286,3 +275,11 @@ Multi-agent AI systems represent a paradigm shift in how we solve complex proble
 Navam Invest proves this approach works at production scale. Ten specialized agents, multiple collaborative workflows, all running on your laptop—delivering professional-grade investment intelligence.
 
 The future of AI isn't single super-models. It's specialized agents working together, orchestrated by frameworks like LangGraph.
+
+---
+
+### Explore the Architecture
+
+See Navam Invest's multi-agent system in action.
+
+[Try it Now](/#get-started) | [View on GitHub](https://github.com/navam-io/navam-invest)

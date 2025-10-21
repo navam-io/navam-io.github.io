@@ -9,9 +9,6 @@ readingTime: "8 min"
 featured: false
 ---
 
-import ProductCard from '@/components/blog/ProductCard.vue';
-import BreakoutSection from '@/components/blog/BreakoutSection.vue';
-
 When you're building an AI-powered investment platform, API costs can quickly spiral out of control. Financial data APIs charge per request, and with 10 AI agents making dozens of API calls per analysis, costs add up fast.
 
 We solved this with smart API caching—and the results were dramatic: **90% cost reduction** and **100x speed improvement** for cached data.
@@ -307,14 +304,6 @@ Expire data based on actual changes, not fixed TTL
 
 Compress cached responses for larger storage capacity
 
-## Experience Smart Caching in Production
-
-All the caching strategies described above are live in Navam Invest. Experience instant investment intelligence with sub-100ms responses powered by intelligent DuckDB caching:
-
-<BreakoutSection client:load>
-  <ProductCard client:load product="invest" imagePosition="left" />
-</BreakoutSection>
-
 ## Conclusion
 
 Smart API caching transformed Navam Invest's economics and performance:
@@ -327,3 +316,11 @@ Smart API caching transformed Navam Invest's economics and performance:
 DuckDB proved to be the perfect caching solution: fast, embedded, zero configuration, and production-ready.
 
 If you're building AI agents that make frequent API calls, implement smart caching early. Your users (and wallet) will thank you.
+
+---
+
+### See It In Action
+
+Try Navam Invest and experience instant investment intelligence powered by smart caching.
+
+[Get Started](/#get-started)

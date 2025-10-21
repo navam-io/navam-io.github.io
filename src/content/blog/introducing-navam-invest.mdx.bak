@@ -9,9 +9,6 @@ readingTime: "5 min"
 featured: true
 ---
 
-import ProductCard from '@/components/blog/ProductCard.vue';
-import BreakoutSection from '@/components/blog/BreakoutSection.vue';
-
 ## The Problem with Traditional Wealth Management
 
 Retail investors managing portfolios between $50K and $1M face a dilemma. Professional wealth management services charge $1,000-$10,000 per year, putting comprehensive investment research out of reach for most individual investors. At the same time, making informed investment decisions requires analyzing earnings reports, understanding macroeconomic trends, evaluating risk exposures, and optimizing tax strategies.
@@ -100,14 +97,6 @@ We built Navam Invest using Textual, a modern Python framework for building soph
 ## Fully Open Source
 
 Navam Invest is completely open source under the MIT license. You can inspect every line of code, understand how decisions are made, and even modify it for your needs. We've also documented all the prompts used to generate the application—full transparency from code to creation.
-
-## Get Started with Navam Invest
-
-Everything described above is production-ready code. Explore the full multi-agent architecture, review test coverage, and start using professional investment intelligence on your laptop:
-
-<BreakoutSection client:load>
-  <ProductCard client:load product="invest" imagePosition="left" />
-</BreakoutSection>
 
 ## Join the Beta
 

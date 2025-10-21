@@ -16,6 +16,19 @@ The flagship product is **Navam Invest** - an AI-powered investment intelligence
     - `logo-circle.png` - Navam logo (750KB)
     - `palette.png` - Color palette reference (1.9MB)
     - `navam-invest/` - Product UI screenshots (7 images showing various app states)
+  - `refer/astro-docs/` - Astro v5.14.5 documentation (244KB total, LLM-optimized)
+    - `README.md` - Documentation map and usage guide
+    - `getting-started.md` - Quick start and introduction
+    - `develop-and-build.md` - Dev server, build process, workflow
+    - `integration-vue.md` - Vue 3 integration (@astrojs/vue v5.1.1)
+    - `integration-mdx.md` - MDX integration (@astrojs/mdx v4.3.7)
+    - `integration-tailwind.md` - Tailwind CSS integration
+    - `content-collections.md` - Type-safe content collections API
+    - `markdown-content.md` - Working with markdown
+    - `routing.md` - File-based routing and dynamic routes
+    - `api-reference.md` - Complete Astro API reference
+    - `configuration-reference.md` - astro.config.mjs options
+    - `upgrade-to-v5.md` - v5 breaking changes and migration
 - `backlog/` - Feature tracking and project management
   - `active.md` - Open backlog items
   - `release-semver.md` - Closed features organized by semantic version releases
@@ -48,13 +61,14 @@ This project uses custom Claude Code commands for streamlined development:
 
 ### Website Development Guidelines
 
-**Design System Requirements:**
-- Use **pastel gradients** throughout the design
-- Implement a **modern type system**
-- Apply appropriate **whitespace** for clean layouts
-- Add **subtle CSS animations** for interactivity
-- Reference `refer/images/palette.png` for color palette (pastel tones)
-- Integrate `refer/images/logo-circle.png` as the brand logo
+**Design System Requirements (Apple-inspired, Bold, Professional):**
+- Use **dark, vivid gradients** (600-900 range): `from-pink-900 to-purple-900`, `from-blue-600 to-indigo-600`
+- Implement **glass morphism**: `backdrop-blur-xl` with transparency (`bg-white/10`)
+- Apply **strong contrast**: Dark backgrounds, white text, bold CTAs
+- Use **epic typography**: `font-black` for headings, tight letter-spacing
+- Add **scale & shadow animations**: `hover:scale-105`, `shadow-2xl`, colored glows
+- Reference existing components: `Card.vue`, `Hero.vue`, `Button.vue` for patterns
+- **NOT pastel** - Bold, saturated, professional aesthetic
 
 **Content Sources:**
 - Product specs: `refer/specs/brief.md`
@@ -73,6 +87,26 @@ This project uses custom Claude Code commands for streamlined development:
 The user manages their own build and preview process in a separate terminal. Only start the dev server if:
 1. You need it for your own testing, OR
 2. The user explicitly asks you to start it
+
+### Astro Development Skill
+
+**Skill location:** `.claude/skills/astro/`
+
+This project has a dedicated **Astro Development Skill** that automatically provides:
+- Project-specific Astro patterns with design system enforcement
+- Progressive disclosure from `refer/astro-docs/` (244KB comprehensive documentation)
+- Curated guidance for Vue 3 integration, content collections, routing, and styling
+- Build configuration and deployment patterns
+
+The skill triggers automatically when working on Astro code and loads relevant documentation based on your specific task. It enforces:
+- **Pastel gradient** design system
+- **Vue client directives** for proper hydration
+- **Type-safe content collections** for blog posts
+- **Static site generation** optimized for GitHub Pages
+
+**Direct documentation access** (when needed outside skill context):
+- Complete docs: `refer/astro-docs/`
+- Documentation map: `refer/astro-docs/README.md`
 
 ### Astro Development Server
 
