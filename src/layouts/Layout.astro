@@ -19,7 +19,7 @@ const {
   ogImage = '/android-chrome-512x512.png',
   ogType = 'website',
   twitterCard = 'summary_large_image',
-  canonicalURL = new URL(Astro.url.pathname, Astro.site).toString(),
+  canonicalURL = Astro.url.toString(),
   author = 'Navam Team'
 } = Astro.props;
 
