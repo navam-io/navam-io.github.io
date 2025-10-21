@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: 'Interactive Knowledge Graph: Network Visualization for AI Industry Intelligence'
 date: '2025-01-12'
 author: 'Navam Advisory Team'

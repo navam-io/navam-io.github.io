@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: 'AI-Powered Business Intelligence for Enterprise Decision-Makers'
 excerpt: 'How Moments transforms overwhelming AI industry information into clear, actionable insights for business professionals, executives, and decision-makers seeking competitive advantage.'
 tags: ['Strategic Intelligence', 'Knowledge Discovery']

@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Introducing Memo: Transform Your Browsing into AI Conversations"
 date: "2025-07-06"
 author: "Navam Team"

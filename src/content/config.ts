@@ -19,7 +19,6 @@ const blog = defineCollection({
     }).optional(),
     featuredImage: z.string().optional(),
     // Legacy-specific fields
-    layout: z.string().optional(),
     relatedPosts: z.array(z.string()).optional(),
     // Common fields
     author: z.string().default('Navam Team'),

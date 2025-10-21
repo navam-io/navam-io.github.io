@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Product Vision Driven Development: AI Solutions Architecture with Strategic Focus"
 date: "2025-07-05"
 author: "Navam Team"

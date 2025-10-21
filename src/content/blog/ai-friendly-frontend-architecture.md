@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "AI-Friendly Frontend Architecture: Building Modern React Applications with AI Integration"
 date: "2025-07-05"
 author: "Navam Team"

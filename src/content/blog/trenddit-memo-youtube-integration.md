@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Memo YouTube Integration: Chat with Video Content Using AI"
 date: "2025-07-06"
 author: "Navam Team"

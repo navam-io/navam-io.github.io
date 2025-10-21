@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Enterprise AI Development Workflows: Scaling AI Automation for Complex Projects"
 date: "2025-07-05"
 author: "Navam Team"

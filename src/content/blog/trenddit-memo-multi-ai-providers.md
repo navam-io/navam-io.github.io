@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Memo Multi-AI Provider Support: Claude, GPT, Gemini, and Local Ollama"
 date: "2025-07-06"
 author: "Navam Team"

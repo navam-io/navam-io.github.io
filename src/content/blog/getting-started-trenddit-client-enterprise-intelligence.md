@@ -1,5 +1,4 @@
 ---
-layout: "@layouts/BlogPost.astro"
 title: "Getting Started with Trends: AI-Powered Enterprise Intelligence"
 excerpt: "Complete step-by-step guide to implementing Trends for enterprise technology decision-making."
 author: "Navam Team"

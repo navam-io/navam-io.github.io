@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Complete Privacy with Ollama: Local AI Processing in Memo"
 date: "2025-07-06"
 author: "Navam Team"

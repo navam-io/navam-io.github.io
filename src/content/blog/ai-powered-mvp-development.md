@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "AI-Powered MVP Development: Building VibeSolver with Vibe-Friendly Technology Stack"
 date: "2025-07-05"
 author: "Navam Team"

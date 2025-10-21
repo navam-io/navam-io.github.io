@@ -1,5 +1,4 @@
 ---
-layout: "@layouts/BlogPost.astro"
 title: "AI-Driven Trend Analysis: Enterprise Intelligence Systems for Technology Decisions"
 excerpt: "Discover how AI-first intelligence systems transform enterprise technology adoption decisions through multi-agent reasoning and predictive analysis."
 author: "Navam Team"

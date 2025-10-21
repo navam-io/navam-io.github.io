@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Sprint-Driven AI Development: Incremental Feature Slicing with VibeFlow"
 date: "2025-07-05"
 author: "Navam Team"

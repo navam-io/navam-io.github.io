@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: 'Correlation Matrix Analytics: Quantifying AI Industry Relationships'
 date: '2025-01-12'
 author: 'Navam Advisory Team'

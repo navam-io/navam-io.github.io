@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: 'Moments Dashboard: Three-Tier Analytics for AI Business Intelligence'
 date: '2025-01-12'
 author: 'Navam Advisory Team'

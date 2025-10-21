@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "AI-Powered Document Workflows: Intelligent Content Management and Automation"
 date: "2025-07-05"
 author: "Navam Team"

@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Command Workflows: Supercharge Your Content Creation with Markdown, Obsidian, and VS Code"
 date: "2025-10-19"
 author: "Navam Team"

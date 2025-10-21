@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Coding with Claude Code"
 date: "2025-07-05"
 author: "Navam Team"

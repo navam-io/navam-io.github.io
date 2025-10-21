@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "AWS Solutions Architecture Automation: AI-Powered Cloud Solution Generation"
 date: "2025-07-05"
 author: "Navam Team"

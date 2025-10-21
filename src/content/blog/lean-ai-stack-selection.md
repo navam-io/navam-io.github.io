@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Lean AI Stack Selection: Complete Technology Foundation Guide"
 date: "2025-07-05"
 author: "Navam Team"

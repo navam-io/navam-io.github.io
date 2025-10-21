@@ -20,7 +20,6 @@ const frontmatter = {
   author: post.data.author,
   excerpt: post.data.excerpt || post.data.description,
   featuredImage: post.data.featuredImage || post.data.image?.url,
-  layout: '@layouts/BlogPost.astro',
   tags: post.data.tags || [],
   relatedPosts: post.data.relatedPosts || [],
 };

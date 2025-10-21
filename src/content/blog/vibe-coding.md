@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Vibe Coding"
 date: "2025-07-05"
 author: "Navam Team"

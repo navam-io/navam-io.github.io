@@ -1,5 +1,4 @@
 ---
-layout: "@layouts/BlogPost.astro"
 title: "Enterprise AI Advisory Platform: Transforming Technology Investment Decisions"
 excerpt: "How Trends revolutionizes enterprise technology adoption with AI-first intelligence and predictive forecasting."
 author: "Navam Team"  

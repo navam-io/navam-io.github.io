@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: 'Factor Distribution Analytics: Advanced Sunburst Charts for AI Intelligence'
 date: '2025-01-12'
 author: 'Navam Advisory Team'

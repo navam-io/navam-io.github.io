@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Memo Privacy-First Design: Local Storage and Encrypted API Keys"
 date: "2025-07-06"
 author: "Navam Team"

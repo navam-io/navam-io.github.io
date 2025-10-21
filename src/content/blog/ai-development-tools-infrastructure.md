@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "AI Development Tools & Infrastructure: Modern DevOps for AI-Powered Applications"
 date: "2025-07-05"
 author: "Navam Team"

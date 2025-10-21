@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "AI Automation Best Practices: Essential Workflows for Enterprise Development"
 date: "2025-07-05"
 author: "Navam Team"

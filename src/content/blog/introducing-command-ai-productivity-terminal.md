@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: "Introducing Command: Supercharge Your Terminal with AI"
 date: "2025-10-19"
 author: "Navam Team"

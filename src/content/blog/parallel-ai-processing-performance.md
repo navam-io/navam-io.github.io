@@ -1,5 +1,4 @@
 ---
-layout: '@layouts/BlogPost.astro'
 title: 'Parallel AI Processing: 10x Performance Through Intelligent Agent Orchestration'
 date: '2025-01-15'
 author: 'Navam Advisory Team'
