@@ -1,5 +1,5 @@
 <template>
-  <div v-if="relatedPosts && relatedPosts.length > 0" class="mt-16 pt-8 border-t border-gray-200" data-related-posts>
+  <div v-if="relatedPosts.length > 0" class="mt-16 pt-8 border-t border-gray-200" data-related-posts>
     <h3 class="text-2xl font-bold mb-8 text-center">Related Articles</h3>
     
     <!-- Carousel Container -->
@@ -173,20 +173,29 @@ const loadRelatedPosts = async () => {
   try {
     // If allPosts is provided, use it
     if (props.allPosts && props.allPosts.length > 0) {
-      relatedPosts.value = props.allPosts
-        .filter(post => {
-          const slug = getSlugFromUrl(post.url);
-          return props.relatedPostSlugs!.includes(slug);
+      // Map related post slugs to find matching posts
+      relatedPosts.value = props.relatedPostSlugs
+        .map(requestedSlug => {
+          // Find the post that matches this slug
+          const matchingPost = props.allPosts!.find(post => {
+            const postSlug = getSlugFromUrl(post.url);
+            return postSlug === requestedSlug;
+          });
+
+          if (matchingPost) {
+            return {
+              slug: requestedSlug,
+              title: matchingPost.frontmatter.title,
+              excerpt: matchingPost.frontmatter.excerpt || '',
+              featuredImage: matchingPost.frontmatter.featuredImage || '/images/blog/vibe-coding-workflows.png',
+              author: matchingPost.frontmatter.author || 'Navam Team',
+              tags: matchingPost.frontmatter.tags || []
+            };
+          }
+          return null;
         })
-        .map(post => ({
-          slug: getSlugFromUrl(post.url),
-          title: post.frontmatter.title,
-          excerpt: post.frontmatter.excerpt,
-          featuredImage: post.frontmatter.featuredImage || '/images/blog/vibe-coding-workflows.png',
-          author: post.frontmatter.author || 'Navam Team',
-          tags: post.frontmatter.tags || []
-        }));
-    } else {
+        .filter((post): post is RelatedPost => post !== null);
+    } else{
       // Fallback: try to fetch posts dynamically
       const postPromises = props.relatedPostSlugs.map(async (slug) => {
         try {
