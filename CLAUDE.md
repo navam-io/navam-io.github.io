@@ -142,57 +142,71 @@ This is an **Astro static site** with the following stack:
 
 ## Git Workflow & GitHub Pages Deployment
 
-**CRITICAL: GitHub Pages deploys from the `main` branch only.**
+### 🚨 CRITICAL DEPLOYMENT POLICY 🚨
 
-### Standard Workflow for Commits
+**DO NOT PUSH TO `main` BRANCH UNLESS EXPLICITLY INSTRUCTED BY USER.**
 
-When committing and deploying changes:
+**Mandatory Workflow:**
+1. Make code changes and commit locally
+2. Build the site: `npm run build`
+3. Preview locally (user will do this in separate terminal)
+4. **WAIT for user to confirm "publish ready"**
+5. Only then push to `main` to trigger deployment
 
+**Reasoning:**
+- Pushing to `main` immediately triggers GitHub Pages deployment
+- User must verify changes locally before publishing to production
+- Prevents publishing broken or unwanted changes to live site
+
+### Standard Workflow for Local Development
+
+**Step 1: Commit Changes Locally**
 ```bash
-# 1. Stage all changes
+# Stage all changes
 git add .
 
-# 2. Commit with descriptive message
+# Commit with descriptive message (but DO NOT push yet!)
 git commit -m "Your commit message"
-
-# 3. Push to BOTH master and main branches
-git push origin master
-git push origin master:main
 ```
 
-**Why push to both branches?**
-- `master`: Development branch for local work
-- `main`: Deployment branch monitored by GitHub Actions
-- GitHub Pages only deploys from `main`
-
-### Important Notes
-
-- **Always push to `main`** to trigger GitHub Pages deployment
-- GitHub Actions workflow (`Deploy to GitHub Pages`) runs on push to `main`
-- Deployment typically takes 2-5 minutes
-- Monitor deployment: https://github.com/navam-io/navam-io.github.io/actions
-
-### Branch Synchronization
-
-Both `main` and `master` should stay in sync. If they diverge:
-
+**Step 2: Build and Test Locally**
 ```bash
-# Force sync master to main
-git checkout master
-git push origin master:main --force
+# Build the site
+npm run build
 
-# Update local main
-git checkout main
-git reset --hard origin/main
+# User will preview in separate terminal
+# DO NOT spawn dev server automatically
 ```
 
-### Custom Commit Command
+**Step 3: Wait for User Approval**
+- User will test the built site locally
+- User will explicitly instruct: "publish" or "deploy" when ready
 
-Use `/code/commit` slash command which automatically:
-1. Runs `git add .`
-2. Creates an appropriate commit message
-3. Commits changes
-4. **Pushes to BOTH master and main branches** (ensuring deployment)
+**Step 4: Deploy to Production (ONLY when instructed)**
+```bash
+# Only run this when user says "publish" or "deploy"
+git push origin main
+```
+
+### GitHub Actions Deployment
+
+- **Trigger:** Push to `main` branch
+- **Workflow:** Deploy to GitHub Pages (automated)
+- **Duration:** Typically 2-5 minutes
+- **Monitor:** https://github.com/navam-io/navam-io.github.io/actions
+
+### Branch Structure
+
+- `main`: Production deployment branch (protected - only push when instructed)
+- `master`: Not currently used (repository is on `main` branch)
+
+### Important Reminders
+
+- ✅ **DO**: Build locally, commit locally, test locally
+- ✅ **DO**: Wait for explicit user instruction before deploying
+- ❌ **DO NOT**: Push to `main` automatically after committing
+- ❌ **DO NOT**: Deploy without user confirmation
+- ❌ **DO NOT**: Assume changes are ready to publish
 
 The repository has permissions preconfigured for: add, commit, push, checkout, log, reset, pull, rebase, merge, remote operations.
 
