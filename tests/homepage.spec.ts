@@ -68,7 +68,8 @@ test.describe('Homepage', () => {
         // Filter out expected errors that don't indicate real problems
         const isExpectedError =
           text.includes('Potential permissions policy violation') || // Stripe button warnings
-          text.includes('Hydration completed but contains mismatches'); // Known hydration issue
+          text.includes('Hydration completed but contains mismatches') || // Known hydration issue
+          text.includes('429'); // Rate limit errors from external services (transient)
 
         if (!isExpectedError) {
           errors.push(text);
