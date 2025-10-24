@@ -34,6 +34,12 @@ The flagship product is **Navam Invest** - an AI-powered investment intelligence
   - `release-semver.md` - Closed features organized by semantic version releases
 - `.claude/` - Claude Code configuration
   - `commands/code/` - Custom slash commands for development workflow
+- `tests/` - Playwright end-to-end browser tests
+  - `homepage.spec.ts` - Homepage functionality and display tests
+  - `blog.spec.ts` - Blog navigation and content tests
+  - `accessibility.spec.ts` - WCAG compliance and a11y tests
+  - `performance.spec.ts` - Load time and optimization tests
+  - `README.md` - Testing documentation and best practices
 
 ## Development Workflow
 
@@ -58,6 +64,76 @@ This project uses custom Claude Code commands for streamlined development:
    - Removes unnecessary backlog files
 
 4. **`/code/commit`** - Standard git commit workflow
+
+5. **`/code/browser`** - Browser testing workflow:
+   - Runs Playwright end-to-end tests
+   - Analyzes test results and failures
+   - Reports bugs with error messages and screenshots
+   - Offers to fix identified issues
+   - See `tests/README.md` for detailed testing documentation
+
+### Browser Testing
+
+**Testing Stack:**
+- **Framework:** Playwright (E2E browser testing)
+- **Configuration:** `playwright.config.ts`
+- **Tests:** `tests/` directory
+- **Reports:** HTML reports with screenshots and videos on failure
+
+**Test Coverage:**
+- **Homepage:** Load time, hero section, navigation, branding, mobile responsive
+- **Blog:** Index page, post listings, individual posts, mobile layout
+- **Accessibility:** Heading hierarchy, alt text, keyboard navigation, ARIA labels
+- **Performance:** Load times, asset optimization, layout shifts, memory leaks
+
+**Quick Commands:**
+```bash
+# Run all tests
+npx playwright test
+
+# Interactive UI mode
+npx playwright test --ui
+
+# View HTML report
+npx playwright show-report
+
+# Debug specific test
+npx playwright test --debug tests/homepage.spec.ts
+```
+
+**Using `/code/browser` slash command:**
+1. Automatically runs full test suite
+2. Analyzes failures and groups by category
+3. Provides detailed error messages with file locations
+4. Captures screenshots for visual debugging
+5. Suggests fixes for common issues
+
+**First-time setup:**
+```bash
+npm install -D @playwright/test
+npx playwright install
+```
+
+### Browser Testing Skill
+
+**Skill location:** `.claude/skills/browser-testing/`
+
+This project has a dedicated **Browser Testing Skill** that automatically provides:
+- Project-specific Playwright patterns for Astro + Vue stack
+- Vue component hydration testing strategies
+- Debugging guidance for common test failures
+- Selector best practices for this site structure
+- WCAG accessibility testing patterns
+
+The skill triggers automatically when working on tests in `tests/` directory and loads relevant guidance based on your specific task. It emphasizes:
+- **Vue hydration patterns** - Critical `client:*` directive testing
+- **Semantic selectors** - Role-based, accessibility-friendly
+- **Content collections testing** - Blog post rendering from Astro collections
+- **Design system verification** - Gradient and glass morphism testing
+
+**Direct documentation access** (when needed outside skill context):
+- Complete skill: `.claude/skills/browser-testing/`
+- Skill overview: `.claude/skills/browser-testing/README.md`
 
 ### Website Development Guidelines
 
@@ -138,6 +214,7 @@ This is an **Astro static site** with the following stack:
 - **UI Components**: Vue 3 with client-side hydration
 - **Styling**: Tailwind CSS + custom CSS properties
 - **Content**: Astro content collections for type-safe blog management
+- **Testing**: Playwright (E2E browser tests)
 - **Deployment**: GitHub Pages (automated via GitHub Actions)
 
 ## Git Workflow & GitHub Pages Deployment
