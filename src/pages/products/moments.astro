@@ -1,0 +1,442 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/Header.vue';
+import Footer from '@components/Footer.vue';
+import Button from '@components/ui/Button.vue';
+
+// Enhanced Product Schema for Moments
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Moments",
+  "applicationCategory": "BusinessApplication",
+  "description": "AI business intelligence dashboard with knowledge graphs, three-tier analytics, and correlation matrix. 237+ entities, 1,814 relationships for strategic insights.",
+  "operatingSystem": "Web Browser",
+  "softwareVersion": "1.0.0",
+  "releaseNotes": "Initial release with knowledge graphs, three-tier analytics, and correlation intelligence",
+  "datePublished": "2025-01-12",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Open source (MIT License). Self-hosted or cloud deployment.",
+    "priceValidUntil": "2026-12-31"
+  },
+  "url": "https://www.navam.io/products/moments",
+  "codeRepository": "https://github.com/navam-io/moments",
+  "screenshot": [
+    "https://www.navam.io/images/blog/dashboard.png",
+    "https://www.navam.io/images/blog/graph.png",
+    "https://www.navam.io/images/blog/matrix.png"
+  ],
+  "featureList": [
+    "237+ entities and 1,814 relationships mapped",
+    "Interactive knowledge graphs with force-directed network visualization",
+    "Three-tier analytics dashboards (Strategic, Tactical, Operational)",
+    "Correlation matrix analysis with 24+ strong correlations",
+    "Factor analytics with sunburst visualization",
+    "Real-time KPI monitoring and trend analysis",
+    "AI-powered pattern discovery",
+    "Multi-dimensional data insights",
+    "Interactive filtering and search",
+    "Strategic business intelligence"
+  ],
+  "softwareRequirements": "Modern web browser (Chrome, Firefox, Safari, Edge)",
+  "applicationSubCategory": "Business Intelligence",
+  "availableOnDevice": ["Desktop", "Tablet"],
+  "countriesSupported": "Worldwide",
+  "inLanguage": "en",
+  "license": "https://opensource.org/licenses/MIT",
+  "author": {
+    "@type": "Organization",
+    "name": "Navam",
+    "url": "https://www.navam.io"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Navam",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.navam.io/images/logo.png"
+    }
+  }
+};
+
+// HowTo Schema for Setup
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Deploy Moments Dashboard",
+  "description": "Deploy your own AI business intelligence dashboard",
+  "totalTime": "PT10M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Clone Repository",
+      "text": "Clone the Moments repository from GitHub",
+      "itemListElement": [
+        {
+          "@type": "HowToDirection",
+          "text": "git clone https://github.com/navam-io/moments.git"
+        }
+      ]
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Install Dependencies",
+      "text": "Install required packages",
+      "itemListElement": [
+        {
+          "@type": "HowToDirection",
+          "text": "npm install"
+        }
+      ]
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Configure Data Sources",
+      "text": "Set up your data connections and API keys"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Start Development Server",
+      "text": "Launch the dashboard locally",
+      "itemListElement": [
+        {
+          "@type": "HowToDirection",
+          "text": "npm run dev"
+        }
+      ]
+    }
+  ]
+};
+
+// FAQ Schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Moments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Moments is an AI business intelligence dashboard that visualizes complex data relationships through interactive knowledge graphs. It features 237+ entities, 1,814 relationships, and three-tier analytics for strategic, tactical, and operational insights."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the three analytics tiers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Strategic tier provides executive-level KPIs and trends. Tactical tier offers correlation intelligence for analysts with 24+ strong correlations. Operational tier delivers real-time data access and filtering for day-to-day operations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the knowledge graph work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The knowledge graph uses force-directed network visualization to map 237+ entities and 1,814 relationships. Interactive nodes reveal connections, patterns, and insights. You can filter by entity type, relationship strength, and temporal dimensions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Moments free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Moments is completely free and open source under the MIT license. You can self-host it on your own infrastructure or deploy to cloud platforms. No licensing fees or subscriptions required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What data can I visualize?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Moments is designed for AI industry intelligence but can be adapted to any domain with entity-relationship data. The reference implementation includes company data, technology trends, strategic moments, and market analysis."
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="Moments - AI Business Intelligence Dashboard with Knowledge Graphs"
+  description="Transform complex data into strategic insights with knowledge graphs, three-tier analytics, and correlation intelligence. 237+ entities, 1,814 relationships. Open source, MIT licensed."
+  keywords="business intelligence dashboard, knowledge graph visualization, AI analytics, correlation analysis, strategic intelligence, data visualization, force-directed graphs"
+  ogImage="/images/blog/dashboard.png"
+  ogType="product"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <Header client:load />
+
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 overflow-hidden">
+      <div class="absolute inset-0 bg-black/20"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center text-white">
+          <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+            See the Connections
+            <span class="block mt-2 bg-gradient-to-r from-blue-200 to-pink-200 bg-clip-text text-transparent">
+              That Drive Strategy
+            </span>
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 text-white/90">
+            Interactive knowledge graphs, three-tier analytics, and correlation intelligence.
+            <strong>237+ entities, 1,814 relationships</strong> mapped for strategic insights.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button client:load variant="primary" size="lg" href="https://github.com/navam-io/moments">
+              View on GitHub
+            </Button>
+            <Button client:load variant="secondary" size="lg" href="#features">
+              Explore Features
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Three-Tier Analytics Architecture</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🎯</div>
+            <h3 class="text-2xl font-bold mb-3">Strategic Tier</h3>
+            <p class="mb-4">Executive-level KPIs and trend summaries for strategic decision-making.</p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Growth velocity charts</li>
+              <li>Real-time KPI monitoring</li>
+              <li>High-impact event tracking</li>
+              <li>Multi-temporal analysis</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-4xl mb-4">📊</div>
+            <h3 class="text-2xl font-bold mb-3">Tactical Tier</h3>
+            <p class="mb-4">Correlation intelligence for analysts discovering hidden patterns.</p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>24+ strong correlations</li>
+              <li>Impact classification</li>
+              <li>AI-powered pattern discovery</li>
+              <li>Emerging trend detection</li>
+            </ul>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="text-4xl mb-4">⚙️</div>
+            <h3 class="text-2xl font-bold mb-3">Operational Tier</h3>
+            <p class="mb-4">Real-time data access and filtering for day-to-day operations.</p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li>Interactive filtering</li>
+              <li>Advanced search</li>
+              <li>Real-time updates</li>
+              <li>Granular data access</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Knowledge Graph -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-4xl md:text-5xl font-black mb-6">Interactive Knowledge Graphs</h2>
+              <p class="text-xl text-gray-700 mb-6">
+                Visualize complex relationships through force-directed network graphs.
+                237+ entities and 1,814 relationships dynamically rendered for exploration.
+              </p>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <span class="text-2xl mr-3">🔗</span>
+                  <div>
+                    <h3 class="font-bold mb-1">Force-Directed Layouts</h3>
+                    <p class="text-gray-600">Physics-based visualization automatically organizes nodes by relationship strength</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-2xl mr-3">🎨</span>
+                  <div>
+                    <h3 class="font-bold mb-1">Multi-Dimensional Filtering</h3>
+                    <p class="text-gray-600">Filter by entity type, relationship strength, and temporal dimensions</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-2xl mr-3">⚡</span>
+                  <div>
+                    <h3 class="font-bold mb-1">Real-Time Interactions</h3>
+                    <p class="text-gray-600">Click nodes to reveal connections, zoom to explore clusters, drag to rearrange</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-gray-200 rounded-lg aspect-square flex items-center justify-center">
+              <p class="text-gray-500 text-center">Knowledge Graph Visualization<br/>(Live Demo in Product)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Correlation Matrix -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-black text-center mb-12">Correlation Intelligence</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+              <h3 class="text-2xl font-bold mb-4">Correlation Matrix Analysis</h3>
+              <p class="mb-4">Discover hidden patterns across 80+ pivotal moments with machine learning algorithms.</p>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center">
+                  <span class="font-semibold">Strong Correlations</span>
+                  <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">24</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="font-semibold">High-Impact Patterns</span>
+                  <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">8</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="font-semibold">Medium-Impact Patterns</span>
+                  <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">15</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="font-semibold">Emerging Trends</span>
+                  <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+              <h3 class="text-2xl font-bold mb-4">Factor Analytics</h3>
+              <p class="mb-4">Sunburst visualization reveals factor contributions and hierarchical relationships.</p>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Multi-level factor decomposition</li>
+                <li>• Interactive drill-down capabilities</li>
+                <li>• Hierarchical data representation</li>
+                <li>• Visual impact assessment</li>
+                <li>• Comparative factor analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Getting Started -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-black text-center mb-12">Getting Started</h2>
+          <div class="bg-white rounded-2xl shadow-xl p-8">
+            <h3 class="text-2xl font-bold mb-6">Deploy Your Dashboard</h3>
+
+            <div class="space-y-6">
+              <div>
+                <h4 class="font-bold text-lg mb-2">1. Clone Repository</h4>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                  git clone https://github.com/navam-io/moments.git
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-lg mb-2">2. Install Dependencies</h4>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                  cd moments<br/>
+                  npm install
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-lg mb-2">3. Configure Data Sources</h4>
+                <p class="text-gray-600 mb-3">Set up your data connections in <code class="bg-gray-100 px-2 py-1 rounded">config.js</code></p>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-lg mb-2">4. Start Development Server</h4>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                  npm run dev
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 p-6 bg-blue-50 rounded-lg">
+              <h4 class="font-bold text-lg mb-2">💡 Customization</h4>
+              <p class="text-gray-700">Moments is designed to be adapted to your domain. The reference implementation uses AI industry data, but you can plug in any entity-relationship data source.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-black text-center mb-12">Frequently Asked Questions</h2>
+
+          <div class="space-y-6">
+            <div class="border-b pb-6">
+              <h3 class="text-xl font-bold mb-3">What is Moments?</h3>
+              <p class="text-gray-700">Moments is an AI business intelligence dashboard that visualizes complex data relationships through interactive knowledge graphs. It features 237+ entities, 1,814 relationships, and three-tier analytics for strategic, tactical, and operational insights.</p>
+            </div>
+
+            <div class="border-b pb-6">
+              <h3 class="text-xl font-bold mb-3">What are the three analytics tiers?</h3>
+              <p class="text-gray-700">Strategic tier provides executive-level KPIs and trends. Tactical tier offers correlation intelligence for analysts with 24+ strong correlations. Operational tier delivers real-time data access and filtering for day-to-day operations.</p>
+            </div>
+
+            <div class="border-b pb-6">
+              <h3 class="text-xl font-bold mb-3">How does the knowledge graph work?</h3>
+              <p class="text-gray-700">The knowledge graph uses force-directed network visualization to map 237+ entities and 1,814 relationships. Interactive nodes reveal connections, patterns, and insights. You can filter by entity type, relationship strength, and temporal dimensions.</p>
+            </div>
+
+            <div class="border-b pb-6">
+              <h3 class="text-xl font-bold mb-3">Is Moments free?</h3>
+              <p class="text-gray-700">Yes, Moments is completely free and open source under the MIT license. You can self-host it on your own infrastructure or deploy to cloud platforms. No licensing fees or subscriptions required.</p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold mb-3">What data can I visualize?</h3>
+              <p class="text-gray-700">Moments is designed for AI industry intelligence but can be adapted to any domain with entity-relationship data. The reference implementation includes company data, technology trends, strategic moments, and market analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-purple-900 to-blue-900">
+      <div class="container mx-auto px-4 text-center text-white">
+        <h2 class="text-4xl md:text-5xl font-black mb-6">Transform Data Into Strategy</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Deploy your own AI business intelligence dashboard and start visualizing the connections that matter.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button client:load variant="primary" size="lg" href="https://github.com/navam-io/moments">
+            View on GitHub
+          </Button>
+          <Button client:load variant="secondary" size="lg" href="/blog/moments-dashboard-three-tier-analytics">
+            Read the Blog Post
+          </Button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>

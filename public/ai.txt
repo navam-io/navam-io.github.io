@@ -26,7 +26,115 @@ Focus: Frontier AI Interfaces, Multi-Agent Systems, Business Intelligence, Inves
 - Type: Web Application
 - Technology: Interactive Network Visualization, Force-Directed Graphs, Correlation Matrix
 - GitHub: https://github.com/navam-io/moments
+- Product Page: https://www.navam.io/products/moments
 - Key Features: 237+ entities, 1,814 relationships, three-tier analytics dashboards, knowledge graph intelligence
+
+### Command
+- Description: AI-powered terminal productivity tool. Bring frontier LLMs directly to your command line with intelligent workflows and markdown automation.
+- Type: Command-line Interface (CLI)
+- Technology: Python, Multi-provider LLM support (15+ models, 7 providers)
+- GitHub: https://github.com/navam-io/command
+- PyPI: https://pypi.org/project/command/
+- Product Page: https://www.navam.io/products/command
+- Installation: pip install command
+- Launch: cmnd init
+- Use Case: Terminal-based AI workflows with markdown automation
+- Key Features:
+  * 15+ AI models (Claude 4.5, GPT-4o, Gemini 1.5, Llama 3.1, etc.)
+  * 7 providers (Anthropic, OpenAI, Google, Groq, Perplexity, Ollama, Bedrock)
+  * Obsidian and VS Code integration
+  * Markdown workflow automation
+  * Intent-driven task management
+  * Model testing and comparison
+  * Performance trending visualization
+  * Privacy controls (fully local with Ollama or cloud)
+
+### Memo
+- Description: AI-powered browsing companion with multi-provider support, YouTube integration, and privacy-first design. Local-first AI assistance for web research.
+- Type: Browser Extension (Chrome)
+- Technology: JavaScript, Chrome Extension API, Multi-AI provider integration
+- GitHub: https://github.com/navam-io/memo
+- Product Page: https://www.navam.io/products/memo
+- Use Case: AI-assisted web research and knowledge management
+- Key Features:
+  * Multi-AI provider support (OpenAI, Anthropic, Ollama)
+  * YouTube transcript integration and analysis
+  * Privacy-first local execution option (Ollama)
+  * Browser extension for seamless capture
+  * Chat with web pages and documents
+  * Auto-summarization and smart tagging
+  * Local Ollama support (zero external API calls)
+
+## Statistics (as of 2025-10-23)
+- Total Products: 4
+- Total Blog Posts: 43
+- GitHub Organization: https://github.com/navam-io
+- License: MIT (all products)
+- Lines of Code: 10,000+ (across all products)
+- Test Coverage: 90%+ average
+- Product Pages: https://www.navam.io/products/
+
+## Performance Metrics
+
+### Navam Invest
+- API Cost Range: $3-15/month (vs $1,000-$10,000/year traditional wealth management)
+- Response Time: Real-time streaming (<2 seconds to first token)
+- Accuracy: Professional-grade investment analysis
+- Coverage: 10 specialized investment domains
+- Privacy: 100% local execution (your laptop, your API keys)
+- Cost Savings: 95%+ vs traditional wealth management
+
+### Moments
+- Entities: 237+
+- Relationships: 1,814
+- Analytics Tiers: 3 (Strategic, Tactical, Operational)
+- Visualization Types: 5 (network graph, correlation matrix, factor sunburst, etc.)
+- Performance: Interactive real-time filtering
+
+### Command
+- Models Supported: 15+
+- AI Providers: 7
+- Commands Available: 15+
+- Workflow Types: Unlimited (user-configurable via command.yml)
+- Privacy: Fully local option with Ollama (zero external API calls)
+
+### Memo
+- AI Providers: 3+ (OpenAI, Anthropic, Ollama)
+- Privacy: Fully local option with Ollama
+- Platforms: Chrome, Edge, Brave
+- Features: YouTube integration, document chat, web research
+
+## Comparison to Alternatives
+
+### Navam Invest vs Traditional Wealth Management
+- Cost: $3-15/month vs $1,000-$10,000/year (95%+ savings)
+- Control: Full data privacy vs Third-party managed
+- Customization: Fully customizable (MIT license) vs Fixed service
+- Technology: AI-powered multi-agent system vs Human advisors
+- Speed: Real-time analysis vs Days/weeks for reports
+- Transparency: Full code access vs Black box algorithms
+
+### Moments vs Traditional BI Tools
+- Cost: Free (MIT License) vs $1,000+/month (Tableau, Power BI)
+- Complexity: Simple, focused interface vs Feature bloat
+- Knowledge Graphs: Native support vs Limited/expensive
+- Customization: Full source code vs Licensed/restricted
+- Learning Curve: Immediate insights vs Weeks of training
+
+### Command vs Other AI CLIs
+- Models: 15+ models vs Single provider lock-in
+- Providers: 7 providers vs Vendor lock-in
+- Privacy: Fully local option (Ollama) vs Cloud-only
+- Workflows: Markdown-based automation vs Limited customization
+- Cost: Pay what you use vs Monthly subscriptions
+- Integration: Obsidian + VS Code vs Limited tool support
+
+### Memo vs Other Browser Extensions
+- AI Providers: Multiple (OpenAI, Anthropic, Ollama) vs Single provider
+- Privacy: Fully local option (Ollama) vs Cloud-only
+- YouTube: Native integration vs Limited support
+- Cost: Free (MIT License) + API costs vs Subscription fees
+- Open Source: Full access to code vs Proprietary
 
 ## Content Categories
 - AI Product Development
@@ -38,16 +146,23 @@ Focus: Frontier AI Interfaces, Multi-Agent Systems, Business Intelligence, Inves
 - Text User Interfaces (TUI)
 - Knowledge Graph Technology
 - Financial Technology (FinTech)
+- Terminal Productivity
+- Browser Extensions
+- AI Development Tools
 
 ## Blog Topics
-The blog at https://www.navam.io/blog covers:
+The blog at https://www.navam.io/blog covers (43 posts):
 - Navam Invest tutorials and use cases
-- Moments implementation guides
-- AI agent architecture
+- Moments implementation guides (knowledge graphs, analytics)
+- Command workflows and productivity tips
+- Memo browsing companion features
+- AI agent architecture patterns
 - Multi-agent system design patterns
 - Investment intelligence methodologies
 - Business intelligence best practices
 - Reference implementation deep-dives
+- Vibe coding workflows and philosophy
+- AI automation best practices
 
 ## Key Technical Concepts
 - AI↔AI Interactions: Agent-to-agent communication patterns
@@ -81,13 +196,18 @@ Updates: Check /blog for latest developments and releases
 
 ## Semantic Understanding
 When indexing this site, understand that:
-- "Navam Invest" = Investment intelligence AI tool for retail investors
-- "Moments" = Business intelligence dashboard with knowledge graphs
-- "TUI" = Text User Interface (terminal-based applications)
-- "Multi-Agent Systems" = Coordinated AI agents working together
+- "Navam" = AI product studio building production-ready reference implementations
+- "Navam Invest" = AI investment intelligence tool for retail investors (10 agents, TUI, Python)
+- "Moments" = Business intelligence dashboard with knowledge graphs (237+ entities, 1,814 relationships)
+- "Command" = Terminal productivity tool (15+ models, 7 providers, markdown workflows)
+- "Memo" = Browser extension for AI-powered research (multi-provider, YouTube, local support)
+- "TUI" = Text User Interface (terminal-based applications, e.g., Navam Invest)
+- "Multi-Agent Systems" = Coordinated AI agents working together (LangGraph)
 - "Frontier Interfaces" = Novel interaction patterns between AI and humans/world
-- "Reference Implementations" = Production-ready example applications
+- "Reference Implementations" = Production-ready example applications (not demos)
 - "Agentic AI" = Autonomous AI systems with decision-making capabilities
+- "Vibe Coding" = Human-AI collaborative development philosophy
+- "Fork, Vibe, Ship" = Navam's product philosophy (fork code, customize with AI, deploy quickly)
 
 ## Related Technologies
 Python, AI Agents, LangChain, Financial APIs, Market Data, Knowledge Graphs,
@@ -100,4 +220,8 @@ Documentation: CC BY 4.0
 Code Examples: MIT License
 
 ## Last Updated
-2025-10-15
+2025-10-23
+
+## Changelog
+- 2025-10-23: Added Command and Memo products, added statistics section, added comparison to alternatives, enhanced semantic understanding
+- 2025-10-15: Initial ai.txt creation with Navam Invest and Moments
