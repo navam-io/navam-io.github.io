@@ -31,6 +31,12 @@
               </a>
               <span class="text-xs text-gray-500 block">Browser Extension</span>
             </li>
+            <li>
+              <a href="/products/trends" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Trends
+              </a>
+              <span class="text-xs text-gray-500 block">Enterprise Intelligence</span>
+            </li>
           </ul>
         </div>
 

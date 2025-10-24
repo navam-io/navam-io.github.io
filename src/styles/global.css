@@ -74,11 +74,16 @@
   html {
     @apply antialiased;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   body {
     @apply bg-white text-gray-900;
     font-family: var(--font-sans);
+    overflow-x: hidden;
+    max-width: 100vw;
+    position: relative;
   }
 }
 
@@ -182,4 +187,15 @@ html {
 .expandable-content.expanded {
   max-height: 2000px;
   opacity: 1;
+}
+
+/* Prevent horizontal overflow on mobile */
+@media (max-width: 640px) {
+  section {
+    overflow-x: hidden;
+  }
+
+  .container {
+    overflow-x: hidden;
+  }
 }
