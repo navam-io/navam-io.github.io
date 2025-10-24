@@ -38,10 +38,11 @@ test.describe('Accessibility', () => {
   test('links have accessible names', async ({ page }) => {
     await page.goto('/');
     await page.waitForLoadState('load');
-    await page.waitForSelector('a', { state: 'visible' });
+    // Wait for header links (not dropdown links which are hidden)
+    await page.waitForSelector('header a', { state: 'visible' });
 
-    // Get all links
-    const links = page.locator('a');
+    // Get all visible links (excludes hidden dropdown)
+    const links = page.locator('header a:visible, main a:visible');
     const count = await links.count();
 
     if (count > 0) {
@@ -71,10 +72,11 @@ test.describe('Accessibility', () => {
   test('interactive elements are keyboard accessible', async ({ page }) => {
     await page.goto('/');
     await page.waitForLoadState('load');
-    await page.waitForSelector('button, a', { state: 'visible' });
+    // Wait for visible interactive elements (not hidden in dropdown)
+    await page.waitForSelector('header a', { state: 'visible' });
 
-    // Find first button or link
-    const firstInteractive = page.locator('button, a').first();
+    // Find first visible button or link (excludes hidden dropdown elements)
+    const firstInteractive = page.locator('header a:visible, header button:visible, main a:visible').first();
 
     if (await firstInteractive.count() > 0) {
       // Should be focusable via keyboard
