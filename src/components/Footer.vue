@@ -8,29 +8,28 @@
           <h3 class="text-lg font-semibold text-gray-900 mb-4">Products</h3>
           <ul class="space-y-3">
             <li>
-              <a href="https://github.com/navam-io/navam-invest" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+              <a href="/products/navam-invest" class="text-gray-600 hover:text-gray-900 transition-colors">
                 Navam Invest
               </a>
+              <span class="text-xs text-gray-500 block">AI Investment Intelligence</span>
             </li>
             <li>
-              <a href="https://github.com/navam-io/moments" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+              <a href="/products/moments" class="text-gray-600 hover:text-gray-900 transition-colors">
                 Moments
               </a>
+              <span class="text-xs text-gray-500 block">Business Intelligence</span>
             </li>
             <li>
-              <a href="https://github.com/navam-io/trends" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Trends
+              <a href="/products/command" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Command
               </a>
+              <span class="text-xs text-gray-500 block">AI Terminal</span>
             </li>
             <li>
-              <a href="https://github.com/navam-io/memo" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+              <a href="/products/memo" class="text-gray-600 hover:text-gray-900 transition-colors">
                 Memo
               </a>
-            </li>
-            <li>
-              <a href="/contact" class="text-gray-600 hover:text-gray-900 transition-colors">
-                Contact
-              </a>
+              <span class="text-xs text-gray-500 block">Browser Extension</span>
             </li>
           </ul>
         </div>
@@ -92,8 +91,17 @@
               </a>
             </li>
             <li>
-              <a href="https://github.com/navam-io" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
+              <a href="/contact" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/navam-io" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-1">
                 GitHub
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                </svg>
               </a>
             </li>
             <li>
