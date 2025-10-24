@@ -15,6 +15,7 @@ test.describe('Performance', () => {
 
   test('images are optimized and lazy-loaded', async ({ page }) => {
     await page.goto('/');
+    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
 
     // Check if images have loading attribute
     const images = page.locator('img');
@@ -32,6 +33,7 @@ test.describe('Performance', () => {
 
   test('no large layout shifts on load', async ({ page }) => {
     await page.goto('/');
+    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
 
     // Get initial viewport position
     const initialScroll = await page.evaluate(() => window.scrollY);
@@ -67,10 +69,13 @@ test.describe('Performance', () => {
 
   test('no memory leaks on navigation', async ({ page }) => {
     await page.goto('/');
+    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
 
     // Navigate to blog and back
     await page.goto('/blog');
+    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
     await page.goto('/');
+    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
 
     // If page is functional after navigation, no major memory issues
     await expect(page.locator('body')).toBeVisible();
@@ -78,6 +83,7 @@ test.describe('Performance', () => {
 
   test('fonts load correctly', async ({ page }) => {
     await page.goto('/');
+    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
 
     // Check if custom fonts are applied
     const bodyFont = await page.locator('body').evaluate(el => {

@@ -3,6 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Homepage', () => {
   test('loads successfully and has correct title', async ({ page }) => {
     await page.goto('/');
+    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
 
     // Check that page loaded
     await expect(page).toHaveTitle(/Navam/);
@@ -13,6 +14,7 @@ test.describe('Homepage', () => {
 
   test('displays hero section', async ({ page }) => {
     await page.goto('/');
+    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
 
     // Main heading should be visible
     const heroHeading = page.locator('h1').first();
@@ -25,6 +27,7 @@ test.describe('Homepage', () => {
 
   test('has navigation menu', async ({ page }) => {
     await page.goto('/');
+    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
 
     // Navigation should exist
     const nav = page.locator('nav, header').first();
@@ -33,6 +36,7 @@ test.describe('Homepage', () => {
 
   test('displays Navam branding', async ({ page }) => {
     await page.goto('/');
+    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
 
     // Should have Navam mentioned in the page
     await expect(page.locator('text=/Navam/i').first()).toBeVisible();
@@ -42,6 +46,7 @@ test.describe('Homepage', () => {
     // Set mobile viewport
     await page.setViewportSize({ width: 375, height: 667 });
     await page.goto('/');
+    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
 
     // Page should still be functional on mobile
     await expect(page.locator('body')).toBeVisible();
