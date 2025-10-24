@@ -47,8 +47,8 @@ test.describe('Blog', () => {
     // Should navigate to post page
     await page.waitForLoadState('networkidle');
 
-    // Post page should have content
-    const postContent = page.locator('article, main');
+    // Post page should have content (select first to handle multiple matches)
+    const postContent = page.locator('article, main').first();
     await expect(postContent).toBeVisible();
   });
 
