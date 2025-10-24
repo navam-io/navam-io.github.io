@@ -2,7 +2,7 @@
 import Layout from '@layouts/Layout.astro';
 import Header from '@components/Header.vue';
 import Footer from '@components/Footer.vue';
-import Button from '@components/ui/Button.vue';
+import StripeButton from '@components/ui/StripeButton.vue';
 
 // Enhanced Product Schema for Moments
 const productSchema = {
@@ -179,39 +179,251 @@ const faqSchema = {
 
   <main class="min-h-screen">
     <!-- Hero Section -->
-    <section class="relative py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 overflow-hidden">
+    <section class="relative py-20 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 overflow-hidden">
       <div class="absolute inset-0 bg-black/20"></div>
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center text-white">
           <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-            See the Connections
-            <span class="block mt-2 bg-gradient-to-r from-blue-200 to-pink-200 bg-clip-text text-transparent">
-              That Drive Strategy
+            Intelligence Dashboards
+            <span class="block mt-2 bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent">
+              With Knowledge Graphs
             </span>
           </h1>
           <p class="text-xl md:text-2xl mb-8 text-white/90">
-            Interactive knowledge graphs, three-tier analytics, and correlation intelligence.
-            <strong>237+ entities, 1,814 relationships</strong> mapped for strategic insights.
+            D3.js force-directed graphs, three-tier analytics, and correlation intelligence.
+            <strong>Fork this to build BI dashboards and strategic intelligence tools.</strong>
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button client:load variant="primary" size="lg" href="https://github.com/navam-io/moments">
-              View on GitHub
-            </Button>
-            <Button client:load variant="secondary" size="lg" href="#features">
-              Explore Features
-            </Button>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="https://github.com/navam-io/moments"
+              target="_blank"
+              class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white border-2 border-gray-300 text-gray-900 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all font-semibold"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span>View Code</span>
+            </a>
+            <StripeButton client:load buyButtonId="buy_btn_1SJ5kFRCxnzBPkIXLnQOqiLe" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Key Features -->
+    <!-- Value Proposition -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+            You're Building BI Dashboards, But...
+          </h2>
+          <p class="text-2xl text-gray-900 leading-relaxed mb-8 font-semibold">
+            D3.js force graphs are complex. Building three-tier analytics takes months. Correlation intelligence requires ML expertise.
+          </p>
+        </div>
+
+        <!-- Comparison Grid -->
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 mb-16">
+          <!-- Building from Scratch -->
+          <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border-2 border-red-200">
+            <div class="text-center mb-4">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mb-4">
+                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Building from Scratch</h3>
+              <div class="text-3xl font-black text-red-600 mb-4">6-12 months</div>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">✗</span>
+                <span>Learn D3.js physics engines</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">✗</span>
+                <span>Debug force-directed layouts</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">✗</span>
+                <span>Build correlation algorithms</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">✗</span>
+                <span>Hope performance scales</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Generic BI Tools -->
+          <div class="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-8 border-2 border-yellow-200">
+            <div class="text-center mb-4">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-100 mb-4">
+                <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Tableau/Power BI</h3>
+              <div class="text-3xl font-black text-yellow-600 mb-4">Limited</div>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500 font-bold">✗</span>
+                <span>No knowledge graph views</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500 font-bold">✗</span>
+                <span>Static chart libraries</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500 font-bold">✗</span>
+                <span>Can't customize architecture</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500 font-bold">✗</span>
+                <span>Locked into their ecosystem</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Fork Moments -->
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-4 border-green-500 shadow-xl relative">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <div class="inline-flex items-center px-4 py-1 rounded-full bg-green-600 text-white text-sm font-bold whitespace-nowrap">
+                REFERENCE READY
+              </div>
+            </div>
+            <div class="text-center mb-4 mt-2">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-4">
+                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Fork Moments</h3>
+              <div class="text-3xl font-black text-green-600 mb-4">Ship in 2-7 Days</div>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="font-medium">D3.js force graphs built-in</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="font-medium">Three-tier analytics ready</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="font-medium">Correlation matrix included</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="font-medium">Fork, customize, ship</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fork This To Build -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Fork This To Build</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Analytics Platforms</h3>
+            <p class="text-gray-600">Executive dashboards, KPI monitoring, trend analysis systems</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">BI Dashboards</h3>
+            <p class="text-gray-600">Business intelligence, data visualization, strategic reporting</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Knowledge Management</h3>
+            <p class="text-gray-600">Enterprise wikis, knowledge graphs, relationship mapping</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Data Visualization Tools</h3>
+            <p class="text-gray-600">Interactive charts, network graphs, correlation analysis</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Corporate Intelligence</h3>
+            <p class="text-gray-600">Market intelligence, competitive analysis, strategic insights</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Strategic Planning Tools</h3>
+            <p class="text-gray-600">Decision support, scenario analysis, strategic mapping</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Market Research Platforms</h3>
+            <p class="text-gray-600">Industry analysis, market sizing, trend detection</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Competitive Analysis Systems</h3>
+            <p class="text-gray-600">Competitor tracking, market positioning, strategic moves</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three-Tier Analytics -->
     <section id="features" class="py-20 bg-white">
       <div class="container mx-auto px-4">
         <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Three-Tier Analytics Architecture</h2>
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <div class="text-4xl mb-4">🎯</div>
+            <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+              </svg>
+            </div>
             <h3 class="text-2xl font-bold mb-3">Strategic Tier</h3>
             <p class="mb-4">Executive-level KPIs and trend summaries for strategic decision-making.</p>
             <ul class="list-disc list-inside text-gray-600 space-y-2">
@@ -223,7 +435,11 @@ const faqSchema = {
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <div class="text-4xl mb-4">📊</div>
+            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
             <h3 class="text-2xl font-bold mb-3">Tactical Tier</h3>
             <p class="mb-4">Correlation intelligence for analysts discovering hidden patterns.</p>
             <ul class="list-disc list-inside text-gray-600 space-y-2">
@@ -235,7 +451,12 @@ const faqSchema = {
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <div class="text-4xl mb-4">⚙️</div>
+            <div class="w-16 h-16 bg-gradient-to-br from-gray-500 to-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
             <h3 class="text-2xl font-bold mb-3">Operational Tier</h3>
             <p class="mb-4">Real-time data access and filtering for day-to-day operations.</p>
             <ul class="list-disc list-inside text-gray-600 space-y-2">
@@ -262,21 +483,33 @@ const faqSchema = {
               </p>
               <ul class="space-y-4">
                 <li class="flex items-start">
-                  <span class="text-2xl mr-3">🔗</span>
+                  <div class="w-10 h-10 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center mr-3 flex-shrink-0 shadow-lg">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                    </svg>
+                  </div>
                   <div>
                     <h3 class="font-bold mb-1">Force-Directed Layouts</h3>
                     <p class="text-gray-600">Physics-based visualization automatically organizes nodes by relationship strength</p>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <span class="text-2xl mr-3">🎨</span>
+                  <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mr-3 flex-shrink-0 shadow-lg">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                    </svg>
+                  </div>
                   <div>
                     <h3 class="font-bold mb-1">Multi-Dimensional Filtering</h3>
                     <p class="text-gray-600">Filter by entity type, relationship strength, and temporal dimensions</p>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <span class="text-2xl mr-3">⚡</span>
+                  <div class="w-10 h-10 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center mr-3 flex-shrink-0 shadow-lg">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                  </div>
                   <div>
                     <h3 class="font-bold mb-1">Real-Time Interactions</h3>
                     <p class="text-gray-600">Click nodes to reveal connections, zoom to explore clusters, drag to rearrange</p>
@@ -284,8 +517,8 @@ const faqSchema = {
                 </li>
               </ul>
             </div>
-            <div class="bg-gray-200 rounded-lg aspect-square flex items-center justify-center">
-              <p class="text-gray-500 text-center">Knowledge Graph Visualization<br/>(Live Demo in Product)</p>
+            <div>
+              <img src="/images/blog/graph.png" alt="Knowledge Graph Visualization" class="rounded-2xl shadow-2xl w-full" />
             </div>
           </div>
         </div>
@@ -374,9 +607,16 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="mt-8 p-6 bg-blue-50 rounded-lg">
-              <h4 class="font-bold text-lg mb-2">💡 Customization</h4>
-              <p class="text-gray-700">Moments is designed to be adapted to your domain. The reference implementation uses AI industry data, but you can plug in any entity-relationship data source.</p>
+            <div class="mt-8 p-6 bg-blue-50 rounded-lg flex items-start gap-3">
+              <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg mb-2">Customization</h4>
+                <p class="text-gray-700">Moments is designed to be adapted to your domain. The reference implementation uses AI industry data, but you can plug in any entity-relationship data source.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -419,20 +659,74 @@ const faqSchema = {
       </div>
     </section>
 
+    <!-- Related Blog Posts -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Learn More About Moments</h2>
+
+        <!-- Blog Post 1 - Image Left -->
+        <div class="max-w-6xl mx-auto mb-16">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img src="/images/blog/dashboard.png" alt="Moments Dashboard" class="rounded-2xl shadow-2xl w-full" />
+            </div>
+            <div>
+              <h3 class="text-3xl font-bold mb-4">Three-Tier Analytics Architecture</h3>
+              <p class="text-xl text-gray-700 mb-6">
+                Transform AI industry data into strategic insights with Moments three-tier analytics dashboard featuring real-time KPIs, correlation intelligence, and factor analysis across strategic, tactical, and operational levels.
+              </p>
+              <a href="/blog/moments-dashboard-three-tier-analytics" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold">
+                Read the full article
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 - Image Right -->
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="md:order-2">
+              <img src="/images/blog/graph.png" alt="Knowledge Graph Visualization" class="rounded-2xl shadow-2xl w-full" />
+            </div>
+            <div class="md:order-1">
+              <h3 class="text-3xl font-bold mb-4">Interactive Knowledge Graph Visualization</h3>
+              <p class="text-xl text-gray-700 mb-6">
+                Discover hidden connections in the AI ecosystem through force-directed network visualization with 237+ entities and 1,814 relationships, revealing strategic patterns and market dynamics.
+              </p>
+              <a href="/blog/moments-knowledge-graph-network-visualization" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold">
+                Read the full article
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-br from-purple-900 to-blue-900">
+    <section class="py-20 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900">
       <div class="container mx-auto px-4 text-center text-white">
-        <h2 class="text-4xl md:text-5xl font-black mb-6">Transform Data Into Strategy</h2>
+        <h2 class="text-4xl md:text-5xl font-black mb-6">Build Intelligence Dashboards That Scale</h2>
         <p class="text-xl mb-8 max-w-2xl mx-auto">
-          Deploy your own AI business intelligence dashboard and start visualizing the connections that matter.
+          Fork Moments and ship BI platforms, analytics dashboards, or knowledge management tools in days. D3.js graphs, three-tier architecture, production-ready.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button client:load variant="primary" size="lg" href="https://github.com/navam-io/moments">
-            View on GitHub
-          </Button>
-          <Button client:load variant="secondary" size="lg" href="/blog/moments-dashboard-three-tier-analytics">
-            Read the Blog Post
-          </Button>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a
+            href="https://github.com/navam-io/moments"
+            target="_blank"
+            class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white border-2 border-gray-300 text-gray-900 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all font-semibold"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            <span>View Code</span>
+          </a>
+          <StripeButton client:load buyButtonId="buy_btn_1SJ5kFRCxnzBPkIXLnQOqiLe" />
         </div>
       </div>
     </section>

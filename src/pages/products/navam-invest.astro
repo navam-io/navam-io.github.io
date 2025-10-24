@@ -2,8 +2,7 @@
 import Layout from '@layouts/Layout.astro';
 import Header from '@components/Header.vue';
 import Footer from '@components/Footer.vue';
-import Button from '@components/ui/Button.vue';
-// Card component not needed - using Tailwind classes directly
+import StripeButton from '@components/ui/StripeButton.vue';
 
 // Enhanced Product Schema for Navam Invest
 const productSchema = {
@@ -237,84 +236,342 @@ const faqSchema = {
 
   <main class="min-h-screen">
     <!-- Hero Section -->
-    <section class="relative py-20 bg-gradient-to-br from-blue-900 via-purple-900 to-pink-900 overflow-hidden">
+    <section class="relative py-20 bg-gradient-to-br from-cyan-900 via-teal-900 to-blue-900 overflow-hidden">
       <div class="absolute inset-0 bg-black/20"></div>
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center text-white">
           <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-            Professional Investment Intelligence
-            <span class="block mt-2 bg-gradient-to-r from-blue-200 to-pink-200 bg-clip-text text-transparent">
-              On Your Laptop
+            Investment Intelligence
+            <span class="block mt-2 bg-gradient-to-r from-cyan-200 to-blue-200 bg-clip-text text-transparent">
+              With 10 AI Agents
             </span>
           </h1>
           <p class="text-xl md:text-2xl mb-8 text-white/90">
-            10 specialized AI agents provide professional-grade investment analysis for <strong>$3-15/month</strong>.
-            That's 95% cheaper than traditional wealth management.
+            Multi-agent system with LangGraph orchestration, streaming TUI, and intelligent caching.
+            <strong>Fork this to build portfolio management and trading platforms.</strong>
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button client:load variant="primary" size="lg" href="https://github.com/navam-io/navam-invest">
-              View on GitHub
-            </Button>
-            <Button client:load variant="secondary" size="lg" href="#installation">
-              Get Started
-            </Button>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="https://github.com/navam-io/navam-invest"
+              target="_blank"
+              class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white border-2 border-gray-300 text-gray-900 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all font-semibold"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span>View Code</span>
+            </a>
+            <StripeButton client:load buyButtonId="buy_btn_1SJ5kFRCxnzBPkIXLnQOqiLe" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Key Features -->
+    <!-- Value Proposition -->
     <section class="py-20 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">10 Specialized AI Agents</h2>
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+            You're Building Investment Tools, But...
+          </h2>
+          <p class="text-2xl text-gray-900 leading-relaxed mb-8 font-semibold">
+            LangGraph orchestration is complex. Multi-agent coordination takes months to get right. Streaming UIs with caching require deep expertise.
+          </p>
+        </div>
+
+        <!-- Comparison Grid -->
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 mb-16">
+          <!-- Building from Scratch -->
+          <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border-2 border-red-200">
+            <div class="text-center mb-4">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mb-4">
+                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Building from Scratch</h3>
+              <div class="text-3xl font-black text-red-600 mb-4">12-18 months</div>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">✗</span>
+                <span>Figure out LangGraph patterns</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">✗</span>
+                <span>Debug agent coordination</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">✗</span>
+                <span>Build streaming + caching</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">✗</span>
+                <span>Hope it scales in production</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Generic Libraries -->
+          <div class="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-8 border-2 border-yellow-200">
+            <div class="text-center mb-4">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-100 mb-4">
+                <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Generic Frameworks</h3>
+              <div class="text-3xl font-black text-yellow-600 mb-4">Incomplete</div>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500 font-bold">✗</span>
+                <span>No domain logic included</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500 font-bold">✗</span>
+                <span>Still need to build agents</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500 font-bold">✗</span>
+                <span>Tutorial-grade examples</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-yellow-500 font-bold">✗</span>
+                <span>Not production-tested</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Fork Navam Invest -->
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-4 border-green-500 shadow-xl relative">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <div class="inline-flex items-center px-4 py-1 rounded-full bg-green-600 text-white text-sm font-bold whitespace-nowrap">
+                REFERENCE READY
+              </div>
+            </div>
+            <div class="text-center mb-4 mt-2">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-4">
+                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Fork Navam Invest</h3>
+              <div class="text-3xl font-black text-green-600 mb-4">Ship in 2-7 Days</div>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="font-medium">LangGraph orchestration built-in</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="font-medium">10 production agents included</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="font-medium">Streaming TUI + caching ready</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="font-medium">Fork, customize, ship</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fork This To Build -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Fork This To Build</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Portfolio Management Tools</h3>
+            <p class="text-gray-600">Robo-advisors, rebalancing systems, asset allocation platforms</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Trading Bots & Algorithms</h3>
+            <p class="text-gray-600">Automated trading, signal generation, execution platforms</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Financial Advisory Platforms</h3>
+            <p class="text-gray-600">Wealth management, financial planning, advisory dashboards</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Crypto Analysis Systems</h3>
+            <p class="text-gray-600">DeFi analytics, blockchain intelligence, crypto trading tools</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Risk Assessment Platforms</h3>
+            <p class="text-gray-600">VaR calculation, portfolio risk, stress testing systems</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Market Intelligence Systems</h3>
+            <p class="text-gray-600">Real-time monitoring, news analysis, market sentiment tools</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Wealth Management Apps</h3>
+            <p class="text-gray-600">High-net-worth tools, tax optimization, estate planning systems</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Investment Research Tools</h3>
+            <p class="text-gray-600">Stock screening, fundamental analysis, earnings analysis platforms</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 Agents -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">10 Production-Ready AI Agents</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-3">🎯 Quill - Equity Analyst</h3>
+            <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-3 shadow-md">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Quill - Equity Analyst</h3>
             <p>Comprehensive fundamental analysis, DCF valuation, comparable company analysis, and detailed investment theses.</p>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-3">📊 Earnings Whisperer</h3>
+            <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-3 shadow-md">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Earnings Whisperer</h3>
             <p>Track earnings surprises, analyze earnings call transcripts, identify post-earnings drift opportunities.</p>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-3">🔍 Screen Forge</h3>
+            <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-3 shadow-md">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Screen Forge</h3>
             <p>Systematically screen thousands of stocks based on quality, momentum, value, and thematic factors.</p>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-3">🌍 Macro Lens</h3>
+            <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-lg flex items-center justify-center mb-3 shadow-md">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Macro Lens</h3>
             <p>Top-down macroeconomic analysis and sector allocation guidance for current market regimes.</p>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-3">📰 News Sentry</h3>
+            <div class="w-10 h-10 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-lg flex items-center justify-center mb-3 shadow-md">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">News Sentry</h3>
             <p>Monitor real-time market events, SEC filings, analyst actions, and trading anomalies.</p>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-3">🛡️ Risk Shield</h3>
+            <div class="w-10 h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center mb-3 shadow-md">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Risk Shield</h3>
             <p>Portfolio exposure analysis, value-at-risk calculations, scenario testing, and drawdown monitoring.</p>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-3">💰 Tax Scout</h3>
+            <div class="w-10 h-10 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mb-3 shadow-md">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Tax Scout</h3>
             <p>Identify tax-loss harvesting opportunities, check wash-sale violations, optimize rebalancing strategies.</p>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-3">🎭 Hedge Smith</h3>
+            <div class="w-10 h-10 bg-gradient-to-br from-pink-500 to-pink-600 rounded-lg flex items-center justify-center mb-3 shadow-md">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Hedge Smith</h3>
             <p>Design options strategies for portfolio protection and yield enhancement (collars, covered calls).</p>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-3">📈 Factor Scout</h3>
+            <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-lg flex items-center justify-center mb-3 shadow-md">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Factor Scout</h3>
             <p>Analyze factor exposures, measure style tilts, assess portfolio alignment with market regimes.</p>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-            <h3 class="text-2xl font-bold mb-3">⚖️ Rebalance Bot</h3>
+            <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-3 shadow-md">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Rebalance Bot</h3>
             <p>Detect portfolio drift, optimize rebalancing, minimize taxes during portfolio adjustments.</p>
           </div>
         </div>
@@ -359,13 +616,22 @@ const faqSchema = {
             </div>
 
             <div class="mt-8 p-6 bg-blue-50 rounded-lg">
-              <h4 class="font-bold text-lg mb-2">💡 Optional Enhancements</h4>
-              <p class="text-gray-700">Add free-tier API keys for enhanced data:</p>
-              <ul class="list-disc list-inside mt-2 space-y-1 text-gray-600">
-                <li>Financial Modeling Prep (company financials)</li>
-                <li>Alpha Vantage (market data)</li>
-                <li>Polygon.io (real-time quotes)</li>
-              </ul>
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-bold text-lg mb-2">Optional Enhancements</h4>
+                  <p class="text-gray-700">Add free-tier API keys for enhanced data:</p>
+                  <ul class="list-disc list-inside mt-2 space-y-1 text-gray-600">
+                    <li>Financial Modeling Prep (company financials)</li>
+                    <li>Alpha Vantage (market data)</li>
+                    <li>Polygon.io (real-time quotes)</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -413,20 +679,70 @@ const faqSchema = {
       </div>
     </section>
 
+    <!-- Related Blog Posts -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Learn More About Navam Invest</h2>
+
+        <!-- Blog Post 1 - Image Left -->
+        <div class="max-w-6xl mx-auto mb-16">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img src="/refer/images/navam-invest/starting.png" alt="Navam Invest Interface" class="rounded-2xl shadow-2xl w-full" />
+            </div>
+            <div>
+              <h3 class="text-3xl font-bold mb-4">AI-Powered Investment Intelligence for Everyone</h3>
+              <p class="text-xl text-gray-700 mb-6">Navam Invest is an AI-powered investment intelligence tool that runs entirely on your laptop, combining 10 specialized AI agents to provide professional-grade investment analysis for $3-15/month.</p>
+              <a href="/blog/introducing-navam-invest" class="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-700 font-semibold text-lg group">
+                Read the full article
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 - Image Right -->
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="md:order-2">
+              <img src="/refer/images/navam-invest/response.png" alt="Multi-Agent Architecture" class="rounded-2xl shadow-2xl w-full" />
+            </div>
+            <div class="md:order-1">
+              <h3 class="text-3xl font-bold mb-4">Multi-Agent AI Systems with LangGraph</h3>
+              <p class="text-xl text-gray-700 mb-6">Learn how specialized AI agents collaborate using LangGraph to deliver comprehensive investment analysis—the architecture powering Navam Invest's 10-agent system.</p>
+              <a href="/blog/multi-agent-architecture-langgraph" class="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-700 font-semibold text-lg group">
+                Read the full article
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-br from-purple-900 to-blue-900">
+    <section class="py-20 bg-gradient-to-br from-cyan-900 via-teal-900 to-blue-900">
       <div class="container mx-auto px-4 text-center text-white">
-        <h2 class="text-4xl md:text-5xl font-black mb-6">Ready to Get Started?</h2>
+        <h2 class="text-4xl md:text-5xl font-black mb-6">Build Investment Intelligence That Works</h2>
         <p class="text-xl mb-8 max-w-2xl mx-auto">
-          Join retail investors who are getting professional-grade investment intelligence without the professional price tag.
+          Fork Navam Invest and ship portfolio management, trading bots, or wealth platforms in days, not months. LangGraph orchestration, 10 agents, production-ready.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button client:load variant="primary" size="lg" href="https://github.com/navam-io/navam-invest">
-            View on GitHub
-          </Button>
-          <Button client:load variant="secondary" size="lg" href="/blog/introducing-navam-invest">
-            Read the Blog Post
-          </Button>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a
+            href="https://github.com/navam-io/navam-invest"
+            target="_blank"
+            class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white border-2 border-gray-300 text-gray-900 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all font-semibold"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            <span>View Code</span>
+          </a>
+          <StripeButton client:load buyButtonId="buy_btn_1SJ5kFRCxnzBPkIXLnQOqiLe" />
         </div>
       </div>
     </section>
