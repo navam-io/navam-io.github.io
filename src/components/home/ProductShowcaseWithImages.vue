@@ -5,7 +5,7 @@
         <!-- Section Header -->
         <div class="text-center mb-20">
           <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Five Production Codebases, Five Different Stacks
+            Five Working Codebases, Five Different Stacks
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
             See what you're getting: Real screenshots from working applications, not mockups or wireframes

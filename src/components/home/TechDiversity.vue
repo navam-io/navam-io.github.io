@@ -8,7 +8,7 @@
             Master Multiple Tech Stacks
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Four production codebases spanning Python TUIs, React dashboards, Next.js apps, and Chrome extensions—each solving real problems with different architectures
+            Four working codebases spanning Python TUIs, React dashboards, Next.js apps, and Chrome extensions—each solving real problems with different architectures
           </p>
         </div>
 
@@ -242,7 +242,7 @@
               Four Different Architectures, One Core Principle
             </p>
             <p class="text-lg text-gray-700 leading-relaxed">
-              From Python CLIs to Chrome extensions, each product demonstrates production patterns you can adapt to your stack. Learn by studying working code that ships.
+              From Python CLIs to Chrome extensions, each product demonstrates working patterns you can adapt to your stack. Learn by studying working code that ships.
             </p>
           </div>
         </div>

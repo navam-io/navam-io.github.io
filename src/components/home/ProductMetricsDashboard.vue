@@ -4,7 +4,7 @@
       <!-- Section Header -->
       <div class="max-w-4xl mx-auto text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Real Production Code. Real Business Value.
+          Real Working Code. Real Business Value.
         </h2>
         <p class="text-lg text-gray-700">
           Complete, battle-tested codebases with proven metrics and full vibe coding automation.

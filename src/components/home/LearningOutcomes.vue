@@ -4,10 +4,10 @@
       <!-- Section Headline -->
       <div class="max-w-3xl mx-auto text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 technical-heading">
-          Get All Five Production Codebases
+          Get All Five Working Codebases
         </h2>
         <p class="text-xl text-gray-600">
-          Python TUIs, CLI tools, Next.js dashboards, tRPC apps, and Chrome extensions—master different stacks by studying working production code.
+          Python TUIs, CLI tools, Next.js dashboards, tRPC apps, and Chrome extensions—master different stacks by studying working working code.
         </p>
       </div>
 
@@ -22,7 +22,7 @@
             <h3 class="text-xl font-bold text-white">Navam Invest</h3>
           </div>
           <p class="text-white/90 text-sm mb-4 leading-relaxed">
-            Multi-agent investment intelligence with streaming TUI. 10 specialized agents, 90%+ test coverage, production-grade.
+            Multi-agent investment intelligence with streaming TUI. 10 specialized agents, 90%+ test coverage, battle-tested.
           </p>
           <div class="flex items-center justify-center gap-4 text-xs text-white/80">
             <span>Python 3.9+</span>

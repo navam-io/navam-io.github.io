@@ -10,13 +10,13 @@
         <!-- Main Headline -->
         <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-tight animate-fade-in tracking-tight">
           <span class="titanium-text-3d">
-            Production AI Code<br />You Can Fork, Vibe, and Ship
+            Working AI Code<br />You Can Fork, Vibe, and Ship
           </span>
         </h1>
 
         <!-- Subheadline -->
         <h2 class="text-2xl md:text-3xl text-white/80 mb-4 animate-fade-in font-light max-w-4xl mx-auto">
-          Multi-agent systems that work first time. Battle-tested in production, fully documented, ready to customize.
+          Multi-agent systems that work first time. Battle-tested in real apps, fully documented, ready to customize.
         </h2>
 
         <p class="text-xl md:text-2xl text-white/70 mb-12 animate-fade-in font-light max-w-3xl mx-auto">
@@ -45,7 +45,7 @@
 
             <h3 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center">Navam Invest</h3>
             <p class="text-xl text-white/90 mb-8 leading-relaxed text-center max-w-2xl mx-auto">
-              Complete 10-agent investment intelligence platform. See exactly how multi-agent coordination, streaming workflows, and intelligent caching work in production.
+              Complete 10-agent investment intelligence platform. See exactly how multi-agent coordination, streaming workflows, and intelligent caching work in real apps.
             </p>
 
             <!-- Install Command -->

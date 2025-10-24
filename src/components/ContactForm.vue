@@ -5,7 +5,7 @@
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold text-gray-900 mb-4">Questions About Our Products?</h2>
         <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-          Commercial licensing, enterprise support, or custom implementations—we'll respond within 24 hours with exactly what you need to ship production AI.
+          Commercial licensing, enterprise support, or custom implementations—we'll respond within 24 hours with exactly what you need to ship working AI.
         </p>
       </div>
 

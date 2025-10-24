@@ -9,7 +9,7 @@
         <!-- Main Title -->
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-8 leading-tight animate-fade-in tracking-tight">
           <span class="bg-gradient-to-r from-white via-cyan-100 to-white bg-clip-text text-transparent drop-shadow-2xl">
-            Ready to Ship Production AI?
+            Ready to Ship Working AI?
           </span>
         </h1>
 
@@ -33,7 +33,7 @@
               </svg>
             </div>
             <h3 class="text-lg font-semibold text-white mb-2">Works First Time</h3>
-            <p class="text-white/70 text-sm">Battle-tested in production · 90%+ test coverage · Ship in days, not months</p>
+            <p class="text-white/70 text-sm">Battle-tested in real apps · 90%+ test coverage · Ship in days, not months</p>
           </div>
 
           <div class="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
@@ -43,7 +43,7 @@
               </svg>
             </div>
             <h3 class="text-lg font-semibold text-white mb-2">Fork and Customize</h3>
-            <p class="text-white/70 text-sm">Complete source code · Every agent & tool · Real production patterns you can study</p>
+            <p class="text-white/70 text-sm">Complete source code · Every agent & tool · Real working patterns you can study</p>
           </div>
 
           <div class="backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl p-6 text-center">

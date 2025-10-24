@@ -9,10 +9,10 @@
       <!-- Section Headline -->
       <div class="max-w-3xl mx-auto text-center mb-4">
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
-          Built on Production-Proven Technologies
+          Built on Battle-Tested Technologies
         </h2>
         <p class="text-xl text-white/80">
-          Every vibe coding ready product uses battle-tested technologies that scale in production
+          Every vibe coding ready product uses battle-tested technologies that scale in real apps
         </p>
       </div>
 

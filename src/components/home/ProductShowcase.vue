@@ -7,7 +7,7 @@
           100% Vibe Coding Ready Products
         </h2>
         <p class="text-xl text-gray-600 mb-4">
-          Complete, working multi-agent systems. Not tutorials, not starters—production codebases built with AI for your vibe coding workflow.
+          Complete, working multi-agent systems. Not tutorials, not starters—working codebases built with AI for your vibe coding workflow.
         </p>
         <div class="flex flex-wrap justify-center items-center gap-6 text-sm font-semibold mt-6">
           <div class="flex items-center gap-2 text-blue-600">
@@ -62,7 +62,7 @@
             <p class="text-lg text-gray-800 leading-relaxed mb-4">
               A complete working implementation of a 10-agent investment analysis system.
               See exactly how to build sophisticated agent coordination, intelligent routing,
-              streaming UIs, and real-time data integration in production.
+              streaming UIs, and real-time data integration in real apps.
             </p>
             <p class="text-lg text-gray-900 font-semibold">
               This is the codebase you wish existed when you started building multi-agent systems.
@@ -117,7 +117,7 @@
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-blue-600 font-bold">→</span>
-                  <span>How prompts work in production</span>
+                  <span>How prompts work in real apps</span>
                 </li>
               </ul>
             </div>
@@ -151,7 +151,7 @@
                 </div>
                 <p class="text-sm text-gray-700">
                   See the actual system prompts, tool instructions, and output format enforcement
-                  that work reliably in production. Months of refinement included.
+                  that work reliably in real apps. Months of refinement included.
                 </p>
               </div>
 
@@ -179,7 +179,7 @@
                 </div>
                 <p class="text-sm text-gray-700">
                   Learn when to cache (fundamentals, 1h TTL) vs when not to (real-time quotes,
-                  60s TTL). See 75% hit rate strategies in production.
+                  60s TTL). See 75% hit rate strategies in real apps.
                 </p>
               </div>
 

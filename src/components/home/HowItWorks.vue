@@ -7,7 +7,7 @@
           How It Works
         </h2>
         <p class="text-xl text-gray-600">
-          Three simple steps to production AI
+          Three simple steps to working AI
         </p>
       </div>
 
@@ -28,7 +28,7 @@
             </div>
             <h3 class="text-2xl font-bold text-gray-900 mb-3">Fork</h3>
             <p class="text-gray-700 leading-relaxed">
-              Clone the production codebase from GitHub. Get 10 agents, 32+ tools, streaming workflows, and all battle-tested patterns.
+              Clone the working codebase from GitHub. Get 10 agents, 32+ tools, streaming workflows, and all battle-tested patterns.
             </p>
           </div>
 
@@ -79,7 +79,7 @@
             </div>
             <h3 class="text-2xl font-bold text-gray-900 mb-3">Ship</h3>
             <p class="text-gray-700 leading-relaxed">
-              Deploy with confidence. 90%+ test coverage, production error handling, and proven patterns mean it works first time.
+              Deploy with confidence. 90%+ test coverage, error handling, and proven patterns mean it works first time.
             </p>
           </div>
         </div>

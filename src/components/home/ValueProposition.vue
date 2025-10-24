@@ -4,12 +4,12 @@
       <!-- Section Headline -->
       <div class="max-w-4xl mx-auto text-center mb-12">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 technical-heading">
-          You're Trying to Build Production AI, But...
+          You're Trying to Build Working AI, But...
         </h2>
 
         <!-- Pain Points -->
         <p class="text-2xl text-gray-900 leading-relaxed mb-8 font-semibold">
-          Tutorials break in production. Hiring takes months. Trial-and-error costs you your market window.
+          Tutorials break in real apps. Hiring takes months. Trial-and-error costs you your market window.
         </p>
       </div>
 
@@ -131,7 +131,7 @@
                 <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="font-medium">Battle-tested in production</span>
+                <span class="font-medium">Battle-tested in real apps</span>
               </li>
             </ul>
           </div>

@@ -64,7 +64,7 @@ const openIndex = ref<number | null>(null);
 const faqs: FAQ[] = [
   {
     question: "What is Navam?",
-    answer: "Navam is an AI product studio building production-ready, open-source tools for AI↔AI, AI↔Human, and AI↔World interactions. We create battle-tested multi-agent systems with full documentation, 90%+ test coverage, and MIT licensing. Fork our code, customize it, and ship in days."
+    answer: "Navam is an AI product studio building battle-tested, open-source tools for AI↔AI, AI↔Human, and AI↔World interactions. We create battle-tested multi-agent systems with full documentation, 90%+ test coverage, and MIT licensing. Fork our code, customize it, and ship in days."
   },
   {
     question: "How much do Navam products cost?",
@@ -76,10 +76,10 @@ const faqs: FAQ[] = [
   },
   {
     question: "What is the technology stack?",
-    answer: "Navam products use frontier AI models (Claude, GPT-4) with production frameworks like LangGraph for multi-agent orchestration. Backend is Python with Textual for terminal UIs. Frontend uses modern React, TypeScript, Astro, and Vue. All code follows best practices with comprehensive testing, type safety, and clear documentation."
+    answer: "Navam products use frontier AI models (Claude, GPT-4) with battle-tested frameworks like LangGraph for multi-agent orchestration. Backend is Python with Textual for terminal UIs. Frontend uses modern React, TypeScript, Astro, and Vue. All code follows best practices with comprehensive testing, type safety, and clear documentation."
   },
   {
-    question: "Is the code really production-ready?",
+    question: "Is the code really battle-tested?",
     answer: "Yes. Unlike proof-of-concept demos, Navam products are battle-tested with 90%+ test coverage, error handling, caching, streaming UIs, and real-world usage. Every feature includes documentation, tests, and prompts used to generate the code. You're getting reference implementations that work first time, not experimental code."
   },
   {

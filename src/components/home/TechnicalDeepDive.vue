@@ -4,7 +4,7 @@
       <!-- Section Headline -->
       <div class="max-w-3xl mx-auto text-center mb-12">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 technical-heading">
-          Production Patterns Included
+          Working Patterns Included
         </h2>
         <p class="text-xl text-gray-600">
           See exactly how we solved the hard problems
@@ -74,7 +74,7 @@
               <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
                 <h4 class="font-bold text-gray-900 mb-2">WHAT YOU'LL LEARN:</h4>
                 <p class="text-gray-700">
-                  See the actual code for agent coordination that works in production. Study our state management, routing logic, and handoff protocols.
+                  See the actual code for agent coordination that works in real apps. Study our state management, routing logic, and handoff protocols.
                 </p>
               </div>
             </div>
@@ -179,7 +179,7 @@
               <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                 <h4 class="font-bold text-gray-900 mb-2">THE PROBLEM:</h4>
                 <p class="text-gray-700">
-                  Tutorial prompts break in production. How do you write system prompts that work reliably? How do you enforce output formats? Handle errors?
+                  Tutorial prompts break in real apps. How do you write system prompts that work reliably? How do you enforce output formats? Handle errors?
                 </p>
               </div>
               <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
@@ -210,7 +210,7 @@
               <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
                 <h4 class="font-bold text-gray-900 mb-2">WHAT YOU'LL LEARN:</h4>
                 <p class="text-gray-700">
-                  See the actual prompts we use in production, not sanitized examples. Study why they work and how we refined them.
+                  See the actual prompts we use in real apps, not sanitized examples. Study why they work and how we refined them.
                 </p>
               </div>
             </div>

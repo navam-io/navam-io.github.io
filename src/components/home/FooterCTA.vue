@@ -13,7 +13,7 @@
 
         <!-- Subheadline -->
         <p class="text-xl md:text-2xl text-white/80 mb-12 leading-relaxed max-w-3xl mx-auto">
-          Fork production-ready multi-agent systems. Learn from battle-tested patterns. Ship in days, not months.
+          Fork battle-tested multi-agent systems. Learn from battle-tested patterns. Ship in days, not months.
         </p>
 
         <!-- Three Clear CTAs -->
@@ -62,7 +62,7 @@
             <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            <span class="text-white font-medium">Production-Proven</span>
+            <span class="text-white font-medium">Battle-Tested</span>
           </div>
           <div class="flex items-center gap-2">
             <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

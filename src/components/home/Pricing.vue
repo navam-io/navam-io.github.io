@@ -32,7 +32,7 @@
             </li>
             <li class="flex items-start gap-2">
               <Icon name="check-circle" size="sm" class="text-gray-900 flex-shrink-0 mt-1" />
-              <span class="text-gray-700">Study production patterns</span>
+              <span class="text-gray-700">Study working patterns</span>
             </li>
             <li class="flex items-start gap-2">
               <Icon name="check-circle" size="sm" class="text-gray-900 flex-shrink-0 mt-1" />
@@ -157,7 +157,7 @@
             <div>
               <h4 class="font-bold text-gray-900 mb-2">What exactly do I get?</h4>
               <p class="text-gray-700">
-                Complete production codebases with full source access. Every agent, every tool, every prompt, every test—nothing held back. MIT licensed.
+                Complete working codebases with full source access. Every agent, every tool, every prompt, every test—nothing held back. MIT licensed.
               </p>
             </div>
 
