@@ -61,6 +61,32 @@ const articleStructuredData = {
   },
   "keywords": tags.join(", ")
 };
+
+// Create BreadcrumbList structured data
+const breadcrumbStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.navam.io"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.navam.io/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": title,
+      "item": new URL(Astro.url.pathname, Astro.site).toString()
+    }
+  ]
+};
 ---
 
 <Layout 
@@ -73,6 +99,7 @@ const articleStructuredData = {
 >
   <Header client:load />
   <script type="application/ld+json" set:html={JSON.stringify(articleStructuredData)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbStructuredData)} />
   <main class="min-h-screen">
     <article>
       {featuredImage ? (

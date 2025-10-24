@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import Header from '@components/Header.vue';
-import HeroReference from '@components/home/HeroReference.vue';
+import HeroCarousel from '@components/home/HeroCarousel.vue';
 import TechTicker from '@components/home/TechTicker.vue';
 import ValueProposition from '@components/home/ValueProposition.vue';
 import FeaturesGrid from '@components/home/FeaturesGrid.vue';
@@ -12,6 +12,7 @@ import ProductShowcaseWithImages from '@components/home/ProductShowcaseWithImage
 import ProductMetricsDashboard from '@components/home/ProductMetricsDashboard.vue';
 import LearningOutcomes from '@components/home/LearningOutcomes.vue';
 import Pricing from '@components/home/Pricing.vue';
+import FAQ from '@components/home/FAQ.vue';
 import FooterCTA from '@components/home/FooterCTA.vue';
 import Footer from '@components/Footer.vue';
 ---
@@ -23,9 +24,81 @@ import Footer from '@components/Footer.vue';
   ogImage="/images/logo.png"
   ogType="website"
 >
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Navam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Navam is an AI product studio building production-ready, open-source tools for AI↔AI, AI↔Human, and AI↔World interactions. We create battle-tested multi-agent systems with full documentation, 90%+ test coverage, and MIT licensing. Fork our code, customize it, and ship in days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much do Navam products cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All Navam products are free and open source under the MIT license. There are no licensing fees or subscription costs. You'll only pay for the API costs of the LLM providers you choose to use (typically $3-15/month for individual use). Commercial support and enterprise customization are available upon request."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Navam Invest?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Navam Invest is an AI-powered investment intelligence tool with 10 specialized agents for retail investors. It runs entirely on your laptop, providing professional-grade investment analysis for $3-15/month in API costs (vs. $1,000-$10,000/year for traditional wealth management). Features include fundamental analysis, earnings tracking, portfolio risk assessment, tax optimization, and options strategies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the technology stack?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Navam products use frontier AI models (Claude, GPT-4) with production frameworks like LangGraph for multi-agent orchestration. Backend is Python with Textual for terminal UIs. Frontend uses modern React, TypeScript, Astro, and Vue. All code follows best practices with comprehensive testing, type safety, and clear documentation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the code really production-ready?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Unlike proof-of-concept demos, Navam products are battle-tested with 90%+ test coverage, error handling, caching, streaming UIs, and real-world usage. Every feature includes documentation, tests, and prompts used to generate the code. You're getting reference implementations that work first time, not experimental code."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I customize the products for my needs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. That's the core value proposition. Navam products are designed to be forked and customized using 'vibe coding'—describe what you want, let AI modify the code. The architecture is modular, well-documented, and built specifically for AI-assisted customization. MIT license means you can use it commercially without restrictions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is 'vibe coding'?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vibe coding is a development philosophy where humans focus on strategic direction while AI handles implementation. You describe the desired outcome and provide domain expertise, then AI generates and modifies the code. Navam products were built using vibe coding and are optimized for you to continue developing this way."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to be a developer to use these products?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For using the products as-is: no. Navam Invest and Command have simple installation commands and terminal UIs. For customizing the code: basic familiarity with Python and terminal commands helps. The products include AI-friendly documentation that helps AI assistants guide you through customization even if you're not an expert developer."
+        }
+      }
+    ]
+  })} />
+
   <Header client:load />
   <main>
-    <HeroReference client:load />
+    <HeroCarousel client:load />
     <TechTicker client:load />
     <ValueProposition client:load />
     <FeaturesGrid client:load />
@@ -36,6 +109,7 @@ import Footer from '@components/Footer.vue';
     <ProductMetricsDashboard client:load />
     <LearningOutcomes client:load />
     <Pricing client:load />
+    <FAQ client:load />
     <FooterCTA client:load />
   </main>
   <Footer client:load />

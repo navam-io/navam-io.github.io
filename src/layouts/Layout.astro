@@ -80,6 +80,48 @@ const structuredData = {
         "Correlation matrix analysis",
         "Strategic insights"
       ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Command",
+      "applicationCategory": "DeveloperApplication",
+      "description": "AI-powered terminal productivity tool. Bring frontier LLMs directly to your command line with intelligent workflows and markdown-based automation.",
+      "operatingSystem": "Windows, macOS, Linux",
+      "softwareVersion": "Latest",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://github.com/navam-io/command",
+      "featureList": [
+        "Terminal-based LLM interface",
+        "Markdown workflow automation",
+        "Obsidian and VS Code integration",
+        "AI-assisted command line productivity",
+        "Multi-provider LLM support"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Memo",
+      "applicationCategory": "ProductivityApplication",
+      "description": "AI-powered browsing companion with multi-provider support, YouTube integration, and privacy-first design. Local-first AI assistance for web research.",
+      "operatingSystem": "Web Browser",
+      "softwareVersion": "Latest",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://github.com/navam-io/memo",
+      "featureList": [
+        "Multi-AI provider support (OpenAI, Anthropic, Ollama)",
+        "YouTube transcript integration",
+        "Privacy-first local execution",
+        "Browser extension for web research",
+        "Local Ollama support"
+      ]
     }
   ],
   "knowsAbout": [
@@ -107,7 +149,7 @@ const structuredData = {
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
     <meta name="author" content={author} />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="language" content="English" />
     <link rel="canonical" href={canonicalURL} />
     
