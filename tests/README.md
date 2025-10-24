@@ -141,6 +141,38 @@ test.describe('Feature Name', () => {
 5. **Use descriptive names**: Test names should explain what they verify
 6. **Group related tests**: Use `test.describe` for organization
 
+### Load State Strategy
+
+**We use `load` instead of `networkidle` for page load waits.** Here's why:
+
+```typescript
+// ✅ CORRECT - Modern web apps with analytics/payments
+await page.goto('/');
+await page.waitForLoadState('load'); // HTML, CSS, JS fully loaded
+await page.waitForSelector('h1', { state: 'visible' }); // Vue hydrated
+
+// ❌ WRONG - Never completes with continuous background requests
+await page.goto('/');
+await page.waitForLoadState('networkidle'); // Waits forever!
+```
+
+**Why `networkidle` doesn't work:**
+- **Stripe buttons** continuously poll their API
+- **Google Analytics & Microsoft Clarity** send ongoing beacons
+- **Vue hydration** happens immediately after `load`, not after `networkidle`
+- Modern web apps have legitimate ongoing network activity
+
+**Our pattern:**
+1. `waitForLoadState('load')` - Wait for page resources to load
+2. `waitForSelector()` - Wait for specific Vue-rendered element
+3. This confirms both page load AND Vue client-side hydration
+
+**Expected console warnings:**
+- "Potential permissions policy violation" - Stripe button warnings (expected)
+- "Hydration completed but contains mismatches" - Known Stripe/analytics DOM injection (acceptable)
+
+These warnings are filtered in tests as they don't indicate broken functionality.
+
 ## Troubleshooting
 
 ### Tests failing locally
@@ -158,9 +190,10 @@ DEBUG=pw:api npx playwright test
 
 ### Flaky tests
 
-- Add explicit waits: `await page.waitForLoadState('networkidle')`
+- Add explicit waits: `await page.waitForSelector('element', { state: 'visible' })`
 - Use `toHaveCount()` before accessing nth element
-- Increase timeout for slow operations
+- Don't use `networkidle` - use `load` + specific element waits instead
+- Increase timeout for slow operations if needed
 
 ### Port conflicts
 

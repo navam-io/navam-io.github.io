@@ -5,7 +5,9 @@ test.describe('Performance', () => {
     const startTime = Date.now();
 
     await page.goto('/');
-    await page.waitForLoadState('networkidle');
+    await page.waitForLoadState('load');
+    // Wait for initial Vue hydration
+    await page.waitForSelector('h1', { state: 'visible' });
 
     const loadTime = Date.now() - startTime;
 
@@ -15,7 +17,8 @@ test.describe('Performance', () => {
 
   test('images are optimized and lazy-loaded', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('img', { state: 'visible' });
 
     // Check if images have loading attribute
     const images = page.locator('img');
@@ -33,7 +36,8 @@ test.describe('Performance', () => {
 
   test('no large layout shifts on load', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('h1', { state: 'visible' });
 
     // Get initial viewport position
     const initialScroll = await page.evaluate(() => window.scrollY);
@@ -61,7 +65,8 @@ test.describe('Performance', () => {
     });
 
     await page.goto('/');
-    await page.waitForLoadState('networkidle');
+    await page.waitForLoadState('load');
+    await page.waitForSelector('h1', { state: 'visible' });
 
     // Should have no failed asset requests
     expect(failedRequests).toHaveLength(0);
@@ -69,13 +74,17 @@ test.describe('Performance', () => {
 
   test('no memory leaks on navigation', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('h1', { state: 'visible' });
 
     // Navigate to blog and back
     await page.goto('/blog');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('h1, h2', { state: 'visible' });
+
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('h1', { state: 'visible' });
 
     // If page is functional after navigation, no major memory issues
     await expect(page.locator('body')).toBeVisible();
@@ -83,7 +92,8 @@ test.describe('Performance', () => {
 
   test('fonts load correctly', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('h1', { state: 'visible' });
 
     // Check if custom fonts are applied
     const bodyFont = await page.locator('body').evaluate(el => {

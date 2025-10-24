@@ -3,7 +3,9 @@ import { test, expect } from '@playwright/test';
 test.describe('Homepage', () => {
   test('loads successfully and has correct title', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    // Wait for Vue hydration by checking for key element
+    await page.waitForSelector('h1', { state: 'visible' });
 
     // Check that page loaded
     await expect(page).toHaveTitle(/Navam/);
@@ -14,9 +16,9 @@ test.describe('Homepage', () => {
 
   test('displays hero section', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
 
-    // Main heading should be visible
+    // Main heading should be visible (also confirms Vue hydration)
     const heroHeading = page.locator('h1').first();
     await expect(heroHeading).toBeVisible();
 
@@ -27,26 +29,31 @@ test.describe('Homepage', () => {
 
   test('has navigation menu', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    // Wait for header to be visible (confirms Vue hydration)
+    await page.waitForSelector('header', { state: 'visible' });
 
     // Navigation should exist
-    const nav = page.locator('nav, header').first();
+    const nav = page.locator('nav').first();
     await expect(nav).toBeVisible();
   });
 
   test('displays Navam branding', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('header', { state: 'visible' });
 
-    // Should have Navam mentioned in the page
-    await expect(page.locator('text=/Navam/i').first()).toBeVisible();
+    // Should have Navam logo and text in header
+    await expect(page.locator('header img[alt="Navam Logo"]')).toBeVisible();
+    await expect(page.locator('header').getByText('Navam')).toBeVisible();
   });
 
   test('is responsive on mobile', async ({ page }) => {
     // Set mobile viewport
     await page.setViewportSize({ width: 375, height: 667 });
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('h1', { state: 'visible' });
 
     // Page should still be functional on mobile
     await expect(page.locator('body')).toBeVisible();
@@ -70,7 +77,10 @@ test.describe('Homepage', () => {
     });
 
     await page.goto('/');
-    await page.waitForLoadState('networkidle');
+    await page.waitForLoadState('load');
+    await page.waitForSelector('h1', { state: 'visible' });
+    // Give time for any console errors to occur during hydration
+    await page.waitForTimeout(500);
 
     // Check for unexpected console errors
     expect(errors).toHaveLength(0);

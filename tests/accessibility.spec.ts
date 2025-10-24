@@ -3,7 +3,8 @@ import { test, expect } from '@playwright/test';
 test.describe('Accessibility', () => {
   test('homepage has proper heading hierarchy', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('h1', { state: 'visible' });
 
     // Should have exactly one h1
     const h1Count = await page.locator('h1').count();
@@ -16,7 +17,8 @@ test.describe('Accessibility', () => {
 
   test('images have alt text', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('img', { state: 'visible' });
 
     // Get all images
     const images = page.locator('img');
@@ -35,7 +37,8 @@ test.describe('Accessibility', () => {
 
   test('links have accessible names', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('a', { state: 'visible' });
 
     // Get all links
     const links = page.locator('a');
@@ -57,7 +60,7 @@ test.describe('Accessibility', () => {
 
   test('page has proper language attribute', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
 
     // HTML element should have lang attribute
     const lang = await page.locator('html').getAttribute('lang');
@@ -67,7 +70,8 @@ test.describe('Accessibility', () => {
 
   test('interactive elements are keyboard accessible', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('button, a', { state: 'visible' });
 
     // Find first button or link
     const firstInteractive = page.locator('button, a').first();
@@ -82,7 +86,8 @@ test.describe('Accessibility', () => {
 
   test('sufficient color contrast on dark backgrounds', async ({ page }) => {
     await page.goto('/');
-    await page.waitForLoadState('networkidle'); // Wait for Vue hydration
+    await page.waitForLoadState('load');
+    await page.waitForSelector('body', { state: 'visible' });
 
     // This is a basic check - in production you'd use a tool like axe-core
     // Check that text is visible (as a proxy for contrast)
