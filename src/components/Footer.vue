@@ -143,8 +143,8 @@
               </a>
             </li>
             <li>
-              <a href="https://github.com/navam-io/navam-invest/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">
-                License (MIT)
+              <a href="/license" class="text-gray-600 hover:text-gray-900 transition-colors">
+                License (BSL-1.1)
               </a>
             </li>
           </ul>

@@ -64,11 +64,11 @@ const openIndex = ref<number | null>(null);
 const faqs: FAQ[] = [
   {
     question: "What is Navam?",
-    answer: "Navam is an AI product studio building battle-tested, open-source tools for AI↔AI, AI↔Human, and AI↔World interactions. We create battle-tested multi-agent systems with full documentation, 90%+ test coverage, and MIT licensing. Fork our code, customize it, and ship in days."
+    answer: "Navam is an AI product studio building battle-tested, source available tools for AI↔AI, AI↔Human, and AI↔World interactions. We create working multi-agent systems with full documentation, 90%+ test coverage, and BSL-1.1 licensing. Fork our code, customize it, and ship in days."
   },
   {
     question: "How much do Navam products cost?",
-    answer: "All Navam products are free and open source under the MIT license. There are no licensing fees or subscription costs. You'll only pay for the API costs of the LLM providers you choose to use (typically $3-15/month for individual use). Commercial support and enterprise customization are available upon request."
+    answer: "All Navam products are free for personal use under the Business Source License (BSL-1.1). You pay nothing for personal projects, learning, or non-commercial use. Commercial use requires a paid license. You'll also pay API costs for LLM providers you choose (typically $3-15/month for individual use). Contact us for commercial licensing."
   },
   {
     question: "What is Navam Invest?",
@@ -84,7 +84,7 @@ const faqs: FAQ[] = [
   },
   {
     question: "Can I customize the products for my needs?",
-    answer: "Absolutely. That's the core value proposition. Navam products are designed to be forked and customized using 'vibe coding'—describe what you want, let AI modify the code. The architecture is modular, well-documented, and built specifically for AI-assisted customization. MIT license means you can use it commercially without restrictions."
+    answer: "Absolutely. That's the core value proposition. Navam products are designed to be forked and customized using 'vibe coding'—describe what you want, let AI modify the code. The architecture is modular, well-documented, and built specifically for AI-assisted customization. BSL-1.1 license allows free personal use; commercial use requires a paid license."
   },
   {
     question: "What is 'vibe coding'?",
