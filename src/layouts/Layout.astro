@@ -10,6 +10,10 @@ export interface Props {
   twitterCard?: string;
   canonicalURL?: string;
   author?: string;
+  // Article-specific properties
+  date?: string;
+  modifiedDate?: string;
+  tags?: string[];
 }
 
 const {
@@ -20,7 +24,10 @@ const {
   ogType = 'website',
   twitterCard = 'summary_large_image',
   canonicalURL = Astro.url.toString(),
-  author = 'Navam Team'
+  author = 'Navam Team',
+  date,
+  modifiedDate,
+  tags = []
 } = Astro.props;
 
 const structuredData = {
@@ -47,8 +54,17 @@ const structuredData = {
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "description": "Open source (BSL-1.1 License). API costs: $3-15/month",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "3",
+          "maxPrice": "15",
+          "priceCurrency": "USD",
+          "unitText": "MONTH"
+        }
       },
+      "priceRange": "$3-$15/month",
       "url": "https://github.com/navam-io/navam-invest",
       "installUrl": "https://pypi.org/project/navam-invest/",
       "screenshot": "https://www.navam.io/images/navam-invest-screenshot.png",
@@ -70,8 +86,17 @@ const structuredData = {
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "description": "Open source (BSL-1.1 License). API costs: $3-15/month",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "3",
+          "maxPrice": "15",
+          "priceCurrency": "USD",
+          "unitText": "MONTH"
+        }
       },
+      "priceRange": "$3-$15/month",
       "url": "https://github.com/navam-io/moments",
       "featureList": [
         "Interactive knowledge graphs",
@@ -91,8 +116,17 @@ const structuredData = {
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "description": "Open source (BSL-1.1 License). API costs: $3-15/month",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "3",
+          "maxPrice": "15",
+          "priceCurrency": "USD",
+          "unitText": "MONTH"
+        }
       },
+      "priceRange": "$3-$15/month",
       "url": "https://github.com/navam-io/command",
       "featureList": [
         "Terminal-based LLM interface",
@@ -112,8 +146,17 @@ const structuredData = {
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "description": "Open source (BSL-1.1 License). API costs: $3-15/month",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "3",
+          "maxPrice": "15",
+          "priceCurrency": "USD",
+          "unitText": "MONTH"
+        }
       },
+      "priceRange": "$3-$15/month",
       "url": "https://github.com/navam-io/memo",
       "featureList": [
         "Multi-AI provider support (OpenAI, Anthropic, Ollama)",
@@ -161,7 +204,18 @@ const structuredData = {
     <meta property="og:image" content={new URL(ogImage, Astro.site).toString()} />
     <meta property="og:site_name" content="Navam" />
     <meta property="og:locale" content="en_US" />
-    
+
+    <!-- Article-specific Open Graph Tags -->
+    {ogType === 'article' && date && (
+      <>
+        <meta property="article:published_time" content={new Date(date).toISOString()} />
+        {modifiedDate && <meta property="article:modified_time" content={new Date(modifiedDate).toISOString()} />}
+        <meta property="article:author" content={author} />
+        {tags.length > 0 && <meta property="article:section" content={tags[0]} />}
+        {tags.map(tag => <meta property="article:tag" content={tag} />)}
+      </>
+    )}
+
     <!-- Twitter -->
     <meta property="twitter:card" content={twitterCard} />
     <meta property="twitter:url" content={canonicalURL} />

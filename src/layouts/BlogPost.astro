@@ -15,6 +15,8 @@ export interface Props {
     featuredImage?: string;
     tags?: string[];
     relatedPosts?: string[];
+    lastModified?: string;
+    modifiedDate?: string;
   };
 }
 
@@ -89,13 +91,16 @@ const breadcrumbStructuredData = {
 };
 ---
 
-<Layout 
+<Layout
   title={`${title} - Navam Blog`}
   description={excerpt}
   keywords={tags.join(', ')}
   ogImage={featuredImage || '/images/logo.png'}
   ogType="article"
   author={author}
+  date={date}
+  modifiedDate={frontmatter.lastModified || frontmatter.modifiedDate}
+  tags={tags}
 >
   <Header client:load />
   <script type="application/ld+json" set:html={JSON.stringify(articleStructuredData)} />
