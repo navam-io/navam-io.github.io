@@ -67,8 +67,24 @@ const faqs: FAQ[] = [
     answer: "Navam is an AI product studio building battle-tested, source available tools for AI↔AI, AI↔Human, and AI↔World interactions. We create working multi-agent systems with full documentation, 90%+ test coverage, and BSL-1.1 licensing. Fork our code, customize it, and ship in days."
   },
   {
+    question: "What exactly do I get?",
+    answer: "Complete working codebases with full source access. Every agent, every tool, every prompt, every test—nothing held back. Licensed under BSL-1.1: free for personal use, paid for commercial use."
+  },
+  {
     question: "How much do Navam products cost?",
     answer: "All Navam products are free for personal use under the Business Source License (BSL-1.1). You pay nothing for personal projects, learning, or non-commercial use. Commercial use requires a paid license. You'll also pay API costs for LLM providers you choose (typically $3-15/month for individual use). Contact us for commercial licensing."
+  },
+  {
+    question: "What's included in \"personal use\"?",
+    answer: "Learning, education, personal projects, and internal evaluation—all free. Commercial use (SaaS, client work, revenue-generating products) requires a commercial license."
+  },
+  {
+    question: "Can I really build commercial products?",
+    answer: "Yes! With a commercial license ($299/product), fork the code, customize it, and ship your own SaaS products. Keep 100% of your revenue. No attribution required."
+  },
+  {
+    question: "What if it doesn't work for my use case?",
+    answer: "30-day money-back guarantee, no questions asked. If you can't adapt it or learn from it, get a full refund."
   },
   {
     question: "What is Navam Invest?",

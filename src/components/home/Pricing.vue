@@ -147,43 +147,6 @@
           <p class="text-center text-gray-600 text-sm mt-4">Regular: $1,495 • Save $696 (47%)</p>
         </div>
       </div>
-
-      <!-- FAQ / Trust Builder -->
-      <div class="max-w-3xl mx-auto mt-16">
-        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
-          <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Frequently Asked Questions</h3>
-
-          <div class="space-y-6">
-            <div>
-              <h4 class="font-bold text-gray-900 mb-2">What exactly do I get?</h4>
-              <p class="text-gray-700">
-                Complete working codebases with full source access. Every agent, every tool, every prompt, every test—nothing held back. Licensed under BSL-1.1: free for personal use, paid for commercial use.
-              </p>
-            </div>
-
-            <div>
-              <h4 class="font-bold text-gray-900 mb-2">What's included in "personal use"?</h4>
-              <p class="text-gray-700">
-                Learning, education, personal projects, and internal evaluation—all free. Commercial use (SaaS, client work, revenue-generating products) requires a commercial license.
-              </p>
-            </div>
-
-            <div>
-              <h4 class="font-bold text-gray-900 mb-2">Can I really build commercial products?</h4>
-              <p class="text-gray-700">
-                Yes! With a commercial license ($299/product), fork the code, customize it, and ship your own SaaS products. Keep 100% of your revenue. No attribution required.
-              </p>
-            </div>
-
-            <div>
-              <h4 class="font-bold text-gray-900 mb-2">What if it doesn't work for my use case?</h4>
-              <p class="text-gray-700">
-                30-day money-back guarantee, no questions asked. If you can't adapt it or learn from it, get a full refund.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 </template>
