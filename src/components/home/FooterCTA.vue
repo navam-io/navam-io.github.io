@@ -8,12 +8,12 @@
       <div class="max-w-4xl mx-auto text-center">
         <!-- Headline -->
         <h2 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-          Start Building Your AI Product Today
+          {{ selectedMessage.title }}
         </h2>
 
         <!-- Subheadline -->
         <p class="text-xl md:text-2xl text-white/80 mb-12 leading-relaxed max-w-3xl mx-auto">
-          Fork battle-tested multi-agent systems. Learn from battle-tested patterns. Ship in days, not months.
+          {{ selectedMessage.subtitle }}
         </p>
 
         <!-- Three Clear CTAs -->
@@ -80,8 +80,24 @@
 </template>
 
 <script setup lang="ts">
-import Button from '@/components/ui/Button.vue'
-import StripeButton from '@/components/ui/StripeButton.vue'
+import { ref, onMounted } from 'vue';
+import Button from '@/components/ui/Button.vue';
+import StripeButton from '@/components/ui/StripeButton.vue';
+import { heroMessages, getRandomMessageExcluding, type HeroMessage } from '@/data/heroMessages';
+
+// Select a message different from the hero
+const selectedMessage = ref<HeroMessage>(heroMessages[0]);
+
+onMounted(() => {
+  // Get the hero's selected message index from global scope
+  const heroIndex = typeof window !== 'undefined'
+    ? (window as any).__navamHeroMessageIndex ?? -1
+    : -1;
+
+  // Pick a different message
+  const differentIndex = getRandomMessageExcluding(heroIndex);
+  selectedMessage.value = heroMessages[differentIndex];
+});
 </script>
 
 <style scoped>
