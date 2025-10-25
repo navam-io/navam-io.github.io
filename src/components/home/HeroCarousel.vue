@@ -232,20 +232,36 @@ interface Technology {
 // Hero message variations (randomly selected on page load)
 const heroMessages: HeroMessage[] = [
   {
-    title: 'Build Production-Grade AI in Days, Not Months.',
-    subtitle: 'Fork battle-tested, multi-agent systems with real-world architectures — customize, ship, and own 100% of your product.'
+    title: 'Stop Building AI from Scratch — Start Shipping in Days.',
+    subtitle: 'Fork complete, battle-tested multi-agent systems. Customize, deploy, and own everything you build.'
   },
   {
-    title: 'From Zero to Production AI — Fast.',
-    subtitle: 'Skip the 6-month trial-and-error. Fork working code, vibe-code your vision, and ship confidently.'
+    title: 'AI That Works the First Time.',
+    subtitle: 'Fork proven codebases — 90%+ test coverage, full documentation, and production patterns you can trust.'
   },
   {
-    title: 'Stop Debugging. Start Shipping.',
-    subtitle: 'Navam gives you complete, tested AI systems you can fork, customize, and launch in days.'
+    title: 'From Idea to Working AI in a Weekend.',
+    subtitle: 'Skip 6 months of debugging. Start with reference implementations that already handle the hard parts.'
+  },
+  {
+    title: 'Turn Months of AI Engineering into a Few Clicks.',
+    subtitle: 'Each Navam reference condenses 6+ months of AI engineering into fork-ready code you can ship in days.'
+  },
+  {
+    title: 'The Fastest Way to Build Real AI Products.',
+    subtitle: 'Fork agentic systems refined in production. Multi-agent workflows, streaming UIs, and intelligent caching — all included.'
   },
   {
     title: 'Fork. Vibe. Ship.',
-    subtitle: 'Real production AI references — multi-agent systems, tested workflows, ready to customize.'
+    subtitle: 'Battle-tested AI templates for fintech, BI, and research. Customize with your brand and ship to customers.'
+  },
+  {
+    title: 'Build Like the Best AI Startups Do.',
+    subtitle: 'Use complete, production-grade systems as your foundation. Save months of trial-and-error.'
+  },
+  {
+    title: 'Production AI, Ready to Fork.',
+    subtitle: '10 agents. 32+ tools. Streaming workflows. Test coverage above 90%. Everything you need to ship AI products.'
   }
 ];
 
