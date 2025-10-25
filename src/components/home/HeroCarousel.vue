@@ -12,12 +12,12 @@
         <div class="text-center mb-16 space-y-6">
           <!-- Main Headline -->
           <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight max-w-5xl mx-auto">
-            Stop wasting time in building AI systems from scratch
+            {{ selectedHeroMessage.title }}
           </h1>
 
           <!-- Subheadline -->
           <p class="text-xl md:text-2xl lg:text-3xl text-white/80 font-light max-w-4xl mx-auto leading-relaxed">
-            Fork working code. Customize with AI. Ship in days.
+            {{ selectedHeroMessage.subtitle }}
           </p>
 
           <!-- Time Comparison -->
@@ -204,6 +204,11 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import StripeButton from '@/components/ui/StripeButton.vue';
 
+interface HeroMessage {
+  title: string;
+  subtitle: string;
+}
+
 interface Product {
   id: string;
   name: string;
@@ -223,6 +228,29 @@ interface Technology {
   name: string;
   logo: string;
 }
+
+// Hero message variations (randomly selected on page load)
+const heroMessages: HeroMessage[] = [
+  {
+    title: 'Build Production-Grade AI in Days, Not Months.',
+    subtitle: 'Fork battle-tested, multi-agent systems with real-world architectures — customize, ship, and own 100% of your product.'
+  },
+  {
+    title: 'From Zero to Production AI — Fast.',
+    subtitle: 'Skip the 6-month trial-and-error. Fork working code, vibe-code your vision, and ship confidently.'
+  },
+  {
+    title: 'Stop Debugging. Start Shipping.',
+    subtitle: 'Navam gives you complete, tested AI systems you can fork, customize, and launch in days.'
+  },
+  {
+    title: 'Fork. Vibe. Ship.',
+    subtitle: 'Real production AI references — multi-agent systems, tested workflows, ready to customize.'
+  }
+];
+
+// Randomly select hero message on component mount
+const selectedHeroMessage = ref<HeroMessage>(heroMessages[0]);
 
 const products: Product[] = [
   {
@@ -402,6 +430,10 @@ function resetAutoplay() {
 }
 
 onMounted(() => {
+  // Randomly select hero message on page load
+  const randomIndex = Math.floor(Math.random() * heroMessages.length);
+  selectedHeroMessage.value = heroMessages[randomIndex];
+
   startAutoplay();
 });
 
