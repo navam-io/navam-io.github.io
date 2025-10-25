@@ -10,16 +10,9 @@
 
         <!-- Top Section: Message -->
         <div class="text-center mb-16 space-y-6">
-          <!-- Badge -->
-          <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-4">
-            <div class="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
-            <span class="text-purple-300 text-sm font-medium">5 Working Reference Implementations</span>
-          </div>
-
           <!-- Main Headline -->
           <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight max-w-5xl mx-auto">
-            Stop Building AI Systems
-            <span class="block text-purple-400">From Scratch</span>
+            Stop wasting time in building AI systems from scratch
           </h1>
 
           <!-- Subheadline -->
