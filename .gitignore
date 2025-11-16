@@ -2,6 +2,7 @@
 .claude/
 backlog/
 refer/
+/content/
 
 # build output
 dist/
