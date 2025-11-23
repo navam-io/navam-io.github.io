@@ -33,19 +33,19 @@
             </h3>
 
             <p class="text-lg text-white/90 mb-6">
-              Click-to-add visual canvas for AI agent testing. Make testing as intuitive as Postman made API testing. Active development with v0.3.1 shipped.
+              Click-to-add visual canvas for AI agent testing. Make testing as intuitive as Postman made API testing. Active development with v0.22.0 shipped - unified library tab with 12 categories.
             </p>
 
             <!-- Version stats -->
             <div class="flex gap-2 mb-6">
               <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">
-                v0.3.1
+                v0.22.0
               </span>
               <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">
-                82 tests
+                473 tests
               </span>
               <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">
-                98% coverage
+                68 components
               </span>
             </div>
 
@@ -119,7 +119,7 @@
               </div>
 
               <img
-                src="/images/sentinel/canvas-palette-react.png"
+                src="/images/sentinel/navam-sentinel-release-55.png"
                 alt="Sentinel Visual Testing Canvas"
                 class="w-full"
                 loading="lazy"

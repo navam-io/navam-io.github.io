@@ -11,9 +11,9 @@ const productSchema = {
   "applicationCategory": "DeveloperApplication",
   "description": "Visual-first testing platform for AI agents. Make AI agent testing as intuitive as Postman made API testing. Click-to-add canvas with real-time YAML generation.",
   "operatingSystem": ["Windows", "macOS", "Linux"],
-  "softwareVersion": "0.3.1",
-  "releaseNotes": "Production-ready visual canvas with React 19, React Flow 12.3, click-to-add UX, and comprehensive testing",
-  "datePublished": "2025-11-16",
+  "softwareVersion": "0.22.0",
+  "releaseNotes": "Unified Library Tab with 12-category system, 473 frontend tests, 68 React components, and comprehensive testing",
+  "datePublished": "2025-11-23",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -31,18 +31,19 @@ const productSchema = {
   "downloadUrl": "https://github.com/navam-io/sentinel",
   "installUrl": "https://github.com/navam-io/sentinel",
   "screenshot": [
-    "https://www.navam.io/images/sentinel/canvas-palette-react.png",
+    "https://www.navam.io/images/sentinel/navam-sentinel-release-55.png",
     "https://www.navam.io/images/sentinel/logo-round.png"
   ],
   "featureList": [
-    "Click-to-add visual canvas with 5 node types (Input, Model, Assertion, Tool, System)",
+    "Click-to-add visual canvas with 6+ node types (Input, Model, Assertion, Tool, System, Output)",
     "Real-time YAML generation with type-safe Pydantic DSL",
     "Production-ready React Flow 12.3 integration",
-    "82 tests with 98% coverage (12 frontend + 70 backend)",
-    "Tauri 2.0 desktop application",
+    "473 frontend tests passing with comprehensive coverage",
+    "68 React components across multiple categories",
+    "Unified Library Tab with 12-category system (Q&A, Code Gen, Browser Agents, Multi-turn, etc.)",
+    "Tauri 2.0 desktop application for Windows, macOS, Linux",
     "Git-friendly YAML diffs for version control",
-    "Round-trip conversion (Visual ↔ YAML) coming in v0.4.0",
-    "Live test execution planned for v0.5.0",
+    "16 built-in test templates with metadata and categorization",
     "BIS License for commercial use"
   ],
   "softwareRequirements": "Python 3.10+, Node.js 18+",
@@ -138,9 +139,9 @@ const faqSchema = {
 
 <Layout
   title="Sentinel - Visual-First Agent Testing for AI Labs"
-  description="Make AI agent testing as intuitive as Postman made API testing. Click-to-add visual canvas with real-time YAML generation. Production-ready with 82 tests, 98% coverage. Fork for commercial use, sponsor active development."
+  description="Make AI agent testing as intuitive as Postman made API testing. Click-to-add visual canvas with real-time YAML generation. Production-ready with 33 tests, 70%+ coverage. Fork for commercial use, sponsor active development."
   keywords="AI agent testing, visual testing platform, Postman for AI, LLM testing, agent testing automation, React Flow, production AI testing, TUI testing, visual canvas, YAML DSL"
-  ogImage="/images/sentinel/canvas-palette-react.png"
+  ogImage="/images/sentinel/navam-sentinel-release-55.png"
   ogType="product"
 >
   <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
@@ -157,7 +158,7 @@ const faqSchema = {
 
   <main class="min-h-screen">
     <!-- Hero Section -->
-    <section class="relative py-20 bg-gradient-to-br from-slate-900 via-teal-900 to-blue-900 overflow-hidden">
+    <section class="relative pt-20 pb-24 bg-gradient-to-br from-slate-900 via-teal-900 to-blue-900">
       <div class="absolute inset-0 bg-black/30"></div>
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center text-white">
@@ -172,7 +173,7 @@ const faqSchema = {
 
           <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
             Sentinel
-            <span class="block mt-2 bg-gradient-to-r from-teal-300 to-blue-300 bg-clip-text text-transparent">
+            <span class="block mt-2 pb-2 bg-gradient-to-r from-teal-300 to-blue-300 bg-clip-text text-transparent text-3xl md:text-5xl">
               Visual-First Agent Testing
             </span>
           </h1>
@@ -185,13 +186,13 @@ const faqSchema = {
           <!-- Version badges -->
           <div class="flex justify-center gap-3 mb-8 flex-wrap">
             <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-sm">
-              v0.3.1
+              v0.22.0
             </span>
             <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-sm">
-              82 tests
+              473 tests
             </span>
             <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-sm">
-              98% coverage
+              68 components
             </span>
             <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-sm">
               BIS License
@@ -358,7 +359,7 @@ const faqSchema = {
               PRODUCTION-READY CANVAS
             </div>
             <img
-              src="/images/sentinel/canvas-palette-react.png"
+              src="/images/sentinel/navam-sentinel-release-55.png"
               alt="Sentinel Visual Canvas with Component Palette and YAML Preview"
               class="w-full"
             />
@@ -457,7 +458,7 @@ const faqSchema = {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
-                <span class="text-gray-700">82 tests with 98% coverage</span>
+                <span class="text-gray-700">473 frontend tests passing with comprehensive coverage</span>
               </li>
               <li class="flex items-start gap-3">
                 <div class="w-6 h-6 bg-green-100 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -568,26 +569,26 @@ const faqSchema = {
                   </svg>
                   SHIPPED
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900">v0.3.1 - Visual Canvas</h3>
-                <p class="text-gray-600">Released November 16, 2025</p>
+                <h3 class="text-2xl font-bold text-gray-900">v0.22.0 - Unified Library Tab</h3>
+                <p class="text-gray-600">Released November 23, 2025</p>
               </div>
             </div>
             <ul class="space-y-2">
               <li class="flex items-start gap-2">
                 <span class="text-green-600 font-bold">✓</span>
-                <span>Click-to-add visual canvas with 5 node types</span>
+                <span>Unified Library Tab with templates and user tests</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-green-600 font-bold">✓</span>
-                <span>Real-time YAML generation with type-safe DSL</span>
+                <span>12-category system (Q&A, Code Gen, Browser Agents, Multi-turn, etc.)</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-green-600 font-bold">✓</span>
-                <span>React Flow 12.3 production-ready integration</span>
+                <span>473 frontend tests passing with comprehensive coverage</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-green-600 font-bold">✓</span>
-                <span>82 tests with 98% coverage</span>
+                <span>68 React components across multiple categories</span>
               </li>
             </ul>
           </div>
@@ -602,26 +603,26 @@ const faqSchema = {
                   </svg>
                   IN PROGRESS
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900">v0.4.0 - YAML Import & Bi-directional Sync</h3>
+                <h3 class="text-2xl font-bold text-gray-900">v0.23.0 - Model Execution & Result Storage</h3>
                 <p class="text-gray-600">Target: Q1 2026</p>
               </div>
             </div>
             <ul class="space-y-2">
               <li class="flex items-start gap-2">
                 <span class="text-blue-600 font-bold">→</span>
-                <span>Import YAML to visual canvas (paste or upload)</span>
+                <span>Live execution dashboard with real-time progress</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-blue-600 font-bold">→</span>
-                <span>Monaco Editor for direct YAML editing</span>
+                <span>Result storage and test run history (SQLite)</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-blue-600 font-bold">→</span>
-                <span>Bi-directional sync (edit canvas OR YAML)</span>
+                <span>Metrics collection and analytics</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-blue-600 font-bold">→</span>
-                <span>Real-time validation with error highlighting</span>
+                <span>Performance tracking and comparison</span>
               </li>
             </ul>
           </div>
@@ -637,48 +638,56 @@ const faqSchema = {
                   </svg>
                   PLANNED
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900">v0.5.0 - Test Execution</h3>
-                <p class="text-gray-600">Target: Q1-Q2 2026</p>
+                <h3 class="text-2xl font-bold text-gray-900">v0.24.0 - Additional Model Providers</h3>
+                <p class="text-gray-600">Target: Q1 2026</p>
               </div>
             </div>
             <ul class="space-y-2">
               <li class="flex items-start gap-2">
                 <span class="text-gray-600 font-bold">○</span>
-                <span>Run tests directly from canvas ("Run" button)</span>
+                <span>Amazon Bedrock integration (multi-model support)</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-gray-600 font-bold">○</span>
-                <span>Live execution dashboard with progress tracking</span>
+                <span>HuggingFace API support (hosted endpoints)</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-gray-600 font-bold">○</span>
-                <span>Anthropic + OpenAI provider integrations</span>
+                <span>Ollama integration (local models)</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-gray-600 font-bold">○</span>
-                <span>Results panel with pass/fail metrics</span>
+                <span>Provider comparison and cost tracking</span>
               </li>
             </ul>
           </div>
 
           <div class="bg-gray-50 p-8 rounded-2xl border-2 border-gray-200">
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Beyond v0.5.0</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Beyond v0.24.0</h3>
             <div class="grid md:grid-cols-2 gap-4">
               <div>
-                <h4 class="font-semibold mb-2">v0.6.0 - Record & Replay</h4>
-                <p class="text-sm text-gray-600">Playwright-style test generation</p>
+                <h4 class="font-semibold mb-2">v0.25.0 - LangGraph Framework Support</h4>
+                <p class="text-sm text-gray-600">State machine testing and multi-agent workflows</p>
               </div>
               <div>
-                <h4 class="font-semibold mb-2">v0.7.0 - Visual Assertion Builder</h4>
-                <p class="text-sm text-gray-600">Forms instead of YAML for assertions</p>
+                <h4 class="font-semibold mb-2">v0.26.0 - AI-Assisted Test Generation</h4>
+                <p class="text-sm text-gray-600">Generate tests from natural language descriptions</p>
               </div>
               <div>
-                <h4 class="font-semibold mb-2">v0.8.0 - Regression Detection</h4>
-                <p class="text-sm text-gray-600">Side-by-side comparison, trend charts</p>
+                <h4 class="font-semibold mb-2">v0.27.0 - Visual Assertion Builder</h4>
+                <p class="text-sm text-gray-600">Enhanced visual forms for creating assertions</p>
               </div>
               <div>
-                <h4 class="font-semibold mb-2">v0.9.0 - LangGraph Support</h4>
-                <p class="text-sm text-gray-600">Framework-specific integrations</p>
+                <h4 class="font-semibold mb-2">v0.28.0 - Regression Detection</h4>
+                <p class="text-sm text-gray-600">Comparison view and trend analysis</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">v0.29.0 - Collaborative Workspaces</h4>
+                <p class="text-sm text-gray-600">Team testing and shared test suites</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">v0.32.0 - CI/CD Integration</h4>
+                <p class="text-sm text-gray-600">Automated testing and deployment pipelines</p>
               </div>
             </div>
           </div>
@@ -728,8 +737,8 @@ const faqSchema = {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">82 Tests, 98% Coverage</h3>
-            <p class="text-gray-600 text-sm">Production-ready with comprehensive test suite. 12 frontend + 70 backend tests</p>
+            <h3 class="text-xl font-bold mb-3">473 Tests Passing</h3>
+            <p class="text-gray-600 text-sm">Production-ready with comprehensive frontend test suite covering all components and features</p>
           </div>
 
           <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
@@ -869,7 +878,7 @@ const faqSchema = {
           <!-- Blog Post 1 -->
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <img src="/images/sentinel/canvas-palette-react.png" alt="Sentinel Visual Canvas" class="rounded-2xl shadow-2xl w-full" />
+              <img src="/images/sentinel/navam-sentinel-release-55.png" alt="Sentinel Visual Canvas" class="rounded-2xl shadow-2xl w-full" />
             </div>
             <div>
               <h3 class="text-3xl font-bold mb-4">Building Sentinel's Visual Canvas</h3>

@@ -5,32 +5,37 @@
     <div class="absolute inset-0 code-grid-pattern opacity-10"></div>
 
     <!-- Main Content -->
-    <div class="relative z-10 container mx-auto px-4 py-16 md:py-24">
+    <div class="relative z-10 container mx-auto px-4 py-8 md:py-12">
       <div class="max-w-7xl mx-auto">
 
-        <!-- Top Section: Message -->
-        <div class="text-center mb-16 space-y-6">
-          <!-- Main Headline -->
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight max-w-5xl mx-auto">
-            {{ selectedHeroMessage.title }}
-          </h1>
+        <!-- Top Section: Message - Two Column Layout -->
+        <div class="mb-8 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+          <!-- Left Column: Title + Time Comparison -->
+          <div class="space-y-4">
+            <!-- Main Headline -->
+            <h1 class="text-2xl md:text-3xl font-black text-white leading-tight">
+              {{ selectedHeroMessage.title }}
+            </h1>
 
-          <!-- Subheadline -->
-          <p class="text-xl md:text-2xl lg:text-3xl text-white/80 font-light max-w-4xl mx-auto leading-relaxed">
-            {{ selectedHeroMessage.subtitle }}
-          </p>
+            <!-- Time Comparison -->
+            <div class="flex items-center gap-4">
+              <div class="text-left">
+                <div class="text-red-400 text-2xl font-black mb-1">6-12 mo</div>
+                <div class="text-white/60 text-xs">Building from scratch</div>
+              </div>
+              <div class="text-white/40 text-2xl">→</div>
+              <div class="text-left">
+                <div class="text-green-400 text-2xl font-black mb-1">2-7 days</div>
+                <div class="text-white/60 text-xs">Forking Navam</div>
+              </div>
+            </div>
+          </div>
 
-          <!-- Time Comparison -->
-          <div class="flex items-center justify-center gap-8 py-6">
-            <div class="text-center">
-              <div class="text-red-400 text-4xl font-black mb-1">6-12 mo</div>
-              <div class="text-white/60 text-sm">Building from scratch</div>
-            </div>
-            <div class="text-white/40 text-3xl">→</div>
-            <div class="text-center">
-              <div class="text-green-400 text-4xl font-black mb-1">2-7 days</div>
-              <div class="text-white/60 text-sm">Forking Navam</div>
-            </div>
+          <!-- Right Column: Subtitle -->
+          <div class="flex items-start lg:items-center">
+            <p class="text-lg md:text-xl lg:text-2xl text-white/80 font-light leading-relaxed text-left lg:text-right">
+              {{ selectedHeroMessage.subtitle }}
+            </p>
           </div>
         </div>
 
@@ -234,7 +239,7 @@ const products: Product[] = [
     id: 'sentinel',
     name: 'Sentinel',
     category: 'Visual Agent Testing Reference',
-    description: 'Click-to-add visual canvas for AI agent testing with React Flow 12.3, real-time YAML generation, and type-safe Pydantic DSL. 82 tests, 98% coverage.',
+    description: 'Click-to-add visual canvas for AI agent testing with React Flow 12.3, real-time YAML generation, and type-safe Pydantic DSL. 473 tests, 68 components, unified library with 12 categories.',
     useCases: [
       'AI agent testing platforms',
       'LLM evaluation tools',
@@ -248,7 +253,7 @@ const products: Product[] = [
     githubUrl: 'https://github.com/navam-io/sentinel',
     buyButtonId: 'buy_btn_1SWTIIRCxnzBPkIXA882bLYZ',
     blogSlug: 'visual-first-design',
-    screenshot: '/images/sentinel/canvas-palette-react.png',
+    screenshot: '/images/sentinel/navam-sentinel-release-55.png',
     windowTitle: 'Sentinel - AI Agent Testing Platform',
     color: 'bg-teal-500/10 text-teal-400 border-teal-500/30',
     techStack: [
