@@ -293,7 +293,7 @@
         </div>
 
         <!-- Command - Image Left -->
-        <div class="mb-16">
+        <div class="mb-32">
           <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <div class="lg:col-span-3">
               <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 hover:shadow-3xl transition-shadow duration-300">

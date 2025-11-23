@@ -231,6 +231,34 @@ const selectedHeroMessage = ref<HeroMessage>(heroMessages[0]);
 
 const products: Product[] = [
   {
+    id: 'sentinel',
+    name: 'Sentinel',
+    category: 'Visual Agent Testing Reference',
+    description: 'Click-to-add visual canvas for AI agent testing with React Flow 12.3, real-time YAML generation, and type-safe Pydantic DSL. 82 tests, 98% coverage.',
+    useCases: [
+      'AI agent testing platforms',
+      'LLM evaluation tools',
+      'Testing automation systems',
+      'Quality assurance dashboards',
+      'Agent debugging tools',
+      'Test case builders',
+      'Workflow validation systems',
+      'Agent orchestration testing'
+    ],
+    githubUrl: 'https://github.com/navam-io/sentinel',
+    buyButtonId: 'buy_btn_1SWTIIRCxnzBPkIXA882bLYZ',
+    blogSlug: 'visual-first-design',
+    screenshot: '/images/sentinel/canvas-palette-react.png',
+    windowTitle: 'Sentinel - AI Agent Testing Platform',
+    color: 'bg-teal-500/10 text-teal-400 border-teal-500/30',
+    techStack: [
+      { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+      { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+      { name: 'Python', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+      { name: 'Tauri', logo: 'https://cdn.simpleicons.org/tauri/FFFFFF' }
+    ]
+  },
+  {
     id: 'invest',
     name: 'Navam Invest',
     category: 'Investment Intelligence Reference',

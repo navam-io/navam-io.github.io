@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "a8b6727cbd1d36cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf50665d115b4b47",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "342cd0768f3ecf27",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "201cd61dd4fa35c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "cdab8717ab6e8b68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cda93ef2fd5aa966",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1befc3061a67d93d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f7d87ce26944e502",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e74215550ddf3180",
+    "type": "split",
+    "children": [
+      {
+        "id": "67807cb9c01a1848",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "485fcab41c7018fc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/self-describing-products/post.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for post"
+            }
+          },
+          {
+            "id": "5c637493c9d7cf04",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/self-describing-products/post.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from post"
+            }
+          },
+          {
+            "id": "7460e814493fff89",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3fc27bb54e3c009d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/self-describing-products/post.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of post"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "342cd0768f3ecf27",
+  "lastOpenFiles": [
+    "test-results/contrast-check.png",
+    "dist/sitemap-index.xml",
+    "dist/sitemap-0.xml",
+    "dist/index.html",
+    "dist/products/trends.html",
+    "dist/products/sentinel.html",
+    "dist/products/navam-invest.html",
+    "dist/products/moments.html",
+    "dist/products/memo.html",
+    "dist/products/command.html",
+    "dist/products",
+    "dist/refer/images/sentinel/sentinel-banner.png",
+    "dist/refer/images/sentinel/canvas-palette-react.png",
+    "dist/refer/images/navam-invest/starting.png",
+    "dist/refer/images/navam-invest/examples.png",
+    "dist/refer/images/navam-invest/response.png",
+    "dist/refer/images/navam-invest/report.png",
+    "dist/refer/images/navam-invest/natural-prompt.png",
+    "dist/refer/images/navam-invest/cache.png",
+    "dist/refer/images/navam-invest/help.png",
+    "dist/refer/images/navam-invest/api.png",
+    "dist/refer/specs/brief.md",
+    "backlog/showcase-plan.md",
+    "backlog/active.md",
+    "content/visual-first-design/blog-post.md",
+    "content/building-navam-sentinel/sentinel-v0-1-0-dsl-foundation/social-media-summary.md",
+    "content/building-navam-sentinel/sentinel-v0-1-0-dsl-foundation/linkedin-post.md",
+    "content/building-navam-sentinel/sentinel-v0-1-0-dsl-foundation/blog-post.md",
+    "content/building-navam-sentinel/sentinel-v0-1-0-dsl-foundation/README.md",
+    "content/building-navam-sentinel/Introducing Navam Sentinel - My Journey Toward a Reliability Layer for Agents & Models.md",
+    "content/building-navam-marketer/Building Navam Marketer.md",
+    "content/self-describing-products/post.md"
+  ]
+}
