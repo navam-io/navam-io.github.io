@@ -146,6 +146,13 @@ const faqSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
+  <!-- Google tag (gtag.js) event -->
+  <script is:inline>
+    gtag('event', 'conversion_event_page_view', {
+      // <event_parameters>
+    });
+  </script>
+
   <Header client:load />
 
   <main class="min-h-screen">
