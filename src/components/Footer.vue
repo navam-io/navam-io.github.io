@@ -163,13 +163,6 @@
           </div>
         </div>
 
-        <!-- Badge Section -->
-        <div class="mt-6 text-center">
-          <a href="https://aihuntlist.com/tool/navam-ai-product-studio" target="_blank" rel="noopener noreferrer">
-            <img src="https://aihuntlist.com/badge-light.svg" alt="Featured on aihuntlist.com" style="height: 54px; width: auto;" />
-          </a>
-        </div>
-
         <!-- SEO Keywords Footer -->
         <div class="mt-6 text-center text-xs text-gray-500">
           <p>100% Vibe Coding Ready | Working AI Reference Implementations | Multi-Agent Systems | LangGraph Working Patterns | Agent Orchestration | Streaming UIs | Intelligent Caching | Investment Intelligence | Business Intelligence | Knowledge Graphs | For AI Engineers</p>
