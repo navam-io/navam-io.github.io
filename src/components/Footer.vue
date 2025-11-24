@@ -8,6 +8,12 @@
           <h3 class="text-lg font-semibold text-gray-900 mb-4">Products</h3>
           <ul class="space-y-3">
             <li>
+              <a href="/products/sentinel" class="text-gray-600 hover:text-gray-900 transition-colors">
+                Sentinel
+              </a>
+              <span class="text-xs text-gray-500 block">Visual Agent Testing</span>
+            </li>
+            <li>
               <a href="/products/navam-invest" class="text-gray-600 hover:text-gray-900 transition-colors">
                 Navam Invest
               </a>
