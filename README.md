@@ -296,7 +296,7 @@ npm run build
 
 ## 📄 License
 
-All Navam products are **MIT Licensed** — free for personal use.
+All Navam products are **Business Source License** — free for personal use.
 
 **Commercial use requires a license:**
 - Single Implementation: $299

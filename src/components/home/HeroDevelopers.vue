@@ -15,7 +15,7 @@
           <div class="space-y-4">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-4">
               <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span class="text-green-400 text-sm font-medium">Production Ready • MIT Licensed</span>
+              <span class="text-green-400 text-sm font-medium">Production Ready • Business Source License</span>
             </div>
 
             <h1 class="text-5xl md:text-6xl lg:text-7xl font-black tracking-tight">
@@ -115,7 +115,7 @@
             </div>
             <div class="flex items-center gap-2">
               <Icon name="check-circle" size="sm" class="text-green-400" />
-              <span>MIT Licensed</span>
+              <span>Business Source License</span>
             </div>
           </div>
 

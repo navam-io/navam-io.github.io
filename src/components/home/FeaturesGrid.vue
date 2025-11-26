@@ -79,7 +79,7 @@
             <Icon name="lock-open" size="lg" />
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-3">Keep 100% of Your Revenue</h3>
-          <p class="text-3xl font-black text-orange-600 mb-4">MIT Licensed</p>
+          <p class="text-3xl font-black text-orange-600 mb-4">Business Source License</p>
           <p class="text-gray-700 leading-relaxed">
             Fork, customize, ship commercial products—no revenue sharing, no attribution required. You own everything you build.
           </p>

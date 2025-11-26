@@ -50,7 +50,7 @@
             <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            <span class="text-white font-medium">MIT Licensed</span>
+            <span class="text-white font-medium">Business Source License</span>
           </div>
           <div class="flex items-center gap-2">
             <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

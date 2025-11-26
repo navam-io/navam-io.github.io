@@ -96,7 +96,7 @@
         <div class="flex flex-wrap justify-center items-center gap-8 text-white text-base mt-8 animate-slide-up-delayed">
           <div class="flex items-center gap-2">
             <Icon name="check-circle" size="md" class="text-green-400" />
-            <span class="font-semibold">MIT Licensed</span>
+            <span class="font-semibold">Business Source License</span>
           </div>
           <div class="flex items-center gap-2">
             <Icon name="check-circle" size="md" class="text-green-400" />
