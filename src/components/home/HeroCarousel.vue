@@ -8,34 +8,63 @@
     <div class="relative z-10 container mx-auto px-4 py-8 md:py-12">
       <div class="max-w-7xl mx-auto">
 
-        <!-- Top Section: Message - Two Column Layout -->
-        <div class="mb-8 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-          <!-- Left Column: Title + Time Comparison -->
-          <div class="space-y-4">
-            <!-- Main Headline -->
-            <h1 class="text-2xl md:text-3xl font-black text-white leading-tight">
-              {{ selectedHeroMessage.title }}
-            </h1>
+        <!-- Top Section: Centered Hero Message with Email Form -->
+        <div class="mb-16 pt-6 text-center">
+          <!-- Main Headline - 2x larger, centered, with gradient -->
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight py-6 animate-fade-in">
+            <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">
+              Build Like the Best AI Startups
+            </span>
+          </h1>
 
-            <!-- Time Comparison -->
-            <div class="flex items-center gap-4">
-              <div class="text-left">
-                <div class="text-red-400 text-2xl font-black mb-1">6-12 mo</div>
-                <div class="text-white/60 text-xs">Building from scratch</div>
-              </div>
-              <div class="text-white/40 text-2xl">→</div>
-              <div class="text-left">
-                <div class="text-green-400 text-2xl font-black mb-1">2-7 days</div>
-                <div class="text-white/60 text-xs">Forking Navam</div>
+          <!-- Glassmorphism Card with Subtitle and Form - Neon Tint -->
+          <div class="backdrop-blur-xl bg-gradient-to-br from-cyan-500/10 via-white/5 to-teal-500/10 border border-cyan-400/30 rounded-3xl pt-6 pb-8 px-8 md:px-10 shadow-2xl animate-slide-up max-w-3xl mx-auto hero-glass-card">
+            <!-- White Subheading - Crisp One-liner -->
+            <p class="text-xl md:text-2xl lg:text-3xl font-semibold leading-relaxed mb-6 text-white">
+              Fork. Customize. Ship in Days.
+            </p>
+
+            <!-- Email Subscription Form -->
+            <div class="max-w-2xl mx-auto">
+              <form v-if="!isSubscribed" @submit.prevent="handleSubscribe" class="flex flex-col sm:flex-row gap-8">
+                <input
+                  v-model="email"
+                  type="email"
+                  required
+                  :disabled="isSubmitting"
+                  placeholder="Enter your email"
+                  class="flex-[2] px-5 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/30 text-white placeholder-white/50 focus:outline-none focus:border-cyan-400/50 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300"
+                />
+                <button
+                  type="submit"
+                  :disabled="isSubmitting"
+                  :class="[
+                    'px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 whitespace-nowrap cursor-pointer',
+                    isSubmitting
+                      ? 'bg-gray-500 cursor-not-allowed'
+                      : 'bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white shadow-lg hover:shadow-xl hover:shadow-cyan-500/30 hover:scale-105'
+                  ]"
+                >
+                  <span v-if="!isSubmitting">Get Exclusive Access</span>
+                  <span v-else class="flex items-center gap-2">
+                    <svg class="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24">
+                      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Subscribing...
+                  </span>
+                </button>
+              </form>
+              <!-- Success State -->
+              <div v-else class="px-6 py-4 rounded-xl bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-400/30 backdrop-blur-sm">
+                <div class="flex items-center justify-center gap-2 text-green-400">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span class="font-semibold text-lg">You have subscribed.</span>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- Right Column: Subtitle -->
-          <div class="flex items-start lg:items-center">
-            <p class="text-lg md:text-xl lg:text-2xl text-white/80 font-light leading-relaxed text-left lg:text-right">
-              {{ selectedHeroMessage.subtitle }}
-            </p>
           </div>
         </div>
 
@@ -45,7 +74,7 @@
           <div class="relative bg-black/30 backdrop-blur-sm rounded-3xl border border-white/10 overflow-hidden shadow-2xl">
 
             <!-- Carousel Inner -->
-            <div class="relative" style="min-height: 650px;">
+            <div class="relative" style="min-height: 580px;">
 
               <!-- Slides -->
               <transition-group name="slide" mode="out-in">
@@ -53,17 +82,33 @@
                   v-for="(product, index) in products"
                   v-show="currentIndex === index"
                   :key="product.id"
-                  class="absolute inset-0 grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 md:p-12"
+                  class="absolute inset-0 grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 md:p-12 items-end"
                 >
                   <!-- Left: Content -->
-                  <div class="flex flex-col justify-center space-y-6">
-                    <!-- Category Badge -->
-                    <div class="inline-block self-start">
-                      <div :class="[
-                        'px-4 py-2 rounded-full text-sm font-bold border-2',
-                        product.color
-                      ]">
-                        {{ product.category }}
+                  <div class="flex flex-col justify-end space-y-6">
+                    <!-- Top Row: Category Badge + Tech Stack -->
+                    <div class="flex items-start justify-between gap-4">
+                      <!-- Category Badge -->
+                      <div class="inline-block">
+                        <div :class="[
+                          'px-4 py-2 rounded-full text-sm font-bold border-2',
+                          product.color
+                        ]">
+                          {{ product.category }}
+                        </div>
+                      </div>
+
+                      <!-- Technology Stack - Top Right -->
+                      <div class="flex flex-wrap gap-4 items-center">
+                        <div v-for="tech in product.techStack" :key="tech.name" class="flex flex-col items-center gap-1 hover:scale-110 transition-transform">
+                          <img
+                            :src="tech.logo"
+                            :alt="tech.name"
+                            class="w-8 h-8 object-contain"
+                            loading="lazy"
+                          />
+                          <span class="text-white/70 text-xs font-medium">{{ tech.name }}</span>
+                        </div>
                       </div>
                     </div>
 
@@ -87,39 +132,11 @@
                         </div>
                       </div>
                     </div>
-
-                    <!-- Technology Stack -->
-                    <div class="flex flex-wrap gap-6 pt-4">
-                      <div v-for="tech in product.techStack" :key="tech.name" class="flex flex-col items-center gap-2 hover:scale-110 transition-transform">
-                        <img
-                          :src="tech.logo"
-                          :alt="tech.name"
-                          class="w-10 h-10 object-contain"
-                          loading="lazy"
-                        />
-                        <span class="text-white/80 text-xs font-medium">{{ tech.name }}</span>
-                      </div>
-                    </div>
                   </div>
 
-                  <!-- Right: Screenshot -->
-                  <div class="flex flex-col justify-center lg:justify-start">
+                  <!-- Right: Screenshot - aligned to bottom of Fork this to build box -->
+                  <div class="flex flex-col justify-end">
                     <div class="relative w-full max-w-2xl">
-                      <!-- Action Buttons - Aligned with title -->
-                      <div class="flex gap-3 mb-6">
-                        <a
-                          :href="product.githubUrl"
-                          target="_blank"
-                          class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white border-2 border-gray-300 text-gray-900 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all font-semibold"
-                        >
-                          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                          </svg>
-                          <span>View Code</span>
-                        </a>
-                        <StripeButton :buyButtonId="product.buyButtonId" />
-                      </div>
-
                       <!-- Terminal/Browser Window Frame -->
                       <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                         <!-- Window Header -->
@@ -207,8 +224,6 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
-import StripeButton from '@/components/ui/StripeButton.vue';
-import { heroMessages, getRandomMessageIndex, type HeroMessage } from '@/data/heroMessages';
 
 interface Product {
   id: string;
@@ -230,9 +245,71 @@ interface Technology {
   logo: string;
 }
 
-// Randomly select hero message on component mount
-const selectedHeroMessageIndex = ref<number>(0);
-const selectedHeroMessage = ref<HeroMessage>(heroMessages[0]);
+// Email subscription state
+const email = ref('');
+const isSubmitting = ref(false);
+const isSubscribed = ref(false);
+
+// Google Apps Script URL (same as contact form)
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwdlD8irGX0Rbm-URqJgOmVXx8Ox3AXnxJ8P6KOzx1ZgTqpYFxxMLfFpEBM4PPczkwZdw/exec';
+
+const handleSubscribe = async () => {
+  if (!email.value || isSubmitting.value) return;
+
+  isSubmitting.value = true;
+
+  try {
+    const payload = {
+      email: email.value,
+      name: '',
+      company: '',
+      message: 'Newsletter subscription from homepage hero',
+      timestamp: new Date().toISOString(),
+      source: 'navam.io/homepage-hero'
+    };
+
+    // Use form submission approach that works with Google Apps Script
+    const formElement = document.createElement('form');
+    formElement.method = 'POST';
+    formElement.action = GOOGLE_SCRIPT_URL;
+    formElement.target = 'hidden_iframe';
+    formElement.style.display = 'none';
+
+    // Add form fields
+    Object.entries(payload).forEach(([key, value]) => {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = key;
+      input.value = String(value);
+      formElement.appendChild(input);
+    });
+
+    // Create hidden iframe for submission
+    let iframe = document.getElementById('hidden_iframe') as HTMLIFrameElement;
+    if (!iframe) {
+      iframe = document.createElement('iframe');
+      iframe.id = 'hidden_iframe';
+      iframe.name = 'hidden_iframe';
+      iframe.style.display = 'none';
+      document.body.appendChild(iframe);
+    }
+
+    // Submit form
+    document.body.appendChild(formElement);
+    formElement.submit();
+    document.body.removeChild(formElement);
+
+    // Show success after short delay
+    setTimeout(() => {
+      isSubscribed.value = true;
+      isSubmitting.value = false;
+    }, 1000);
+
+  } catch (error) {
+    console.error('Subscription error:', error);
+    isSubmitting.value = false;
+  }
+};
 
 const products: Product[] = [
   {
@@ -440,15 +517,6 @@ function resetAutoplay() {
 }
 
 onMounted(() => {
-  // Randomly select hero message on page load
-  selectedHeroMessageIndex.value = getRandomMessageIndex();
-  selectedHeroMessage.value = heroMessages[selectedHeroMessageIndex.value];
-
-  // Store index globally so FooterCTA can avoid using the same message
-  if (typeof window !== 'undefined') {
-    (window as any).__navamHeroMessageIndex = selectedHeroMessageIndex.value;
-  }
-
   startAutoplay();
 });
 
@@ -483,7 +551,50 @@ onUnmounted(() => {
   transform: translateX(-30px);
 }
 
-/* Smooth animations */
+/* Hero Animations */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+/* Hero Glass Card with neon glow */
+.hero-glass-card {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0 0 80px -20px rgba(6, 182, 212, 0.3),
+    0 0 40px -10px rgba(20, 184, 166, 0.2),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Smooth animations for carousel */
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -497,5 +608,16 @@ onUnmounted(() => {
 
 h1, h2 {
   animation: fade-up 0.8s ease-out;
+}
+
+/* Glass morphism enhancements */
+.backdrop-blur-xl {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* Enhanced shadow effects */
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 </style>
