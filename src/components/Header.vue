@@ -83,6 +83,59 @@
           @mouseleave="handleMenuLeave"
         >
           <div class="container mx-auto px-4 py-6 sm:py-8 max-w-6xl">
+            <!-- Featured Product: Lattice (Full Width) -->
+            <a
+              href="https://www.latticelab.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group block mb-6 p-6 rounded-2xl border-2 border-violet-300 bg-gradient-to-r from-violet-50 via-blue-50 to-indigo-50 hover:border-violet-400 hover:shadow-xl hover:shadow-violet-100/50 active:scale-[0.99] transition-all duration-300 touch-manipulation relative overflow-hidden"
+              @click="closeDropdown"
+            >
+              <!-- Featured badge -->
+              <div class="absolute -top-1 -right-1 px-4 py-1.5 bg-gradient-to-r from-violet-600 to-blue-600 text-white text-xs font-bold rounded-bl-xl rounded-tr-xl shadow-lg flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                FEATURED
+              </div>
+
+              <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+                <!-- Icon -->
+                <div class="w-16 h-16 bg-gradient-to-br from-violet-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                  </svg>
+                </div>
+
+                <!-- Content -->
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="font-bold text-lg text-gray-900 group-hover:text-violet-700 transition-colors">Lattice</span>
+                    <span class="text-violet-600 font-semibold text-sm">by Navam Team</span>
+                    <svg class="w-4 h-4 text-gray-400 group-hover:text-violet-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </div>
+                  <p class="text-sm text-gray-600 leading-relaxed mb-2">
+                    <span class="font-semibold text-gray-700">Smart AI System Decisions</span> - Agentic AI lab assistant for research engineers, platform leads, and CTOs. Make confident AI infrastructure decisions with grounded recommendations and full citations.
+                  </p>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2 py-0.5 bg-violet-100 text-violet-700 rounded-full text-xs font-medium">36 Blueprints</span>
+                    <span class="px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">10+ Vendors</span>
+                    <span class="px-2 py-0.5 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">LangGraph RAG</span>
+                    <span class="px-2 py-0.5 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">$99 Lifetime</span>
+                  </div>
+                </div>
+
+                <!-- CTA Arrow -->
+                <div class="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-violet-100 group-hover:bg-violet-200 transition-colors">
+                  <svg class="w-6 h-6 text-violet-600 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5">
               <!-- Navam Invest -->
               <a

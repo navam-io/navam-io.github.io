@@ -1,0 +1,653 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/Header.vue';
+import Footer from '@components/Footer.vue';
+
+// Enhanced Product Schema for Lattice
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Lattice",
+  "applicationCategory": "DeveloperApplication",
+  "description": "Agentic AI lab assistant for research engineers, platform leads, and CTOs. Make confident AI infrastructure decisions with grounded recommendations and full citations.",
+  "operatingSystem": ["Windows", "macOS", "Linux"],
+  "softwareVersion": "0.6.2",
+  "releaseNotes": "36 curated blueprints, LangGraph-powered research agent, three-panel interface for AI research",
+  "datePublished": "2025-11-29",
+  "offers": {
+    "@type": "Offer",
+    "price": "99",
+    "priceCurrency": "USD",
+    "description": "One-time purchase with lifetime access. All three panels, 36 blueprints, unlimited workspaces, and all future updates.",
+    "priceValidUntil": "2026-12-31"
+  },
+  "url": "https://www.latticelab.io",
+  "screenshot": [
+    "https://www.latticelab.io/images/journeys/chat-with-ai/chat-with-ai-04.png",
+    "https://www.latticelab.io/images/journeys/browse-blueprints/browse-blueprints-02.png"
+  ],
+  "featureList": [
+    "LangGraph-powered multi-step reasoning with transparent thinking traces",
+    "Numbered citations with source context linking back to authoritative documentation",
+    "36 curated blueprints from Anthropic, AWS, NVIDIA, GCP, Meta, and Mistral",
+    "Three-panel interface: Sources, Lab, and Studio",
+    "Multi-source knowledge ingestion (PDF, URL, GitHub, YouTube, Google Docs)",
+    "Hybrid semantic + keyword search with real-time indexing",
+    "Scenario configuration for workload requirements (latency, budget, compliance)",
+    "Stack management with model selection and hardware preferences",
+    "Artifact generation with export to Markdown, JSON, or CSV",
+    "10+ vendor integrations"
+  ],
+  "softwareRequirements": "Modern web browser",
+  "author": {
+    "@type": "Organization",
+    "name": "Navam",
+    "url": "https://www.navam.io"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lattice Lab",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.latticelab.io/images/logo.png"
+    }
+  }
+};
+
+// FAQ Schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Lattice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lattice is an agentic AI lab assistant that helps research engineers, platform leads, and CTOs make confident AI infrastructure decisions. It automates research synthesis by processing vendor documentation, benchmarks, and pricing data—providing grounded recommendations with full citations back to authoritative sources."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Lattice differ from ChatGPT or Claude?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unlike general-purpose AI assistants, Lattice is purpose-built for AI infrastructure research. It ingests your specific sources (vendor docs, papers, pricing pages), maintains citation chains, and provides recommendations grounded in your curated knowledge base—not generic training data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are blueprints?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Blueprints are curated knowledge bundles that package vendor documentation, pre-configured scenarios, and recommended stacks. Lattice includes 36 blueprints from leading vendors like Anthropic, AWS, NVIDIA, GCP, Meta, and Mistral."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in the $99 purchase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The one-time $99 purchase includes lifetime access to Lattice: all three panels (Sources, Lab, Studio), 36 curated blueprints, unlimited workspaces, scenario and stack configuration, artifact generation and export, and all future updates."
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="Lattice - Smart AI System Decisions | Navam"
+  description="Agentic AI lab assistant for research engineers, platform leads, and CTOs. Make confident AI infrastructure decisions with grounded recommendations and full citations. 36 curated blueprints from Anthropic, AWS, NVIDIA, GCP, Meta, and Mistral."
+  keywords="AI infrastructure, AI research assistant, LLM evaluation, model comparison, AI stack decisions, grounded recommendations, Claude, GPT, Gemini, RAG, embeddings, blueprints, vendor comparison"
+  ogImage="/images/lattice/lattice-lab-preview.png"
+  ogType="product"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- Google tag (gtag.js) event -->
+  <script is:inline>
+    gtag('event', 'conversion_event_page_view', {
+      // <event_parameters>
+    });
+  </script>
+
+  <Header client:load />
+
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-24 bg-gradient-to-br from-gray-900 via-slate-900 to-violet-900">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <!-- Subtle Code Pattern Background -->
+      <div class="absolute inset-0 code-grid-pattern opacity-10"></div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center text-white">
+          <div class="inline-block px-4 py-2 bg-violet-400/20 backdrop-blur-sm rounded-full mb-6">
+            <span class="text-violet-200 font-bold flex items-center gap-2 justify-center">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+              FEATURED PRODUCT - BY NAVAM TEAM
+            </span>
+          </div>
+
+          <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+            Lattice
+            <span class="block mt-2 pb-2 bg-gradient-to-r from-violet-400 via-blue-400 to-teal-400 bg-clip-text text-transparent text-3xl md:text-5xl">
+              Smart AI System Decisions
+            </span>
+          </h1>
+
+          <p class="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
+            Agentic AI lab assistant for research engineers, platform leads, and CTOs.
+            <strong>Make confident AI infrastructure decisions.</strong>
+          </p>
+
+          <!-- Version badges -->
+          <div class="flex justify-center gap-3 mb-8 flex-wrap">
+            <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-sm">
+              v0.6.2
+            </span>
+            <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-sm">
+              36 Blueprints
+            </span>
+            <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-sm">
+              10+ Vendors
+            </span>
+            <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-sm">
+              2,134 Tests
+            </span>
+          </div>
+
+          <!-- Dual CTA -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://www.latticelab.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 h-14 px-8 bg-gradient-to-r from-violet-600 to-blue-600 text-white rounded-xl hover:from-violet-700 hover:to-blue-700 transition-all font-bold text-lg shadow-lg hover:shadow-xl hover:shadow-violet-500/30 hover:scale-105"
+            >
+              <span>Get Lattice - $99</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+            <span class="text-white/60 text-sm">Lifetime access - One-time purchase</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+            The Problem with AI Infrastructure Research
+          </h2>
+          <p class="text-2xl text-gray-700 leading-relaxed mb-8">
+            Making AI infrastructure decisions requires synthesizing scattered vendor documentation, benchmarks, and pricing. Research is manual, citations are missing, and recommendations lack grounding.
+          </p>
+        </div>
+
+        <!-- Comparison Grid -->
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 mb-16">
+          <!-- General AI Assistants -->
+          <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border-2 border-red-200">
+            <div class="text-center mb-4">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mb-4">
+                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">General AI Assistants</h3>
+              <div class="text-3xl font-black text-red-600 mb-4">Ungrounded</div>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">x</span>
+                <span>Recommendations from training data</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">x</span>
+                <span>No citations to verify claims</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">x</span>
+                <span>Outdated vendor information</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 font-bold">x</span>
+                <span>Generic, not scenario-specific</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Manual Research -->
+          <div class="bg-gradient-to-br from-slate-50 to-violet-50 rounded-2xl p-8 border-2 border-violet-200">
+            <div class="text-center mb-4">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-violet-100 mb-4">
+                <svg class="w-8 h-8 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Manual Research</h3>
+              <div class="text-3xl font-black text-violet-600 mb-4">Time-Consuming</div>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-gray-400 font-bold">x</span>
+                <span>Weeks of documentation review</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gray-400 font-bold">x</span>
+                <span>Scattered sources and notes</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gray-400 font-bold">x</span>
+                <span>Hard to maintain knowledge base</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gray-400 font-bold">x</span>
+                <span>No repeatable process</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Lattice Approach -->
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-4 border-green-500 shadow-xl relative">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <div class="inline-flex items-center px-4 py-1 rounded-full bg-green-600 text-white text-sm font-bold whitespace-nowrap">
+                LATTICE APPROACH
+              </div>
+            </div>
+            <div class="text-center mb-4 mt-2">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-4">
+                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Lattice</h3>
+              <div class="text-3xl font-black text-green-600 mb-4">Grounded AI</div>
+            </div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">+</span>
+                <span class="font-medium">Citations to authoritative sources</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">+</span>
+                <span class="font-medium">36 pre-built vendor blueprints</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">+</span>
+                <span class="font-medium">Scenario-aware recommendations</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 font-bold text-lg">+</span>
+                <span class="font-medium">Reusable artifacts and exports</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three-Panel Interface -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+              Three-Panel Interface for AI Research
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Lattice combines knowledge management, AI-powered analysis, and artifact generation
+              in a unified interface designed for AI infrastructure decisions.
+            </p>
+          </div>
+
+          <!-- Features Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Sources -->
+            <div class="group p-8 rounded-2xl border border-gray-200 bg-white hover:border-violet-300 hover:shadow-xl transition-all duration-300">
+              <div class="w-14 h-14 bg-gradient-to-br from-violet-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Sources Panel</h3>
+              <p class="text-gray-600 mb-4">
+                Multi-source knowledge ingestion with hybrid semantic and keyword search.
+                Every recommendation links back to specific source chunks.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-500">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  PDFs, URLs, GitHub, YouTube, Google Docs
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Real-time indexing with chunk counting
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Citation tracking to source documents
+                </li>
+              </ul>
+            </div>
+
+            <!-- Lab -->
+            <div class="group p-8 rounded-2xl border border-gray-200 bg-white hover:border-blue-300 hover:shadow-xl transition-all duration-300">
+              <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Lab Panel</h3>
+              <p class="text-gray-600 mb-4">
+                LangGraph-powered research agent with transparent reasoning.
+                Get grounded recommendations citing specific source chunks.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-500">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Multi-step reasoning with thinking traces
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Conversation-to-scenario extraction
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  @ mentions for source references
+                </li>
+              </ul>
+            </div>
+
+            <!-- Studio -->
+            <div class="group p-8 rounded-2xl border border-gray-200 bg-white hover:border-teal-300 hover:shadow-xl transition-all duration-300">
+              <div class="w-14 h-14 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Studio Panel</h3>
+              <p class="text-gray-600 mb-4">
+                Save chat responses as reusable artifacts. Generate tables, comparisons,
+                and decision documents for stakeholder review.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-500">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Save responses as named artifacts
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Export to CSV, JSON, Markdown
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Track artifact history and versions
+                </li>
+              </ul>
+            </div>
+
+            <!-- Blueprints -->
+            <div class="group p-8 rounded-2xl border-2 border-violet-200 bg-gradient-to-br from-violet-50 to-blue-50 hover:border-violet-400 hover:shadow-xl transition-all duration-300">
+              <div class="w-14 h-14 bg-gradient-to-br from-violet-600 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">36 Curated Blueprints</h3>
+              <p class="text-gray-600 mb-4">
+                Pre-built knowledge bundles from Anthropic, AWS, NVIDIA, GCP, Meta, and Mistral.
+                One-click workspace population.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-500">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Vendor documentation pre-packaged
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Pre-configured scenarios and stacks
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  AI-powered blueprint discovery
+                </li>
+              </ul>
+            </div>
+
+            <!-- Scenarios -->
+            <div class="group p-8 rounded-2xl border border-gray-200 bg-white hover:border-amber-300 hover:shadow-xl transition-all duration-300">
+              <div class="w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Scenario Configuration</h3>
+              <p class="text-gray-600 mb-4">
+                Define workload types, SLO requirements, budget constraints, and compliance needs.
+                Get stack recommendations that match.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-500">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Chat, RAG, Agentic, Embedding workloads
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Latency, throughput, availability targets
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  SOC2, HIPAA, GDPR compliance
+                </li>
+              </ul>
+            </div>
+
+            <!-- Stacks -->
+            <div class="group p-8 rounded-2xl border border-gray-200 bg-white hover:border-emerald-300 hover:shadow-xl transition-all duration-300">
+              <div class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Stack Management</h3>
+              <p class="text-gray-600 mb-4">
+                Configure model providers, framework selection, and hardware options.
+                AI-suggested stack recommendations.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-500">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Claude, GPT-4, Gemini model selection
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  A100, H100, L40S hardware options
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  vLLM, TensorRT frameworks
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Stats -->
+    <section class="py-16 bg-gradient-to-br from-gray-900 via-slate-900 to-violet-900">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div class="text-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10">
+            <div class="text-3xl md:text-4xl font-bold text-violet-400">36</div>
+            <div class="text-white/60 text-sm">Curated Blueprints</div>
+          </div>
+          <div class="text-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10">
+            <div class="text-3xl md:text-4xl font-bold text-blue-400">10+</div>
+            <div class="text-white/60 text-sm">Vendor Integrations</div>
+          </div>
+          <div class="text-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10">
+            <div class="text-3xl md:text-4xl font-bold text-teal-400">2,134</div>
+            <div class="text-white/60 text-sm">Passing Tests</div>
+          </div>
+          <div class="text-center p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10">
+            <div class="text-3xl md:text-4xl font-bold text-purple-400">$99</div>
+            <div class="text-white/60 text-sm">Lifetime Access</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Supported Vendors -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+            Built-in Vendor Support
+          </h2>
+          <p class="text-xl text-gray-600">
+            Pre-packaged documentation and blueprints from leading AI vendors
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="p-6 bg-gray-50 rounded-xl text-center">
+            <div class="text-2xl font-bold text-gray-900 mb-1">Anthropic Claude</div>
+            <div class="text-gray-500 text-sm">API, Computer Use, MCP</div>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-xl text-center">
+            <div class="text-2xl font-bold text-gray-900 mb-1">AWS Bedrock</div>
+            <div class="text-gray-500 text-sm">Foundation Models, Agents</div>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-xl text-center">
+            <div class="text-2xl font-bold text-gray-900 mb-1">Google Vertex AI</div>
+            <div class="text-gray-500 text-sm">Gemini, AI Platform</div>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-xl text-center">
+            <div class="text-2xl font-bold text-gray-900 mb-1">NVIDIA NIM</div>
+            <div class="text-gray-500 text-sm">Inference, TensorRT</div>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-xl text-center">
+            <div class="text-2xl font-bold text-gray-900 mb-1">Meta Llama</div>
+            <div class="text-gray-500 text-sm">Open Models, Fine-tuning</div>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-xl text-center">
+            <div class="text-2xl font-bold text-gray-900 mb-1">Mistral AI</div>
+            <div class="text-gray-500 text-sm">API, Self-hosted</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-black text-center mb-12">Frequently Asked Questions</h2>
+
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-3">What is Lattice?</h3>
+              <p class="text-gray-700">Lattice is an agentic AI lab assistant that helps research engineers, platform leads, and CTOs make confident AI infrastructure decisions. It automates research synthesis by processing vendor documentation, benchmarks, and pricing data-providing grounded recommendations with full citations back to authoritative sources.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-3">How does Lattice differ from ChatGPT or Claude?</h3>
+              <p class="text-gray-700">Unlike general-purpose AI assistants, Lattice is purpose-built for AI infrastructure research. It ingests your specific sources (vendor docs, papers, pricing pages), maintains citation chains, and provides recommendations grounded in your curated knowledge base-not generic training data.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-3">What are blueprints?</h3>
+              <p class="text-gray-700">Blueprints are curated knowledge bundles that package vendor documentation, pre-configured scenarios, and recommended stacks. Lattice includes 36 blueprints from leading vendors like Anthropic, AWS, NVIDIA, GCP, Meta, and Mistral.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-3">What's included in the $99 purchase?</h3>
+              <p class="text-gray-700">The one-time $99 purchase includes lifetime access to Lattice: all three panels (Sources, Lab, Studio), 36 curated blueprints, unlimited workspaces, scenario and stack configuration, artifact generation and export, and all future updates.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-violet-900">
+      <div class="container mx-auto px-4 text-center text-white">
+        <h2 class="text-4xl md:text-5xl font-black mb-6">Make Smart AI System Decisions</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Get grounded recommendations with full citations. 36 vendor blueprints included. Lifetime access for $99.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a
+            href="https://www.latticelab.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-2 h-14 px-8 bg-gradient-to-r from-violet-600 to-blue-600 text-white rounded-xl hover:from-violet-700 hover:to-blue-700 transition-all font-bold text-lg shadow-lg hover:shadow-xl hover:shadow-violet-500/30 hover:scale-105"
+          >
+            <span>Get Lattice - $99</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+          <span class="text-white/60 text-sm">Lifetime access - One-time purchase</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer client:load />
+</Layout>
+
+<style>
+  .code-grid-pattern {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: -1px -1px;
+  }
+</style>

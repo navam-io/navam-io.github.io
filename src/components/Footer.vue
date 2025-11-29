@@ -8,6 +8,16 @@
           <h3 class="text-lg font-semibold text-gray-900 mb-4">Products</h3>
           <ul class="space-y-3">
             <li>
+              <a href="https://www.latticelab.io" target="_blank" rel="noopener noreferrer" class="text-violet-600 hover:text-violet-800 transition-colors font-semibold flex items-center gap-1">
+                Lattice
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                </svg>
+              </a>
+              <span class="text-xs text-violet-500 block">Featured - AI Research Assistant</span>
+            </li>
+            <li>
               <a href="/products/sentinel" class="text-gray-600 hover:text-gray-900 transition-colors">
                 Sentinel
               </a>

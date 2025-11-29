@@ -313,6 +313,34 @@ const handleSubscribe = async () => {
 
 const products: Product[] = [
   {
+    id: 'lattice',
+    name: 'Lattice',
+    category: 'AI Infrastructure Research Assistant',
+    description: 'Agentic AI lab assistant for research engineers, platform leads, and CTOs. Make confident AI infrastructure decisions with grounded recommendations and full citations.',
+    useCases: [
+      'AI infrastructure planning',
+      'Vendor evaluation & comparison',
+      'Model selection for workloads',
+      'Cost optimization analysis',
+      'Compliance-aware stack design',
+      'Architecture decision support',
+      'LLM evaluation workflows',
+      'AI platform modernization'
+    ],
+    githubUrl: 'https://www.latticelab.io',
+    buyButtonId: '',
+    blogSlug: '',
+    screenshot: '/images/lattice/lattice-lab-panel.png',
+    windowTitle: 'latticelab.io',
+    color: 'bg-violet-500/10 text-violet-400 border-violet-500/30',
+    techStack: [
+      { name: 'Python', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+      { name: 'LangGraph', logo: 'https://cdn.simpleicons.org/langchain/FFFFFF' },
+      { name: 'Anthropic', logo: 'https://cdn.simpleicons.org/anthropic/FFFFFF' },
+      { name: 'Vue', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' }
+    ]
+  },
+  {
     id: 'sentinel',
     name: 'Sentinel',
     category: 'Visual Agent Testing Reference',
