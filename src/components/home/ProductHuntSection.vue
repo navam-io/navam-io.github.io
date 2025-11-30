@@ -69,9 +69,9 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 
-// Launch date: midnight 11/29/2025 PST
-// PST is UTC-8, so midnight 11/29 PST = 08:00 UTC 11/29
-const launchDate = new Date('2025-11-29T08:00:00Z');
+// Launch date: midnight 11/30/2025 PST
+// PST is UTC-8, so midnight 11/30 PST = 08:00 UTC 11/30
+const launchDate = new Date('2025-11-30T08:00:00Z');
 
 const now = ref(new Date());
 let intervalId: number | null = null;
