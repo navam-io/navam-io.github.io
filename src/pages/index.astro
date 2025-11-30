@@ -3,6 +3,8 @@ import Layout from '@layouts/Layout.astro';
 import Header from '@components/Header.vue';
 import HeroCarousel from '@components/home/HeroCarousel.vue';
 import TechTicker from '@components/home/TechTicker.vue';
+import LetterSection from '@components/home/LetterSection.vue';
+import ProductHuntSection from '@components/home/ProductHuntSection.vue';
 import ValueProposition from '@components/home/ValueProposition.vue';
 import FeaturesGrid from '@components/home/FeaturesGrid.vue';
 import HowItWorks from '@components/home/HowItWorks.vue';
@@ -101,6 +103,8 @@ import Footer from '@components/Footer.vue';
   <main>
     <HeroCarousel client:load />
     <TechTicker client:load />
+    <LetterSection client:load />
+    <ProductHuntSection client:load />
     <LatticeShowcase client:load />
     <ValueProposition client:load />
     <FeaturesGrid client:load />
