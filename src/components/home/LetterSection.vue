@@ -20,6 +20,38 @@
     <!-- Radial gradient overlay to fade edges -->
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-amber-50/80"></div>
 
+    <!-- 3D Holiday Cheer Objects -->
+    <!-- Snowflake top-left -->
+    <div class="holiday-object absolute top-16 left-8 md:left-16 lg:left-24 animate-float-slow">
+      <svg class="w-10 h-10 md:w-14 md:h-14 text-amber-300/60 drop-shadow-lg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0L13 4L12 8L11 4L12 0ZM12 16L13 20L12 24L11 20L12 16ZM0 12L4 11L8 12L4 13L0 12ZM16 12L20 11L24 12L20 13L16 12ZM3.5 3.5L6 5.5L8.5 8.5L5.5 6L3.5 3.5ZM15.5 15.5L18 17.5L20.5 20.5L17.5 18L15.5 15.5ZM20.5 3.5L18 5.5L15.5 8.5L17.5 6L20.5 3.5ZM8.5 15.5L6 17.5L3.5 20.5L5.5 18L8.5 15.5Z"/>
+      </svg>
+    </div>
+
+    <!-- Star top-right -->
+    <div class="holiday-object absolute top-20 right-12 md:right-20 lg:right-32 animate-twinkle">
+      <svg class="w-8 h-8 md:w-12 md:h-12 text-yellow-400/50 drop-shadow-lg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2L14.09 8.26L20.5 9.27L15.75 13.97L16.82 20.5L12 17.77L7.18 20.5L8.25 13.97L3.5 9.27L9.91 8.26L12 2Z"/>
+      </svg>
+    </div>
+
+    <!-- Gift box bottom-left -->
+    <div class="holiday-object absolute bottom-20 left-6 md:left-12 lg:left-20 animate-bounce-gentle">
+      <svg class="w-9 h-9 md:w-12 md:h-12 text-red-400/50 drop-shadow-lg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 12V22H4V12H20ZM22 7V10H2V7H9.17C9.06 6.69 9 6.35 9 6C9 4.34 10.34 3 12 3C13.66 3 15 4.34 15 6C15 6.35 14.94 6.69 14.83 7H22ZM12 5C11.45 5 11 5.45 11 6C11 6.55 11.45 7 12 7C12.55 7 13 6.55 13 6C13 5.45 12.55 5 12 5Z"/>
+        <rect x="11" y="7" width="2" height="15" fill="currentColor" opacity="0.8"/>
+      </svg>
+    </div>
+
+    <!-- Ornament bottom-right -->
+    <div class="holiday-object absolute bottom-24 right-8 md:right-16 lg:right-28 animate-swing">
+      <svg class="w-8 h-8 md:w-10 md:h-10 text-emerald-500/50 drop-shadow-lg" viewBox="0 0 24 24" fill="currentColor">
+        <circle cx="12" cy="14" r="8"/>
+        <rect x="10" y="2" width="4" height="4" rx="1"/>
+        <path d="M12 6V8" stroke="currentColor" stroke-width="2"/>
+      </svg>
+    </div>
+
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-3xl mx-auto">
         <!-- Premium Paper Effect -->
@@ -53,60 +85,43 @@
               <p class="text-xl md:text-2xl font-medium">We know your world.</p>
 
               <p>
-                You spend weeks reading vendor documentation, comparing model benchmarks, and building spreadsheets to justify infrastructure decisions. You juggle pricing pages that change monthly, model cards with incompatible metrics, and compliance requirements that vary by region. And when leadership asks "why this vendor?", you need an answer backed by evidence, not intuition.
+                You spend weeks comparing models, juggling pricing pages, and building spreadsheets. When leadership asks "why this vendor?", you need evidence—not intuition.
               </p>
 
               <p class="text-xl md:text-2xl font-medium text-amber-900">We built Lattice because we faced the same challenge.</p>
 
               <p>
-                <strong>The AI infrastructure landscape changes faster than any team can track.</strong> New models drop weekly. Pricing structures shift. Benchmarks contradict each other. Meanwhile, your business requirements (latency targets, budget constraints, compliance needs) remain non-negotiable.
-              </p>
-
-              <p>
-                <strong>Your research contains sensitive information.</strong> Requirements under NDA. Proprietary use cases. Competitive analysis. You can't simply paste everything into a general-purpose chatbot and hope for the best.
+                The AI landscape changes faster than any team can track. Your research contains sensitive information. You can't paste it into a general-purpose chatbot and hope for the best.
               </p>
 
               <p class="text-xl md:text-2xl font-medium text-amber-900">Lattice changes this.</p>
 
               <p>
-                We created an agentic AI lab assistant that runs privately on your laptop or cloud. Your data never leaves your control. You bring your own API keys. And you get the research depth of a dedicated analyst, in minutes instead of weeks.
+                An agentic AI lab assistant running privately on your machine. Your data never leaves your control. Research depth in minutes instead of weeks.
               </p>
 
-              <p class="font-semibold mt-10 mb-4">Here's what Lattice delivers:</p>
-
-              <ul class="list-none space-y-4 pl-5 border-l-3 border-amber-400">
-                <li><strong>36 curated blueprints</strong> from Anthropic, AWS, NVIDIA, Google Cloud, Meta, and Mistral, ready to apply with one click</li>
-                <li><strong>Source-grounded recommendations</strong> with numbered citations linking every claim to specific documentation</li>
-                <li><strong>Scenario-aware analysis</strong> that factors in your latency targets, budget limits, and compliance requirements</li>
-                <li><strong>Exportable artifacts</strong> for board presentations, architecture docs, and decision memos</li>
+              <ul class="list-none space-y-3 pl-5 border-l-3 border-amber-400 mt-8">
+                <li><strong>36 curated blueprints</strong> from Anthropic, AWS, NVIDIA, Google, Meta, Mistral</li>
+                <li><strong>Source-grounded recommendations</strong> with citations to specific docs</li>
+                <li><strong>Scenario-aware analysis</strong> for your latency, budget, compliance needs</li>
               </ul>
 
-              <p class="mt-8">
-                Whether you're a research engineer evaluating embedding models for a RAG pipeline, a platform lead selecting LLM providers for your team, or a CTO presenting AI strategy to the board, Lattice gives you confidence backed by evidence.
-              </p>
-
-              <p>
-                <strong>We priced Lattice at $99 for lifetime access because we believe every AI team deserves quality research tools, not just those with enterprise budgets.</strong>
-              </p>
-
-              <p class="text-center text-xl md:text-2xl my-10 text-gray-600 tracking-wide">
-                No subscriptions. No vendor lock-in. No data leaving your machine.
+              <p class="text-center text-xl md:text-2xl my-8 text-gray-600 tracking-wide">
+                $99 lifetime. No subscriptions. No data leaving your machine.
               </p>
 
               <p class="text-center text-xl md:text-2xl font-semibold text-amber-900">
-                Just smart AI system decisions, grounded in evidence.
+                Smart AI decisions, grounded in evidence.
               </p>
 
-              <p class="mt-10 text-xl">We can't wait to see what you build.</p>
-
               <!-- Signature -->
-              <div class="mt-12 pt-8 border-t border-amber-700/30">
+              <div class="mt-10 pt-6 border-t border-amber-700/30">
                 <p class="letter-signature text-2xl text-gray-800">Team Navam</p>
               </div>
 
               <!-- P.S. -->
-              <p class="mt-8 text-sm text-gray-600 italic">
-                P.S. Watch our <a href="https://www.latticelab.io/#walkthrough" target="_blank" rel="noopener noreferrer" class="text-violet-600 hover:text-violet-700 underline">walkthrough</a> or read our <a href="https://www.latticelab.io/blog" target="_blank" rel="noopener noreferrer" class="text-violet-600 hover:text-violet-700 underline">blog</a> to see Lattice in action. And find us on <a href="https://www.producthunt.com/products/lattice-4" target="_blank" rel="noopener noreferrer" class="text-violet-600 hover:text-violet-700 underline">Product Hunt</a>, we'd love your support.
+              <p class="mt-6 text-sm text-gray-600 italic">
+                P.S. Watch our <a href="https://www.latticelab.io/#walkthrough" target="_blank" rel="noopener noreferrer" class="text-violet-600 hover:text-violet-700 underline">walkthrough</a> or read our <a href="https://www.latticelab.io/blog" target="_blank" rel="noopener noreferrer" class="text-violet-600 hover:text-violet-700 underline">blog</a> to see Lattice in action.
               </p>
             </div>
           </div>
@@ -198,5 +213,67 @@
   .letter-body ul {
     font-size: 1.25rem;
   }
+}
+
+/* Holiday object animations */
+.holiday-object {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(5deg);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1) rotate(15deg);
+  }
+}
+
+@keyframes bounce-gentle {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.05);
+  }
+}
+
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 4s ease-in-out infinite;
+}
+
+.animate-swing {
+  animation: swing 3s ease-in-out infinite;
+  transform-origin: top center;
 }
 </style>
