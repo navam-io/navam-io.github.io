@@ -120,7 +120,7 @@
               </div>
 
               <!-- P.S. -->
-              <p class="mt-6 text-sm text-gray-600 italic">
+              <p class="mt-6 text-gray-600 italic">
                 P.S. Watch our <a href="https://www.latticelab.io/#walkthrough" target="_blank" rel="noopener noreferrer" class="text-violet-600 hover:text-violet-700 underline">walkthrough</a> or read our <a href="https://www.latticelab.io/blog" target="_blank" rel="noopener noreferrer" class="text-violet-600 hover:text-violet-700 underline">blog</a> to see Lattice in action.
               </p>
             </div>
