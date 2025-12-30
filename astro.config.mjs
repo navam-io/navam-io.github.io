@@ -29,7 +29,13 @@ export default defineConfig({
     }
   },
   integrations: [
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag.startsWith('stripe-')
+        }
+      }
+    }),
     mdx(),
     sitemap({
       filter: (page) => page !== 'https://www.navam.io/404',
