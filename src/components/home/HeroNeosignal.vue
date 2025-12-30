@@ -38,12 +38,17 @@
         </div>
 
         <!-- NeoSignal Screenshot -->
-        <div class="relative max-w-6xl mx-auto animate-slide-up-delayed">
+        <a
+          href="https://neosignal.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative block max-w-6xl mx-auto animate-slide-up-delayed group"
+        >
           <!-- Glow Effect Behind Image -->
-          <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-teal-500/20 to-emerald-500/20 blur-3xl transform scale-110"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-teal-500/20 to-emerald-500/20 blur-3xl transform scale-110 group-hover:from-cyan-500/30 group-hover:via-teal-500/30 group-hover:to-emerald-500/30 transition-all duration-300"></div>
 
           <!-- Image Container with Frame -->
-          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 group-hover:border-cyan-400/30 group-hover:shadow-cyan-500/20 transition-all duration-300">
             <!-- Browser Window Frame -->
             <div class="flex items-center gap-2 px-4 py-3 bg-gray-800/80 border-b border-white/10">
               <div class="flex gap-2">
@@ -56,13 +61,13 @@
 
             <!-- Screenshot -->
             <img
-              src="/images/neosignal-screenwall.png"
+              src="/images/neosignal-command-center.png"
               alt="NeoSignal - Frontier Technology Platform"
-              class="w-full h-auto"
+              class="w-full h-auto group-hover:scale-[1.02] transition-transform duration-300"
               loading="eager"
             />
           </div>
-        </div>
+        </a>
 
       </div>
     </div>
