@@ -60,7 +60,7 @@ const technologies = ref<Technology[]>([
   { name: 'Next.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
   { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
   { name: 'Anthropic', logo: 'https://cdn.simpleicons.org/anthropic/000000' },
-  { name: 'OpenAI', logo: 'https://cdn.simpleicons.org/openai/412991' },
+  { name: 'OpenAI', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg' },
   { name: 'PostgreSQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
   { name: 'Tailwind CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
   { name: 'D3.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg' },
