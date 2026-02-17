@@ -1,17 +1,17 @@
 <template>
   <!-- NeoSignal Hero Section -->
-  <section class="relative min-h-screen overflow-hidden bg-gradient-to-br from-gray-900 via-slate-900 to-cyan-900">
+  <section class="relative overflow-hidden bg-gradient-to-br from-gray-900 via-slate-900 to-cyan-900">
     <!-- Subtle Grid Pattern Background -->
     <div class="absolute inset-0 tech-grid-pattern opacity-10"></div>
 
     <!-- Main Content -->
-    <div class="relative z-10 container mx-auto px-4 py-16 md:py-24">
+    <div class="relative z-10 container mx-auto px-4 py-20 md:py-32">
       <div class="max-w-7xl mx-auto">
 
         <!-- Hero Content -->
         <div class="text-center mb-12">
           <!-- Main Headline -->
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-8 animate-fade-in">
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-8 animate-fade-in">
             <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">
               Join Our Mission to Accelerate
             </span>
@@ -19,7 +19,7 @@
             <span class="text-white">
               Frontier Technology Diffusion
             </span>
-          </h1>
+          </h2>
 
           <!-- CTA Button -->
           <div class="animate-slide-up">
