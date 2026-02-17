@@ -1,19 +1,19 @@
 <template>
-  <section class="py-24 bg-white">
+  <section ref="target" :class="['reveal', { 'is-visible': isVisible }]" class="py-24 from-gray-900 to-gray-950 bg-gradient-to-b">
     <div class="container mx-auto px-4">
       <!-- Section Headline -->
       <div class="max-w-3xl mx-auto text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
           How It Works
         </h2>
-        <p class="text-xl text-gray-600">
+        <p class="text-xl text-gray-400">
           Three simple steps to working AI
         </p>
       </div>
 
       <!-- 3-Step Process -->
       <div class="max-w-5xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-6">
           <!-- Step 1: Fork -->
           <div class="text-center">
             <div class="relative mb-6">
@@ -26,8 +26,8 @@
                 1
               </div>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">Fork</h3>
-            <p class="text-gray-700 leading-relaxed">
+            <h3 class="text-2xl font-bold text-white mb-3">Fork</h3>
+            <p class="text-gray-300 leading-relaxed">
               Clone the working codebase from GitHub. Get 10 agents, 32+ tools, streaming workflows, and all battle-tested patterns.
             </p>
           </div>
@@ -52,8 +52,8 @@
                 2
               </div>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">Vibe</h3>
-            <p class="text-gray-700 leading-relaxed">
+            <h3 class="text-2xl font-bold text-white mb-3">Vibe</h3>
+            <p class="text-gray-300 leading-relaxed">
               Adapt agents, prompts, and tools to your use case. Study the working patterns, learn the architecture, make it yours.
             </p>
           </div>
@@ -77,8 +77,8 @@
                 3
               </div>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">Ship</h3>
-            <p class="text-gray-700 leading-relaxed">
+            <h3 class="text-2xl font-bold text-white mb-3">Ship</h3>
+            <p class="text-gray-300 leading-relaxed">
               Deploy with confidence. 90%+ test coverage, error handling, and proven patterns mean it works first time.
             </p>
           </div>
@@ -87,11 +87,11 @@
 
       <!-- Proof Statement -->
       <div class="max-w-3xl mx-auto mt-16 text-center">
-        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border-2 border-blue-200">
-          <p class="text-2xl font-bold text-gray-900 mb-4">
+        <div class="bg-white/[0.03] backdrop-blur-xl rounded-2xl p-8 border border-white/10">
+          <p class="text-2xl font-bold text-white mb-4">
             "I spent 3 months trying to figure out agent coordination. Navam Invest showed me exactly how it works. Shipped my MVP in 2 weeks."
           </p>
-          <p class="text-gray-600 font-medium">
+          <p class="text-gray-400 font-medium">
             — AI Engineer building a fintech platform
           </p>
         </div>
@@ -101,5 +101,7 @@
 </template>
 
 <script setup lang="ts">
-// No imports needed - using inline SVGs
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+const { target, isVisible } = useScrollReveal()
 </script>

@@ -1,12 +1,12 @@
 <template>
-  <section class="py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+  <section ref="target" :class="['reveal', { 'is-visible': isVisible }]" class="py-16 bg-gradient-to-br from-gray-900 to-gray-950">
     <div class="container mx-auto px-4">
       <!-- Section Header -->
       <div class="max-w-4xl mx-auto text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
           Real Working Code. Real Business Value.
         </h2>
-        <p class="text-lg text-gray-700">
+        <p class="text-lg text-gray-300">
           Complete, battle-tested codebases with proven metrics and full vibe coding automation.
         </p>
       </div>
@@ -23,7 +23,7 @@
               'flex items-center gap-2',
               selectedProduct === product.id
                 ? `${product.activeClass} shadow-lg scale-105`
-                : 'bg-white text-gray-700 hover:bg-gray-50 shadow-md hover:scale-102'
+                : 'bg-white/5 text-gray-400 hover:bg-white/10 shadow-md hover:scale-102'
             ]"
           >
             <div :class="['w-5 h-5 flex items-center justify-center', selectedProduct === product.id ? '' : 'text-gray-600']">
@@ -118,8 +118,8 @@
         <!-- Second Row: Vibe Coding Readiness + Senior Engineer Package -->
         <div class="grid lg:grid-cols-2 gap-6">
           <!-- Left: Vibe Coding Readiness -->
-          <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-6 shadow-lg border-2 border-purple-200 card-slide-in-left">
-            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <div class="bg-white/[0.03] rounded-xl p-6 shadow-lg border border-white/10 card-slide-in-left">
+            <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
               <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center icon-pulse">
                 <Icon name="lightning" size="sm" class="text-white" />
               </div>
@@ -128,7 +128,7 @@
             <div class="space-y-3">
               <div class="vibe-stat">
                 <div class="flex items-center justify-between">
-                  <span class="text-sm font-semibold text-gray-700">Slash Commands</span>
+                  <span class="text-sm font-semibold text-gray-300">Slash Commands</span>
                   <span class="vibe-badge">{{ currentMetrics.vibeMetrics.slashCommands }}</span>
                 </div>
                 <div class="vibe-bar">
@@ -137,7 +137,7 @@
               </div>
               <div class="vibe-stat">
                 <div class="flex items-center justify-between">
-                  <span class="text-sm font-semibold text-gray-700">Feature Backlog</span>
+                  <span class="text-sm font-semibold text-gray-300">Feature Backlog</span>
                   <span class="vibe-badge">{{ currentMetrics.vibeMetrics.backlogItems }}</span>
                 </div>
                 <div class="vibe-bar">
@@ -146,7 +146,7 @@
               </div>
               <div class="vibe-stat">
                 <div class="flex items-center justify-between">
-                  <span class="text-sm font-semibold text-gray-700">CLAUDE.md Guide</span>
+                  <span class="text-sm font-semibold text-gray-300">CLAUDE.md Guide</span>
                   <span class="vibe-badge">{{ currentMetrics.vibeMetrics.claudeMdLines }} lines</span>
                 </div>
                 <div class="vibe-bar">
@@ -155,7 +155,7 @@
               </div>
               <div class="vibe-stat">
                 <div class="flex items-center justify-between">
-                  <span class="text-sm font-semibold text-gray-700">Documentation Files</span>
+                  <span class="text-sm font-semibold text-gray-300">Documentation Files</span>
                   <span class="vibe-badge">{{ currentMetrics.vibeMetrics.totalDocs }}</span>
                 </div>
                 <div class="vibe-bar">
@@ -163,9 +163,9 @@
                 </div>
               </div>
             </div>
-            <div class="mt-4 pt-4 border-t border-purple-200">
+            <div class="mt-4 pt-4 border-t border-white/10">
               <div class="flex items-center justify-between">
-                <span class="text-sm font-bold text-gray-900">Readiness Score</span>
+                <span class="text-sm font-bold text-white">Readiness Score</span>
                 <span class="text-2xl font-black bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent score-pulse">
                   {{ currentMetrics.vibeMetrics.readinessScore }}%
                 </span>
@@ -241,6 +241,9 @@ import { ref, computed } from 'vue'
 import Button from '@/components/ui/Button.vue'
 import Icon from '@/components/ui/Icon.vue'
 import StripeButton from '@/components/ui/StripeButton.vue'
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+const { target, isVisible } = useScrollReveal()
 
 type ProductId = 'invest' | 'moments' | 'trends' | 'memo' | 'command'
 
@@ -551,11 +554,11 @@ function formatNumber(num: number): string {
 
 /* Compact Metric Cards */
 .compact-card {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.03);
   border-radius: 0.75rem;
   padding: 1rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgb(229, 231, 235);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -567,7 +570,7 @@ function formatNumber(num: number): string {
 .compact-card-title {
   font-size: 0.875rem;
   font-weight: 700;
-  color: rgb(17, 24, 39);
+  color: rgb(255, 255, 255);
   margin-bottom: 0.75rem;
   display: flex;
   align-items: center;
@@ -579,13 +582,13 @@ function formatNumber(num: number): string {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem;
-  background: linear-gradient(90deg, rgb(249, 250, 251), rgb(239, 246, 255));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05));
   border-radius: 0.375rem;
   transition: all 0.2s ease;
 }
 
 .compact-item:hover {
-  background: linear-gradient(90deg, rgb(239, 246, 255), rgb(243, 232, 255));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.08));
   transform: translateX(2px);
 }
 
@@ -609,13 +612,13 @@ function formatNumber(num: number): string {
 .compact-name {
   font-size: 0.75rem;
   font-weight: 600;
-  color: rgb(55, 65, 81);
+  color: rgb(209, 213, 219);
 }
 
 .compact-name-small {
   font-size: 0.75rem;
   font-weight: 600;
-  color: rgb(55, 65, 81);
+  color: rgb(209, 213, 219);
   line-height: 1.2;
 }
 
@@ -637,14 +640,14 @@ function formatNumber(num: number): string {
 .metric-mini {
   text-align: center;
   padding: 0.5rem;
-  background: linear-gradient(135deg, rgb(243, 244, 246) 0%, rgb(239, 246, 255) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.05) 100%);
   border-radius: 0.375rem;
 }
 
 .metric-mini-value {
   font-size: 1.25rem;
   font-weight: 900;
-  background: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -654,7 +657,7 @@ function formatNumber(num: number): string {
 .metric-mini-label {
   font-size: 0.625rem;
   font-weight: 600;
-  color: rgb(107, 114, 128);
+  color: rgb(156, 163, 175);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -679,7 +682,7 @@ function formatNumber(num: number): string {
 
 .vibe-bar {
   height: 0.5rem;
-  background-color: rgba(147, 51, 234, 0.1);
+  background-color: rgba(147, 51, 234, 0.2);
   border-radius: 9999px;
   overflow: hidden;
   margin-top: 0.5rem;

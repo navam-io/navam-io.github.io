@@ -1,16 +1,16 @@
 <template>
-  <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/60">
+  <header class="sticky top-0 z-50 w-full border-b border-white/10 bg-gray-950/80 backdrop-blur-xl">
     <div class="container mx-auto px-4 py-4 sm:py-0">
       <div class="flex flex-col items-center sm:flex-row sm:h-16 sm:items-center">
         <a href="/" class="flex items-center space-x-2 mb-3 sm:mb-0 group">
           <img src="/images/logo.png" alt="Navam Logo" class="h-6 w-auto" />
           <div class="flex flex-col">
-            <span class="text-2xl font-bold">Navam</span>
-            <span class="text-[10px] text-muted-foreground/70 -mt-1 hidden sm:block">Fork, Vibe, Ship!</span>
+            <span class="text-2xl font-bold text-white">Navam</span>
+            <span class="text-[10px] text-gray-500 -mt-1 hidden sm:block">Fork, Vibe, Ship!</span>
           </div>
         </a>
         <nav class="flex items-center space-x-6 text-sm font-medium sm:ml-auto" aria-label="Main navigation">
-          <a href="/" class="transition-colors hover:text-foreground/80 text-foreground">Home</a>
+          <a href="/" class="transition-colors hover:text-white text-white">Home</a>
 
           <!-- Products Button -->
           <div
@@ -23,7 +23,7 @@
               @keydown.escape="closeDropdown"
               @keydown.enter="toggleDropdown"
               @keydown.space.prevent="toggleDropdown"
-              class="transition-colors hover:text-foreground/80 text-foreground/60 flex items-center gap-1 touch-manipulation"
+              class="transition-colors hover:text-white text-gray-400 flex items-center gap-1 touch-manipulation"
               aria-haspopup="true"
               :aria-expanded="showDropdown"
               aria-label="Products menu"
@@ -42,8 +42,8 @@
             </button>
           </div>
 
-          <a href="/blog" class="transition-colors hover:text-foreground/80 text-foreground/60">Blog</a>
-          <a href="/contact" class="transition-colors hover:text-foreground/80 text-foreground/60">Contact</a>
+          <a href="/blog" class="transition-colors hover:text-white text-gray-400">Blog</a>
+          <a href="/contact" class="transition-colors hover:text-white text-gray-400">Contact</a>
         </nav>
       </div>
     </div>
@@ -77,7 +77,7 @@
       >
         <div
           v-show="showDropdown"
-          class="fixed left-0 right-0 top-[73px] sm:top-[65px] z-[50] bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/60"
+          class="fixed left-0 right-0 top-[73px] sm:top-[65px] z-[50] bg-gray-950/95 backdrop-blur-xl border-b border-white/10"
           @click.stop
           @mouseenter="handleMenuEnter"
           @mouseleave="handleMenuLeave"
@@ -88,7 +88,7 @@
               href="https://neosignal.io"
               target="_blank"
               rel="noopener noreferrer"
-              class="group block mb-6 p-6 rounded-2xl border-2 border-cyan-300 bg-gradient-to-r from-cyan-50 via-teal-50 to-emerald-50 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-100/50 active:scale-[0.99] transition-all duration-300 touch-manipulation relative overflow-hidden"
+              class="group block mb-6 p-6 rounded-2xl border border-cyan-500/30 bg-cyan-500/10 hover:border-cyan-400/50 hover:shadow-xl hover:shadow-cyan-500/10 active:scale-[0.99] transition-all duration-300 touch-manipulation relative overflow-hidden"
               @click="closeDropdown"
             >
               <!-- Featured badge -->
@@ -110,25 +110,25 @@
                 <!-- Content -->
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center gap-2 mb-1">
-                    <span class="font-bold text-lg text-gray-900 group-hover:text-cyan-700 transition-colors">NeoSignal</span>
-                    <span class="text-cyan-600 font-semibold text-sm">by Navam Team</span>
+                    <span class="font-bold text-lg text-white group-hover:text-cyan-300 transition-colors">NeoSignal</span>
+                    <span class="text-cyan-400 font-semibold text-sm">by Navam Team</span>
                     <svg class="w-4 h-4 text-gray-400 group-hover:text-cyan-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                     </svg>
                   </div>
-                  <p class="text-sm text-gray-600 leading-relaxed mb-2">
-                    <span class="font-semibold text-gray-700">Frontier Tech Stack Intelligence</span> - Decision-support platform for tech stack evaluators. Synthesized signals across AI Models, Accelerators, Cloud Providers, and Frameworks.
+                  <p class="text-sm text-gray-400 leading-relaxed mb-2">
+                    <span class="font-semibold text-gray-300">Frontier Tech Stack Intelligence</span> - Decision-support platform for tech stack evaluators. Synthesized signals across AI Models, Accelerators, Cloud Providers, and Frameworks.
                   </p>
                   <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2 py-0.5 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">Signal Cards</span>
-                    <span class="px-2 py-0.5 bg-teal-100 text-teal-700 rounded-full text-xs font-medium">Stack Builder</span>
-                    <span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded-full text-xs font-medium">4 Categories</span>
-                    <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded-full text-xs font-medium">Free Access</span>
+                    <span class="px-2 py-0.5 bg-cyan-500/20 text-cyan-300 rounded-full text-xs font-medium">Signal Cards</span>
+                    <span class="px-2 py-0.5 bg-teal-500/20 text-teal-300 rounded-full text-xs font-medium">Stack Builder</span>
+                    <span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-300 rounded-full text-xs font-medium">4 Categories</span>
+                    <span class="px-2 py-0.5 bg-green-500/20 text-green-300 rounded-full text-xs font-medium">Free Access</span>
                   </div>
                 </div>
 
                 <!-- CTA Arrow -->
-                <div class="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-cyan-100 group-hover:bg-cyan-200 transition-colors">
+                <div class="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-cyan-500/20 group-hover:bg-cyan-500/30 transition-colors">
                   <svg class="w-6 h-6 text-cyan-600 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                   </svg>
@@ -140,7 +140,7 @@
               <!-- Navam Invest -->
               <a
                 href="/products/navam-invest"
-                class="group block p-5 rounded-2xl border border-gray-200 bg-white hover:border-cyan-300 hover:shadow-xl hover:shadow-cyan-100/50 active:scale-[0.98] transition-all duration-300 touch-manipulation"
+                class="group block p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-cyan-500/30 hover:shadow-xl hover:shadow-cyan-500/10 active:scale-[0.98] transition-all duration-300 touch-manipulation"
                 @click="closeDropdown"
               >
                 <div class="flex items-start gap-4">
@@ -150,8 +150,8 @@
                     </svg>
                   </div>
                   <div class="flex-1 min-w-0">
-                    <div class="font-bold text-base text-gray-900 group-hover:text-cyan-700 transition-colors mb-1">Navam Invest</div>
-                    <div class="text-sm text-gray-600 leading-relaxed">Investment Intelligence · 10 AI Agents</div>
+                    <div class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors mb-1">Navam Invest</div>
+                    <div class="text-sm text-gray-400 leading-relaxed">Investment Intelligence · 10 AI Agents</div>
                   </div>
                 </div>
               </a>
@@ -159,7 +159,7 @@
               <!-- Moments -->
               <a
                 href="/products/moments"
-                class="group block p-5 rounded-2xl border border-gray-200 bg-white hover:border-blue-300 hover:shadow-xl hover:shadow-blue-100/50 active:scale-[0.98] transition-all duration-300 touch-manipulation"
+                class="group block p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-blue-500/30 hover:shadow-xl hover:shadow-blue-500/10 active:scale-[0.98] transition-all duration-300 touch-manipulation"
                 @click="closeDropdown"
               >
                 <div class="flex items-start gap-4">
@@ -169,8 +169,8 @@
                     </svg>
                   </div>
                   <div class="flex-1 min-w-0">
-                    <div class="font-bold text-base text-gray-900 group-hover:text-blue-700 transition-colors mb-1">Moments</div>
-                    <div class="text-sm text-gray-600 leading-relaxed">Business Intelligence · Knowledge Graphs</div>
+                    <div class="font-bold text-base text-white group-hover:text-blue-300 transition-colors mb-1">Moments</div>
+                    <div class="text-sm text-gray-400 leading-relaxed">Business Intelligence · Knowledge Graphs</div>
                   </div>
                 </div>
               </a>
@@ -178,7 +178,7 @@
               <!-- Command -->
               <a
                 href="/products/command"
-                class="group block p-5 rounded-2xl border border-gray-200 bg-white hover:border-green-300 hover:shadow-xl hover:shadow-green-100/50 active:scale-[0.98] transition-all duration-300 touch-manipulation"
+                class="group block p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-green-500/30 hover:shadow-xl hover:shadow-green-500/10 active:scale-[0.98] transition-all duration-300 touch-manipulation"
                 @click="closeDropdown"
               >
                 <div class="flex items-start gap-4">
@@ -188,8 +188,8 @@
                     </svg>
                   </div>
                   <div class="flex-1 min-w-0">
-                    <div class="font-bold text-base text-gray-900 group-hover:text-green-700 transition-colors mb-1">Command</div>
-                    <div class="text-sm text-gray-600 leading-relaxed">Terminal AI · 15+ Models · 7 Providers</div>
+                    <div class="font-bold text-base text-white group-hover:text-green-300 transition-colors mb-1">Command</div>
+                    <div class="text-sm text-gray-400 leading-relaxed">Terminal AI · 15+ Models · 7 Providers</div>
                   </div>
                 </div>
               </a>
@@ -197,7 +197,7 @@
               <!-- Memo -->
               <a
                 href="/products/memo"
-                class="group block p-5 rounded-2xl border border-gray-200 bg-white hover:border-orange-300 hover:shadow-xl hover:shadow-orange-100/50 active:scale-[0.98] transition-all duration-300 touch-manipulation"
+                class="group block p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-orange-500/30 hover:shadow-xl hover:shadow-orange-500/10 active:scale-[0.98] transition-all duration-300 touch-manipulation"
                 @click="closeDropdown"
               >
                 <div class="flex items-start gap-4">
@@ -207,8 +207,8 @@
                     </svg>
                   </div>
                   <div class="flex-1 min-w-0">
-                    <div class="font-bold text-base text-gray-900 group-hover:text-orange-700 transition-colors mb-1">Memo</div>
-                    <div class="text-sm text-gray-600 leading-relaxed">Browser AI · Multi-Provider · YouTube</div>
+                    <div class="font-bold text-base text-white group-hover:text-orange-300 transition-colors mb-1">Memo</div>
+                    <div class="text-sm text-gray-400 leading-relaxed">Browser AI · Multi-Provider · YouTube</div>
                   </div>
                 </div>
               </a>
@@ -216,7 +216,7 @@
               <!-- Trends -->
               <a
                 href="/products/trends"
-                class="group block p-5 rounded-2xl border border-gray-200 bg-white hover:border-purple-300 hover:shadow-xl hover:shadow-purple-100/50 active:scale-[0.98] transition-all duration-300 touch-manipulation"
+                class="group block p-5 rounded-2xl border border-white/10 bg-white/5 hover:border-purple-500/30 hover:shadow-xl hover:shadow-purple-500/10 active:scale-[0.98] transition-all duration-300 touch-manipulation"
                 @click="closeDropdown"
               >
                 <div class="flex items-start gap-4">
@@ -226,8 +226,8 @@
                     </svg>
                   </div>
                   <div class="flex-1 min-w-0">
-                    <div class="font-bold text-base text-gray-900 group-hover:text-purple-700 transition-colors mb-1">Trends</div>
-                    <div class="text-sm text-gray-600 leading-relaxed">Enterprise Intelligence · Multi-Agent Reasoning</div>
+                    <div class="font-bold text-base text-white group-hover:text-purple-300 transition-colors mb-1">Trends</div>
+                    <div class="text-sm text-gray-400 leading-relaxed">Enterprise Intelligence · Multi-Agent Reasoning</div>
                   </div>
                 </div>
               </a>
@@ -235,7 +235,7 @@
               <!-- Sentinel (Sponsor Project) -->
               <a
                 href="/products/sentinel"
-                class="group block p-5 rounded-2xl border-2 border-teal-300 bg-gradient-to-br from-slate-50 to-teal-50 hover:border-teal-400 hover:shadow-xl hover:shadow-teal-100/50 active:scale-[0.98] transition-all duration-300 touch-manipulation relative"
+                class="group block p-5 rounded-2xl border border-teal-500/30 bg-teal-500/10 hover:border-teal-400/50 hover:shadow-xl hover:shadow-teal-500/10 active:scale-[0.98] transition-all duration-300 touch-manipulation relative"
                 @click="closeDropdown"
               >
                 <!-- Special "Sponsor" badge -->
@@ -253,8 +253,8 @@
                     </svg>
                   </div>
                   <div class="flex-1 min-w-0">
-                    <div class="font-bold text-base text-gray-900 group-hover:text-teal-700 transition-colors mb-1">Sentinel</div>
-                    <div class="text-sm text-gray-600 leading-relaxed">Visual Agent Testing · Active Development</div>
+                    <div class="font-bold text-base text-white group-hover:text-teal-300 transition-colors mb-1">Sentinel</div>
+                    <div class="text-sm text-gray-400 leading-relaxed">Visual Agent Testing · Active Development</div>
                   </div>
                 </div>
               </a>

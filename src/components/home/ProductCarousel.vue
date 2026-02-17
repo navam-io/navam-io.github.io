@@ -56,7 +56,7 @@
                           <img
                             :src="tech.logo"
                             :alt="tech.name"
-                            class="w-8 h-8 object-contain brightness-0 invert"
+                            :class="['w-8 h-8 object-contain opacity-70 hover:opacity-100', { 'invert-logo': tech.invert }]"
                             loading="lazy"
                           />
                           <span class="text-white/70 text-xs font-medium">{{ tech.name }}</span>
@@ -195,6 +195,7 @@ interface Product {
 interface Technology {
   name: string;
   logo: string;
+  invert?: boolean;
 }
 
 const products: Product[] = [
@@ -332,7 +333,7 @@ const products: Product[] = [
     color: 'bg-blue-500/10 text-blue-400 border-blue-500/30',
     techStack: [
       { name: 'Anthropic', logo: 'https://cdn.simpleicons.org/anthropic/FFFFFF' },
-      { name: 'OpenAI', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg' },
+      { name: 'OpenAI', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg', invert: true },
       { name: 'Gemini', logo: 'https://cdn.simpleicons.org/googlegemini/FFFFFF' },
       { name: 'Ollama', logo: 'https://cdn.simpleicons.org/ollama/FFFFFF' }
     ]
@@ -360,7 +361,7 @@ const products: Product[] = [
     color: 'bg-orange-500/10 text-orange-400 border-orange-500/30',
     techStack: [
       { name: 'Anthropic', logo: 'https://cdn.simpleicons.org/anthropic/FFFFFF' },
-      { name: 'OpenAI', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg' },
+      { name: 'OpenAI', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg', invert: true },
       { name: 'Gemini', logo: 'https://cdn.simpleicons.org/googlegemini/FFFFFF' },
       { name: 'Ollama', logo: 'https://cdn.simpleicons.org/ollama/FFFFFF' }
     ]
@@ -474,5 +475,10 @@ onUnmounted(() => {
 /* Enhanced shadow effects */
 .shadow-2xl {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Invert black SVGs to white for dark backgrounds */
+.invert-logo {
+  filter: brightness(0) invert(1);
 }
 </style>

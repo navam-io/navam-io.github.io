@@ -10,6 +10,7 @@ import { computed } from 'vue'
 interface Props {
   variant?: 'default' | 'glass' | 'gradient' | 'featured' | 'outlined'
   gradient?: 'cyan' | 'blue' | 'purple' | 'green' | 'orange'
+  accent?: 'none' | 'cyan' | 'violet' | 'teal' | 'orange' | 'green' | 'red' | 'blue'
   hover?: boolean
   padding?: 'none' | 'sm' | 'md' | 'lg'
 }
@@ -17,6 +18,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   variant: 'default',
   gradient: 'blue',
+  accent: 'none',
   hover: true,
   padding: 'md'
 })
@@ -32,17 +34,48 @@ const cardClasses = computed(() => {
   }
 
   const variants = {
-    default: 'bg-white shadow-lg border border-gray-200',
-    glass: 'backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl',
+    default: 'backdrop-blur-xl bg-white/[0.03] border border-white/10 shadow-lg',
+    glass: 'backdrop-blur-xl bg-white/[0.03] border border-white/10 shadow-2xl',
     gradient: getGradientClasses(),
-    featured: 'bg-gradient-to-br from-white to-gray-50 shadow-xl ring-2 ring-gray-200',
-    outlined: 'bg-transparent border-2 border-gray-300'
+    featured: 'bg-white/[0.05] backdrop-blur-xl shadow-xl ring-2 ring-white/20',
+    outlined: 'bg-transparent border-2 border-white/20'
   }
 
-  const hoverEffect = props.hover ? 'hover:scale-105 hover:shadow-2xl' : ''
+  const accentClasses = getAccentClasses()
+  const hoverEffect = props.hover ? getHoverClasses() : ''
 
-  return `${base} ${paddings[props.padding]} ${variants[props.variant]} ${hoverEffect}`
+  return `${base} ${paddings[props.padding]} ${variants[props.variant]} ${accentClasses} ${hoverEffect}`
 })
+
+function getAccentClasses() {
+  if (props.accent === 'none') return ''
+
+  const accents: Record<string, string> = {
+    cyan: 'border-t-2 border-t-cyan-500/50',
+    violet: 'border-t-2 border-t-violet-500/50',
+    teal: 'border-t-2 border-t-teal-500/50',
+    orange: 'border-t-2 border-t-orange-500/50',
+    green: 'border-t-2 border-t-green-500/50',
+    red: 'border-t-2 border-t-red-500/50',
+    blue: 'border-t-2 border-t-blue-500/50'
+  }
+  return accents[props.accent] || ''
+}
+
+function getHoverClasses() {
+  if (props.accent === 'none') return 'hover:scale-105 hover:shadow-2xl'
+
+  const hoverGlows: Record<string, string> = {
+    cyan: 'hover:scale-105 hover:shadow-cyan-500/10 hover:shadow-2xl',
+    violet: 'hover:scale-105 hover:shadow-violet-500/10 hover:shadow-2xl',
+    teal: 'hover:scale-105 hover:shadow-teal-500/10 hover:shadow-2xl',
+    orange: 'hover:scale-105 hover:shadow-orange-500/10 hover:shadow-2xl',
+    green: 'hover:scale-105 hover:shadow-green-500/10 hover:shadow-2xl',
+    red: 'hover:scale-105 hover:shadow-red-500/10 hover:shadow-2xl',
+    blue: 'hover:scale-105 hover:shadow-blue-500/10 hover:shadow-2xl'
+  }
+  return hoverGlows[props.accent] || 'hover:scale-105 hover:shadow-2xl'
+}
 
 function getGradientClasses() {
   const gradients = {

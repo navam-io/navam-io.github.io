@@ -1,9 +1,9 @@
 <template>
-  <section class="py-16 bg-gradient-to-br from-slate-50 to-gray-100 overflow-hidden">
+  <section class="py-16 bg-gray-950 overflow-hidden">
     <div class="container mx-auto px-4">
       <!-- Section Label -->
       <div class="text-center mb-8">
-        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider text-white/70">
           Battle-Tested with Production Technologies
         </p>
       </div>
@@ -19,7 +19,7 @@
                 <img
                   :src="tech.logo"
                   :alt="tech.name"
-                  class="tech-logo-img"
+                  :class="['tech-logo-img', { 'invert-logo': tech.invert }]"
                   loading="lazy"
                 />
                 <span class="tech-logo-label">{{ tech.name }}</span>
@@ -33,7 +33,7 @@
                 <img
                   :src="tech.logo"
                   :alt="tech.name"
-                  class="tech-logo-img"
+                  :class="['tech-logo-img', { 'invert-logo': tech.invert }]"
                   loading="lazy"
                 />
                 <span class="tech-logo-label">{{ tech.name }}</span>
@@ -52,15 +52,16 @@ import { ref } from 'vue'
 interface Technology {
   name: string
   logo: string
+  invert?: boolean
 }
 
 const technologies = ref<Technology[]>([
   { name: 'Python', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
   { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-  { name: 'Next.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+  { name: 'Next.js', logo: 'https://cdn.simpleicons.org/nextdotjs/ffffff' },
   { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-  { name: 'Anthropic', logo: 'https://cdn.simpleicons.org/anthropic/000000' },
-  { name: 'OpenAI', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg' },
+  { name: 'Anthropic', logo: 'https://cdn.simpleicons.org/anthropic/ffffff' },
+  { name: 'OpenAI', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg', invert: true },
   { name: 'PostgreSQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
   { name: 'Tailwind CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
   { name: 'D3.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg' },
@@ -112,16 +113,16 @@ const technologies = ref<Technology[]>([
   flex-shrink: 0;
   width: 160px;
   padding: 1.5rem 1rem;
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .tech-logo-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   border-color: rgba(59, 130, 246, 0.3);
 }
 
@@ -138,22 +139,25 @@ const technologies = ref<Technology[]>([
   width: 48px;
   height: 48px;
   object-fit: contain;
-  filter: grayscale(100%);
   opacity: 0.7;
   transition: all 0.3s ease;
 }
 
 .tech-logo-card:hover .tech-logo-img {
-  filter: grayscale(0%);
   opacity: 1;
   transform: scale(1.1);
+}
+
+/* Invert black SVGs to white for dark backgrounds */
+.invert-logo {
+  filter: brightness(0) invert(1);
 }
 
 /* Logo Label */
 .tech-logo-label {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #334155;
+  color: rgba(255, 255, 255, 0.7);
   text-align: center;
   letter-spacing: -0.01em;
 }

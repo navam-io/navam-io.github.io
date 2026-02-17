@@ -4,44 +4,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Pastel color palette
-        pastel: {
-          purple: '#E8D5F2',
-          blue: '#D5E8F2',
-          pink: '#F2D5E8',
-          peach: '#F2E5D5',
-          mint: '#D5F2E8',
-          lavender: '#E5D5F2',
-        },
-        // Text colors
+        // Text colors for dark theme
         text: {
-          primary: '#2D2D2D',
-          secondary: '#6B6B6B',
-          light: '#9B9B9B',
+          primary: '#F2F2F2',
+          secondary: '#A0A0A0',
+          light: '#6B6B6B',
         },
       },
       fontFamily: {
         display: [
-          'SF Pro Display',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          'Segoe UI',
+          'Bricolage Grotesque',
+          'DM Sans',
+          'Inter',
           'system-ui',
           'sans-serif',
         ],
         body: [
-          'SF Pro Text',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          'Segoe UI',
+          'DM Sans',
+          'Inter',
           'system-ui',
           'sans-serif',
         ],
         mono: [
-          'SF Mono',
+          'JetBrains Mono',
+          'Menlo',
           'Monaco',
-          'Cascadia Code',
-          'Courier New',
+          'Consolas',
           'monospace',
         ],
       },
@@ -53,19 +41,17 @@ export default {
         xl: '6rem',     // 96px
       },
       boxShadow: {
-        sm: '0 2px 8px rgba(0, 0, 0, 0.08)',
-        md: '0 4px 16px rgba(0, 0, 0, 0.1)',
-        lg: '0 8px 32px rgba(0, 0, 0, 0.12)',
+        sm: '0 2px 8px rgba(0, 0, 0, 0.3)',
+        md: '0 4px 16px rgba(0, 0, 0, 0.4)',
+        lg: '0 8px 32px rgba(0, 0, 0, 0.5)',
       },
       backgroundImage: {
-        // Pastel gradient utilities
-        'gradient-primary': 'linear-gradient(135deg, #E8D5F2 0%, #D5E8F2 100%)',
-        'gradient-secondary': 'linear-gradient(135deg, #F2D5E8 0%, #E8D5F2 100%)',
-        'gradient-accent': 'linear-gradient(135deg, #D5F2E8 0%, #D5E8F2 100%)',
-        'gradient-warm': 'linear-gradient(135deg, #F2E5D5 0%, #F2D5E8 100%)',
-        'gradient-hero': 'linear-gradient(135deg, #E8D5F2 0%, #D5E8F2 50%, #D5F2E8 100%)',
-        'gradient-footer': 'linear-gradient(135deg, #2D2D2D 0%, #1A1A1A 100%)',
-        'gradient-body': 'linear-gradient(180deg, #FAFBFC 0%, #F5F7FA 100%)',
+        // Dark theme gradient utilities
+        'gradient-primary': 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+        'gradient-secondary': 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)',
+        'gradient-accent': 'linear-gradient(135deg, #042f2e 0%, #0c4a6e 100%)',
+        'gradient-footer': 'linear-gradient(135deg, #030712 0%, #0a0a0a 100%)',
+        'gradient-body': 'linear-gradient(180deg, #030712 0%, #0a0a0a 100%)',
         // Text gradients
         'gradient-text': 'linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%)',
       },
