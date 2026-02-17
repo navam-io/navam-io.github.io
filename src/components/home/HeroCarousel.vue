@@ -104,7 +104,7 @@
                           <img
                             :src="tech.logo"
                             :alt="tech.name"
-                            class="w-8 h-8 object-contain"
+                            class="w-8 h-8 object-contain brightness-0 invert"
                             loading="lazy"
                           />
                           <span class="text-white/70 text-xs font-medium">{{ tech.name }}</span>
@@ -446,7 +446,7 @@ const products: Product[] = [
     color: 'bg-blue-500/10 text-blue-400 border-blue-500/30',
     techStack: [
       { name: 'Anthropic', logo: 'https://cdn.simpleicons.org/anthropic/FFFFFF' },
-      { name: 'OpenAI', logo: 'https://cdn.simpleicons.org/openai/FFFFFF' },
+      { name: 'OpenAI', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg' },
       { name: 'Gemini', logo: 'https://cdn.simpleicons.org/googlegemini/FFFFFF' },
       { name: 'Ollama', logo: 'https://cdn.simpleicons.org/ollama/FFFFFF' }
     ]
@@ -474,7 +474,7 @@ const products: Product[] = [
     color: 'bg-orange-500/10 text-orange-400 border-orange-500/30',
     techStack: [
       { name: 'Anthropic', logo: 'https://cdn.simpleicons.org/anthropic/FFFFFF' },
-      { name: 'OpenAI', logo: 'https://cdn.simpleicons.org/openai/FFFFFF' },
+      { name: 'OpenAI', logo: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg' },
       { name: 'Gemini', logo: 'https://cdn.simpleicons.org/googlegemini/FFFFFF' },
       { name: 'Ollama', logo: 'https://cdn.simpleicons.org/ollama/FFFFFF' }
     ]
