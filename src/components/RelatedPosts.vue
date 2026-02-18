@@ -1,5 +1,5 @@
 <template>
-  <div v-if="relatedPosts.length > 0" class="mt-16 pt-8 border-t border-gray-200" data-related-posts>
+  <div v-if="relatedPosts.length > 0" class="mt-16 pt-8 border-t border-white/10" data-related-posts>
     <h3 class="text-2xl font-bold mb-8 text-center">Related Articles</h3>
     
     <!-- Carousel Container -->
@@ -12,7 +12,7 @@
         <article
           v-for="post in relatedPosts"
           :key="post.slug"
-          class="flex-shrink-0 w-80 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+          class="flex-shrink-0 w-80 bg-white/5 rounded-xl shadow-lg border border-white/10 hover:shadow-xl hover:border-white/20 transition-all duration-300 group"
         >
           <a :href="`/blog/${post.slug}`" class="block">
             <!-- Featured Image -->
@@ -27,10 +27,10 @@
             
             <!-- Content -->
             <div class="p-6">
-              <h4 class="text-xl font-semibold mb-3 line-clamp-2 group-hover:text-blue-600 transition-colors">
+              <h4 class="text-xl font-semibold text-white mb-3 line-clamp-2 group-hover:text-blue-400 transition-colors">
                 {{ post.title }}
               </h4>
-              <p class="text-gray-600 text-sm line-clamp-3 mb-4">
+              <p class="text-gray-400 text-sm line-clamp-3 mb-4">
                 {{ post.excerpt }}
               </p>
               
@@ -39,7 +39,7 @@
                 <span 
                   v-for="tag in post.tags.slice(0, 3)" 
                   :key="tag"
-                  class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full"
+                  class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full"
                 >
                   {{ tag }}
                 </span>
@@ -47,7 +47,7 @@
               
               <!-- Read More -->
               <div class="flex items-center justify-between">
-                <span class="text-blue-600 text-sm font-medium group-hover:underline">
+                <span class="text-blue-400 text-sm font-medium group-hover:underline">
                   Read Article →
                 </span>
                 <div class="text-xs text-gray-400">
@@ -63,10 +63,10 @@
       <button
         v-if="canScrollLeft"
         @click="scrollLeft"
-        class="absolute left-2 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:shadow-2xl transition-all duration-200 z-20"
+        class="absolute left-2 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-gray-800 rounded-full shadow-xl border border-white/10 flex items-center justify-center hover:bg-gray-700 hover:shadow-2xl transition-all duration-200 z-20"
         aria-label="Previous posts"
       >
-        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
         </svg>
       </button>
@@ -74,10 +74,10 @@
       <button
         v-if="canScrollRight"
         @click="scrollRight"
-        class="absolute right-2 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl border border-gray-200 flex items-center justify-center hover:bg-gray-50 hover:shadow-2xl transition-all duration-200 z-20"
+        class="absolute right-2 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-gray-800 rounded-full shadow-xl border border-white/10 flex items-center justify-center hover:bg-gray-700 hover:shadow-2xl transition-all duration-200 z-20"
         aria-label="Next posts"
       >
-        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
         </svg>
       </button>
@@ -91,7 +91,7 @@
         @click="goToSlide(index)"
         :class="[
           'w-2 h-2 rounded-full transition-colors',
-          currentIndex === index ? 'bg-blue-600' : 'bg-gray-300'
+          currentIndex === index ? 'bg-blue-400' : 'bg-gray-600'
         ]"
         :aria-label="`Go to slide ${index + 1}`"
       ></button>

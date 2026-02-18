@@ -5,14 +5,14 @@
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
       <!-- Image Section -->
       <div :class="imageColClass">
-        <div v-if="product === 'moments' || product === 'memo'" class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 hover:shadow-3xl transition-shadow duration-300">
-          <div class="bg-gray-100 px-4 py-3 flex items-center gap-2 border-b border-gray-200">
+        <div v-if="product === 'moments' || product === 'memo'" class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 hover:shadow-3xl transition-shadow duration-300">
+          <div class="bg-gray-800 px-4 py-3 flex items-center gap-2 border-b border-white/10">
             <div class="flex gap-2">
               <div class="w-3 h-3 rounded-full bg-red-500"></div>
               <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
               <div class="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
-            <div class="flex-1 text-center text-sm text-gray-600 font-medium">{{ browserTitle }}</div>
+            <div class="flex-1 text-center text-sm text-gray-400 font-medium">{{ browserTitle }}</div>
           </div>
           <img
             :src="image"
@@ -21,14 +21,14 @@
             loading="lazy"
           />
         </div>
-        <div v-else-if="product === 'trends'" class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 hover:shadow-3xl transition-shadow duration-300">
-          <div class="bg-gray-100 px-4 py-3 flex items-center gap-2 border-b border-gray-200">
+        <div v-else-if="product === 'trends'" class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 hover:shadow-3xl transition-shadow duration-300">
+          <div class="bg-gray-800 px-4 py-3 flex items-center gap-2 border-b border-white/10">
             <div class="flex gap-2">
               <div class="w-3 h-3 rounded-full bg-red-500"></div>
               <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
               <div class="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
-            <div class="flex-1 text-center text-sm text-gray-600 font-medium">app.trenddit.com - Trend Intelligence</div>
+            <div class="flex-1 text-center text-sm text-gray-400 font-medium">app.trenddit.com - Trend Intelligence</div>
           </div>
           <img
             :src="image"
@@ -37,7 +37,7 @@
             loading="lazy"
           />
         </div>
-        <div v-else-if="product === 'command'" class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 hover:shadow-3xl transition-shadow duration-300">
+        <div v-else-if="product === 'command'" class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 hover:shadow-3xl transition-shadow duration-300">
           <div class="bg-gray-900 px-4 py-3 flex items-center gap-2 border-b border-gray-700">
             <div class="flex gap-2">
               <div class="w-3 h-3 rounded-full bg-red-500"></div>
@@ -64,7 +64,7 @@ $ cmnd test ask
 ✓ Gemini Flash: 0.8s (ultra-fast)</code></pre>
           </div>
         </div>
-        <div v-else class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 hover:shadow-3xl transition-shadow duration-300">
+        <div v-else class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 hover:shadow-3xl transition-shadow duration-300">
           <img
             :src="image"
             :alt="imageAlt"
@@ -79,8 +79,8 @@ $ cmnd test ask
         <div :class="badgeClass">
           {{ badge }}
         </div>
-        <h3 class="text-3xl font-bold text-gray-900 mb-4">{{ title }}</h3>
-        <p class="text-lg text-gray-600 mb-6">
+        <h3 class="text-3xl font-bold text-white mb-4">{{ title }}</h3>
+        <p class="text-lg text-gray-400 mb-6">
           {{ description }}
         </p>
         <ul class="space-y-3 mb-8">
@@ -90,14 +90,14 @@ $ cmnd test ask
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <span class="text-gray-700">{{ feature }}</span>
+            <span class="text-gray-300">{{ feature }}</span>
           </li>
         </ul>
         <div class="flex items-center gap-4 not-prose">
           <a
             :href="githubUrl"
             target="_blank"
-            class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white border-2 border-gray-300 text-gray-900 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all font-semibold no-underline"
+            class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white/10 border-2 border-white/20 text-white rounded-lg hover:bg-white/15 hover:border-white/30 transition-all font-semibold no-underline"
           >
             <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -129,7 +129,7 @@ const props = withDefaults(defineProps<Props>(), {
 const productConfig = {
   invest: {
     badge: 'Python Terminal Application',
-    badgeColor: 'bg-blue-100 text-blue-700',
+    badgeColor: 'bg-blue-500/20 text-blue-300',
     title: 'Navam Invest',
     description: 'Multi-agent investment intelligence with streaming TUI. Production-grade test coverage and code metrics shown in real terminal output.',
     features: [
@@ -145,7 +145,7 @@ const productConfig = {
   },
   moments: {
     badge: 'Next.js Business Intelligence',
-    badgeColor: 'bg-purple-100 text-purple-700',
+    badgeColor: 'bg-purple-500/20 text-purple-300',
     title: 'Moments',
     description: 'AI-powered analytics dashboard with knowledge graphs and three-tier intelligence. Real-time visualization of business insights.',
     features: [
@@ -161,7 +161,7 @@ const productConfig = {
   },
   trends: {
     badge: 'Next.js 15 Enterprise App',
-    badgeColor: 'bg-green-100 text-green-700',
+    badgeColor: 'bg-green-500/20 text-green-300',
     title: 'Trends',
     description: 'Strategic intelligence platform with tRPC and Supabase. Card-based UI for tracking and analyzing enterprise trends with AI-powered insights.',
     features: [
@@ -177,7 +177,7 @@ const productConfig = {
   },
   memo: {
     badge: 'Chrome Extension',
-    badgeColor: 'bg-orange-100 text-orange-700',
+    badgeColor: 'bg-orange-500/20 text-orange-300',
     title: 'Memo',
     description: 'Knowledge management extension with multi-provider AI. Capture, tag, and chat with your browsing insights using Claude, GPT, Gemini, or local Ollama.',
     features: [
@@ -193,7 +193,7 @@ const productConfig = {
   },
   command: {
     badge: 'Python CLI Tool',
-    badgeColor: 'bg-cyan-100 text-cyan-700',
+    badgeColor: 'bg-cyan-500/20 text-cyan-300',
     title: 'Command',
     description: 'Turn your Terminal into a configurable AI workspace with 15+ LLMs and 7 providers. Intent-driven workflows with markdown integration.',
     features: [
@@ -212,7 +212,7 @@ const productConfig = {
 const config = computed(() => productConfig[props.product])
 
 const containerClass = computed(() =>
-  'py-24 bg-white'
+  'py-24 bg-gray-950'
 )
 
 const imageColClass = computed(() => {

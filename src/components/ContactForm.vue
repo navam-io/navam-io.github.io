@@ -1,20 +1,20 @@
 <template>
-  <section class="bg-gradient-to-br from-gray-50 to-white py-20">
+  <section class="bg-gradient-to-br from-gray-900 to-gray-950 py-20">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Form Header -->
       <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">Questions About Our Products?</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        <h2 class="text-4xl font-bold text-white mb-4">Questions About Our Products?</h2>
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto">
           Commercial licensing, enterprise support, or custom implementations—we'll respond within 24 hours with exactly what you need to ship working AI.
         </p>
       </div>
 
       <!-- Contact Form -->
-      <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 p-8 md:p-12">
+      <div class="bg-white/5 rounded-3xl shadow-2xl border border-white/10 backdrop-blur-xl p-8 md:p-12">
         <form @submit.prevent="handleSubmit" class="space-y-6">
           <!-- Name Field -->
           <div>
-            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+            <label for="name" class="block text-sm font-semibold text-gray-300 mb-2">
               Full Name <span class="text-red-500">*</span>
             </label>
             <input
@@ -23,10 +23,10 @@
               type="text"
               required
               :class="[
-                'w-full px-4 py-3 rounded-xl border transition-all duration-300',
+                'w-full px-4 py-3 rounded-xl border bg-white/5 text-white placeholder:text-gray-500 transition-all duration-300',
                 errors.name
-                  ? 'border-red-300 focus:border-red-500 focus:ring-red-200'
-                  : 'border-gray-200 focus:border-cyan-500 focus:ring-cyan-200'
+                  ? 'border-red-500/50 focus:border-red-500 focus:ring-red-500/20'
+                  : 'border-white/15 focus:border-cyan-500 focus:ring-cyan-500/20'
               ]"
               :disabled="isSubmitting"
               placeholder="John Doe"
@@ -38,7 +38,7 @@
 
           <!-- Email Field -->
           <div>
-            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+            <label for="email" class="block text-sm font-semibold text-gray-300 mb-2">
               Email Address <span class="text-red-500">*</span>
             </label>
             <input
@@ -47,10 +47,10 @@
               type="email"
               required
               :class="[
-                'w-full px-4 py-3 rounded-xl border transition-all duration-300',
+                'w-full px-4 py-3 rounded-xl border bg-white/5 text-white placeholder:text-gray-500 transition-all duration-300',
                 errors.email
-                  ? 'border-red-300 focus:border-red-500 focus:ring-red-200'
-                  : 'border-gray-200 focus:border-cyan-500 focus:ring-cyan-200'
+                  ? 'border-red-500/50 focus:border-red-500 focus:ring-red-500/20'
+                  : 'border-white/15 focus:border-cyan-500 focus:ring-cyan-500/20'
               ]"
               :disabled="isSubmitting"
               placeholder="john@company.com"
@@ -62,14 +62,14 @@
 
           <!-- Company Field -->
           <div>
-            <label for="company" class="block text-sm font-semibold text-gray-700 mb-2">
+            <label for="company" class="block text-sm font-semibold text-gray-300 mb-2">
               Company
             </label>
             <input
               id="company"
               v-model="formData.company"
               type="text"
-              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-cyan-500 focus:ring-cyan-200 transition-all duration-300"
+              class="w-full px-4 py-3 rounded-xl border border-white/15 bg-white/5 text-white placeholder:text-gray-500 focus:border-cyan-500 focus:ring-cyan-500/20 transition-all duration-300"
               :disabled="isSubmitting"
               placeholder="Acme Inc."
             />
@@ -77,7 +77,7 @@
 
           <!-- Message Field -->
           <div>
-            <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+            <label for="message" class="block text-sm font-semibold text-gray-300 mb-2">
               Message <span class="text-red-500">*</span>
             </label>
             <textarea
@@ -86,10 +86,10 @@
               required
               rows="5"
               :class="[
-                'w-full px-4 py-3 rounded-xl border transition-all duration-300 resize-none',
+                'w-full px-4 py-3 rounded-xl border bg-white/5 text-white placeholder:text-gray-500 transition-all duration-300 resize-none',
                 errors.message
-                  ? 'border-red-300 focus:border-red-500 focus:ring-red-200'
-                  : 'border-gray-200 focus:border-cyan-500 focus:ring-cyan-200'
+                  ? 'border-red-500/50 focus:border-red-500 focus:ring-red-500/20'
+                  : 'border-white/15 focus:border-cyan-500 focus:ring-cyan-500/20'
               ]"
               :disabled="isSubmitting"
               placeholder="What are you building? Need commercial licensing? Custom implementation? Tell us..."
@@ -130,15 +130,16 @@
           <!-- Success Message -->
           <div
             v-if="showSuccess"
-            class="mt-6 p-4 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-xl"
+            ref="successRef"
+            class="mt-6 p-4 bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl"
           >
             <div class="flex items-start gap-3">
               <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
               <div>
-                <p class="font-semibold text-green-900">Message sent successfully!</p>
-                <p class="text-sm text-green-700 mt-1">We'll get back to you soon.</p>
+                <p class="font-semibold text-green-300">Message sent successfully!</p>
+                <p class="text-sm text-green-400 mt-1">We'll get back to you soon.</p>
               </div>
             </div>
           </div>
@@ -146,15 +147,15 @@
           <!-- Error Message -->
           <div
             v-if="showError"
-            class="mt-6 p-4 bg-gradient-to-r from-red-50 to-pink-50 border border-red-200 rounded-xl"
+            class="mt-6 p-4 bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/30 rounded-xl"
           >
             <div class="flex items-start gap-3">
               <svg class="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
               <div>
-                <p class="font-semibold text-red-900">Submission failed</p>
-                <p class="text-sm text-red-700 mt-1">{{ errorMessage }}</p>
+                <p class="font-semibold text-red-300">Submission failed</p>
+                <p class="text-sm text-red-400 mt-1">{{ errorMessage }}</p>
               </div>
             </div>
           </div>
@@ -163,11 +164,11 @@
 
       <!-- Additional Contact Info -->
       <div class="mt-12 text-center">
-        <p class="text-gray-600 mb-4">Prefer email or GitHub?</p>
+        <p class="text-gray-400 mb-4">Prefer email or GitHub?</p>
         <div class="flex flex-wrap gap-4 justify-center">
           <a
             href="mailto:team@navam.io"
-            class="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-full text-gray-700 hover:border-cyan-300 hover:shadow-md transition-all duration-300"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-full text-gray-300 hover:border-cyan-500/30 hover:shadow-md transition-all duration-300"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -178,7 +179,7 @@
             href="https://github.com/navam-io"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 px-6 py-3 bg-white border border-gray-200 rounded-full text-gray-700 hover:border-cyan-300 hover:shadow-md transition-all duration-300"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-full text-gray-300 hover:border-cyan-500/30 hover:shadow-md transition-all duration-300"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
@@ -217,6 +218,7 @@ const formData = reactive<FormData>({
 const errors = reactive<FormErrors>({})
 const isSubmitting = ref(false)
 const showSuccess = ref(false)
+const successRef = ref<HTMLElement | null>(null)
 const showError = ref(false)
 const errorMessage = ref('')
 
@@ -326,9 +328,8 @@ const handleSubmit = async () => {
 
       // Scroll to success message
       setTimeout(() => {
-        const successEl = document.querySelector('.bg-gradient-to-r.from-green-50')
-        if (successEl) {
-          successEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        if (successRef.value) {
+          successRef.value.scrollIntoView({ behavior: 'smooth', block: 'center' })
         }
       }, 100)
 
@@ -350,6 +351,16 @@ textarea:focus,
 select:focus {
   outline: none;
   ring: 2px;
+}
+
+/* Dark theme autofill override */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.05) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 @keyframes spin {

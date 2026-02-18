@@ -2,8 +2,8 @@
   <div class="space-y-6">
     <!-- Section Title -->
     <div class="text-center">
-      <h2 class="text-2xl font-bold text-gray-900 mb-2">Explore by Category</h2>
-      <p class="text-gray-600">Filter articles by topic to find exactly what you need</p>
+      <h2 class="text-2xl font-bold text-white mb-2">Explore by Category</h2>
+      <p class="text-gray-400">Filter articles by topic to find exactly what you need</p>
     </div>
 
     <!-- Filter Pills -->
@@ -14,7 +14,7 @@
           'px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105',
           activeTag === ''
             ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg'
-            : 'bg-white text-gray-700 border border-gray-200 hover:border-purple-300 hover:shadow-md'
+            : 'bg-white/5 text-gray-300 border border-white/10 hover:border-purple-500/30 hover:shadow-md'
         ]"
       >
         <span class="flex items-center gap-2">
@@ -32,7 +32,7 @@
           'px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105',
           activeTag === tag
             ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg'
-            : 'bg-white text-gray-700 border border-gray-200 hover:border-purple-300 hover:shadow-md'
+            : 'bg-white/5 text-gray-300 border border-white/10 hover:border-purple-500/30 hover:shadow-md'
         ]"
       >
         {{ tag }}

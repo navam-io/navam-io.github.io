@@ -105,6 +105,7 @@ const faqSchema = {
   <Header client:load />
 
   <main class="min-h-screen">
+    <!-- Hero - already dark gradient, unchanged -->
     <section class="relative py-20 bg-gradient-to-br from-orange-900 via-red-900 to-pink-900 overflow-hidden">
       <div class="absolute inset-0 bg-black/20"></div>
       <div class="container mx-auto px-4 relative z-10">
@@ -121,7 +122,7 @@ const faqSchema = {
           </p>
           <div class="flex flex-col sm:flex-row gap-3 justify-center">
             <a href="https://github.com/navam-io/memo" target="_blank"
-               class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white border-2 border-gray-300 text-gray-900 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all font-semibold">
+               class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white/10 border-2 border-white/20 text-white rounded-lg hover:bg-white/20 hover:border-white/30 transition-all font-semibold">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
               </svg>
@@ -134,13 +135,13 @@ const faqSchema = {
     </section>
 
     <!-- Value Proposition -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-950">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto text-center mb-12">
-          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+          <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
             You're Building Browser Extensions, But...
           </h2>
-          <p class="text-2xl text-gray-900 leading-relaxed mb-8 font-semibold">
+          <p class="text-2xl text-white leading-relaxed mb-8 font-semibold">
             Chrome extension architecture is complex. Multi-provider AI integration takes months. Privacy-first design requires expertise.
           </p>
         </div>
@@ -148,98 +149,98 @@ const faqSchema = {
         <!-- Comparison Grid -->
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 mb-16">
           <!-- Building from Scratch -->
-          <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border-2 border-red-200">
+          <div class="bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-2xl p-8 border-2 border-red-500/30">
             <div class="text-center mb-4">
-              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mb-4">
-                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-500/20 mb-4">
+                <svg class="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">Building from Scratch</h3>
-              <div class="text-3xl font-black text-red-600 mb-4">4-8 months</div>
+              <h3 class="text-2xl font-bold text-white mb-2">Building from Scratch</h3>
+              <div class="text-3xl font-black text-red-400 mb-4">4-8 months</div>
             </div>
-            <ul class="space-y-3 text-sm text-gray-700">
+            <ul class="space-y-3 text-sm text-gray-300">
               <li class="flex items-start gap-2">
-                <span class="text-red-500 font-bold">✗</span>
+                <span class="text-red-400 font-bold">✗</span>
                 <span>Learn Chrome extension APIs</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-red-500 font-bold">✗</span>
+                <span class="text-red-400 font-bold">✗</span>
                 <span>Build content capture system</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-red-500 font-bold">✗</span>
+                <span class="text-red-400 font-bold">✗</span>
                 <span>Integrate multiple AI providers</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-red-500 font-bold">✗</span>
+                <span class="text-red-400 font-bold">✗</span>
                 <span>Debug browser permissions</span>
               </li>
             </ul>
           </div>
 
           <!-- Generic Extensions -->
-          <div class="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-8 border-2 border-yellow-200">
+          <div class="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 rounded-2xl p-8 border-2 border-yellow-500/30">
             <div class="text-center mb-4">
-              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-100 mb-4">
-                <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-500/20 mb-4">
+                <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">Extension Boilerplates</h3>
-              <div class="text-3xl font-black text-yellow-600 mb-4">Limited</div>
+              <h3 class="text-2xl font-bold text-white mb-2">Extension Boilerplates</h3>
+              <div class="text-3xl font-black text-yellow-400 mb-4">Limited</div>
             </div>
-            <ul class="space-y-3 text-sm text-gray-700">
+            <ul class="space-y-3 text-sm text-gray-300">
               <li class="flex items-start gap-2">
-                <span class="text-yellow-500 font-bold">✗</span>
+                <span class="text-yellow-400 font-bold">✗</span>
                 <span>No AI integration included</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-yellow-500 font-bold">✗</span>
+                <span class="text-yellow-400 font-bold">✗</span>
                 <span>Basic structure only</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-yellow-500 font-bold">✗</span>
+                <span class="text-yellow-400 font-bold">✗</span>
                 <span>Still need domain logic</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-yellow-500 font-bold">✗</span>
+                <span class="text-yellow-400 font-bold">✗</span>
                 <span>No privacy features</span>
               </li>
             </ul>
           </div>
 
           <!-- Fork Memo -->
-          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-4 border-green-500 shadow-xl relative">
+          <div class="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl p-8 border-4 border-green-500 shadow-xl relative">
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <div class="inline-flex items-center px-4 py-1 rounded-full bg-green-600 text-white text-sm font-bold whitespace-nowrap">
                 REFERENCE READY
               </div>
             </div>
             <div class="text-center mb-4 mt-2">
-              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-4">
-                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-500/20 mb-4">
+                <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">Fork Memo</h3>
-              <div class="text-3xl font-black text-green-600 mb-4">Ship in 2-7 Days</div>
+              <h3 class="text-2xl font-bold text-white mb-2">Fork Memo</h3>
+              <div class="text-3xl font-black text-green-400 mb-4">Ship in 2-7 Days</div>
             </div>
-            <ul class="space-y-3 text-sm text-gray-700">
+            <ul class="space-y-3 text-sm text-gray-300">
               <li class="flex items-start gap-2">
-                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="text-green-400 font-bold text-lg">✓</span>
                 <span class="font-medium">Multi-provider AI ready</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="text-green-400 font-bold text-lg">✓</span>
                 <span class="font-medium">Content capture built-in</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="text-green-400 font-bold text-lg">✓</span>
                 <span class="font-medium">Privacy-first with Ollama</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="text-green-400 font-bold text-lg">✓</span>
                 <span class="font-medium">Fork, customize, ship</span>
               </li>
             </ul>
@@ -249,174 +250,175 @@ const faqSchema = {
     </section>
 
     <!-- Fork This To Build -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-900">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Fork This To Build</h2>
+        <h2 class="text-4xl md:text-5xl font-black text-white text-center mb-16">Fork This To Build</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Research Tools</h3>
-            <p class="text-gray-600">Academic research, web scraping, data collection platforms</p>
+            <h3 class="text-xl font-bold text-white mb-3">Research Tools</h3>
+            <p class="text-gray-400">Academic research, web scraping, data collection platforms</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Content Aggregators</h3>
-            <p class="text-gray-600">News readers, RSS aggregators, content curation systems</p>
+            <h3 class="text-xl font-bold text-white mb-3">Content Aggregators</h3>
+            <p class="text-gray-400">News readers, RSS aggregators, content curation systems</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Browser AI Assistants</h3>
-            <p class="text-gray-600">Page analysis, smart summaries, contextual AI helpers</p>
+            <h3 class="text-xl font-bold text-white mb-3">Browser AI Assistants</h3>
+            <p class="text-gray-400">Page analysis, smart summaries, contextual AI helpers</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Knowledge Capture Systems</h3>
-            <p class="text-gray-600">Personal wikis, second brain apps, knowledge management</p>
+            <h3 class="text-xl font-bold text-white mb-3">Knowledge Capture Systems</h3>
+            <p class="text-gray-400">Personal wikis, second brain apps, knowledge management</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Note-Taking Extensions</h3>
-            <p class="text-gray-600">Web clipper, annotation tools, highlight management</p>
+            <h3 class="text-xl font-bold text-white mb-3">Note-Taking Extensions</h3>
+            <p class="text-gray-400">Web clipper, annotation tools, highlight management</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Content Summarizers</h3>
-            <p class="text-gray-600">Article summaries, video transcripts, tl;dr generators</p>
+            <h3 class="text-xl font-bold text-white mb-3">Content Summarizers</h3>
+            <p class="text-gray-400">Article summaries, video transcripts, tl;dr generators</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Web Scraping Tools</h3>
-            <p class="text-gray-600">Data extraction, price monitoring, competitor tracking</p>
+            <h3 class="text-xl font-bold text-white mb-3">Web Scraping Tools</h3>
+            <p class="text-gray-400">Data extraction, price monitoring, competitor tracking</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Reading Comprehension Aids</h3>
-            <p class="text-gray-600">Study helpers, vocabulary tools, context analysis</p>
+            <h3 class="text-xl font-bold text-white mb-3">Reading Comprehension Aids</h3>
+            <p class="text-gray-400">Study helpers, vocabulary tools, context analysis</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Features -->
-    <section id="features" class="py-20 bg-white">
+    <section id="features" class="py-20 bg-gray-950">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Working Features</h2>
+        <h2 class="text-4xl md:text-5xl font-black text-white text-center mb-16">Working Features</h2>
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-3 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold mb-3">Capture & Chat</h3>
-            <p>Save content from any website and have real conversations with it using AI. Not just bookmarks—intelligent research.</p>
+            <h3 class="text-2xl font-bold text-white mb-3">Capture & Chat</h3>
+            <p class="text-gray-400">Save content from any website and have real conversations with it using AI. Not just bookmarks—intelligent research.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-3 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold mb-3">Auto-Organize</h3>
-            <p>AI suggests tags and categories automatically. No more "where did I save that?" moments.</p>
+            <h3 class="text-2xl font-bold text-white mb-3">Auto-Organize</h3>
+            <p class="text-gray-400">AI suggests tags and categories automatically. No more "where did I save that?" moments.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-3 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold mb-3">Ask Real Questions</h3>
-            <p>"What did I save about React performance?" or "Compare the pricing I found"—get actual answers.</p>
+            <h3 class="text-2xl font-bold text-white mb-3">Ask Real Questions</h3>
+            <p class="text-gray-400">"What did I save about React performance?" or "Compare the pricing I found"—get actual answers.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-3 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold mb-3">YouTube Integration</h3>
-            <p>Automatically captures transcripts and metadata. Chat with video content as easily as articles.</p>
+            <h3 class="text-2xl font-bold text-white mb-3">YouTube Integration</h3>
+            <p class="text-gray-400">Automatically captures transcripts and metadata. Chat with video content as easily as articles.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-3 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold mb-3">Privacy-First</h3>
-            <p>Use local Ollama for zero external API calls. Your data stays on your device, completely private.</p>
+            <h3 class="text-2xl font-bold text-white mb-3">Privacy-First</h3>
+            <p class="text-gray-400">Use local Ollama for zero external API calls. Your data stays on your device, completely private.</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-3 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold mb-3">Multi-Provider</h3>
-            <p>Choose OpenAI, Anthropic Claude, or local Ollama. Switch anytime based on your needs.</p>
+            <h3 class="text-2xl font-bold text-white mb-3">Multi-Provider</h3>
+            <p class="text-gray-400">Choose OpenAI, Anthropic Claude, or local Ollama. Switch anytime based on your needs.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-20 bg-gray-50">
+    <!-- How It Works -->
+    <section class="py-20 bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="max-w-6xl mx-auto">
-          <h2 class="text-4xl md:text-5xl font-black text-center mb-12">How It Works</h2>
+          <h2 class="text-4xl md:text-5xl font-black text-white text-center mb-12">How It Works</h2>
           <div class="space-y-16">
             <div class="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 class="text-3xl font-bold mb-4">1. Capture with One Click</h3>
-                <p class="text-xl text-gray-700 mb-4">
+                <h3 class="text-3xl font-bold text-white mb-4">1. Capture with One Click</h3>
+                <p class="text-xl text-gray-300 mb-4">
                   Point and click on any content you want to save. Our extension makes everything selectable.
                 </p>
-                <ul class="space-y-2 text-gray-600">
+                <ul class="space-y-2 text-gray-400">
                   <li>✓ Any website (articles, products, docs)</li>
                   <li>✓ YouTube videos (with transcripts)</li>
                   <li>✓ Smart extraction of titles and summaries</li>
@@ -433,11 +435,11 @@ const faqSchema = {
                 <img src="/images/blog/save-memo.png" alt="AI Analysis Demo" class="rounded-2xl shadow-2xl w-full" />
               </div>
               <div class="order-1 md:order-2">
-                <h3 class="text-3xl font-bold mb-4">2. AI Does the Heavy Lifting</h3>
-                <p class="text-xl text-gray-700 mb-4">
+                <h3 class="text-3xl font-bold text-white mb-4">2. AI Does the Heavy Lifting</h3>
+                <p class="text-xl text-gray-300 mb-4">
                   Once captured, AI immediately processes your content automatically.
                 </p>
-                <ul class="space-y-2 text-gray-600">
+                <ul class="space-y-2 text-gray-400">
                   <li>✓ Auto-summarization of key points</li>
                   <li>✓ Smart tagging and categorization</li>
                   <li>✓ Structured data extraction (prices, dates)</li>
@@ -448,11 +450,11 @@ const faqSchema = {
 
             <div class="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 class="text-3xl font-bold mb-4">3. Chat with Everything</h3>
-                <p class="text-xl text-gray-700 mb-4">
+                <h3 class="text-3xl font-bold text-white mb-4">3. Chat with Everything</h3>
+                <p class="text-xl text-gray-300 mb-4">
                   Have real conversations with your saved content using natural language.
                 </p>
-                <ul class="space-y-2 text-gray-600">
+                <ul class="space-y-2 text-gray-400">
                   <li>✓ "Compare the features I saved"</li>
                   <li>✓ "What was the pricing from that article?"</li>
                   <li>✓ "Summarize my research on React hooks"</li>
@@ -468,21 +470,22 @@ const faqSchema = {
       </div>
     </section>
 
-    <section class="py-20 bg-white">
+    <!-- Installation -->
+    <section class="py-20 bg-gray-950">
       <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto">
-          <h2 class="text-4xl md:text-5xl font-black text-center mb-12">Installation</h2>
-          <div class="bg-gray-50 rounded-2xl p-8">
+          <h2 class="text-4xl md:text-5xl font-black text-white text-center mb-12">Installation</h2>
+          <div class="bg-gray-900 rounded-2xl p-8">
             <div class="space-y-6">
               <div>
-                <h4 class="font-bold text-lg mb-2">1. Install Extension</h4>
-                <p class="text-gray-600 mb-3">Add Memo to Chrome from the Chrome Web Store (or install from GitHub for development)</p>
+                <h4 class="font-bold text-lg text-white mb-2">1. Install Extension</h4>
+                <p class="text-gray-400 mb-3">Add Memo to Chrome from the Chrome Web Store (or install from GitHub for development)</p>
               </div>
 
               <div>
-                <h4 class="font-bold text-lg mb-2">2. Configure AI Provider</h4>
-                <p class="text-gray-600 mb-3">Choose your preferred AI provider:</p>
-                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                <h4 class="font-bold text-lg text-white mb-2">2. Configure AI Provider</h4>
+                <p class="text-gray-400 mb-3">Choose your preferred AI provider:</p>
+                <ul class="list-disc list-inside text-gray-400 space-y-1">
                   <li>OpenAI (GPT-4o, GPT-4o Mini)</li>
                   <li>Anthropic (Claude Sonnet, Haiku)</li>
                   <li>Ollama (Local - Llama 3.1, Mistral, Gemma 2)</li>
@@ -490,25 +493,25 @@ const faqSchema = {
               </div>
 
               <div>
-                <h4 class="font-bold text-lg mb-2">3. Add API Keys</h4>
-                <p class="text-gray-600">Enter your API keys in the extension settings (skip this step if using Ollama locally)</p>
+                <h4 class="font-bold text-lg text-white mb-2">3. Add API Keys</h4>
+                <p class="text-gray-400">Enter your API keys in the extension settings (skip this step if using Ollama locally)</p>
               </div>
 
               <div>
-                <h4 class="font-bold text-lg mb-2">4. Start Capturing</h4>
-                <p class="text-gray-600">Click the Memo icon on any webpage to start saving and chatting with content!</p>
+                <h4 class="font-bold text-lg text-white mb-2">4. Start Capturing</h4>
+                <p class="text-gray-400">Click the Memo icon on any webpage to start saving and chatting with content!</p>
               </div>
             </div>
 
-            <div class="mt-8 p-6 bg-green-50 rounded-lg flex items-start gap-3">
+            <div class="mt-8 p-6 bg-green-500/10 border border-green-500/20 rounded-lg flex items-start gap-3">
               <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
                 <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                 </svg>
               </div>
               <div>
-                <h4 class="font-bold text-lg mb-2">Privacy Tip</h4>
-                <p class="text-gray-700">For maximum privacy, use Ollama. All processing happens locally on your device with zero external API calls.</p>
+                <h4 class="font-bold text-lg text-white mb-2">Privacy Tip</h4>
+                <p class="text-gray-300">For maximum privacy, use Ollama. All processing happens locally on your device with zero external API calls.</p>
               </div>
             </div>
           </div>
@@ -516,26 +519,27 @@ const faqSchema = {
       </div>
     </section>
 
-    <section class="py-20 bg-gray-50">
+    <!-- FAQ -->
+    <section class="py-20 bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto">
-          <h2 class="text-4xl md:text-5xl font-black text-center mb-12">FAQ</h2>
+          <h2 class="text-4xl md:text-5xl font-black text-white text-center mb-12">FAQ</h2>
           <div class="space-y-6">
-            <div class="bg-white p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-3">What is Memo?</h3>
-              <p class="text-gray-700">Memo is a Chrome extension that transforms your browsing into AI conversations. Capture content from any website or YouTube video and chat with it using AI.</p>
+            <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+              <h3 class="text-xl font-bold text-white mb-3">What is Memo?</h3>
+              <p class="text-gray-300">Memo is a Chrome extension that transforms your browsing into AI conversations. Capture content from any website or YouTube video and chat with it using AI.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-3">Which AI providers are supported?</h3>
-              <p class="text-gray-700">Memo supports OpenAI (GPT-4o), Anthropic (Claude), and local Ollama models. Switch between providers or use fully local execution for complete privacy.</p>
+            <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+              <h3 class="text-xl font-bold text-white mb-3">Which AI providers are supported?</h3>
+              <p class="text-gray-300">Memo supports OpenAI (GPT-4o), Anthropic (Claude), and local Ollama models. Switch between providers or use fully local execution for complete privacy.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-3">Is my data private?</h3>
-              <p class="text-gray-700">Yes! Use local Ollama for zero external API calls—everything stays on your device. Or choose trusted cloud providers based on your preferences.</p>
+            <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+              <h3 class="text-xl font-bold text-white mb-3">Is my data private?</h3>
+              <p class="text-gray-300">Yes! Use local Ollama for zero external API calls—everything stays on your device. Or choose trusted cloud providers based on your preferences.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-3">Does Memo work with YouTube?</h3>
-              <p class="text-gray-700">Yes! Memo automatically captures YouTube transcripts, video metadata, and lets you chat with video content.</p>
+            <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+              <h3 class="text-xl font-bold text-white mb-3">Does Memo work with YouTube?</h3>
+              <p class="text-gray-300">Yes! Memo automatically captures YouTube transcripts, video metadata, and lets you chat with video content.</p>
             </div>
           </div>
         </div>
@@ -543,9 +547,9 @@ const faqSchema = {
     </section>
 
     <!-- Related Blog Posts -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-950">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Learn More About Memo</h2>
+        <h2 class="text-4xl md:text-5xl font-black text-white text-center mb-16">Learn More About Memo</h2>
 
         <!-- Blog Post 1 - Image Left -->
         <div class="max-w-6xl mx-auto mb-16">
@@ -554,11 +558,11 @@ const faqSchema = {
               <img src="/images/blog/select-content-to-capture.png" alt="Memo Content Capture" class="rounded-2xl shadow-2xl w-full" />
             </div>
             <div>
-              <h3 class="text-3xl font-bold mb-4">Transform Your Browsing into AI Conversations</h3>
-              <p class="text-xl text-gray-700 mb-6">
+              <h3 class="text-3xl font-bold text-white mb-4">Transform Your Browsing into AI Conversations</h3>
+              <p class="text-xl text-gray-300 mb-6">
                 A Chrome extension that lets you capture content from any website and actually talk to it using AI. Turn your bookmarks into intelligent conversations with multiple AI providers.
               </p>
-              <a href="/blog/introducing-trenddit-memo-ai-browsing" class="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold">
+              <a href="/blog/introducing-trenddit-memo-ai-browsing" class="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-semibold">
                 Read the full article
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -575,11 +579,11 @@ const faqSchema = {
               <img src="/images/blog/save-memo.png" alt="YouTube Integration" class="rounded-2xl shadow-2xl w-full" />
             </div>
             <div class="md:order-1">
-              <h3 class="text-3xl font-bold mb-4">Chat with YouTube Videos Using AI</h3>
-              <p class="text-xl text-gray-700 mb-6">
+              <h3 class="text-3xl font-bold text-white mb-4">Chat with YouTube Videos Using AI</h3>
+              <p class="text-xl text-gray-300 mb-6">
                 Capture YouTube videos with automatic transcript extraction and have intelligent conversations with video content. Transform educational videos into searchable, interactive knowledge.
               </p>
-              <a href="/blog/trenddit-memo-youtube-integration" class="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold">
+              <a href="/blog/trenddit-memo-youtube-integration" class="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-semibold">
                 Read the full article
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -591,6 +595,7 @@ const faqSchema = {
       </div>
     </section>
 
+    <!-- CTA - already dark gradient, unchanged -->
     <section class="py-20 bg-gradient-to-br from-orange-900 via-red-900 to-pink-900">
       <div class="container mx-auto px-4 text-center text-white">
         <h2 class="text-4xl md:text-5xl font-black mb-6">Build Browser Extensions That Stand Out</h2>
@@ -599,7 +604,7 @@ const faqSchema = {
         </p>
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
           <a href="https://github.com/navam-io/memo" target="_blank"
-             class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white border-2 border-gray-300 text-gray-900 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all font-semibold">
+             class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white/10 border-2 border-white/20 text-white rounded-lg hover:bg-white/20 hover:border-white/30 transition-all font-semibold">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
             </svg>

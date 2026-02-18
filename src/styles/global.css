@@ -146,14 +146,14 @@
 }
 
 .comparison-table th {
-  background-color: #f3f4f6;
+  background-color: rgba(255, 255, 255, 0.05);
   font-weight: 600;
-  color: #111827;
-  border-bottom: 2px solid #d1d5db;
+  color: #f3f4f6;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .comparison-table td {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Feature grid icons */

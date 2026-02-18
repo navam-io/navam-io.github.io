@@ -19,8 +19,8 @@
   margin-left: -50vw;
   margin-right: -50vw;
 
-  /* Add background matching homepage sections */
-  background: white;
+  /* Transparent to inherit dark background */
+  background: transparent;
 
   /* Ensure proper z-index stacking */
   z-index: 1;

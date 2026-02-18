@@ -49,7 +49,8 @@
     </div>
 
     <!-- Products Ribbon Menu (slides down from header) -->
-    <teleport to="body">
+    <!-- Guard teleport with mounted flag to prevent Vue SSR hydration mismatch -->
+    <teleport to="body" v-if="mounted">
       <!-- Subtle overlay backdrop -->
       <transition
         enter-active-class="transition-opacity duration-200 ease-out"
@@ -272,6 +273,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const showDropdown = ref(false);
 const dropdownButton = ref(null);
 const isTouchDevice = ref(false);
+const mounted = ref(false);
 let closeTimeout = null;
 
 // Detect touch device
@@ -331,6 +333,7 @@ const closeDropdown = () => {
 };
 
 onMounted(() => {
+  mounted.value = true;
   checkTouchDevice();
   window.addEventListener('resize', checkTouchDevice);
 });

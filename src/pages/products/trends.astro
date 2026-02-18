@@ -193,7 +193,7 @@ const faqSchema = {
           </p>
           <div class="flex flex-col sm:flex-row gap-3 justify-center">
             <a href="https://github.com/navam-io/trends" target="_blank"
-               class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white border-2 border-gray-300 text-gray-900 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all font-semibold">
+               class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white/10 border-2 border-white/20 text-white rounded-lg hover:bg-white/20 hover:border-white/40 transition-all font-semibold">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
               </svg>
@@ -206,13 +206,13 @@ const faqSchema = {
     </section>
 
     <!-- Value Proposition -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-950">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto text-center mb-12">
-          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+          <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
             You're Building Intelligence Tools, But...
           </h2>
-          <p class="text-2xl text-gray-900 leading-relaxed mb-8 font-semibold">
+          <p class="text-2xl text-white leading-relaxed mb-8 font-semibold">
             Multi-agent systems are complex. Strategic intelligence requires deep domain knowledge. Getting AI reasoning right takes months of iteration.
           </p>
         </div>
@@ -220,98 +220,98 @@ const faqSchema = {
         <!-- Comparison Grid -->
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
           <!-- Building from Scratch -->
-          <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border-2 border-red-200">
+          <div class="bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-2xl p-8 border-2 border-red-500/30">
             <div class="text-center mb-4">
-              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mb-4">
-                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-500/20 mb-4">
+                <svg class="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">Building from Scratch</h3>
-              <div class="text-3xl font-black text-red-600 mb-4">9-18 months</div>
+              <h3 class="text-2xl font-bold text-white mb-2">Building from Scratch</h3>
+              <div class="text-3xl font-black text-red-400 mb-4">9-18 months</div>
             </div>
-            <ul class="space-y-3 text-sm text-gray-700">
+            <ul class="space-y-3 text-sm text-gray-300">
               <li class="flex items-start gap-2">
-                <span class="text-red-500 font-bold">✗</span>
+                <span class="text-red-400 font-bold">✗</span>
                 <span>Figure out multi-agent patterns</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-red-500 font-bold">✗</span>
+                <span class="text-red-400 font-bold">✗</span>
                 <span>Trial and error with reasoning</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-red-500 font-bold">✗</span>
+                <span class="text-red-400 font-bold">✗</span>
                 <span>No proven architecture</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-red-500 font-bold">✗</span>
+                <span class="text-red-400 font-bold">✗</span>
                 <span>Hope it works in real apps</span>
               </li>
             </ul>
           </div>
 
           <!-- Generic BI Tools -->
-          <div class="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-8 border-2 border-yellow-200">
+          <div class="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 rounded-2xl p-8 border-2 border-yellow-500/30">
             <div class="text-center mb-4">
-              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-100 mb-4">
-                <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-yellow-500/20 mb-4">
+                <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">Generic BI Tools</h3>
-              <div class="text-3xl font-black text-yellow-600 mb-4">Limited</div>
+              <h3 class="text-2xl font-bold text-white mb-2">Generic BI Tools</h3>
+              <div class="text-3xl font-black text-yellow-400 mb-4">Limited</div>
             </div>
-            <ul class="space-y-3 text-sm text-gray-700">
+            <ul class="space-y-3 text-sm text-gray-300">
               <li class="flex items-start gap-2">
-                <span class="text-yellow-500 font-bold">✗</span>
+                <span class="text-yellow-400 font-bold">✗</span>
                 <span>No AI reasoning built-in</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-yellow-500 font-bold">✗</span>
+                <span class="text-yellow-400 font-bold">✗</span>
                 <span>Static dashboards only</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-yellow-500 font-bold">✗</span>
+                <span class="text-yellow-400 font-bold">✗</span>
                 <span>Can't customize logic</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-yellow-500 font-bold">✗</span>
+                <span class="text-yellow-400 font-bold">✗</span>
                 <span>Black box for developers</span>
               </li>
             </ul>
           </div>
 
           <!-- Fork Trends -->
-          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-4 border-green-500 shadow-xl relative">
+          <div class="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl p-8 border-4 border-green-500 shadow-xl relative">
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <div class="inline-flex items-center px-4 py-1 rounded-full bg-green-600 text-white text-sm font-bold whitespace-nowrap">
                 REFERENCE READY
               </div>
             </div>
             <div class="text-center mb-4 mt-2">
-              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-4">
-                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-500/20 mb-4">
+                <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">Fork Trends</h3>
-              <div class="text-3xl font-black text-green-600 mb-4">Ship in 2-7 Days</div>
+              <h3 class="text-2xl font-bold text-white mb-2">Fork Trends</h3>
+              <div class="text-3xl font-black text-green-400 mb-4">Ship in 2-7 Days</div>
             </div>
-            <ul class="space-y-3 text-sm text-gray-700">
+            <ul class="space-y-3 text-sm text-gray-300">
               <li class="flex items-start gap-2">
-                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="text-green-400 font-bold text-lg">✓</span>
                 <span class="font-medium">Multi-agent reasoning built-in</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="text-green-400 font-bold text-lg">✓</span>
                 <span class="font-medium">Battle-tested architecture</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="text-green-400 font-bold text-lg">✓</span>
                 <span class="font-medium">TypeScript + Next.js stack</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-green-500 font-bold text-lg">✓</span>
+                <span class="text-green-400 font-bold text-lg">✓</span>
                 <span class="font-medium">Fork, customize, ship</span>
               </li>
             </ul>
@@ -321,134 +321,134 @@ const faqSchema = {
     </section>
 
     <!-- Key Features -->
-    <section id="features" class="py-20 bg-gray-50">
+    <section id="features" class="py-20 bg-gray-900">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Fork This To Build</h2>
+        <h2 class="text-4xl md:text-5xl font-black text-center text-white mb-16">Fork This To Build</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Technology Assessment Tools</h3>
-            <p class="text-gray-600">Automated vendor evaluation, technology scoring, stack analysis systems</p>
+            <h3 class="text-xl font-bold text-white mb-3">Technology Assessment Tools</h3>
+            <p class="text-gray-400">Automated vendor evaluation, technology scoring, stack analysis systems</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Market Research Platforms</h3>
-            <p class="text-gray-600">Competitive intelligence, market sizing, trend analysis dashboards</p>
+            <h3 class="text-xl font-bold text-white mb-3">Market Research Platforms</h3>
+            <p class="text-gray-400">Competitive intelligence, market sizing, trend analysis dashboards</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Strategic Planning Systems</h3>
-            <p class="text-gray-600">Decision support tools, innovation roadmaps, strategic intelligence</p>
+            <h3 class="text-xl font-bold text-white mb-3">Strategic Planning Systems</h3>
+            <p class="text-gray-400">Decision support tools, innovation roadmaps, strategic intelligence</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Technology Radar Dashboards</h3>
-            <p class="text-gray-600">Real-time innovation tracking, emerging trend detection, tech monitoring</p>
+            <h3 class="text-xl font-bold text-white mb-3">Technology Radar Dashboards</h3>
+            <p class="text-gray-400">Real-time innovation tracking, emerging trend detection, tech monitoring</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Vendor Evaluation Platforms</h3>
-            <p class="text-gray-600">Scoring algorithms, comparison matrices, procurement intelligence</p>
+            <h3 class="text-xl font-bold text-white mb-3">Vendor Evaluation Platforms</h3>
+            <p class="text-gray-400">Scoring algorithms, comparison matrices, procurement intelligence</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Innovation Tracking Tools</h3>
-            <p class="text-gray-600">Patent analysis, startup monitoring, innovation pipeline tracking</p>
+            <h3 class="text-xl font-bold text-white mb-3">Innovation Tracking Tools</h3>
+            <p class="text-gray-400">Patent analysis, startup monitoring, innovation pipeline tracking</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Competitive Intelligence</h3>
-            <p class="text-gray-600">Competitor tracking, market positioning, strategic moves analysis</p>
+            <h3 class="text-xl font-bold text-white mb-3">Competitive Intelligence</h3>
+            <p class="text-gray-400">Competitor tracking, market positioning, strategic moves analysis</p>
           </div>
 
-          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="bg-white/5 p-6 rounded-lg shadow-lg border border-white/10 hover:shadow-xl transition">
             <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
-            <h3 class="text-xl font-bold mb-3">Investment Research Systems</h3>
-            <p class="text-gray-600">Due diligence automation, sector analysis, investment trend tracking</p>
+            <h3 class="text-xl font-bold text-white mb-3">Investment Research Systems</h3>
+            <p class="text-gray-400">Due diligence automation, sector analysis, investment trend tracking</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Technology Stack -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-950">
       <div class="container mx-auto px-4">
         <div class="max-w-6xl mx-auto">
-          <h2 class="text-4xl md:text-5xl font-black text-center mb-12">Battle-Tested Stack</h2>
+          <h2 class="text-4xl md:text-5xl font-black text-white text-center mb-12">Battle-Tested Stack</h2>
 
           <div class="grid md:grid-cols-3 gap-8 mb-16">
             <div class="text-center p-6">
               <div class="inline-flex items-center justify-center w-20 h-20 mb-4">
-                <img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" class="w-16 h-16" />
+                <img src="https://cdn.simpleicons.org/nextdotjs/FFFFFF" alt="Next.js" class="w-16 h-16" />
               </div>
-              <h3 class="text-2xl font-bold mb-2">Next.js 14</h3>
-              <p class="text-gray-600">Modern React framework with server components, streaming, and optimal performance</p>
+              <h3 class="text-2xl font-bold text-white mb-2">Next.js 14</h3>
+              <p class="text-gray-400">Modern React framework with server components, streaming, and optimal performance</p>
             </div>
 
             <div class="text-center p-6">
               <div class="inline-flex items-center justify-center w-20 h-20 mb-4">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="w-16 h-16" />
               </div>
-              <h3 class="text-2xl font-bold mb-2">TypeScript</h3>
-              <p class="text-gray-600">Type safety across the entire codebase with comprehensive type definitions</p>
+              <h3 class="text-2xl font-bold text-white mb-2">TypeScript</h3>
+              <p class="text-gray-400">Type safety across the entire codebase with comprehensive type definitions</p>
             </div>
 
             <div class="text-center p-6">
               <div class="inline-flex items-center justify-center w-20 h-20 mb-4">
                 <img src="https://cdn.simpleicons.org/anthropic/FFFFFF" alt="Anthropic" class="w-16 h-16 bg-gray-900 rounded-lg p-2" />
               </div>
-              <h3 class="text-2xl font-bold mb-2">Claude AI</h3>
-              <p class="text-gray-600">Multi-agent reasoning with Anthropic's most capable models for deep analysis</p>
+              <h3 class="text-2xl font-bold text-white mb-2">Claude AI</h3>
+              <p class="text-gray-400">Multi-agent reasoning with Anthropic's most capable models for deep analysis</p>
             </div>
           </div>
 
-          <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 border-l-4 border-green-600 shadow-lg">
+          <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-2xl p-8 border-l-4 border-green-600 shadow-lg">
             <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                 </svg>
               </div>
-              <p class="text-lg text-gray-800 leading-relaxed">
-                <strong class="text-gray-900">6+ months of multi-agent architecture</strong> refined for real-world use. Fork the working patterns for agent coordination, reasoning chains, and strategic analysis—skip the debugging hell, ship in days.
+              <p class="text-lg text-gray-300 leading-relaxed">
+                <strong class="text-white">6+ months of multi-agent architecture</strong> refined for real-world use. Fork the working patterns for agent coordination, reasoning chains, and strategic analysis—skip the debugging hell, ship in days.
               </p>
             </div>
           </div>
@@ -457,23 +457,23 @@ const faqSchema = {
     </section>
 
     <!-- Getting Started -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto">
-          <h2 class="text-4xl md:text-5xl font-black text-center mb-12">Getting Started</h2>
-          <div class="bg-white rounded-2xl shadow-xl p-8">
-            <h3 class="text-2xl font-bold mb-6">Deploy in 15 minutes:</h3>
+          <h2 class="text-4xl md:text-5xl font-black text-white text-center mb-12">Getting Started</h2>
+          <div class="bg-white/5 rounded-2xl shadow-xl p-8 border border-white/10">
+            <h3 class="text-2xl font-bold text-white mb-6">Deploy in 15 minutes:</h3>
 
             <div class="space-y-6">
               <div>
-                <h4 class="font-bold text-lg mb-2">1. Clone Repository</h4>
+                <h4 class="font-bold text-lg text-white mb-2">1. Clone Repository</h4>
                 <div class="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
                   git clone https://github.com/navam-io/trends.git
                 </div>
               </div>
 
               <div>
-                <h4 class="font-bold text-lg mb-2">2. Install Dependencies</h4>
+                <h4 class="font-bold text-lg text-white mb-2">2. Install Dependencies</h4>
                 <div class="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
                   cd trends<br/>
                   npm install
@@ -481,31 +481,31 @@ const faqSchema = {
               </div>
 
               <div>
-                <h4 class="font-bold text-lg mb-2">3. Configure AI Keys</h4>
-                <p class="text-gray-600 mb-3">Create <code class="bg-gray-100 px-2 py-1 rounded">.env.local</code> with your Anthropic API key:</p>
+                <h4 class="font-bold text-lg text-white mb-2">3. Configure AI Keys</h4>
+                <p class="text-gray-400 mb-3">Create <code class="bg-gray-800 px-2 py-1 rounded">.env.local</code> with your Anthropic API key:</p>
                 <div class="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
                   ANTHROPIC_API_KEY=your_key_here
                 </div>
               </div>
 
               <div>
-                <h4 class="font-bold text-lg mb-2">4. Start Dashboard</h4>
+                <h4 class="font-bold text-lg text-white mb-2">4. Start Dashboard</h4>
                 <div class="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
                   npm run dev
                 </div>
               </div>
             </div>
 
-            <div class="mt-8 p-6 bg-indigo-50 rounded-lg">
+            <div class="mt-8 p-6 bg-blue-500/10 rounded-lg border border-blue-500/20">
               <div class="flex items-center gap-2 mb-2">
                 <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
                   <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                   </svg>
                 </div>
-                <h4 class="font-bold text-lg">Customize for Your Domain</h4>
+                <h4 class="font-bold text-lg text-white">Customize for Your Domain</h4>
               </div>
-              <p class="text-gray-700">Trends is a reference implementation. Adapt the multi-agent reasoning for your specific market intelligence needs—technology trends, competitive analysis, or investment research.</p>
+              <p class="text-gray-300">Trends is a reference implementation. Adapt the multi-agent reasoning for your specific market intelligence needs—technology trends, competitive analysis, or investment research.</p>
             </div>
           </div>
         </div>
@@ -513,35 +513,35 @@ const faqSchema = {
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-950">
       <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto">
-          <h2 class="text-4xl md:text-5xl font-black text-center mb-12">Frequently Asked Questions</h2>
+          <h2 class="text-4xl md:text-5xl font-black text-white text-center mb-12">Frequently Asked Questions</h2>
 
           <div class="space-y-6">
-            <div class="border-b pb-6">
-              <h3 class="text-xl font-bold mb-3">What is Trends?</h3>
-              <p class="text-gray-700">Trends is an AI-powered enterprise intelligence platform for technology trend analysis. It uses multi-agent reasoning to provide automated market research, competitive intelligence, and strategic decision support—perfect for building technology assessment tools and innovation tracking systems.</p>
+            <div class="border-b border-white/10 pb-6">
+              <h3 class="text-xl font-bold text-white mb-3">What is Trends?</h3>
+              <p class="text-gray-300">Trends is an AI-powered enterprise intelligence platform for technology trend analysis. It uses multi-agent reasoning to provide automated market research, competitive intelligence, and strategic decision support—perfect for building technology assessment tools and innovation tracking systems.</p>
             </div>
 
-            <div class="border-b pb-6">
-              <h3 class="text-xl font-bold mb-3">What can I build with Trends?</h3>
-              <p class="text-gray-700">Fork Trends to build: market research platforms, competitive intelligence dashboards, technology radar systems, vendor evaluation tools, strategic planning platforms, innovation tracking dashboards, or investment research systems. It's a reference implementation for any AI-driven intelligence product.</p>
+            <div class="border-b border-white/10 pb-6">
+              <h3 class="text-xl font-bold text-white mb-3">What can I build with Trends?</h3>
+              <p class="text-gray-300">Fork Trends to build: market research platforms, competitive intelligence dashboards, technology radar systems, vendor evaluation tools, strategic planning platforms, innovation tracking dashboards, or investment research systems. It's a reference implementation for any AI-driven intelligence product.</p>
             </div>
 
-            <div class="border-b pb-6">
-              <h3 class="text-xl font-bold mb-3">What technology stack does Trends use?</h3>
-              <p class="text-gray-700">Trends is built with Next.js 14, TypeScript for type safety, and Anthropic Claude for multi-agent reasoning. The architecture is battle-tested with comprehensive testing, error handling, and scalable design patterns.</p>
+            <div class="border-b border-white/10 pb-6">
+              <h3 class="text-xl font-bold text-white mb-3">What technology stack does Trends use?</h3>
+              <p class="text-gray-300">Trends is built with Next.js 14, TypeScript for type safety, and Anthropic Claude for multi-agent reasoning. The architecture is battle-tested with comprehensive testing, error handling, and scalable design patterns.</p>
             </div>
 
-            <div class="border-b pb-6">
-              <h3 class="text-xl font-bold mb-3">Is Trends free?</h3>
-              <p class="text-gray-700">Yes, Trends is completely free and source available under the BSL-1.1 license. Fork it, customize it for your domain, and ship commercial products without restrictions. You'll only pay for Claude API costs based on your usage.</p>
+            <div class="border-b border-white/10 pb-6">
+              <h3 class="text-xl font-bold text-white mb-3">Is Trends free?</h3>
+              <p class="text-gray-300">Yes, Trends is completely free and source available under the BSL-1.1 license. Fork it, customize it for your domain, and ship commercial products without restrictions. You'll only pay for Claude API costs based on your usage.</p>
             </div>
 
             <div>
-              <h3 class="text-xl font-bold mb-3">How is Trends different from other BI tools?</h3>
-              <p class="text-gray-700">Trends is a reference implementation focused on AI-driven intelligence. Unlike generic BI tools, it demonstrates multi-agent reasoning patterns, automated research workflows, and strategic analysis—ready to fork and adapt for your specific market intelligence needs.</p>
+              <h3 class="text-xl font-bold text-white mb-3">How is Trends different from other BI tools?</h3>
+              <p class="text-gray-300">Trends is a reference implementation focused on AI-driven intelligence. Unlike generic BI tools, it demonstrates multi-agent reasoning patterns, automated research workflows, and strategic analysis—ready to fork and adapt for your specific market intelligence needs.</p>
             </div>
           </div>
         </div>
@@ -549,9 +549,9 @@ const faqSchema = {
     </section>
 
     <!-- Related Blog Posts -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gray-900">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-black text-center mb-16">Learn More About Trends</h2>
+        <h2 class="text-4xl md:text-5xl font-black text-white text-center mb-16">Learn More About Trends</h2>
 
         <!-- Blog Post 1 - Image Left -->
         <div class="max-w-6xl mx-auto mb-16">
@@ -560,9 +560,9 @@ const faqSchema = {
               <img src="/images/blog/trends-intelligence-cards.png" alt="Trends Intelligence Dashboard" class="rounded-2xl shadow-2xl w-full" />
             </div>
             <div>
-              <h3 class="text-3xl font-bold mb-4">AI-Driven Trend Analysis for Enterprise Intelligence</h3>
-              <p class="text-xl text-gray-700 mb-6">Discover how AI-first intelligence systems transform enterprise technology adoption decisions through multi-agent reasoning and predictive analysis. Move from manual research to automated strategic intelligence.</p>
-              <a href="/blog/ai-driven-trend-analysis-enterprise-intelligence" class="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold text-lg group">
+              <h3 class="text-3xl font-bold text-white mb-4">AI-Driven Trend Analysis for Enterprise Intelligence</h3>
+              <p class="text-xl text-gray-300 mb-6">Discover how AI-first intelligence systems transform enterprise technology adoption decisions through multi-agent reasoning and predictive analysis. Move from manual research to automated strategic intelligence.</p>
+              <a href="/blog/ai-driven-trend-analysis-enterprise-intelligence" class="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-semibold text-lg group">
                 Read the full article
                 <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -579,9 +579,9 @@ const faqSchema = {
               <img src="/images/blog/personalized-trends.png" alt="Enterprise Intelligence Setup" class="rounded-2xl shadow-2xl w-full" />
             </div>
             <div class="md:order-1">
-              <h3 class="text-3xl font-bold mb-4">Getting Started with Enterprise Intelligence</h3>
-              <p class="text-xl text-gray-700 mb-6">Complete step-by-step guide to implementing Trends for enterprise technology decision-making. Transform your organization from intuition-based to evidence-driven strategic advantage in 90 days.</p>
-              <a href="/blog/getting-started-trenddit-client-enterprise-intelligence" class="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold text-lg group">
+              <h3 class="text-3xl font-bold text-white mb-4">Getting Started with Enterprise Intelligence</h3>
+              <p class="text-xl text-gray-300 mb-6">Complete step-by-step guide to implementing Trends for enterprise technology decision-making. Transform your organization from intuition-based to evidence-driven strategic advantage in 90 days.</p>
+              <a href="/blog/getting-started-trenddit-client-enterprise-intelligence" class="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-semibold text-lg group">
                 Read the full article
                 <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -602,7 +602,7 @@ const faqSchema = {
         </p>
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
           <a href="https://github.com/navam-io/trends" target="_blank"
-             class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white border-2 border-gray-300 text-gray-900 rounded-lg hover:bg-gray-50 hover:border-gray-400 transition-all font-semibold">
+             class="inline-flex items-center justify-center gap-2 h-12 px-6 bg-white/10 border-2 border-white/20 text-white rounded-lg hover:bg-white/20 hover:border-white/40 transition-all font-semibold">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
             </svg>

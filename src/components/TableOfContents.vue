@@ -11,20 +11,20 @@
     <button
       v-if="!isTocExpanded"
       @click="expandToc"
-      class="bg-white shadow-lg rounded-full p-3 hover:bg-gray-50 transition-colors duration-200 border border-gray-200"
+      class="bg-gray-900 shadow-lg rounded-full p-3 hover:bg-gray-800 transition-colors duration-200 border border-white/10"
       title="Show Table of Contents"
     >
-      <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     </button>
 
     <!-- Expanded Panel Mode -->
-    <div v-else class="bg-white shadow-lg rounded-lg border border-gray-200 overflow-hidden">
+    <div v-else class="bg-gray-900 shadow-lg rounded-lg border border-white/10 overflow-hidden">
       <!-- Toggle Button -->
       <button
         @click="collapseToc"
-        class="w-full flex items-center justify-between p-3 bg-gray-50 hover:bg-gray-100 text-sm font-semibold text-gray-700 transition-colors duration-200 border-b border-gray-200"
+        class="w-full flex items-center justify-between p-3 bg-gray-800 hover:bg-gray-700 text-sm font-semibold text-gray-300 transition-colors duration-200 border-b border-white/10"
       >
         <span>Table of Contents</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -39,8 +39,8 @@
           :key="heading.id"
           :href="`#${heading.id}`"
           :class="[
-            'toc-item block text-sm hover:text-blue-600 transition-colors duration-200',
-            'font-medium text-gray-800'
+            'toc-item block text-sm hover:text-blue-400 transition-colors duration-200',
+            'font-medium text-gray-300'
           ]"
           @click="scrollToHeading(heading.id)"
         >

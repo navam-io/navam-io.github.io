@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Filter Section with Magazine-style Design -->
-    <section class="bg-gradient-to-br from-gray-50 to-white py-16 border-b border-gray-100">
+    <section class="bg-gradient-to-br from-gray-900 to-gray-950 py-16 border-b border-white/10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <BlogTagFilter
           :tags="allTags"
@@ -11,7 +11,7 @@
     </section>
 
     <!-- Main Content Section -->
-    <section class="bg-white py-16">
+    <section class="bg-gray-950 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Empty State -->
         <div v-if="filteredPosts.length === 0" class="text-center py-20">
@@ -64,21 +64,21 @@
                   <span
                     v-for="tag in filteredPosts[0].frontmatter.tags?.slice(0, 3)"
                     :key="tag"
-                    class="px-3 py-1 bg-gradient-to-r from-purple-100 to-indigo-100 text-purple-700 text-xs font-semibold rounded-full"
+                    class="px-3 py-1 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 text-purple-300 text-xs font-semibold rounded-full"
                   >
                     {{ tag }}
                   </span>
                 </div>
 
-                <h2 class="text-3xl lg:text-4xl font-black text-gray-900 leading-tight group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-indigo-600 group-hover:bg-clip-text transition-all duration-300">
+                <h2 class="text-3xl lg:text-4xl font-black text-white leading-tight group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-indigo-400 group-hover:bg-clip-text transition-all duration-300">
                   {{ filteredPosts[0].frontmatter.title }}
                 </h2>
 
-                <p class="text-lg text-gray-600 leading-relaxed">
+                <p class="text-lg text-gray-400 leading-relaxed">
                   {{ filteredPosts[0].frontmatter.excerpt }}
                 </p>
 
-                <div class="flex items-center gap-4 pt-4 text-sm text-gray-500">
+                <div class="flex items-center gap-4 pt-4 text-sm text-gray-400">
                   <span v-if="filteredPosts[0].frontmatter.author">
                     By {{ filteredPosts[0].frontmatter.author }}
                   </span>
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="pt-2">
-                  <span class="inline-flex items-center text-purple-600 font-semibold group-hover:gap-3 gap-2 transition-all duration-300">
+                  <span class="inline-flex items-center text-purple-400 font-semibold group-hover:gap-3 gap-2 transition-all duration-300">
                     Read Article
                     <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -105,7 +105,7 @@
           <article
             v-for="post in filteredPosts.slice(1)"
             :key="post.url"
-            class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-purple-200 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1"
+            class="group bg-white/5 rounded-2xl overflow-hidden border border-white/10 hover:border-purple-500/30 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1"
           >
             <a :href="post.url" class="block h-full flex flex-col">
               <!-- Card Image -->
@@ -128,28 +128,28 @@
                   <span
                     v-for="tag in post.frontmatter.tags?.slice(0, 2)"
                     :key="tag"
-                    class="px-2 py-1 bg-gradient-to-r from-purple-50 to-indigo-50 text-purple-600 text-xs font-medium rounded-full"
+                    class="px-2 py-1 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 text-purple-300 text-xs font-medium rounded-full"
                   >
                     {{ tag }}
                   </span>
                 </div>
 
                 <!-- Title -->
-                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors duration-300 line-clamp-2">
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors duration-300 line-clamp-2">
                   {{ post.frontmatter.title }}
                 </h3>
 
                 <!-- Excerpt -->
-                <p class="text-gray-600 text-sm mb-4 flex-1 line-clamp-3">
+                <p class="text-gray-400 text-sm mb-4 flex-1 line-clamp-3">
                   {{ post.frontmatter.excerpt }}
                 </p>
 
                 <!-- Meta -->
-                <div class="flex items-center justify-between pt-4 border-t border-gray-100">
-                  <span v-if="post.frontmatter.author" class="text-xs text-gray-500">
+                <div class="flex items-center justify-between pt-4 border-t border-white/10">
+                  <span v-if="post.frontmatter.author" class="text-xs text-gray-400">
                     {{ post.frontmatter.author }}
                   </span>
-                  <span class="inline-flex items-center text-purple-600 text-sm font-semibold group-hover:gap-2 gap-1 transition-all duration-300">
+                  <span class="inline-flex items-center text-purple-400 text-sm font-semibold group-hover:gap-2 gap-1 transition-all duration-300">
                     Read
                     <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
